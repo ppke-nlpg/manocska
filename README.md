@@ -5,7 +5,7 @@ A _Manócska_ adatbázis összefogja és harmonizálja a szabadon elérhető mag
 - [_Magyar igei szerkezetek (szótár)_. Sass Bálint et al.](ige_szotar/README.md)
 - [28 millió szintaktikailag elemzett mondat és _500000 igei szerkezet (lista)_. Sass Bálint.](isz/README.md)
 - [_Tádé_ – Igei vonzatkeret-gyakorisági lista. Kornai András et al.](tade/README.md)
-- [_A magyar igei komplexumok vizsgálata. Kalivoda Ágnes_. (Mester szakos szakdolgozat)](kagi_verbal_complex/README.md)
+- [_A magyar igei komplexumok vizsgálata. Kalivoda Ágnes_. (Mesterszakos szakdolgozat)](https://github.com/kagnes/hungarian_verbal_complex/)
 
 Tartalmazza az összes ige-igekötő-keret hármast a fenti erőforrásokból származó gyakoriságokkal.
 
@@ -51,7 +51,7 @@ Tartalmazza az összes ige-igekötő-keret hármast a fenti erőforrásokból sz
 
 # Az erőforrás előállítása
 
-A reprodukálhatóságot könnyítendő az alábbi parancsok segítségével a Manócska előállítható a többi erőforrás előfeldolgozott formátumainak felhasználásval.
+A reprodukálhatóságot könnyítendő az alábbi parancsok segítségével a Manócska előállítható a többi erőforrás előfeldolgozott formátumainak felhasználásval. (git clone --recursive ...)
 
     time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k6,6g | \
     tee manocska.sorted.txt | grep -v $'[^\t ][=[]' > manocska.sorted.nolex.txt)
@@ -60,5 +60,5 @@ A reprodukálhatóságot könnyítendő az alábbi parancsok segítségével a M
 
 # Licensz
 
-Felhasználható oktatási, kutatási és magáncélra. Ez esetben az összes a Manócska által felhasznált erőforrást hivatkozni kell.
+Felhasználható oktatási, kutatási és magáncélra. Ez esetben __az összes a _Manócska_ által felhasznált erőforrást hivatkozni kell__.
 Továbbiakban a Manócska készítése során felhasznált erőforrások jogtulajdonosainak álláspontja a mértékadó.
