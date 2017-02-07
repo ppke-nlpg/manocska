@@ -1,0 +1,3 @@
+[submodule "kagi_verbal_complex"]
+	path = kagi_verbal_complex
+	url = https://github.com/kagnes/hungarian_verbal_complex/

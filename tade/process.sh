@@ -1,0 +1,22 @@
+iconv -f ISO8859-2 -t UTF-8 -o tade.kimenet.tsv tade.tsv &&
+sed -i -e 's/NP<CAS<ACC>>/[ACC]/g' \
+       -e 's/NP<CAS<DAT>>/[DAT]/g' \
+       -e 's/NP<CAS<INS>>/[INS]/g' \
+       -e 's/NP<CAS<CAU>>/[CAU]/g' \
+       -e 's/NP<CAS<TRA>>/[FAC]/g' \
+       -e 's/NP<CAS<INE>>/[INE]/g' \
+       -e 's/NP<CAS<SUE>>/[SUP]/g' \
+       -e 's/NP<CAS<ADE>>/[ADE]/g' \
+       -e 's/NP<CAS<ILL>>/[ILL]/g' \
+       -e 's/NP<CAS<SBL>>/[SUB]/g' \
+       -e 's/NP<CAS<ALL>>/[ALL]/g' \
+       -e 's/NP<CAS<TER>>/[TER]/g' \
+       -e 's/NP<CAS<ELA>>/[ELA]/g' \
+       -e 's/NP<CAS<DEL>>/[DEL]/g' \
+       -e 's/NP<CAS<ABL>>/[ABL]/g' \
+       -e 's/NP<CAS<FOR>>/[FOR]/g' \
+       -e 's/NP<CAS<ESS>>/[ESS]/g' \
+       -e 's/NP<CAS<TEM>>/[TEM]/g' \
+       -e 's/PP<\([^>]*\)>/=\L\1/g' \
+       -e 's/+/|/g' \
+       -e 's/_/ /g' tade.kimenet.tsv
