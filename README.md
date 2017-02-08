@@ -1,6 +1,6 @@
 # Manócska – integrált igei vonzatkeret adatbázis
 
-A _Manócska_ adatbázis összefogja és harmonizálja a szabadon elérhető magyarnyelvű igei vonzatkeret adatbázisokat és az igékről elérhető információkat melyek a következők:
+A _Manócska_ adatbázis összefogja és harmonizálja a szabadon elérhető magyar nyelvű igei vonzatkeret adatbázisokat és az igékről elérhető információkat, melyek a következők:
 
 - [_Magyar igei szerkezetek (szótár)_. Sass Bálint et al.](ige_szotar/README.md)
 - [28 millió szintaktikailag elemzett mondat és _500000 igei szerkezet (lista)_. Sass Bálint.](isz/README.md)
@@ -11,7 +11,7 @@ Tartalmazza az összes ige-igekötő-keret hármast a fenti erőforrásokból sz
 
 # Az erőforrás szerkezete
 
-### Az erőforrás a kövektező fájlokból áll:
+### Az erőforrás a következő fájlokból áll:
 
 - manocska.txt: ige és keret szerint rendezve
 - manocska.sorted.txt: rang szerint rendezve
@@ -22,7 +22,7 @@ Tartalmazza az összes ige-igekötő-keret hármast a fenti erőforrásokból sz
 
 ### manocska.txt, manocska.sorted.txt, manocska.sorted.nolex.txt, manocska.sorted.lex.txt:
 
-- Midnen mező Tab-bal van elválasztva.
+- Minden mező Tab-bal van elválasztva.
 - Első mező az ige (igekötő |-al van elválasztva)
 - Második mező az argumentumok szóközzel elválasztva
     - az esetek [Humor kódban](http://www.morphologic.hu/downloads/publications/na/2006_mszny_jobbhumor_na-pt.pdf) vannak megadva (a [PSe3] minden személyű birtokost egységesen jelöl)
@@ -31,9 +31,9 @@ Tartalmazza az összes ige-igekötő-keret hármast a fenti erőforrásokból sz
     - @ jelzi ha nincs argumentum
     - A lexikálisan kötött elemek szótöve és az eset illetve névutó közvetlenül kapcsolódik
 - Harmadik mező a keret frekvenciája a _Magyar igei szerkezetek (szótár)_ alapján
-- Negyedik mező a keret frekvenciája a _500000 igei szerkezet (lista)_ alpján
+- Negyedik mező a keret frekvenciája a _500000 igei szerkezet (lista)_ alapján
 - Ötödik mező a keret frekvenciája a _Tádé_ alapján
-- Hatoik mező az (igekötős)ige frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igékre nulla, minden keretre azonos)
+- Hatodik mező az (igekötős)ige frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igékre nulla, minden keretre azonos)
 - Hetedik mező a "rang": sum (adatbázisonként a keret előfordulásának és az összes keret előfordulásának hányadosa)
 
 
