@@ -60,5 +60,16 @@ A reprodukálhatóságot könnyítendő az alábbi parancsok segítségével a M
 
 # Licensz
 
-Felhasználható oktatási, kutatási és magáncélra. Ez esetben __az összes a _Manócska_ által felhasznált erőforrást hivatkozni kell__.
+Felhasználható oktatási, kutatási és magáncélra. Ez esetben __az összes, a _Manócska_ által felhasznált erőforrást hivatkozni kell__.
 Továbbiakban a Manócska készítése során felhasznált erőforrások jogtulajdonosainak álláspontja a mértékadó.
+
+Indig Balázs. _Manócska – integrált igei vonzatkeret adatbázis._ (2017) Elérhető: [https://github.com/ppke-nlpg/manocska](https://github.com/ppke-nlpg/manocska)
+
+    @MISC{manocska,
+      author       = {Indig, Bal{\'a}zs},
+      title        = {Man{\'o}cska -- integr{\'a}lt igei vonzatkeret adatb{\'a}zis},
+      year         = {2017},
+      howpublished = {\url{https://github.com/ppke-nlpg/manocska}}
+    }
+
+A többi erőforrás hivatkozásához szükséges bibliográfiai adatokat lásd a fenti linkeken.
