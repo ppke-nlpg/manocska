@@ -21,16 +21,17 @@ def smart_append(verbs_dict, verb, freq, frame):
             return
     verbs_dict[verb].append([freq, frame])
 
+
 szotar_igek = defaultdict(list)
 szotar_sumfreq = 0
 with open('ige_szotar/szotar.kimenet.txt', encoding='UTF-8') as szotar:
-    for l in szotar:
-        l = l.strip().split('\t')
-        if len(l) == 3:
-            ige, gyak, pelda = l
+    for entry in szotar:
+        entry = entry.strip().split('\t')
+        if len(entry) == 3:
+            ige, gyak, pelda = entry
             vonzatok = []
-        elif len(l) >= 4:
-            ige, *vonzatok, gyak, pelda = l
+        elif len(entry) >= 4:
+            ige, *vonzatok, gyak, pelda = entry
         else:
             break
         gyak = int(gyak)
@@ -43,14 +44,14 @@ print('Igék száma (szótár): ', len(szotar_igek), file=sys.stderr)
 isz_igek = defaultdict(list)
 isz_sumfreq = 0
 with open('isz/igeiszerkezet-lista.kimenet.txt', encoding='UTF-8') as isz:
-    for l in isz:
-        if not l.startswith((' 0', 'Igeskicc')):
-            l = l.strip().split('\t')
-            if len(l) == 2:
-                ige, gyak = l
+    for entry in isz:
+        if not entry.startswith((' 0', 'Igeskicc')):
+            entry = entry.strip().split('\t')
+            if len(entry) == 2:
+                ige, gyak = entry
                 vonzatok = []
-            elif len(l) >= 3:
-                ige, *vonzatok, gyak = l
+            elif len(entry) >= 3:
+                ige, *vonzatok, gyak = entry
             else:
                 break
             gyak = int(gyak)
@@ -63,14 +64,14 @@ print('Igék száma (igei szerkezetek): ', len(isz_igek), file=sys.stderr)
 tade_igek = defaultdict(list)
 tade_sumfreq = 0
 with open('tade/tade.kimenet.tsv', encoding='UTF-8') as tade:
-    for l in tade:
-        l = l.strip().split('\t')
-        if len(l) == 5:
-            ige, vonzatok, gyak, igegyak, arany = l
+    for entry in tade:
+        entry = entry.strip().split('\t')
+        if len(entry) == 5:
+            ige, vonzatok, gyak, igegyak, arany = entry
             if vonzatok[0] == '@':
                 vonzatok = ''
-        elif len(l) >= 6:
-            ige, vonzatok, gyak, igegyak, arany = l
+        elif len(entry) >= 6:
+            ige, vonzatok, gyak, igegyak, arany = entry
         else:
             break
         vonzatok = tuple(vonzatok.split())
@@ -91,17 +92,16 @@ print('Igék száma (Tadé): ', len(tade_igek), file=sys.stderr)
 kagi_igek = Counter()
 kagi_sumfreq = 0
 with open('kagi_verbal_complex/freqPrevFin.txt', encoding='UTF-8') as kagi:
-    for l in kagi:
-        l = l.strip().split(' ')
-        if len(l) == 2:
-            gyak, ige = l
+    for entry in kagi:
+        entry = entry.strip().split(' ')
+        if len(entry) == 2:
+            gyak, ige_w_ik = entry
         else:
             break
-        ik, igek = ige.split('+')
+        ik, ige = ige_w_ik.split('+')
         gyak = int(gyak)
-        for i in ('{0}|{1}'.format(ik, i) for i in igek.split('|')):  # One or more
-            kagi_igek[ige] = gyak
-            kagi_sumfreq += gyak
+        kagi_igek['{0}|{1}'.format(ik, ige)] = gyak
+        kagi_sumfreq += gyak
 
 print('Igék száma (kagi): ', len(kagi_igek), file=sys.stderr)
 
@@ -131,6 +131,6 @@ for ige in sorted(all_ige):
 
 """
 time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k6,6g | \
-tee manocska.sorted.txt | grep -v $'[^\t ][=[]' > manocska.sorted.nolex.txt)
+tee manocska.sorted.txt | grep -v $'[^\t ][=[]' > manocska.sorted.nolex.txt) &&
 cat manocska.sorted.txt | grep $'[^\t ][=[]' > manocska.sorted.lex.txt
 """
