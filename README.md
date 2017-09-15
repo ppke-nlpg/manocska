@@ -1,6 +1,6 @@
-# Manócska – integrált igei vonzatkeret adatbázis
+# Manócska – integrált igeivonzatkeret-adatbázis
 
-A _Manócska_ adatbázis összefogja és harmonizálja a szabadon elérhető magyar nyelvű igei vonzatkeret adatbázisokat és az igékről elérhető információkat, melyek a következők:
+A _Manócska_ adatbázis összefogja és harmonizálja a szabadon elérhető magyar nyelvű igeivonzatkeret-adatbázisokat és az igékről elérhető információkat, melyek a következők:
 
 - [_Magyar igei szerkezetek (szótár)_. Sass Bálint et al.](ige_szotar/README.md)
 - [28 millió szintaktikailag elemzett mondat és _500000 igei szerkezet (lista)_. Sass Bálint.](isz/README.md)
@@ -33,15 +33,18 @@ Tartalmazza az összes ige-igekötő-keret hármast a fenti erőforrásokból sz
 - Harmadik mező a keret frekvenciája a _Magyar igei szerkezetek (szótár)_ alapján
 - Negyedik mező a keret frekvenciája a _500000 igei szerkezet (lista)_ alapján
 - Ötödik mező a keret frekvenciája a _Tádé_ alapján
-- Hatodik mező az (igekötős)ige frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igékre nulla, minden keretre azonos)
-- Hetedik mező a "rang": sum (adatbázisonként a keret előfordulásának és az összes keret előfordulásának hányadosa)
+- Hatodik mező az (igekötős)ige frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igékre None, minden keretre azonos)
+- Hedetik mező az infinitívuszos ige az infinitívusz igekötőjével összekapcsolt frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős infinitívuszra és nem infinitívuszos igére None, minden keretre azonos)
+- Nyolcadik mező az infinitívuszos ige igekötőjének és az infinitívusznak az összekapcsolt frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igére és nem infinitívuszos igére None, minden keretre azonos)
+- Kilencedik mező az infinitívuszos ige igekötős infintívuszának frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős infinitívuszra és nem infinitívuszos igére None, minden keretre azonos)
+- Tizetdik mező a "rang": sum (adatbázisonként a keret előfordulásának és az összes keret előfordulásának hányadosa)
 
 
 ### merge.log.txt:
 
 - Az igék száma az egyes adatbázisokban
 - Aztán az egyes igékhez a közös keretek száma (ahol volt ilyen):
-    - Mezőelválasztó Tab karakter
+    - Mezőelválasztó: soremelés karakter (\n), rekordelválasztó: dupla soremelés karakter (\n\n)
     - A keretek listái Python jelölésben vannak
     - Első mező az ige
     - Második mező a _Magyar igei szerkezetek (szótár)_ és a 500000 igei szerkezet című lista közös keretei az adott igéhez
@@ -52,9 +55,10 @@ Tartalmazza az összes ige-igekötő-keret hármast a fenti erőforrásokból sz
 # Az erőforrás előállítása
 
 A reprodukálhatóságot könnyítendő az alábbi parancsok segítségével a Manócska előállítható a többi erőforrás előfeldolgozott formátumainak felhasználásval. (git clone --recursive ...)
+A git repozitórium __nem tartalmazza az eredeti erőforrásokat__ melyek szükségesek a reprodukcióhoz __azok licensze miatt__.
 
-    time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k6,6g | \
-    tee manocska.sorted.txt | grep -v $'[^\t ][=[]' > manocska.sorted.nolex.txt)
+    time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k10,10nr -k1,2 | \
+    tee manocska.sorted.txt | grep -v $'[^\t ][=[]' > manocska.sorted.nolex.txt) &&
     cat manocska.sorted.txt | grep $'[^\t ][=[]' > manocska.sorted.lex.txt
 
 
@@ -65,11 +69,11 @@ Továbbiakban a Manócska készítése során felhasznált erőforrások jogtula
 
 Indig Balázs. _Manócska – integrált igei vonzatkeret adatbázis._ (2017) Elérhető: [https://github.com/ppke-nlpg/manocska](https://github.com/ppke-nlpg/manocska)
 
-    @MISC{manocska,
+    @manual{manocska,
       author       = {Indig, Bal{\'a}zs},
-      title        = {Man{\'o}cska -- integr{\'a}lt igei vonzatkeret adatb{\'a}zis},
+      title        = {Man{\'o}cska -- integr{\'a}lt igeivonzatkeret-adatb{\'a}zis},
       year         = {2017},
-      howpublished = {\url{https://github.com/ppke-nlpg/manocska}}
+      url = {https://github.com/ppke-nlpg/manocska}
     }
 
 A többi erőforrás hivatkozásához szükséges bibliográfiai adatokat lásd a fenti linkeken.

@@ -23,17 +23,15 @@ Andras Kornai, Dávid Márk Nemeskey and Gábor Recski.
 Detecting optional arguments of verbs.
 In Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016).
 
-	@InProceedings{KORNAI16.330,
-	  author    = {Kornai, Andr{\'a}s and Nemeskey, D{\'a}vid M{\'a}rk and Recski, G{\'a}bor},
-	  title     = {Detecting Optional Arguments of Verbs},
-	  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
-	  year      = {2016},
-	  month     = {may},
-	  date      = {23-28},
-	  location  = {Portoro\v{z}, Slovenia},
-	  editor    = {Nicoletta Calzolari (Conference Chair) and Khalid Choukri and Thierry Declerck and Sara Goggi and Marko Grobelnik and Bente Maegaard and Joseph Mariani and Helene Mazo and Asuncion Moreno and Jan Odijk and Stelios Piperidis},
-	  publisher = {European Language Resources Association (ELRA)},
-	  address   = {Paris, France},
-	  isbn      = {978-2-9517408-9-1},
-	  language  = {english}
-	 }
+    @InProceedings{KORNAI16.330,
+        author    = {Kornai, Andr{\'a}s and Nemeskey, D{\'a}vid M{\'a}rk and Recski, G{\'a}bor},
+        title     = {Detecting Optional Arguments of Verbs},
+        booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+        year      = {2016},
+        month     = {may},
+        location  = {Portoro\v{z}, Slovenia},
+        editor    = {Nicoletta Calzolari (Conference Chair) and Khalid Choukri and Thierry Declerck and Sara Goggi and Marko Grobelnik and Bente Maegaard and Joseph Mariani and Helene Mazo and Asuncion Moreno and Jan Odijk and Stelios Piperidis},
+        publisher = {European Language Resources Association (ELRA)},
+        address   = {Paris, France},
+        isbn      = {978-2-9517408-9-1}
+    }

@@ -61,6 +61,7 @@ with open('isz/igeiszerkezet-lista.kimenet.txt', encoding='UTF-8') as isz:
 
 print('Igék száma (igei szerkezetek): ', len(isz_igek), file=sys.stderr)
 
+
 tade_igek = defaultdict(list)
 tade_sumfreq = 0
 with open('tade/tade.kimenet.tsv', encoding='UTF-8') as tade:
@@ -81,8 +82,11 @@ with open('tade/tade.kimenet.tsv', encoding='UTF-8') as tade:
                 print('Dropped: {0}'.format(ige), file=sys.stderr)
                 continue
             ige, inf = ige.split()
-            smart_append(tade_igek, inf, gyak, tuple(sorted(vonzatok)))  # Here stuff can be non uniq...
-            tade_sumfreq += gyak
+            # Do not append INF's frame to the non-INF occurence's frame.
+            # It could contain argument of the FIN verb too!
+            # TODO: Research a solution later...
+            # smart_append(tade_igek, inf, gyak, tuple(sorted(vonzatok)))  # Here stuff can be non uniq...
+            # tade_sumfreq += gyak
             vonzatok = ['INF_' + inf]
         smart_append(tade_igek, ige, gyak, tuple(sorted(vonzatok)))  # Here stuff can be non uniq...
         tade_sumfreq += gyak
@@ -115,22 +119,51 @@ for ige in sorted(all_ige):
     all_frame = set(szotar_ige) | set(isz_ige) | set(tade_ige)
     if len(szotar_ige) + len(isz_ige) + len(tade_ige) > len(all_frame):
         print(ige, list(sorted(set(szotar_ige) & set(isz_ige))), list(sorted(set(isz_ige) & set(tade_ige))),
-              list(sorted(set(tade_ige) & set(szotar_ige))), kagi_igek[ige], file=sys.stderr)
+              list(sorted(set(tade_ige) & set(szotar_ige))), kagi_igek[ige], sep='\n', end='\n\n', file=sys.stderr)
     for act_frame in sorted(all_frame):
         szotar_freq = get_freq_w_ind_for_frame(szotar_igek[ige], act_frame)[1]
         isz_freq = get_freq_w_ind_for_frame(isz_igek[ige], act_frame)[1]
         tade_freq = get_freq_w_ind_for_frame(tade_igek[ige], act_frame)[1]
-        kagi_freq = kagi_igek[ige]
+        kagi_aggr_freq = 0
+        kagi_freq_fin1_ik1 = kagi_freq_fin1_ik2 = kagi_freq_fin2_ik1 = kagi_freq_fin2_ik2 = None
+        if '|' in ige:
+            kagi_freq_fin1_ik1 = kagi_igek[ige]
+            kagi_aggr_freq += kagi_freq_fin1_ik1
+            if len(act_frame) > 0 and act_frame[0].startswith('INF_'):
+                inf = act_frame[0][4:]  # strip 'INF_' prefix
+                ige_ik, ige_wo_ik = ige.split('|', maxsplit=1)
+                if '|' in inf:
+                    # Own PreV
+                    kagi_freq_fin2_ik2 = kagi_igek[inf]
+                    kagi_aggr_freq += kagi_freq_fin2_ik2
+                    # Swap PreV
+                    inf_ik, inf_wo_ik = inf.split('|', maxsplit=1)
+                    kagi_freq_fin1_ik2 = kagi_igek['{0}|{1}'.format(inf_ik, ige_wo_ik)]
+                    kagi_aggr_freq += kagi_freq_fin1_ik2
+                    kagi_freq_fin2_ik1 = kagi_igek['{0}|{1}'.format(ige_ik, inf_wo_ik)]
+                    kagi_aggr_freq += kagi_freq_fin2_ik1
+                else:
+                    kagi_freq_fin2_ik1 = kagi_igek['{0}|{1}'.format(ige_ik, inf)]
+                    kagi_aggr_freq += kagi_freq_fin2_ik1
+        else:
+            if len(act_frame) > 0 and act_frame[0].startswith('INF_'):
+                inf = act_frame[0][4:]  # strip 'INF_' prefix
+                if '|' in inf:
+                    inf_ik, inf_wo_ik = inf.split('|', maxsplit=1)
+                    kagi_freq_fin1_ik2 = kagi_igek['{0}|{1}'.format(inf_ik, ige)]
+                    kagi_aggr_freq += kagi_freq_fin1_ik2
+
         if act_frame == ():
             act_frame = '@'
         else:
             act_frame = ' '.join(act_frame)
-        rank = szotar_freq / szotar_sumfreq + isz_freq / isz_sumfreq + tade_freq / tade_sumfreq \
-            + kagi_freq / kagi_sumfreq
-        print(ige, act_frame, szotar_freq, isz_freq, tade_freq, kagi_freq, rank, sep='\t')
+        rank = sum((szotar_freq / szotar_sumfreq, isz_freq / isz_sumfreq, tade_freq / tade_sumfreq,
+                    kagi_aggr_freq / (4*kagi_sumfreq)))
+        print(ige, act_frame, szotar_freq, isz_freq, tade_freq, kagi_freq_fin1_ik1,
+              kagi_freq_fin1_ik2, kagi_freq_fin2_ik1, kagi_freq_fin2_ik2, '{0:1.20f}'.format(rank), sep='\t')
 
 """
-time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k6,6g | \
+time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k10,10nr -k1,2 | \
 tee manocska.sorted.txt | grep -v $'[^\t ][=[]' > manocska.sorted.nolex.txt) &&
 cat manocska.sorted.txt | grep $'[^\t ][=[]' > manocska.sorted.lex.txt
 """

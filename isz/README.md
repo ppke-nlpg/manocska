@@ -21,13 +21,14 @@ Sass Bálint.
 In: Tanács Attila, Varga Viktor, Vincze Veronika (szerk.) MSZNY 2015, XI. Magyar Számítógépes Nyelvészeti Konferencia, Szeged: JATEPress, 303-308.
 
     @inproceedings{sass201528millio,
-      author    = {Sass, B{\'a}lint},
-      booktitle = {XI. Magyar Sz{\'a}m{\'\i}t{\'o}g{\'e}pes Nyelv{\'e}szeti Konferencia (MSZNY 2015)},
-      editor    = {Tan{\'a}cs, Attila and Varga, Viktor and Vincze, Veronika},
-      publisher = {SZTE TTIK Informatikai Tansz{\'e}kcsoport}
-      pages     = {399--403},
-      address   = {Szeged, Magyarország},
-      year      = {2015},
-      month     = {Január},
-      date      = {15-16}
+        author    = {Sass, B{\'a}lint},
+        title = {28 milli{\'o} szintaktikailag elemzett mondat {\'e}s 500000 igei szerkezet},
+        booktitle = {XI. Magyar Sz{\'a}m{\'i}t{\'o}g{\'e}pes Nyelv{\'e}szeti Konferencia (MSZNY 2015)},
+        pages     = {399--403},
+        year      = {2015},
+        month     = {Janu\'ar},
+        editor    = {Tan{\'a}cs, Attila and Varga, Viktor and Vincze, Veronika},
+        publisher={Szegedi Tudom{\'a}nyegyetem Informatikai Tansz{\'e}kcsoport},
+        organization = {Szegedi Tudom{\'a}nyegyetem Informatikai Int{\'e}zet},
+        address = {Szeged},
     }
