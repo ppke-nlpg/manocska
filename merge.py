@@ -158,9 +158,9 @@ false_prev_good = {'felesel', 'felvételizik', 'karbantart', 'kétségbeesik', '
                    'szemrevételez', 'szörnyethal', 'túlórázik', 'útbaigazít'}
 
 """
-Good verbs, that have false verbal article analysis but need ik suffix
+Good verbs, that have false verbal particle analysis but need ik suffix
 """
-false_prev_need_ik = {'elenyész', 'elhaláloz', 'túlóráz'}
+false_prev_need_ik = {'túlóráz'}
 
 """
 Occur not splitted but only the splitted is OK. And ik suffix is needed
@@ -168,7 +168,8 @@ Occur not splitted but only the splitted is OK. And ik suffix is needed
 prev_and_ik_verbs = \
              {elem.replace('|', ''): (elem + 'ik') for elem in
               {'el|búcsúz', 'meg|éhez', 'meg|fáz', 'meg|reggeliz', 'meg|szomjaz', 'meg|vacsoráz',
-               'rá|fáz', 'be|gubóz', 'el|időz', 'el|puskáz', 'el|szipkáz', 'fel|tornáz', 'le|fasisztáz', 'ki|mazsoláz'}}
+               'rá|fáz', 'be|gubóz', 'el|időz', 'el|puskáz', 'el|szipkáz', 'fel|tornáz', 'le|fasisztáz', 'ki|mazsoláz',
+               'el|enyész', 'el|haláloz'}}
 
 """
 Stemming error with strange verbal article
