@@ -1,3 +1,6 @@
 [submodule "kagi_verbal_complex"]
 	path = kagi_verbal_complex
 	url = https://github.com/kagnes/hungarian_verbal_complex/
+[submodule "infinitival_constructions"]
+	path = infinitival_constructions
+	url = https://github.com/kagnes/infinitival_constructions

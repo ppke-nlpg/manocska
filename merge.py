@@ -19,7 +19,7 @@ ez a file: light_verb_exceptions.txt
 light_verb_exception_verbs = {'bír', 'fog', 'kezd', 'kíván', 'mer', 'szeret', 'szokik', 'talál', 'tetszik',
                               'tud', 'van', 'lesz', 'lehet', 'nincs', 'sincs'}
 
-with open('light_verb_exceptions.txt', encoding='UTF-8') as lve:
+with open('light_verbs/light_verb_exceptions.txt', encoding='UTF-8') as lve:
     light_verb_exception_verbs_w_prev = {line.replace('+', '|') for line in lve.readlines()}
 
 # TODO: ezt mergelni: jo_inf_lista.txt
@@ -76,6 +76,29 @@ good_verbs_humor_not_recognised2 = {'bent|ragad', 'cserben|hagy', 'élen|jár', 
                                     'hatályosul'
                                     }
 
+good_verbs_humor_not_recognised3 = {'jelent|jelentet', 'jön|jő', 'békén|hagy', 'vet|vetet', 'bent|jár',
+                                    'bicsakol', 'csökkent|csökkentet', 'döglik|dögöl', 'ébreszt|ébresztet',
+                                    'edz|edzet', 'ejt|ejtet', 'fejt|fejtet', 'felejt|felejtet', 'hí|hív', 'jön|jő',
+                                    'ment|mentet', 'vérezik|vérzik', 'veszt|vesztet', 'emlékezik|emlékszik',
+                                    'ereszt|eresztet', 'érez|érzik', 'érint|érintet', 'ért|értet',
+                                    'fejleszt|fejlesztet', 'fejt|fejtet', 'felejt|felejtet', 'hí|hív',
+                                    'jelent|jelentet', 'jön|jő', 'kelt|keltet', 'ment|mentet', 'ért|értet',
+                                    'feltételez', 'félt|féltet', 'vet|vetet', 'fest|festet', 'gerjeszt|gerjesztet',
+                                    'habozik|habzik', 'hajlik|hajol', 'hangozik|hangzik', 'jön|jő',
+                                    'hiányozik|hiányzik', 'hí|hív', 'illet|illik', 'int|intet', 'jelent|jelentet',
+                                    'jól|esik', 'jön|jő', 'kell|kelletik', 'kelt|keltet', 'kétségbe|esik', 'ejt|ejtet',
+                                    'fejleszt|fejlesztet', 'fejt|fejtet', 'felejt|felejtet', 'jelent|jelentet',
+                                    'jön|jő', 'betegedik|betegszik', 'hajlik|hajol', 'int|intet', 'jön|jő',
+                                    'törleszt|törlesztet', 'vet|vetet', 'ért|értet', 'hí|hív', 'lesz|van',
+                                    'ment|mentet', 'teremt|teremtet', 'vet|vetet', 'melegedik|melegszik',
+                                    'mellékel', 'ment|mentet', 'jön|jő', 'jön|jő', 'rogyaszt', 'rosszul|esik',
+                                    'sejt|sejtet', 'sért|sértet', 'síkra|száll', 'szembesül', 'szerkeszt|szerkesztet',
+                                    'talizik', 'tekint|tekintet', 'teremt|teremtet', 'terjeszt|terjesztet',
+                                    'tetszet|tetszik', 'veszik|veszt', 'veszt|vesztet', 'vet|vetet', 'jön|jő',
+                                    'bé|lát'
+                                    }
+
+
 """
 Prev and verb do not go together
 and
@@ -114,7 +137,13 @@ double_prev_verbs = {'abba|bele|megy', 'abba|bele|nyugodik', 'abba|bele|törődi
                      'meg|el|olvas', 'meg|le|ír', 'meg|meg|jelenik', 'meg|meg|néz', 'meg|meg|tesz', 'meg|meg|van',
                      'oda|be|megy', 'oda|el|jut', 'oda|el|megy', 'oda|vissza|tér', 'rá|meg|van', 'abba|bele|egyez'}
 
-not_rev_verbs_drop_prev = {'földet|őriz', 'helyt|őriz', 'helyt|rendez'}
+not_rev_verbs_drop_prev = {'földet|őriz', 'helyt|őriz', 'helyt|rendez',
+                           'egyet|enged', 'egyet|sikerül', 'egyet|tart', 'földet|hagy', 'földet|igyekezik',
+                           'földet|sikerül', 'helyben|igyekezik', 'helyben|sikerül', 'helyben|tervez', 'jól|eszik',
+                           'jól|öltözik', 'jót|hívat', 'kölcsön|sikerül', 'nagyot|segít', 'nagyot|sikerül',
+                           'rendre|próbál', 'számba|sikerül'
+                           }
+
 
 """
 Occur splitted and not splitted but both wrong.
@@ -138,6 +167,11 @@ wrong_verbs2 = {'ajánlat', 'al', 'alat', 'alázat', 'áldozat', 'asztat', 'bí'
                 'pályázat', 'romol', 'sarkallik', 'seregel', 'sorozat', 'szavazat', 'szégyenel', 'szeretet',
                 'szervezet', 'szövetkezet', 'születet', 'táblázat', 'tagozat', 'tervezet',
                 'ugor', 'vadászat', 'változat', 'van--van', 'veszélyeztetet', 'vigyázat', 'fokozat', 'el|jutat'}
+
+wrong_verbs3 = {'benézik', 'érdekképvis', 'észre|ve', 'fel|éte', 'hal|hallik', 'ihlet|ihlik', 'készt|késztet', 'lessz',
+                'liz', 'lizik', 'ihlet|ihlik', 'méltó', 'méltö', 'nagyméltó', 'sokal', 'tellik', 'véghez', 'vérá',
+                'viszszahú'}
+
 
 """
 Occur splitted and not splitted but only the splitted is OK.
@@ -217,7 +251,8 @@ not_prev_verbs3 = \
       'síkra|száll',
       'el|időz', 'el|puskáz', 'el|enyész', 'ki|mazsoláz', 'el|búcsúz', 'meg|éhez', 'meg|fáz', 'meg|reggeliz',
       'meg|szomjaz', 'meg|vacsoráz', 'rá|fáz', 'be|gubóz', 'el|szipkáz', 'fel|tornáz', 'le|fasisztáz', 'el|haláloz',
-      'be|árnyékoz', 'meg|gémberedik', 'ki|esik'
+      'be|árnyékoz', 'meg|gémberedik', 'ki|esik', 'át|ázik', 'be|biztosít', 'el|csorog', 'igénybe|vesz', 'le|főz',
+      'oda|utazik', 'vissza|kocog'
       }
      }
 
@@ -302,7 +337,8 @@ with open('ige_szotar/szotar.kimenet.txt', encoding='UTF-8') as verb_dict:
         else:
             break
         freq = int(freq)
-        if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev:
+        if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev or\
+                verb in wrong_verbs3:
             continue
         verb = fix_verb(verb)
         arguments = [i.replace(' =', '=') for i in arguments]  # Because at the end args will be separated by spaces
@@ -326,7 +362,8 @@ with open('isz/igeiszerkezet-lista.kimenet.txt', encoding='UTF-8') as isz:
             else:
                 break
             freq = int(freq)
-            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev:
+            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or\
+                    verb in verb_bad_prev or verb in wrong_verbs3:
                 continue
             verb = fix_verb(verb)
             arguments = [i.replace(' =', '=') for i in arguments]  # Because at the end args will be separated by spaces
@@ -348,7 +385,8 @@ with open('tade/tade.kimenet.tsv', encoding='UTF-8') as tade:
             break
         arguments = tuple(arguments.split())
         freq = int(freq)
-        if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev:
+        if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev or\
+                verb in wrong_verbs3:
             continue
         verb = fix_verb(verb)
         # Fix double argumetns: Uniq
@@ -360,7 +398,8 @@ with open('tade/tade.kimenet.tsv', encoding='UTF-8') as tade:
                 print('Dropped: {0}'.format(verb), file=sys.stderr)
                 continue
             verb, inf = verb.split()
-            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev:
+            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or\
+                    verb in verb_bad_prev or verb in wrong_verbs3:
                 continue
             verb = fix_verb(verb)
             # Do not append INF's frame to the non-INF occurence's frame.
@@ -386,6 +425,10 @@ with open('kagi_verbal_complex/freqPrevFin.txt', encoding='UTF-8') as kagi:
             break
         ik, verb = verb_w_ik.split('+')
         freq = int(freq)
+        if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev or\
+                verb in wrong_verbs3:
+            continue
+        verb = fix_verb(verb)
         kagi_verbs['{0}|{1}'.format(ik, verb)] = freq
         kagi_sumfreq += freq
 
@@ -395,7 +438,7 @@ print('No. of Verbs (kagi_verbal_complex): ', len(kagi_verbs), file=sys.stderr)
 # TODO: document
 inflist_verbs = defaultdict(list)
 inflist_sumfreq = 0
-with open('inf_list.txt', encoding='UTF-8') as inflist:
+with open('infinitival_constructions/FinInf.txt', encoding='UTF-8') as inflist:
     for entry in inflist:
         entry = entry.strip().split(' ')
         if len(entry) == 2:
