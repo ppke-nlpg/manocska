@@ -294,7 +294,7 @@ def fix_verb(verb_elem):
             ('|' in verb_elem and verb_elem.split('|', maxsplit=1)[1] in never_prev_verbs):
         verb_elem = verb_elem.split('|', maxsplit=1)[1]
     elif verb_elem in not_prev_verbs or verb_elem in not_prev_verbs2:  # Remove split
-        verb_elem = verb.replace('|', '')
+        verb_elem = verb_elem.replace('|', '')
     elif verb_elem in verb_add_ik_suffix:
         verb_elem += 'ik'
     verb_elem = not_prev_verbs3.get(verb_elem, verb_elem)  # Put split
@@ -324,182 +324,256 @@ def smart_append(verbs_dict, verb_elem, freqency, frame):
     verbs_dict[verb_elem].append([freqency, frame])
 
 
+verb_dict_wrong_verbs = set()
 verb_dict_verbs = defaultdict(list)
 verb_dict_sumfreq = 0
-with open('ige_szotar/szotar.kimenet.txt', encoding='UTF-8') as verb_dict:
-    for entry in verb_dict:
-        entry = entry.strip().split('\t')
-        if len(entry) == 3:
-            verb, freq, example = entry
-            arguments = []
-        elif len(entry) >= 4:
-            verb, *arguments, freq, example = entry
-        else:
-            break
-        freq = int(freq)
-        if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev or\
-                verb in wrong_verbs3:
-            continue
-        verb = fix_verb(verb)
-        arguments = [i.replace(' =', '=') for i in arguments]  # Because at the end args will be separated by spaces
-        smart_append(verb_dict_verbs, verb, freq, tuple(sorted(arguments)))
-        verb_dict_sumfreq += freq
-
-print('No. of Verbs (ige_szotar): ', len(verb_dict_verbs), file=sys.stderr)
 
 
+def ige_szotar_process(sumfreq):
+    with open('ige_szotar/szotar.kimenet.txt', encoding='UTF-8') as verb_dict:
+        for entry in verb_dict:
+            entry = entry.strip().split('\t')
+            if len(entry) == 3:
+                verb, freq, example = entry
+                arguments = []
+            elif len(entry) >= 4:
+                verb, *arguments, freq, example = entry
+            elif entry == ['']:
+                break
+            else:
+                arguments, freq = [], 0  # Dummy assignment to silence IDE
+                exit('verb_dict_error: {0}'.format(entry))
+            freq = int(freq)
+            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev \
+                    or verb in wrong_verbs3:
+                verb_dict_wrong_verbs.add(verb)
+                continue
+            verb_new = fix_verb(verb)
+            if verb_new != verb:
+                verb_dict_wrong_verbs.add(verb)
+            verb = verb_new
+            arguments = [i.replace(' =', '=') for i in arguments]  # Because at the end args will be separated by spaces
+            smart_append(verb_dict_verbs, verb, freq, tuple(sorted(arguments)))
+            sumfreq += freq
+    return sumfreq
+
+
+verb_dict_sumfreq = ige_szotar_process(verb_dict_sumfreq)
+
+print('No. of Verbs (ige_szotar): ', len(verb_dict_verbs), verb_dict_sumfreq, len(verb_dict_wrong_verbs),
+      file=sys.stderr)
+
+isz_wrong_verbs = set()
 isz_verbs = defaultdict(list)
 isz_sumfreq = 0
-with open('isz/igeiszerkezet-lista.kimenet.txt', encoding='UTF-8') as isz:
-    for entry in isz:
-        if not entry.startswith((' 0', 'Igeskicc')):
-            entry = entry.strip().split('\t')
-            if len(entry) == 2:
-                verb, freq = entry
-                arguments = []
-            elif len(entry) >= 3:
-                verb, *arguments, freq = entry
-            else:
-                break
-            freq = int(freq)
-            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or\
-                    verb in verb_bad_prev or verb in wrong_verbs3:
-                continue
-            verb = fix_verb(verb)
-            arguments = [i.replace(' =', '=') for i in arguments]  # Because at the end args will be separated by spaces
-            smart_append(isz_verbs, verb, freq, tuple(sorted(arguments)))
-            isz_sumfreq += freq
 
-print('No. of Verbs (isz): ', len(isz_verbs), file=sys.stderr)
 
+def isz_process(sumfreq):
+    with open('isz/igeiszerkezet-lista.kimenet.txt', encoding='UTF-8') as isz:
+        for entry in isz:
+            if not entry.startswith((' 0', 'Igeskicc')):
+                entry = entry.strip().split('\t')
+                if len(entry) == 2:
+                    verb, freq = entry
+                    arguments = []
+                elif len(entry) >= 3:
+                    verb, *arguments, freq = entry
+                else:
+                    arguments, freq = [], 0  # Dummy assignment to silence IDE
+                    exit('isz_error: {0}'.format(entry))
+                freq = int(freq)
+                if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or \
+                        verb in verb_bad_prev or verb in wrong_verbs3:
+                    isz_wrong_verbs.add(verb)
+                    continue
+                verb_new = fix_verb(verb)
+                if verb_new != verb:
+                    isz_wrong_verbs.add(verb)
+                verb = verb_new
+                arguments = [i.replace(' =', '=') for i in
+                             arguments]  # Because at the end args will be separated by spaces
+                smart_append(isz_verbs, verb, freq, tuple(sorted(arguments)))
+                sumfreq += freq
+    return sumfreq
+
+
+isz_sumfreq = isz_process(isz_sumfreq)
+
+print('No. of Verbs (isz): ', len(isz_verbs), isz_sumfreq, len(isz_wrong_verbs),
+      file=sys.stderr)
+
+tade_wrong_verbs = set()
 tade_verbs = defaultdict(list)
 tade_sumfreq = 0
-with open('tade/tade.kimenet.tsv', encoding='UTF-8') as tade:
-    for entry in tade:
-        entry = entry.strip().split('\t')
-        if len(entry) == 5:
-            verb, arguments, freq, igegyak, arany = entry
-            if arguments[0] == '@':
-                arguments = ''
-        else:
-            break
-        arguments = tuple(arguments.split())
-        freq = int(freq)
-        if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev or\
-                verb in wrong_verbs3:
-            continue
-        verb = fix_verb(verb)
-        # Fix double argumetns: Uniq
-        set_vonzatok = set(arguments)
-        if len(arguments) > len(set_vonzatok):
-            arguments = tuple(set_vonzatok)
-        if ' ' in verb:
-            if verb.startswith('"'):
-                print('Dropped: {0}'.format(verb), file=sys.stderr)
-                continue
-            verb, inf = verb.split()
-            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or\
-                    verb in verb_bad_prev or verb in wrong_verbs3:
-                continue
-            verb = fix_verb(verb)
-            # Do not append INF's frame to the non-INF occurence's frame.
-            # It could contain argument of the FIN verb too!
-            # TODO: Research a solution later...
-            # smart_append(tade_verbs, inf, freq, tuple(sorted(arguments)))  # Here stuff can be non uniq...
-            # tade_sumfreq += freq
-            # arguments = ['INF_' + inf]
-            arguments = ['INF']
-        smart_append(tade_verbs, verb, freq, tuple(sorted(arguments)))  # Here stuff can be non uniq...
-        tade_sumfreq += freq
 
-print('No. of Verbs (Tadé): ', len(tade_verbs), file=sys.stderr)
 
+def tade_process(sumfreq):
+    with open('tade/tade.kimenet.tsv', encoding='UTF-8') as tade:
+        for entry in tade:
+            entry = entry.strip().split('\t')
+            if len(entry) == 5:
+                verb, arguments, freq, igegyak, arany = entry
+                if arguments[0] == '@':
+                    arguments = ''
+            else:
+                arguments, freq = [], 0  # Dummy assignment to silence IDE
+                exit('tade_error: {0}'.format(entry))
+            arguments = tuple(arguments.split())
+            freq = int(freq)
+            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev\
+                    or verb in wrong_verbs3:
+                tade_wrong_verbs.add(verb)
+                continue
+            verb_new = fix_verb(verb)
+            if verb_new != verb:
+                tade_wrong_verbs.add(verb)
+            verb = verb_new
+
+            # Fix double argumetns: Uniq
+            set_vonzatok = set(arguments)
+            if len(arguments) > len(set_vonzatok):
+                arguments = tuple(set_vonzatok)
+            if ' ' in verb:
+                if verb.startswith('"'):
+                    print('Dropped: {0}'.format(verb), file=sys.stderr)
+                    continue
+                verb, inf = verb.split()
+                if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or \
+                        verb in verb_bad_prev or verb in wrong_verbs3:
+                    tade_wrong_verbs.add(verb)
+                    continue
+                verb_new = fix_verb(verb)
+                if verb_new != verb:
+                    tade_wrong_verbs.add(verb)
+                verb = verb_new
+                # Do not append INF's frame to the non-INF occurence's frame.
+                # It could contain argument of the FIN verb too!
+                # TODO: Research a solution later...
+                # smart_append(tade_verbs, inf, freq, tuple(sorted(arguments)))  # Here stuff can be non uniq...
+                # tade_sumfreq += freq
+                # arguments = ['INF_' + inf]
+                arguments = ['INF']
+            smart_append(tade_verbs, verb, freq, tuple(sorted(arguments)))  # Here stuff can be non uniq...
+            sumfreq += freq
+    return sumfreq
+
+
+tade_sumfreq = tade_process(tade_sumfreq)
+
+print('No. of Verbs (Tadé): ', len(tade_verbs), tade_sumfreq, len(tade_wrong_verbs),
+      file=sys.stderr)
+
+kagi_wrong_verbs = set()
 kagi_verbs = Counter()
 kagi_sumfreq = 0
-with open('kagi_verbal_complex/freqPrevFin.txt', encoding='UTF-8') as kagi:
-    for entry in kagi:
-        entry = entry.strip().split(' ')
-        if len(entry) == 2:
-            freq, verb_w_ik = entry
-        else:
-            break
-        ik, verb = verb_w_ik.split('+')
-        freq = int(freq)
-        if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev or\
-                verb in wrong_verbs3:
-            continue
-        verb = fix_verb(verb)
-        kagi_verbs['{0}|{1}'.format(ik, verb)] = freq
-        kagi_sumfreq += freq
 
-print('No. of Verbs (kagi_verbal_complex): ', len(kagi_verbs), file=sys.stderr)
+
+def kagi_verbs_process(sumfreq):
+    with open('kagi_verbal_complex/freqPrevFin.txt', encoding='UTF-8') as kagi:
+        for entry in kagi:
+            entry = entry.strip().split(' ')
+            if len(entry) == 2:
+                freq, verb_w_ik = entry
+            else:
+                verb_w_ik, freq = [], 0  # Dummy assignment to silence IDE
+                exit('kagi_verbs_error: {0}'.format(entry))
+            ik, verb = verb_w_ik.split('+')
+            freq = int(freq)
+            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev\
+                    or verb in wrong_verbs3:
+                kagi_wrong_verbs.add(verb)
+                continue
+            verb_new = fix_verb(verb)
+            if verb_new != verb:
+                tade_wrong_verbs.add(verb)
+            verb = verb_new
+            kagi_verbs['{0}|{1}'.format(ik, verb)] = freq
+            sumfreq += freq
+    return sumfreq
+
+
+kagi_sumfreq = kagi_verbs_process(kagi_sumfreq)
+
+print('No. of Verbs (kagi_verbal_complex): ', len(kagi_verbs), kagi_sumfreq, len(kagi_wrong_verbs), file=sys.stderr)
 
 
 # TODO: document
 inflist_verbs = defaultdict(list)
 inflist_sumfreq = 0
-with open('infinitival_constructions/FinInf.txt', encoding='UTF-8') as inflist:
-    for entry in inflist:
-        entry = entry.strip().split(' ')
-        if len(entry) == 2:
-            freq, verb_w_ik = entry
-            if '+' in verb_w_ik:
-                ik, verb = verb_w_ik.split('+')
-                verb = '{0}|{1}'.format(ik, verb)
+
+
+def kagi_inflist_process(sumfreq):
+    with open('infinitival_constructions/FinInf.txt', encoding='UTF-8') as inflist:
+        for entry in inflist:
+            entry = entry.strip().split('\t')
+            if len(entry) >= 2:
+                freq, verb_w_ik = entry[:2]
+                if '+' in verb_w_ik:
+                    ik, verb = verb_w_ik.split('+')
+                    verb = '{0}|{1}'.format(ik, verb)
+                else:
+                    freq, verb = entry[:2]
             else:
-                freq, verb = entry
-        else:
-            break
-        freq = int(freq)
-        arguments = ['INF']
-        smart_append(inflist_verbs, verb, freq, tuple(sorted(arguments)))
-        inflist_sumfreq += freq
+                verb, freq = [], 0  # Dummy assignment to silence IDE
+                exit('kagi_fininf_error: {0}'.format(entry))
+            freq = int(freq)
+            arguments = ['INF']
+            smart_append(inflist_verbs, verb, freq, tuple(sorted(arguments)))
+            sumfreq += freq
+    return sumfreq
 
-print('No. of Verbs (inflist): ', len(inflist_verbs), file=sys.stderr)
 
+inflist_sumfreq = kagi_inflist_process(inflist_sumfreq)
+
+print('No. of Verbs (inflist): ', len(inflist_verbs), inflist_sumfreq, file=sys.stderr)
 
 all_ige = set(verb_dict_verbs.keys()) | set(isz_verbs.keys()) | set(tade_verbs.keys()) | set(inflist_verbs.keys())
 print('Igék száma (összesen): ', len(all_ige), file=sys.stderr)
 
-for verb in sorted(all_ige):
-    szotar_frames = tuple([frame[1] for frame in verb_dict_verbs[verb]])
-    isz_frames = tuple([frame[1] for frame in isz_verbs[verb]])
-    tade_frames = tuple([frame[1] for frame in tade_verbs[verb]])
-    inflist_frames = tuple([frame[1] for frame in inflist_verbs[verb]])
-    all_frame = set(szotar_frames) | set(isz_frames) | set(tade_frames) | set(inflist_frames)
-    if len(szotar_frames) + len(isz_frames) + len(tade_frames) + len(inflist_frames) > len(all_frame):
-        print(verb, list(sorted(set(szotar_frames) & set(isz_frames))),
-              list(sorted(set(isz_frames) & set(tade_frames))),
-              list(sorted(set(tade_frames) & set(szotar_frames))),
-              list(sorted(set(tade_frames) & set(inflist_frames))),  # TODO: document
-              kagi_verbs[verb], sep='\n', end='\n\n', file=sys.stderr)
-    for act_frame in sorted(all_frame):
-        szotar_freq = get_freq_w_ind_for_frame(verb_dict_verbs[verb], act_frame)[1]
-        isz_freq = get_freq_w_ind_for_frame(isz_verbs[verb], act_frame)[1]
-        tade_freq = get_freq_w_ind_for_frame(tade_verbs[verb], act_frame)[1]
-        kagi_freq = None
-        kagi_freq_rank = 0
-        if '|' in verb:
-            kagi_freq = kagi_verbs.get(verb, 0)
-            kagi_freq_rank = kagi_freq / kagi_sumfreq
 
-        inflist_freq = None
-        inflist_freq_rank = 0
-        if len(act_frame) > 0 and act_frame[0] == 'INF':
-            inflist_freq = inflist_verbs.get(verb)
-            if len(inflist_freq) == 0:
-                inflist_freq = 0
+def merge():
+    for verb in sorted(all_ige):
+        szotar_frames = tuple([frame[1] for frame in verb_dict_verbs[verb]])
+        isz_frames = tuple([frame[1] for frame in isz_verbs[verb]])
+        tade_frames = tuple([frame[1] for frame in tade_verbs[verb]])
+        inflist_frames = tuple([frame[1] for frame in inflist_verbs[verb]])
+        all_frame = set(szotar_frames) | set(isz_frames) | set(tade_frames) | set(inflist_frames)
+        if len(szotar_frames) + len(isz_frames) + len(tade_frames) + len(inflist_frames) > len(all_frame):
+            print(verb, list(sorted(set(szotar_frames) & set(isz_frames))),
+                  list(sorted(set(isz_frames) & set(tade_frames))),
+                  list(sorted(set(tade_frames) & set(szotar_frames))),
+                  list(sorted(set(tade_frames) & set(inflist_frames))),  # TODO: document
+                  kagi_verbs[verb], sep='\n', end='\n\n', file=sys.stderr)
+        for act_frame in sorted(all_frame):
+            szotar_freq = get_freq_w_ind_for_frame(verb_dict_verbs[verb], act_frame)[1]
+            isz_freq = get_freq_w_ind_for_frame(isz_verbs[verb], act_frame)[1]
+            tade_freq = get_freq_w_ind_for_frame(tade_verbs[verb], act_frame)[1]
+            kagi_freq = None
+            kagi_freq_rank = 0
+            if '|' in verb:
+                kagi_freq = kagi_verbs.get(verb, 0)
+                kagi_freq_rank = kagi_freq / kagi_sumfreq
+
+            inflist_freq = None
+            inflist_freq_rank = 0
+            if len(act_frame) > 0 and act_frame[0] == 'INF':
+                inflist_freq = inflist_verbs.get(verb)
+                if len(inflist_freq) == 0:
+                    inflist_freq = 0
+                else:
+                    inflist_freq = inflist_freq[0][0]  # Freq for act frame
+                inflist_freq_rank = inflist_freq / inflist_sumfreq
+            if act_frame == ():
+                act_frame = '@'
             else:
-                inflist_freq = inflist_freq[0][0]  # Freq for act frame
-            inflist_freq_rank = inflist_freq / inflist_sumfreq
-        if act_frame == ():
-            act_frame = '@'
-        else:
-            act_frame = ' '.join(act_frame)
-        rank = sum((szotar_freq / verb_dict_sumfreq, isz_freq / isz_sumfreq, tade_freq / tade_sumfreq,
-                    kagi_freq_rank, inflist_freq_rank))
-        print(verb, act_frame, szotar_freq, isz_freq, tade_freq, kagi_freq, inflist_freq,
-              '{0:1.20f}'.format(rank), sep='\t')
+                act_frame = ' '.join(act_frame)
+            rank = sum((szotar_freq / verb_dict_sumfreq, isz_freq / isz_sumfreq, tade_freq / tade_sumfreq,
+                        kagi_freq_rank, inflist_freq_rank))
+            print(verb, act_frame, szotar_freq, isz_freq, tade_freq, kagi_freq, inflist_freq,
+                  '{0:1.20f}'.format(rank), sep='\t')
+
+
+merge()
 
 """
 time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k10,10nr -k1,2 | \
