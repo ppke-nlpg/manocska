@@ -1,20 +1,21 @@
-# Manócska – integrált igeivonzatkeret-adatbázis
+# Manócska – integrált igei vonzatkeret adatbázis
 
-A _Manócska_ adatbázis összefogja és harmonizálja a szabadon elérhető magyar nyelvű igeivonzatkeret-adatbázisokat és az igékről elérhető információkat, melyek a következők:
+A _Manócska_ adatbázis összefogja és harmonizálja a szabadon elérhető magyar nyelvű igei vonzatkeret adatbázisokat és az igékről elérhető információkat, melyek a következők:
 
 - [_Magyar igei szerkezetek (szótár)_. Sass Bálint et al.](ige_szotar/README.md)
 - [28 millió szintaktikailag elemzett mondat és _500000 igei szerkezet (lista)_. Sass Bálint.](isz/README.md)
 - [_Tádé_ – Igei vonzatkeret-gyakorisági lista. Kornai András et al.](tade/README.md)
-- [_A magyar igei komplexumok vizsgálata. Kalivoda Ágnes_. (Mesterszakos szakdolgozat)](https://github.com/kagnes/hungarian_verbal_complex/)
+- [_A magyar igei komplexumok vizsgálata_. Kalivoda Ágnes. (Mesterszakos szakdolgozat)](https://github.com/kagnes/hungarian_verbal_complex/)
+- [_Infinitívuszi szerkezetek a magyarban_. Kalivoda Ágnes.](https://github.com/kagnes/infinitival_constructions)
 
-Tartalmazza az összes ige-igekötő-keret hármast a fenti erőforrásokból származó gyakoriságokkal.
+Tartalmazza az összes ige-igekötő-vonzatkeret hármast a fenti erőforrásokból származó gyakoriságokkal.
 
 # Az erőforrás szerkezete
 
 ### Az erőforrás a következő fájlokból áll:
 
 - manocska.txt: ige és keret szerint rendezve
-- manocska.sorted.txt: rang szerint rendezve
+- manocska.sorted.txt: rang szerint rendezve (ez adatbázisonként a keret előfordulásának és az összes keret előfordulásának hányadosa)
 - manocska.sorted.nolex.txt: rang szerint rendezve, a lexikálisan kötött argumentumot tartalmazó keretek __kihagyva__
 - manocska.sorted.lex.txt: rang szerint rendezve, __csak__ a lexikálisan kötött argumentumot tartalmazó keretek
 - manocska.log.txt: információk az összevonásról
@@ -22,18 +23,18 @@ Tartalmazza az összes ige-igekötő-keret hármast a fenti erőforrásokból sz
 
 ### manocska.txt, manocska.sorted.txt, manocska.sorted.nolex.txt, manocska.sorted.lex.txt:
 
-- Minden mező Tab-bal van elválasztva.
-- Első mező az ige (igekötő |-al van elválasztva)
-- Második mező az argumentumok szóközzel elválasztva
+- Minden mező Tab-bal van elválasztva
+- Első mező: az ige (igekötő |-al van elválasztva)
+- Második mező: az argumentumok szóközzel elválasztva
     - az esetek [Humor kódban](http://www.morphologic.hu/downloads/publications/na/2006_mszny_jobbhumor_na-pt.pdf) vannak megadva (a [PSe3] minden személyű birtokost egységesen jelöl)
     - INF_ prefixummal az infinitív argumentumok
     - = jellel prefixálva a névutók
-    - @ jelzi ha nincs argumentum
+    - @ jelzi, ha nincs argumentum
     - A lexikálisan kötött elemek szótöve és az eset illetve névutó közvetlenül kapcsolódik
-- Harmadik mező a keret frekvenciája a _Magyar igei szerkezetek (szótár)_ alapján
-- Negyedik mező a keret frekvenciája a _500000 igei szerkezet (lista)_ alapján
-- Ötödik mező a keret frekvenciája a _Tádé_ alapján
-- Hatodik mező az (igekötős)ige frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igékre None, minden keretre azonos)
+- Harmadik mező: a keret frekvenciája a _Magyar igei szerkezetek (szótár)_ alapján
+- Negyedik mező: a keret frekvenciája a _500000 igei szerkezet (lista)_ alapján
+- Ötödik mező: a keret frekvenciája a _Tádé_ alapján
+- Hatodik mező: az (igekötős)ige frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igékre None, minden keretre azonos)
 - Hedetik mező az infinitívuszos ige az infinitívusz igekötőjével összekapcsolt frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős infinitívuszra és nem infinitívuszos igére None, minden keretre azonos)
 - Nyolcadik mező az infinitívuszos ige igekötőjének és az infinitívusznak az összekapcsolt frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igére és nem infinitívuszos igére None, minden keretre azonos)
 - Kilencedik mező az infinitívuszos ige igekötős infintívuszának frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős infinitívuszra és nem infinitívuszos igére None, minden keretre azonos)
