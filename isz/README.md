@@ -2,7 +2,7 @@
 
 A [Sass Bálint](http://www.nytud.hu/oszt/korpusz/Sass_Balint.html) által létrehozott [Mazsola lekérdező adatbázisából](http://corpus.nytud.hu/mazsola/) automatikusan származtatott [igeiszerkezet-lista](http://corpus.nytud.hu/isz/), melyből a [_Magyar Igei Szerkezetek_](http://www.tintakiado.hu/book_view.php?id=286) [című szótár](http://www.tankonyvtar.hu/hu/tartalom/tamop425/2011_0001_545_02_Magyar_igei_szerkezetek/adatok.html) is született.
 
-Az erőforrások elérhetők a linkeken regisztráció után elérhetők.
+Az erőforrások a linkeken regisztráció után elérhetők.
 
 
 ### Közlemény

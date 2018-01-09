@@ -11,14 +11,14 @@
 
 ### Közlemény
 
-Az adatbázis eredeti formájában jelenleg csak a fenti linkeken érhető el. Jelen tárolóban egy géppel könnyebben feldolgozható tartalmában megegyező változat érhető el, melyből a Manócska adatbázis épült.
+Az adatbázis eredeti formájában jelenleg csak a fenti linkeken érhető el. Jelen tárolóban egy géppel könnyebben feldolgozható tartalmában megegyező változat érhető el, melyből a Manócska adatbázis épült." -> "Jelen tárolóban egy géppel könnyebben feldolgozható, tartalmában megegyező változat érhető el, melyből a Manócska adatbázis épült.
 
 # Licensz
 
 Az erőforrás jogtulajdonosai [Kornai András](http://hlt.bme.hu/hu/kornai), [Nemeskey Dávid Márk](http://hlt.bme.hu/hu/david) és [Recski Gábor](http://hlt.bme.hu/hu/recski).
 Felhasználható oktatási, kutatási és magáncélra. Ez esetben az alábbi cikket kell hivatkozni:
 
-Andras Kornai, Dávid Márk Nemeskey and Gábor Recski.
+András Kornai, Dávid Márk Nemeskey and Gábor Recski.
 2016.
 Detecting optional arguments of verbs.
 In Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016).

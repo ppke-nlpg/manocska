@@ -1,3 +1,5 @@
+#### [Click here for English readme!](https://github.com/ppke-nlpg/manocska/blob/master/README.en.md)
+
 # Manócska – integrált igei vonzatkeret adatbázis
 
 A _Manócska_ adatbázis összefogja és harmonizálja a szabadon elérhető magyar nyelvű igei vonzatkeret adatbázisokat és az igékről elérhető információkat, melyek a következők:

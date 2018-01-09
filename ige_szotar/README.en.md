@@ -1,21 +1,21 @@
-# Magyar igei szerkezetek
+# Hungarian verbal structures
 
-Sass Bálint, Váradi Tamás, Pajzs Júlia, Kiss Margit: Magyar igei szerkezetek – A leggyakoribb vonzatok és szókapcsolatok szótára
+Bálint, Sass – Tamás, Váradi – Júlia, Pajzs – Margit, Kiss: Hungarian Verbal Structures – Dictionary of the most frequent Arguments and Collocations (the original data: Sass Bálint, Váradi Tamás, Pajzs Júlia, Kiss Margit: Magyar igei szerkezetek – A leggyakoribb vonzatok és szókapcsolatok szótára)
 
-A _Magyar igei szerkezetek – A leggyakoribb vonzatok és szókapcsolatok szótára_ az MTA Nyelvtudományi Intézetében készült, 2200 ige 6200 szerkezetét tartalmazza. Megfigyelhetjük, hogy a kommunikáció során folyamatosan igei szerkezeteket használunk, (egyszerű) mondataink általában egy igéből és annak bővítményeiből állnak.
+The dictionary was written at the Research Institute for Linguistics of the Hungarian Academy of Sciences. It contains 6200 argument frames of 2200 verbs. We can observe easily that even our simplest sentences consist usually of a verb and its arguments. Thus, a dictionary like this can be used for several purposes, as it covers one of the most essential parts of the Hungarian language.
 
-### Közlemény
+### Notes
 
-A teljes szótár adatbázis formában jelenleg nem nyilvánosan elérhető.
+The whole dictionary is not open-source as a database.
 
-# Licensz
+# Licence
 
-A szótár jogtulajdonosa a Tinta Könyvkiadó.
+The rightsholder of the dictionary is _Tinta Könyvkiadó_.
 
-Papír formában megvásárolható [innen](http://www.tintakiado.hu/book_view.php?id=286).
-Elektronikusan [a Digitális tankönyvtárban mindenki számára nyilvánosan hozzáférhető](http://www.tankonyvtar.hu/hu/tartalom/tamop425/2011_0001_545_02_Magyar_igei_szerkezetek/adatok.html), kutatható (és teljes mértékben letölthető), oktatási-kutatási célokra, non-profit jellegének megtartása mellett szabadon felhasználható, az idézés szabályait betartva.
+The printed version (hardback) can be bought [here](http://www.tintakiado.hu/book_view.php?id=286).
+It is freely accessible in digital form [in the _Digitális tankönyvtár_](http://www.tankonyvtar.hu/hu/tartalom/tamop425/2011_0001_545_02_Magyar_igei_szerkezetek/adatok.html). It can be downloaded and used for research, education and private projects.
 
-Ha részben vagy egészben felhasználod, kérlek idézz az alábbi cikkekből legalább egyet:
+If you are planning to use it, please refer to at least one of these articles:
 
 
 - Sass, Bálint.
@@ -60,3 +60,4 @@ Ha részben vagy egészben felhasználod, kérlek idézz az alábbi cikkekből l
             year   = {2011},
             school = {P{\'a}zm{\'a}ny P{\'e}ter Katolikus Egyetem ITK}
         }
+
