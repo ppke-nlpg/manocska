@@ -34,11 +34,9 @@ Tartalmazza az összes ige-igekötő-vonzatkeret hármast a fenti erőforrásokb
 - Harmadik mező: a keret frekvenciája a _Magyar igei szerkezetek (szótár)_ alapján
 - Negyedik mező: a keret frekvenciája a _500000 igei szerkezet (lista)_ alapján
 - Ötödik mező: a keret frekvenciája a _Tádé_ alapján
-- Hatodik mező: az (igekötős)ige frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igékre None, minden keretre azonos)
-- Hedetik mező az infinitívuszos ige az infinitívusz igekötőjével összekapcsolt frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős infinitívuszra és nem infinitívuszos igére None, minden keretre azonos)
-- Nyolcadik mező az infinitívuszos ige igekötőjének és az infinitívusznak az összekapcsolt frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igére és nem infinitívuszos igére None, minden keretre azonos)
-- Kilencedik mező az infinitívuszos ige igekötős infintívuszának frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős infinitívuszra és nem infinitívuszos igére None, minden keretre azonos)
-- Tizetdik mező a "rang": sum (adatbázisonként a keret előfordulásának és az összes keret előfordulásának hányadosa)
+- Hatodik mező: az (igekötős)ige frekvenciája _Kalivoda Ágnes Infinitívuszi szerkezetek a magyarban_ vizsgálata alapján (nem igekötős igékre None, minden keretre azonos)
+- Hetedik mező: az infinitívuszi vonzattal rendelkező igék frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (infinitívuszi vonzattal nem rendelkező igékre None, minden keretre azonos)
+- Nyolcadik mező: a rang
 
 
 ### merge.log.txt:
@@ -47,16 +45,16 @@ Tartalmazza az összes ige-igekötő-vonzatkeret hármast a fenti erőforrásokb
 - Aztán az egyes igékhez a közös keretek száma (ahol volt ilyen):
     - Mezőelválasztó: soremelés karakter (\n), rekordelválasztó: dupla soremelés karakter (\n\n)
     - A keretek listái Python jelölésben vannak
-    - Első mező az ige
-    - Második mező a _Magyar igei szerkezetek (szótár)_ és a 500000 igei szerkezet című lista közös keretei az adott igéhez
-    - Harmadik mező a _500000 igei szerkezet (lista)_ és a _Tádé_ közös keretei az adott igéhez
-    - Negyedik mező a _Tádé_ és a _Magyar igei szerkezetek (szótár)_ közös keretei az adott igéhez
-    - Ötödik mező az ige _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ szerinti frekvenciája
+    - Első mező: az ige
+    - Második mező: a _Magyar igei szerkezetek (szótár)_ és az _500000 igei szerkezet_ című lista közös keretei az adott igéhez
+    - Harmadik mező: a _500000 igei szerkezet (lista)_ és a _Tádé_ közös keretei az adott igéhez
+    - Negyedik mező: a _Tádé_ és a _Magyar igei szerkezetek (szótár)_ közös keretei az adott igéhez
+    - Ötödik mező: az ige _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ szerinti frekvenciája
 
 # Az erőforrás előállítása
 
-A reprodukálhatóságot könnyítendő az alábbi parancsok segítségével a Manócska előállítható a többi erőforrás előfeldolgozott formátumainak felhasználásval. (git clone --recursive ...)
-A git repozitórium __nem tartalmazza az eredeti erőforrásokat__ melyek szükségesek a reprodukcióhoz __azok licensze miatt__.
+A reprodukálhatóságot könnyítendő a Manócska előállítható a többi erőforrás előfeldolgozott formátumainak felhasználásával, az alábbi parancsok segítségével (git clone --recursive ...).
+A git repozitórium __nem tartalmazza az eredeti erőforrásokat__, melyek szükségesek a reprodukcióhoz, __azok licensze miatt__.
 
     time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k10,10nr -k1,2 | \
     tee manocska.sorted.txt | grep -v $'[^\t ][=[]' > manocska.sorted.nolex.txt) &&
@@ -65,7 +63,7 @@ A git repozitórium __nem tartalmazza az eredeti erőforrásokat__ melyek szüks
 
 # Licensz
 
-Felhasználható oktatási, kutatási és magáncélra. Ez esetben __az összes, a _Manócska_ által felhasznált erőforrást hivatkozni kell__.
+Felhasználható oktatási, kutatási és magáncélra. Ez esetben __a _Manócska_ által felhasznált összes erőforrást hivatkozni kell__.
 Továbbiakban a Manócska készítése során felhasznált erőforrások jogtulajdonosainak álláspontja a mértékadó.
 
 Indig Balázs. _Manócska – integrált igei vonzatkeret adatbázis._ (2017) Elérhető: [https://github.com/ppke-nlpg/manocska](https://github.com/ppke-nlpg/manocska)
