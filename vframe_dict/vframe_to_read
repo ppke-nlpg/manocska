@@ -1556,7 +1556,6 @@ emésztet|emészt	el: X, fel: X, föl: X, meg: X
 emészthet	el: X, fel: X, föl: X, meg: X
 emésztődik	el: X, fel: X, föl: X, meg: X
 emigrál	?
-**emilezik	el: X
 emleget	el: X, fel: X, föl: X, meg: X
 emlegethet	föl: X
 emlékezhet	meg: X, vissza: X
@@ -1919,7 +1918,6 @@ feltételezik	elő: X
 feltételez	?
 félt|féltet	?
 félt	túl: X
-	felül: X, fölül: X
 fél	?
 feministázik	le: X
 fen	bele: X, el: X, ide: X, ki: X, meg: X, oda: X, össze: X
@@ -2850,8 +2848,6 @@ hessentet	el: X
 hessentet|hessent	el: X
 hessent|hessentet	el: X
 hessenthet	el: X
-het	bele: X, felül: X, fölül: X
-hetel	le: X
 hétszerez	meg: X
 hétszereződik	meg: X
 heveredhet	le: X
@@ -4348,7 +4344,6 @@ les	át: X, be-be: X, bele: X, be: X, elő: X, el: X, föl: X, hátra: X, ki-ki:
 leshet	?, bele: X, el: X, ki: X, le: X, meg: X
 leskel	ki-ki: X, ki: X
 leskelődik	ki: X
-lesz	@lex: képes, hajlandó...	?
 lesz|van	el: X, ki: X, meg: X, oda: X, túl: X
 lesz	?, el: X, fel: X, ide: X, ki: X, le: X, meg: X, oda: X, túl: X
 létezik	?
@@ -6929,9 +6924,7 @@ szünetel	?
 szűnhet	?, meg: ?
 szűnik	?, meg: ?
 szüntet	be: X, meg: ?
-**szüntet	be: X, meg: X
 szüntethet	be: X, meg: X
-**szűntethet	meg: X
 szüntettet	be: X, meg: X
 szűr	át: X, bele: X, be: X, elő: X, el: X, ki: X, le: X, meg: X, össze: X, rá: X
 szürcsöl	bele: X, el: X, fel: X, ki: X
@@ -7247,7 +7240,6 @@ tereltet	össze: X
 terel	?, át: X, bele: X, be: X, egybe: X, el: X, félre: X, fel: X, haza: X, ide: X, ki: ?, le: X, oda: X, össze: X, rá: X, tovább: X, végig: X, vissza: X
 terem	elő: X, fenn: X, ki: X, külön: X, le: X, meg: X, oda: X, rá: X
 teremhet	meg: X
--terem	ott: X
 teremtet	elő: X, le: X, meg: X, újjá: X, újra: X
 teremtet|teremt	elő: X, le: X, meg: X, újjá: X, újra: X
 teremthet	elő: X, meg: X, újjá: X, újra: X
@@ -7321,8 +7313,8 @@ testesülhet	meg: X
 testesül	meg: X
 tesztelhet	le: X
 tesztel	ki: X, le: X, meg: X, újra: X, végig: X, vissza: X
-tesz|tet	felül: X, fölül: X
-tesz	?, alá: X, át: X, be: ?, bele: ?, belé: X, egybe: X, el: ?, előre: X, fel: ?, félre: ?, felül: X, föl: ?, fölül: X, hátra: X, helyre: X, hozzá: ?, ide: X, jóvá: X, keresztbe: X, ki: ?, közé: X, közzé: X, külön: X, le: ?, le-le: X, meg: X, mellé: X, oda: ?, össze: X, rá: ?, szét: X, tele: X, teli: X, tovább: X, tönkre: X, túl: X, utána: X, vissza: ?
+tesz|tet	fölül: X
+tesz	?, alá: X, át: X, be: ?, bele: ?, belé: X, egybe: X, el: ?, előre: X, fel: ?, félre: ?, föl: ?, fölül: X, hátra: X, helyre: X, hozzá: ?, ide: X, jóvá: X, keresztbe: X, ki: ?, közé: X, közzé: X, külön: X, le: ?, le-le: X, meg: X, mellé: X, oda: ?, össze: X, rá: ?, szét: X, tele: X, teli: X, tovább: X, tönkre: X, túl: X, utána: X, vissza: ?
 tételez	fel: X
 tételezhet	fel: X, föl: X
 tételezhetik	fel: X
@@ -7332,7 +7324,7 @@ tetet	át: X, bele: X, be: X, el: X, félre: X, fel: X, föl: X, hozzá: X, ki: 
 tetéz	be: X, meg: X, rá: X
 tétezik	fel: X
 tetéződik	meg: X
-tet	felül: X, fölül: X
+tet	fölül: X
 tetovál	ki: X, rá: X
 tetováltat	rá: X
 tétovázik	?
@@ -7346,7 +7338,7 @@ tetszet|tetszik	meg: X
 tetszhet	ki: X, meg: X
 tetszik|tetszet	meg: X
 tetszik	?, át: X, meg: X, vissza: X
-tet|tesz	felül: X, fölül: X
+tet|tesz	fölül: X
 tettet	ki: X, meg: X, össze: X, tönkre: X
 tetvesedik	el: X, meg: X
 tévedhet	?, be: X, el: X, meg: X
@@ -7723,11 +7715,11 @@ uzsorázik	ki: X
 ülepedhet	le: X
 ülepít	ki: X, le: X
 ülepszik	ki: X, le: X, meg: X, rá: X
-ülhet	?, át: X, be: ?, bele: X, el: X, ide: X, ki: ?, körül: X, le: ?, meg: X, neki: X, oda: X, össze: X, rá: X, végig: X, vissza: X
+ülhet	?, át: X, be: ?, bele: X, el: X, fel: X, föl: X, ide: X, ki: ?, körül: X, le: ?, meg: X, neki: X, oda: X, össze: X, rá: X, végig: X, vissza: X
 ültethet	át: X, be: X, el: X, ki: X, le: X, vissza: X
 ültetődik	át: X, el: X
-ültet	?, át: X, be: ?, bele: X, belé: X, előre: X, el: X, fel: X, ide: X, ki: ?, körbe: X, körül: X, le: ?, meg: X, mellé: X, oda: X, össze: X, rá: X, szembe: X, szét: X, tele: X, újra: X, vissza: X
-ül	?, alá: X, át: ?, be: ?, be-be: X, bele: X, belé: X, előre: X, el: X, fel: ?, félre: X, hátra: X, hozzá: X, ide: ?, ki: ?, ki-ki: X, körbe: X, körül: X, külön: X, le: ?, le-le: X, meg: X, mellé: X, neki: ?, oda: ?, össze: ?, rá: X, szembe: X, tele: X, túl: X, végig: X, vissza: ?
+ültet	?, át: X, be: ?, bele: X, belé: X, előre: X, el: X, fel: X, föl: X, ide: X, ki: ?, körbe: X, körül: X, le: ?, meg: X, mellé: X, oda: X, össze: X, rá: X, szembe: X, szét: X, tele: X, újra: X, vissza: X
+ül	?, alá: X, át: ?, be: ?, be-be: X, bele: X, belé: X, előre: X, el: X, fel: ?, félre: X, föl: X, hátra: X, hozzá: X, ide: ?, ki: ?, ki-ki: X, körbe: X, körül: X, külön: X, le: ?, le-le: X, meg: X, mellé: X, neki: ?, oda: ?, össze: ?, rá: X, szembe: X, tele: X, túl: X, végig: X, vissza: ?
 ünnepel	agyon: X, meg: X
 ünnepelhet	meg: X
 ünnepeltet	meg: X
@@ -8003,7 +7995,6 @@ vesztet	el: X, meg: X, össze: X, rajta: X
 vesztettet	el: X
 vesztet|veszt	el: X, rajta: X
 veszthet	el: X, rajta: X
-vesz	@lex: fenyegetésnek, útjukat veszik VAGY vesz magának enni...	?
 vesztődik	el: X
 veszt|veszik	át: X, bele: X, be: X, elő: X, el: X, fel: X, hozzá: X, ki: X, le: X, meg: X, oda: X, össze: X, vissza: X
 veszt|vesztet	el: ?, rajta: X
