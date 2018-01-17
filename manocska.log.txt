@@ -3,7 +3,7 @@ No. of Verbs (isz):  9629 18303463 417
 Dropped: "gyökér, lomb és száraz ág 
 Dropped: "tömör, világos és egyszerű szöveget szeretnénk, és már fel is kértünk néhány jogi szakértőt egy kiegészítő jegyzőkönyv kidolgozására, mely a szubszidiaritásról, és az arányosságról szóló jegyzőkönyvek mintáját követné"-tájék
 No. of Verbs (Tadé):  29244 8867536 1752
-No. of Verbs (kagi_verbal_complex):  27086 13715465 0
+No. of Verbs (kagi_verbal_complex):  27080 13713326 0
 No. of Verbs (inflist):  1506 8465995
 Igék száma (összesen):  30119
 abba|hagy
@@ -17063,14 +17063,14 @@ fel|ül
 [(), ('[ACC]',), ('[DAT]',), ('[ELA]',), ('[ILL]',), ('[INE]',), ('[INE]', '[SUB]'), ('[INS]',), ('[INS]', '[SUB]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUP]',)]
 [('[SUB]',)]
 []
-0
+4698
 
 fel|ültet
 []
 [(), ('[ACC]',), ('[ACC]', '[SUB]'), ('[SUB]',)]
 []
 []
-124
+284
 
 fel|üt
 []
@@ -19674,7 +19674,7 @@ föl|ül
 [(), ('[DAT]',), ('[INE]',), ('[INS]', '[SUB]'), ('[SUB]',), ('[SUP]',)]
 []
 []
-0
+754
 
 föl|üt
 []
