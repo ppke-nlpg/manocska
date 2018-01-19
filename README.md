@@ -68,13 +68,29 @@ A git repozitórium __nem tartalmazza az eredeti erőforrásokat__, melyek szük
 Felhasználható oktatási, kutatási és magáncélra. Ez esetben __a _Manócska_ által felhasznált összes erőforrást hivatkozni kell__.
 Továbbiakban a Manócska készítése során felhasznált erőforrások jogtulajdonosainak álláspontja a mértékadó.
 
-Indig Balázs. _Manócska – integrált igei vonzatkeret adatbázis._ (2017) Elérhető: [https://github.com/ppke-nlpg/manocska](https://github.com/ppke-nlpg/manocska)
+A _Manócska_ a következő bibliográfiai bejegyzések egyikével hivatkozható:
+
+Indig Balázs, Vadász Noémi, Kalivoda Ágnes . _Manócska – integrált igei vonzatkeret adatbázis._ (2017) Elérhető: [https://github.com/ppke-nlpg/manocska](https://github.com/ppke-nlpg/manocska)
 
     @manual{manocska,
-      author       = {Indig, Bal{\'a}zs},
+      author       = {Indig, Bal{\'a}zs and Vad{\'a}sz, No{\'e}mi and Kalivoda, {\'A}gnes},
       title        = {Man{\'o}cska -- integr{\'a}lt igeivonzatkeret-adatb{\'a}zis},
       year         = {2017},
       url = {https://github.com/ppke-nlpg/manocska}
+    }
+
+Vadász Noémi, Kalivoda Ágnes, Indig Balázs. _Egy egységesített magyar igei vonzatkerettár építése és felhasználása_ XIV. Magyar Számítógépes Nyelvészeti Konferencia (MSZNY 2018). 3--15. Szeged. 2018.
+
+    @inproceedings{vadasz_kalivoda_indig_2018a,
+        title = {Egy egys{\'e}ges{\'i}tett magyar igei vonzatkerett{\'a}r {\'e}p{\'i}t{\'e}se {\'e}s felhaszn{\'a}l{\'a}sa},
+        booktitle = {XIV. Magyar Sz{\'a}m{\'i}t{\'o}g{\'e}pes Nyelv{\'e}szeti Konferencia (MSZNY 2018)},
+        year = {2018},
+        pages = {3{\textendash}15},
+        publisher={Szegedi Tudom{\'a}nyegyetem Informatikai Tansz{\'e}kcsoport},
+        organization = {Szegedi Tudom{\'a}nyegyetem Informatikai Int{\'e}zet},
+        address = {Szeged},
+        author = {Vad{\'a}sz, No{\'e}mi and Kalivoda, {\'A}gnes and Indig, Bal{\'a}zs},
+        editor = {Vincze, Veronika}
     }
 
 A többi erőforrás hivatkozásához szükséges bibliográfiai adatokat lásd a fenti linkeken.

@@ -65,13 +65,29 @@ The git repository __does not contain__ the original resources needed for reprod
 
 _Manócska_ can be used for education, research and private projects. Please refer to __every resource__ used by _Manócska_. In every other case, you should keep yourself to the licences set by the resources' creators.
 
-Balázs Indig. _Manócska – an integrated verb frame database._ (2017) Available at: [https://github.com/ppke-nlpg/manocska](https://github.com/ppke-nlpg/manocska)
+To cite _Manócska_ use one of the following bibliographic entries:
+
+Balázs Indig, Noémi Vadász, Ágnes Kalivoda. _Manócska – an integrated verb frame database._ (2017) Available at: [https://github.com/ppke-nlpg/manocska](https://github.com/ppke-nlpg/manocska)
 
     @manual{manocska,
-      author       = {Indig, Bal{\'a}zs},
+      author       = {Indig, Bal{\'a}zs and Vad{\'a}sz, No{\'e}mi and Kalivoda, {\'A}gnes},
       title        = {Man{\'o}cska -- integr{\'a}lt igeivonzatkeret-adatb{\'a}zis},
       year         = {2017},
       url = {https://github.com/ppke-nlpg/manocska}
+    }
+
+Vadász Noémi, Kalivoda Ágnes, Indig Balázs. _Egy egységesített magyar igei vonzatkerettár építése és felhasználása_ XIV. Magyar Számítógépes Nyelvészeti Konferencia (MSZNY 2018). 3--15. Szeged. 2018.
+
+    @inproceedings{vadasz_kalivoda_indig_2018a,
+        title = {Egy egys{\'e}ges{\'i}tett magyar igei vonzatkerett{\'a}r {\'e}p{\'i}t{\'e}se {\'e}s felhaszn{\'a}l{\'a}sa},
+        booktitle = {XIV. Magyar Sz{\'a}m{\'i}t{\'o}g{\'e}pes Nyelv{\'e}szeti Konferencia (MSZNY 2018)},
+        year = {2018},
+        pages = {3{\textendash}15},
+        publisher={Szegedi Tudom{\'a}nyegyetem Informatikai Tansz{\'e}kcsoport},
+        organization = {Szegedi Tudom{\'a}nyegyetem Informatikai Int{\'e}zet},
+        address = {Szeged},
+        author = {Vad{\'a}sz, No{\'e}mi and Kalivoda, {\'A}gnes and Indig, Bal{\'a}zs},
+        editor = {Vincze, Veronika}
     }
 
 The bibliographical data needed for citing the other resources can be found on the links presented at the top of this page.
