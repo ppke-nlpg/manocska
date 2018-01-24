@@ -5,7 +5,7 @@ Dropped: "tömör, világos és egyszerű szöveget szeretnénk, és már fel is
 No. of Verbs (Tadé):  27159 8865936 4489
 No. of Verbs (kagi_verbal_complex):  27077 13713255 1
 No. of Verbs (inflist):  1506 8465995
-Igék száma (összesen):  27978
+Igék száma (összesen):  41636
 abba|hagy
 [('[ACC]',)]
 [(), ('=előtt', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=után',), ('=után', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TER]',)]
