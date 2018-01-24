@@ -47,7 +47,7 @@ SHOULD NOT BE splitted!
 noop
 """
 false_prev_good = {'felesel', 'felvételizik', 'kiabál', 'mellékel', 'szembesül', 'túlórázik', 'fölényeskedik',
-                   'alázatoskodik', 'televíziózik', 'feliratoz', 'felvételizik', 'felvigyáz'
+                   'alázatoskodik', 'televíziózik', 'feliratoz'
                    }
 
 """
@@ -129,7 +129,8 @@ good_verbs_humor_not_recognised3 = {'jelent|jelentet', 'békén|hagy', 'vet|vete
                                     'rohog', 'súlyosul', 'szakralizál', 'szakralizálódik', 'táncikál', 'tapizik',
                                     'tehermentesül', 'telik--múlik', 'toronylik', 'transzcendál', 'transzportál',
                                     'treffel', 'tutul', 'tüsszen', 'utóvizsgázik', 'útrakel', 'vakarászik', 'vemhesül',
-                                    'vidámkodik', 'virgonckodik', 'pofon|csap'
+                                    'vidámkodik', 'virgonckodik', 'pofon|csap', 'ellen|tart', 'ellen|támad',
+                                    'elé|toppan', 'elé|áll', 'elé|borul', 'elé|citál'
                                     }
 
 
@@ -141,8 +142,8 @@ delete
 """
 # TODO: further research (delete)
 not_prev_verbs_TODO_FR = {'jól|esik', 'jól|lakat', 'jól|lakik', 'jól|tart', 'jót|áll', 'rosszul|esik', 'után|állít',
-                          'után|ízesít', 'után|nyom', 'után|rendel', 'után|tölt', 'együtt|áll', 'abba|fejez',
-                          'együtt|hat', 'ellen|támad', 'ellen|tart'
+                          'után|ízesít', 'után|nyom', 'után|rendel', 'után|tölt', 'abba|fejez',
+                          'együtt|hat'
                           }
 
 # TODO: Research written together of separately?
@@ -541,9 +542,8 @@ funny_prev_drop_prev = {'abba|dob', 'abba|esik', 'abba|eszik', 'abba|kerül', 'a
                         'tudtul|ad', 'után|fut', 'után|jár', 'után|keresgél', 'után|közöl', 'után|von',
                         'útba|csatlakozik', 'útba|ejtet', 'útba|ér', 'útba|esik', 'útba|fordul', 'útba|fut',
                         'útba|indít', 'útba|indul', 'útba|nyit', 'útba|tagol', 'útba|torkollik', 'útba|vezet',
-                        'véget|ér', 'zokon|esik', 'zöldágra|jut', 'együtt|hál', 'elé|áll', 'elé|borul', 'elé|citál',
-                        'elé|toppan', 'észhez|kap', 'észhez|tér', 'észhez|térít', 'észre|tér', 'észre|térít',
-                        'zöldágra|vergődik'
+                        'véget|ér', 'zokon|esik', 'zöldágra|jut', 'együtt|hál',
+                        'észhez|tér', 'észhez|térít', 'észre|tér', 'észre|térít', 'zöldágra|vergődik', 'észhez|kap'
                         }
 
 """
@@ -741,7 +741,7 @@ not_prev_verbs3 = \
       'vissza|ijed', 'vissza|indít', 'vissza|ítél', 'vissza|kocsikázik', 'vissza|kuporodik', 'vissza|lépdel',
       'vissza|lóg', 'vissza|lopódzik', 'vissza|masírozik', 'vissza|özönlik', 'vissza|rabol', 'vissza|slattyog',
       'vissza|szolgál', 'vissza|tántorodik', 'vissza|tetszik', 'vissza|torpan', 'vissza|tűz', 'vissza-vissza|csillan',
-      'vissza-vissza|fordul', 'fel|virágoz'
+      'vissza-vissza|fordul', 'fel|virágoz', 'fel|virul', 'fel|vigyáz', 'együtt|áll'
       }
      }
 
@@ -1074,7 +1074,7 @@ def merge():
 merge()
 
 """
-time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k10,10gr -k1,2 | \
+time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k8,8nr -k1,2 | \
 tee manocska.sorted.txt | grep -v $'[^\t ][=[]' > manocska.sorted.nolex.txt) &&
 cat manocska.sorted.txt | grep $'[^\t ][=[]' > manocska.sorted.lex.txt
 """
