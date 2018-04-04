@@ -1,7 +1,7 @@
-No. of Verbs (ige_szotar):  2185 6117057 47
-No. of Verbs (isz):  9589 18210335 477
 Dropped: "gyökér, lomb és száraz ág 
 Dropped: "tömör, világos és egyszerű szöveget szeretnénk, és már fel is kértünk néhány jogi szakértőt egy kiegészítő jegyzőkönyv kidolgozására, mely a szubszidiaritásról, és az arányosságról szóló jegyzőkönyvek mintáját követné"-tájék
+No. of Verbs (ige_szotar):  2185 6117057 47
+No. of Verbs (isz):  9589 18210335 477
 No. of Verbs (Tadé):  27159 8865936 4489
 No. of Verbs (kagi_verbal_complex):  27077 13713255 4
 No. of Verbs (inflist):  1506 8465995
