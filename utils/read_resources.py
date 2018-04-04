@@ -8,15 +8,7 @@ import pickle
 from collections import defaultdict, Counter
 from concurrent.futures import ProcessPoolExecutor, wait
 
-"""
-from utils.correction_tables import never_prev_verbs, light_verb_exception_verbs, not_prev_verbs, not_prev_verbs2, \
-    false_prev_good, funny_ik_replacements, good_verbs_humor_not_recognised, good_verbs_humor_not_recognised2,\
-    good_verbs_humor_not_recognised3, double_prev_verbs, not_rev_verbs_drop_prev, funny_prev_drop_prev, \
-    not_prev_verbs3, verb_add_ik_suffix, prev_and_ik_verbs, del_prev_and_add_ik
-"""
-
-from utils.correction_tables import wrong_verbs, wrong_verbs2, not_prev_verbs_TODO_FR, verb_bad_prev, wrong_verbs3, \
-    bad_forms, bad_forms2, fix_verb
+from utils.correction_tables import is_verb_wrong, fix_verb, correct_postp
 
 
 def get_freq_w_ind_for_frame(frames, frame):
@@ -54,8 +46,7 @@ def ige_szotar_process():
                 verb, arguments, freq = None, [], 0  # Dummy assignment to silence IDE
                 exit('verb_dict_error: {0}'.format(entry))
             freq = int(freq)
-            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev \
-                    or verb in wrong_verbs3 or verb in bad_forms or verb in bad_forms2:
+            if is_verb_wrong(verb):
                 found_wrong_verbs.add(verb)
                 continue
             verb_new = fix_verb(verb)
@@ -63,6 +54,7 @@ def ige_szotar_process():
                 found_wrong_verbs.add(verb)
             verb = verb_new
             arguments = [i.replace(' =', '=') for i in arguments]  # Because at the end args will be separated by spaces
+            arguments = correct_postp(arguments)
             smart_append(found_verbs, verb, freq, tuple(sorted(arguments)))
             sumfreq += freq
     return sumfreq, found_wrong_verbs, found_verbs
@@ -85,16 +77,16 @@ def isz_process():
                     verb, arguments, freq = None, [], 0  # Dummy assignment to silence IDE
                     exit('isz_error: {0}'.format(entry))
                 freq = int(freq)
-                if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or \
-                        verb in verb_bad_prev or verb in wrong_verbs3 or verb in bad_forms or verb in bad_forms2:
+                if is_verb_wrong(verb):
                     found_wrong_verbs.add(verb)
                     continue
                 verb_new = fix_verb(verb)
                 if verb_new != verb:
                     found_wrong_verbs.add(verb)
                 verb = verb_new
-                arguments = [i.replace(' =', '=') for i in
-                             arguments]  # Because at the end args will be separated by spaces
+                # Because at the end args will be separated by spaces
+                arguments = [i.replace(' =', '=') for i in arguments]
+                arguments = correct_postp(arguments)
                 smart_append(found_verbs, verb, freq, tuple(sorted(arguments)))
                 sumfreq += freq
     return sumfreq, found_wrong_verbs, found_verbs
@@ -116,8 +108,7 @@ def tade_process():
                 exit('tade_error: {0}'.format(entry))
             arguments = tuple(arguments.split())
             freq = int(freq)
-            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev\
-                    or verb in wrong_verbs3 or verb in bad_forms or verb in bad_forms2:
+            if is_verb_wrong(verb):
                 found_wrong_verbs.add(verb)
                 continue
             verb_new = fix_verb(verb)
@@ -134,8 +125,7 @@ def tade_process():
                     print('Dropped: {0}'.format(verb), file=sys.stderr)
                     continue
                 verb, inf = verb.split()
-                if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or \
-                        verb in verb_bad_prev or verb in wrong_verbs3 or verb in bad_forms or verb in bad_forms2:
+                if is_verb_wrong(verb):
                     found_wrong_verbs.add(verb)
                     continue
                 verb_new = fix_verb(verb)
@@ -149,7 +139,9 @@ def tade_process():
                 # sumfreq += freq
                 # arguments = ['INF_' + inf]
                 arguments = ['INF']
+            arguments = correct_postp(arguments)
             smart_append(found_verbs, verb, freq, tuple(sorted(arguments)))  # Here stuff can be non uniq...
+
             sumfreq += freq
     return sumfreq, found_wrong_verbs, found_verbs
 
@@ -168,8 +160,7 @@ def kagi_verbs_process():
                 exit('kagi_verbs_error: {0}'.format(entry))
             ik, verb = verb_w_ik.split('+')
             freq = int(freq)
-            if verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev\
-                    or verb in wrong_verbs3 or verb in bad_forms or verb in bad_forms2:
+            if is_verb_wrong(verb):
                 found_wrong_verbs.add(verb)
                 continue
             verb_new = fix_verb(verb)

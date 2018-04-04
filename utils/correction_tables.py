@@ -777,6 +777,11 @@ prev_and_ik_verbs = \
 del_prev_and_add_ik = {'végig|horgász'}
 
 
+def is_verb_wrong(verb):
+    return verb in wrong_verbs or verb in wrong_verbs2 or verb in not_prev_verbs_TODO_FR or verb in verb_bad_prev \
+                    or verb in wrong_verbs3 or verb in bad_forms or verb in bad_forms2
+
+
 def fix_verb(verb_elem):
     if verb_elem in double_prev_verbs or verb_elem in not_rev_verbs_drop_prev or verb_elem in funny_prev_drop_prev or \
             ('|' in verb_elem and verb_elem.split('|', maxsplit=1)[1] in never_prev_verbs):
@@ -800,3 +805,75 @@ def fix_verb(verb_elem):
         verb_elem = verb_elem.replace('--', '-')
 
     return verb_elem
+
+
+# Not postpositional phrase -> delete
+not_postp = {'adódóan', 'beálltával', 'bekövetkeztével', 'egyidőben', 'elmúltával', 'előrehaladtával', 'eltérően',
+             'eredményeképpen', 'eredően', 'fakadóan', 'folyólag', 'függetlenül', 'függően', 'hála', 'illetően',
+             'innen', 'ízben', 'köszönhetően', 'következőleg', 'követően', 'közeledtével', 'közöttii', 'lejártával',
+             'leteltével', 'létrejöttével', 'megelőzően', 'megfelelően', 'túlmenően', 'unknown', 'végből', 'virradóan',
+             'virradólag', 'vonatkozólag'}
+
+# Not postpositional phrase -> case
+postp_to_case = {'belőle': '[ELA]', 'inneni': '[NOM]', 'közelében': '[INE]', 'rajta': '[SUP]'}
+
+# "Adjective postpositional phrase" -> case
+postp_to_case2 = {'afölötti': '[NOM]', 'alatti': '[NOM]', 'alattiak': '[NOM]', 'alattiakat': '[ACC]',
+                  'alattiakban': '[INE]', 'alattiaknak': '[DAT]', 'alattiaknál': '[ADE]', 'alattiakon': '[SUP]',
+                  'alattijuktól': '[ABL]', 'alattinak': '[DAT]', 'alattira': '[SUB]', 'alattit': '[ACC]',
+                  'alattival': '[INS]', 'alóli': '[NOM]', 'általi': '[NOM]', 'azelőtti': '[NOM]',
+                  'azelőttihez': '[ALL]', 'azelőttire': '[SUB]', 'azelőttit': '[ACC]', 'belüli': '[NOM]',
+                  'belülinek': '[DAT]', 'belülivel': '[INS]', 'elleni': '[NOM]', 'elleniek': '[NOM]',
+                  'ellenieket': '[ACC]', 'ellenit': '[ACC]', 'ellenivel': '[INS]', 'előtti': '[NOM]',
+                  'előttihez': '[ALL]', 'előttije': '[NOM]', 'előttinek': '[DAT]', 'előttinél': '[ADE]',
+                  'előttire': '[SUB]', 'előttiség': '[NOM]', 'előttit': '[ACC]', 'előttitől': '[ABL]',
+                  'előttivé': '[FAC]', 'előttivel': '[INS]', 'ezelőtti': '[NOM]', 'ezelőttiekénél': '[ADE]',
+                  'ezelőttiekkel': '[INS]', 'ezelőttiektől': '[ABL]', 'ezelőttihez': '[ALL]', 'ezelőttinek': '[DAT]',
+                  'ezelőttinél': '[ADE]', 'ezelőttire': '[SUB]', 'ezelőttit': '[ACC]', 'ezelőttitől': '[ABL]',
+                  'ezelőttivel': '[INS]', 'feletti': '[NOM]', 'felettiek': '[NOM]', 'felettieket': '[ACC]',
+                  'felettiekkel': '[INS]', 'felettieknek': '[DAT]', 'felettieknél': '[ADE]', 'felettiekről': '[DEL]',
+                  'felettije': '[NOM]', 'felettinek': '[DAT]', 'felettire': '[SUB]', 'felettit': '[ACC]',
+                  'felettivel': '[INS]', 'felőli': '[NOM]', 'felüli': '[NOM]', 'felüliek': '[NOM]',
+                  'felüliekkel': '[INS]', 'felülieknek': '[DAT]', 'felülieknél': '[ADE]', 'felüliekre': '[SUB]',
+                  'felülit': '[ACC]', 'fölötti': '[NOM]', 'fölöttiek': '[NOM]', 'fölöttieket': '[ACC]',
+                  'fölöttiekkel': '[INS]', 'fölöttieknél': '[ADE]', 'fölöttiekre': '[SUB]', 'fölöttire': '[SUB]',
+                  'fölüliek': '[NOM]', 'helyetti': '[NOM]', 'Iránt': '[-]', 'iránti': '[NOM]', 'képesti': '[NOM]',
+                  'keresztüli': '[NOM]', 'kívüli': '[NOM]', 'kívüliek': '[NOM]', 'kívülieket': '[ACC]',
+                  'kívüliekkel': '[INS]', 'kívüliként': '[FOR]', 'kívülisége': '[NOM]', 'kívüliségére': '[SUB]',
+                  'kívülivé': '[FAC]', 'kívülivel': '[INS]', 'körüli': '[NOM]', 'körüliek': '[NOM]',
+                  'körüliekkel': '[INS]', 'körüliektől': '[ABL]', 'körülire': '[SUB]', 'körüliről': '[DEL]',
+                  'körülit': '[ACC]', 'közbeni': '[NOM]', 'közelről': '[-]', 'közötti': '[NOM]', 'közöttiek': '[NOM]',
+                  'közöttiekből': '[ELA]', 'közöttieké': '[NOM]', 'közöttieket': '[ACC]', 'közöttieknek': '[DAT]',
+                  'közöttieknél': '[ADE]', 'közöttiekre': '[SUB]', 'közöttin': '[SUP]', 'közöttinek': '[DAT]',
+                  'közöttinél': '[ADE]', 'közöttire': '[SUB]', 'közti': '[NOM]', 'köztiek': '[NOM]', 'közüli': '[NOM]',
+                  'melletti': '[NOM]', 'miatti': '[NOM]', 'mögötti': '[NOM]', 'nélküli': '[NOM]', 'nélkülibe': '[ILL]',
+                  'nélküliből': '[ELA]', 'nélküliek': '[NOM]', 'nélkülieké': '[NOM]', 'nélkülieknél': '[ADE]',
+                  'nélküliekre': '[SUB]', 'nélkülinek': '[DAT]', 'nélkülit': '[ACC]', 'nélkülivé': '[FAC]',
+                  'számára': '[DAT]', 'számodra': '[DAT]', 'számomra': '[DAT]', 'számunkra': '[DAT]',
+                  'szembeni': '[NOM]', 'szemközti': '[NOM]', 'szerinti': '[NOM]', 'szerintiek': '[NOM]',
+                  'szerintiekkel': '[INS]', 'szerintiektől': '[ABL]', 'szerintinek': '[DAT]', 'szerintire': '[SUB]',
+                  'szerintiről': '[DEL]', 'szerintit': '[ACC]', 'szerintitől': '[ABL]', 'szerintivé': '[FAC]',
+                  'szerintivel': '[INS]', 'túli': '[NOM]', 'túliak': '[NOM]', 'túliaké': '[NOM]', 'túliakig': '[TER]',
+                  'túliakkal': '[INS]', 'túliaknak': '[DAT]', 'utáni': '[NOM]', 'utániak': '[NOM]',
+                  'utániakat': '[ACC]', 'utánira': '[SUB]'}
+
+# Correct postpositional phrase -> delete reflexiveness
+postp_to_postp = {'afelett': 'felett', 'amellett': 'mellett', 'anélkül': 'nélkül', 'aszerint': 'szerint',
+                  'efelé': 'felé', 'efelett': 'felett', 'efölött': 'fölött', 'ehelyett': 'helyett',
+                  'ekörül': 'körül', 'eközben': 'közben', 'emellé': 'mellé', 'emiatt': 'miatt', 'emögött': 'mögött',
+                  'ezelőtt': 'előtt', 'eziránt': 'iránt'}
+
+
+def correct_postp(frame):
+    new_frame = []
+    for arg in frame:
+        if '=' in arg:
+            prefix, postp = arg.split('=',  maxsplit=1)
+            if postp in not_postp:
+                continue  # Drop bad arg
+            postp = postp_to_case.get(postp, postp)
+            postp = postp_to_case2.get(postp, postp)
+            postp = postp_to_postp.get(postp, postp)
+            arg = '='.join((prefix, postp))
+        new_frame.append(arg)
+    return new_frame
