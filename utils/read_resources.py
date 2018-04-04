@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8, vim: expandtab:ts=4 -*-
+
 import sys
+import os
+import pickle
 
 from collections import defaultdict, Counter
+from concurrent.futures import ProcessPoolExecutor, wait
 
 """
 from utils.correction_tables import never_prev_verbs, light_verb_exception_verbs, not_prev_verbs, not_prev_verbs2, \
@@ -199,3 +203,36 @@ def kagi_inflist_process():
             smart_append(found_verbs, verb, freq, tuple(sorted(arguments)))
             sumfreq += freq
     return sumfreq, found_verbs
+
+
+def read_resources_parallel(pickled_name, overwrite=False):
+    with ProcessPoolExecutor(max_workers=5) as executor:
+        create_ige_szotar = executor.submit(ige_szotar_process)
+        create_isz = executor.submit(isz_process)
+        create_tade = executor.submit(tade_process)
+        create_kagi_verbs = executor.submit(kagi_verbs_process)
+        create_kagi_inflist = executor.submit(kagi_inflist_process)
+
+    wait([create_ige_szotar, create_isz, create_kagi_verbs, create_kagi_inflist])
+
+    verb_dict_sumfreq, verb_dict_wrong_verbs, verb_dict_verbs = create_ige_szotar.result()
+    isz_sumfreq, isz_wrong_verbs, isz_verbs = create_isz.result()
+    tade_sumfreq, tade_wrong_verbs, tade_verbs = create_tade.result()
+    kagi_sumfreq, kagi_wrong_verbs, kagi_verbs = create_kagi_verbs.result()
+    inflist_sumfreq, inflist_verbs = create_kagi_inflist.result()
+    all_ige = set(verb_dict_verbs.keys()) | set(isz_verbs.keys()) | set(tade_verbs.keys()) | set(inflist_verbs.keys()) \
+        | set(kagi_verbs.keys())
+
+    print('No. of Verbs (ige_szotar): ', len(verb_dict_verbs), verb_dict_sumfreq, len(verb_dict_wrong_verbs),
+          file=sys.stderr)
+    print('No. of Verbs (isz): ', len(isz_verbs), isz_sumfreq, len(isz_wrong_verbs), file=sys.stderr)
+    print('No. of Verbs (Tadé): ', len(tade_verbs), tade_sumfreq, len(tade_wrong_verbs), file=sys.stderr)
+    print('No. of Verbs (kagi_verbal_complex): ', len(kagi_verbs), kagi_sumfreq, len(kagi_wrong_verbs), file=sys.stderr)
+    print('No. of Verbs (inflist): ', len(inflist_verbs), inflist_sumfreq, file=sys.stderr)
+    print('No. of Verbs (total): ', len(all_ige), file=sys.stderr)
+
+    if overwrite or not os.path.exists(pickled_name):
+        pickle.dump((verb_dict_verbs, isz_verbs, tade_verbs, kagi_verbs, inflist_verbs), open(pickled_name, 'wb'))
+
+    return (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
+        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), all_ige

@@ -40,8 +40,9 @@ def extract_kagi_freq_and_rank(verb, kagi_verbs, kagi_sumfreq):
     return kagi_freq, kagi_freq_rank
 
 
-def merge(verb_dict_sumfreq, isz_sumfreq, tade_sumfreq, inflist_verbs, inflist_sumfreq, kagi_verbs,
-          kagi_sumfreq, all_ige, verb_dict_verbs, isz_verbs, tade_verbs):
+def merge(*args):
+    (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
+        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), all_ige = args
 
     for verb in sorted(all_ige):
         szotar_frames = tuple([frame[1] for frame in verb_dict_verbs[verb]])
