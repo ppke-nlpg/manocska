@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8, vim: expandtab:ts=4 -*-
 
+import os
+
 """
 These verbs never occur with verbal particle.
 All occurence with verbal particle should be corrected to the sole verb.
@@ -16,7 +18,7 @@ ez a file: light_verb_exceptions.txt
 light_verb_exception_verbs = {'bír', 'fog', 'kezd', 'kíván', 'mer', 'szeret', 'szokik', 'talál', 'tetszik',
                               'tud', 'van', 'lesz', 'lehet', 'nincs', 'sincs'}
 
-with open('light_verbs/light_verb_exceptions.txt', encoding='UTF-8') as lve:
+with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'light_verbs', 'light_verb_exceptions.txt'), encoding='UTF-8') as lve:
     light_verb_exception_verbs_w_prev = {line.replace('+', '|') for line in lve.readlines()}
 
 # TODO: ezt mergelni: jo_inf_lista.txt

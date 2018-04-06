@@ -3,6 +3,7 @@
 
 import sys
 import locale
+import copy
 from collections import defaultdict
 from itertools import repeat
 
@@ -42,14 +43,15 @@ def extract_kagi_freq_and_rank(verb, kagi_verbs, kagi_sumfreq):
     return kagi_freq, kagi_freq_rank
 
 
-def compute_all_frames(inflist_verbs, isz_verbs, kagi_verbs, tade_verbs, verb, verb_dict_verbs):
+def compute_all_frames(verb, verb_dict_verbs, isz_verbs, tade_verbs, inflist_verbs, kagi_verbs, mmo_verbs):
     verb_dict_frames = tuple([frame[1] for frame in verb_dict_verbs[verb]])
-    isz_frames = tuple([frame[1] for frame in isz_verbs[verb]])
-    tade_frames = tuple([frame[1] for frame in tade_verbs[verb]])
-    inflist_frames = tuple([frame[1] for frame in inflist_verbs[verb]])
-    all_frame = set(verb_dict_frames) | set(isz_frames) | set(tade_frames) | set(inflist_frames)
+    isz_frames = tuple(frame[1] for frame in isz_verbs[verb])
+    tade_frames = tuple(frame[1] for frame in tade_verbs[verb])
+    inflist_frames = tuple(frame[1] for frame in inflist_verbs[verb])
+    mmo_frames = tuple(tuple(arg[1] for arg in frame[1]) for frame in mmo_verbs[verb])
+    all_frame = set(verb_dict_frames) | set(isz_frames) | set(tade_frames) | set(inflist_frames) | set(mmo_frames)
 
-    # INFO output
+    # INFO output  # TODO: MMO
     if len(verb_dict_frames) + len(isz_frames) + len(tade_frames) + len(inflist_frames) > len(all_frame):
         print(verb, list(sorted(set(verb_dict_frames) & set(isz_frames))),
               list(sorted(set(isz_frames) & set(tade_frames))),
@@ -59,40 +61,47 @@ def compute_all_frames(inflist_verbs, isz_verbs, kagi_verbs, tade_verbs, verb, v
     return all_frame
 
 
-def print_entry(verb, act_frame, verb_dict_freq, isz_freq, tade_freq, kagi_freq, kagi_freq_rank, inflist_freq,
-                inflist_freq_rank, verb_dict_sumfreq, isz_sumfreq, tade_sumfreq):
+def print_entry(*args):
+    verb, act_frame, (verb_dict_freq, verb_dict_sumfreq), (isz_freq, isz_sumfreq), (tade_freq, tade_sumfreq),\
+        (kagi_freq, kagi_freq_rank), (inflist_freq, inflist_freq_rank), (mmo_freq, mmo_rank, _) = args
+
     if act_frame == ():
         act_frame = '@'
     else:
         act_frame = ' '.join(act_frame)
     rank = sum((verb_dict_freq / verb_dict_sumfreq, isz_freq / isz_sumfreq, tade_freq / tade_sumfreq,
-                kagi_freq_rank, inflist_freq_rank))
-    print(verb, act_frame, verb_dict_freq, isz_freq, tade_freq, kagi_freq, inflist_freq, '{0:1.20f}'.format(rank),
-          sep='\t')
+                kagi_freq_rank, inflist_freq_rank, mmo_rank))
+    print(verb, act_frame, verb_dict_freq, isz_freq, tade_freq, kagi_freq, inflist_freq, mmo_freq,
+          '{0:1.20f}'.format(rank), sep='\t')
 
 
 def merge(*args, print_fun=print_entry):
     (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
-        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), all_ige \
+        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige \
         = args
 
     for verb in sorted(all_ige):
-        all_frame = compute_all_frames(inflist_verbs, isz_verbs, kagi_verbs, tade_verbs, verb, verb_dict_verbs)
+        all_frame = compute_all_frames(verb, verb_dict_verbs, isz_verbs, tade_verbs, inflist_verbs, kagi_verbs,
+                                       mmo_verbs)
 
         if len(all_frame) == 0:
             kagi_freq, kagi_freq_rank = extract_kagi_freq_and_rank(verb, kagi_verbs, kagi_sumfreq)
-            print_fun(verb, ['???'], 0, 0, 0, kagi_freq, kagi_freq_rank, None, 0, verb_dict_sumfreq, isz_sumfreq,
-                      tade_sumfreq)
+            print_fun(verb, ['???'], (0, verb_dict_sumfreq), (0, isz_sumfreq), (0, tade_sumfreq),
+                      (kagi_freq, kagi_freq_rank), (None, 0), (0, 0, mmo_verbs[verb]))
 
+        mmo_frames = set(tuple(arg[1] for arg in frame[1]) for frame in mmo_verbs[verb])
         for act_frame in sorted(all_frame):
             verb_dict_freq = get_freq_w_ind_for_frame(verb_dict_verbs[verb], act_frame)[1]
             isz_freq = get_freq_w_ind_for_frame(isz_verbs[verb], act_frame)[1]
             tade_freq = get_freq_w_ind_for_frame(tade_verbs[verb], act_frame)[1]
             inflist_freq, inflist_freq_rank = extract_inflist_freq_rank(verb, act_frame, inflist_verbs, inflist_sumfreq)
+            mmo_freq = int(act_frame in mmo_frames)
+            mmo_rank = mmo_freq/mmo_sumfreq
 
             kagi_freq, kagi_freq_rank = extract_kagi_freq_and_rank(verb, kagi_verbs, kagi_sumfreq)
-            print_fun(verb, act_frame, verb_dict_freq, isz_freq, tade_freq, kagi_freq, kagi_freq_rank, inflist_freq,
-                      inflist_freq_rank, verb_dict_sumfreq, isz_sumfreq, tade_sumfreq)
+            print_fun(verb, act_frame, (verb_dict_freq, verb_dict_sumfreq), (isz_freq, isz_sumfreq),
+                      (tade_freq, tade_sumfreq), (kagi_freq, kagi_freq_rank), (inflist_freq, inflist_freq_rank),
+                      (mmo_freq, mmo_rank, mmo_verbs[verb]))
 
 
 def prettify(elem):
@@ -105,12 +114,17 @@ def prettify(elem):
 
 def print_entry_xml_fun(top):
 
-    def print_entry_xml(verb, act_frame, verb_dict_freq, isz_freq, tade_freq, kagi_freq, kagi_freq_rank, inflist_freq,
-                        inflist_freq_rank, verb_dict_sumfreq, isz_sumfreq, tade_sumfreq):
+    def print_entry_xml(*args):
+        verb, act_frame, (verb_dict_freq, verb_dict_sumfreq), (isz_freq, isz_sumfreq), (tade_freq, tade_sumfreq),\
+           (kagi_freq, kagi_freq_rank), (inflist_freq, inflist_freq_rank), (mmo_freq, mmo_rank, mmo_frames) = args
+
+        mmo_compatible_frames = [frame for frame in mmo_frames if tuple(arg[1] for arg in frame[1]) == act_frame]
+
         prev, just_the_verb = prev_split(verb)
         rank = '{0:1.20f}'.format(sum((verb_dict_freq / verb_dict_sumfreq, isz_freq / isz_sumfreq,
-                                       tade_freq / tade_sumfreq, kagi_freq_rank, inflist_freq_rank)))
-        freq_dict = {'verb_dict': verb_dict_freq, 'isz': isz_freq, 'tade': tade_freq, 'finInf': inflist_freq}
+                                       tade_freq / tade_sumfreq, kagi_freq_rank, inflist_freq_rank, mmo_rank)))
+        freq_dict = {'verb_dict': verb_dict_freq, 'isz': isz_freq, 'tade': tade_freq, 'finInf': inflist_freq,
+                     'mmo': mmo_freq}
 
         # Locate subtree
         prev_xpath = 'no_prev'
@@ -131,6 +145,10 @@ def print_entry_xml_fun(top):
                 frame = SubElement(preve, 'inf', rank=rank)
             else:
                 frame.set('rank', rank)
+
+            # Add freqs
+            SubElement(frame, 'freqs', {k: str(v) for k, v in freq_dict.items() if v is not None and v > 0})
+
         else:
             infe = preve.find('no_inf')
             if infe is None:
@@ -140,33 +158,45 @@ def print_entry_xml_fun(top):
             if frames is None:
                 frames = SubElement(infe, 'frames')
 
-            frame = SubElement(frames, 'frame', rank=rank)
-            args = SubElement(frame, 'args')
-
-            # Add args
-            if act_frame == ():
-                SubElement(args, 'no_arg')
+            if len(mmo_compatible_frames) == 0:
+                create_frame_node(act_frame, frames, rank, freq_dict)
             else:
-                for arg in act_frame:
-                    lex = ''
-                    case = ''
-                    postp = ''
-                    if '=' in arg:
-                        lex, postp = arg.split('=', maxsplit=1)
-                    elif '[' in arg:
-                        lex, case = arg.rsplit('[', maxsplit=1)
-                        case = '[' + case
-                    arg_dict = {}
-                    if len(lex) > 0:
-                        arg_dict['lex'] = lex
-                    if len(case) > 0:
-                        arg_dict['case'] = case
-                    if len(postp) > 0:
-                        arg_dict['postp'] = postp
-                    SubElement(args, 'arg', **arg_dict)
+                for mmo_frame in mmo_compatible_frames:
+                    create_frame_node(act_frame, frames, rank, freq_dict, mmo_frame)
 
+    def create_frame_node(act_frame, frames, rank, freq_dict, mmo_frame=None):
+        attrdict = {}
+        # if mmo_frame is not None:
+        #    attrdict = {'mmo_id': mmo_frame[0]['mmoid'], 'en': mmo_frame[0]['EN.VP']}
+
+        mmo_arg_dict = {arg[1]: arg[0] for arg in mmo_frame[1]}
+        frame = SubElement(frames, 'frame', rank=rank, **attrdict)
+        args = SubElement(frame, 'args')
+        # Add args
+        if act_frame == ():
+            SubElement(args, 'no_arg')
+        else:
+            for arg in act_frame:
+                lex = ''
+                case = ''
+                postp = ''
+                if '=' in arg:
+                    lex, postp = arg.split('=', maxsplit=1)
+                elif '[' in arg:
+                    lex, case = arg.rsplit('[', maxsplit=1)
+                    case = '[' + case
+                arg_dict = copy.deepcopy(mmo_arg_dict.get(arg, {}))
+                if len(lex) > 0:
+                    arg_dict['lex'] = lex
+                if len(case) > 0:
+                    arg_dict['case'] = case
+                if len(postp) > 0:
+                    arg_dict['postp'] = postp
+                SubElement(args, 'arg', **arg_dict)
         # Add freqs
         SubElement(frame, 'freqs', {k: str(v) for k, v in freq_dict.items() if v is not None and v > 0})
+
+        return frame
 
     return print_entry_xml
 
@@ -182,7 +212,7 @@ def add_child_with_attrs(root, tag, key, vals, other_attrs=None, parent=None):
 
 
 def merge_xml(*args):
-    _, _, _, _, _, all_ige = args
+    _, _, _, _, _, _, all_ige = args
 
     # Precompute values
     verbs = defaultdict(set)

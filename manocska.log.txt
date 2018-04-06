@@ -1,11 +1,3 @@
-Dropped: "gyökér, lomb és száraz ág 
-Dropped: "tömör, világos és egyszerű szöveget szeretnénk, és már fel is kértünk néhány jogi szakértőt egy kiegészítő jegyzőkönyv kidolgozására, mely a szubszidiaritásról, és az arányosságról szóló jegyzőkönyvek mintáját követné"-tájék
-No. of Verbs (ige_szotar):  2185 6117057 47
-No. of Verbs (isz):  9589 18210335 477
-No. of Verbs (Tadé):  27159 8865936 4489
-No. of Verbs (kagi_verbal_complex):  27077 13713255 4
-No. of Verbs (inflist):  1506 8465995
-No. of Verbs (total):  41636
 abba|hagy
 [('[ACC]',)]
 [(), ('=előtt', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=után',), ('=után', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TER]',)]
@@ -149,13 +141,6 @@ aggaszt
 aggat
 []
 [('[ACC]',), ('[ACC]', '[ILL]'), ('[ACC]', '[SUB]'), ('[SUB]',)]
-[]
-[]
-0
-
-aggodalmaskodik
-[]
-[(), ('=miatt',)]
 []
 []
 0
@@ -304,13 +289,6 @@ akar
 [('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[TEM]'), ('amennyi[ACC]',), ('jó[ACC]',), ('valami[ACC]',)]
 [(), ('=[DAT]', '[ACC]'), ('=alatt', '[ACC]'), ('=belül', '[ACC]'), ('=előtt', '[ACC]'), ('=helyett', '[ACC]'), ('=körül', '[ACC]'), ('=között',), ('=között', '[ACC]'), ('=közül',), ('=mellett',), ('=mellett', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=nélkül', '[ACC]'), ('=szemben', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=után',), ('=után', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ESS]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ALL]',), ('[CAU]',), ('[DAT]',), ('[DEL]',), ('[ELA]',), ('[FAC]',), ('[FOR]',), ('[ILL]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TER]',)]
 [('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[TEM]')]
-[('INF',)]
-0
-
-akarózik
-[]
-[]
-[]
 [('INF',)]
 0
 
@@ -580,13 +558,6 @@ alá|száll
 []
 317
 
-alá|tesz
-[]
-[('[ACC]',)]
-[]
-[]
-68
-
 alá|támaszt
 [('[ACC]',), ('[ACC]', '[INS]')]
 [(), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INS]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]'), ('[INE]',), ('[INS]',)]
@@ -730,20 +701,6 @@ archivál
 artikulál
 []
 [(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[SUP]')]
-[]
-[]
-0
-
-aránylik
-[]
-[('[ALL]',), ('[ALL]', '[INE]')]
-[]
-[]
-0
-
-aspirál
-[]
-[('[INS]', '[SUB]'), ('[SUB]',)]
 []
 []
 0
@@ -935,13 +892,6 @@ baszik
 [(), ('[ACC]',), ('[ACC]', '[ILL]'), ('[ILL]',), ('[INS]',), ('[SUB]',)]
 []
 [('INF',)]
-0
-
-becsmérel
-[]
-[('[ACC]',)]
-[]
-[]
 0
 
 becsül
@@ -1433,13 +1383,6 @@ bele|keveredik
 []
 []
 1699
-
-bele|kiált
-[]
-[('[ILL]',)]
-[]
-[]
-95
 
 bele|kontárkodik
 []
@@ -1945,13 +1888,6 @@ bele|tör
 []
 0
 
-bele|törik
-[]
-[()]
-[]
-[]
-543
-
 bele|törődik
 [('[ILL]',)]
 [(), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INS]')]
@@ -2364,13 +2300,6 @@ be|borít
 []
 []
 1131
-
-be|bugyolál
-[]
-[('[ACC]',)]
-[]
-[]
-149
 
 be|bukik
 []
@@ -2953,13 +2882,6 @@ be|hajt
 []
 1694
 
-be|hajít
-[]
-[('[ACC]', '[ILL]')]
-[]
-[]
-153
-
 be|hajóz
 []
 [(), ('[ILL]',)]
@@ -3218,13 +3140,6 @@ be|ismer
 [('[ACC]',)]
 []
 7843
-
-be|iszik
-[]
-[(), ('[ACC]',)]
-[]
-[]
-247
 
 be|ivódik
 []
@@ -4038,13 +3953,6 @@ be|repül
 []
 463
 
-be|rezel
-[]
-[()]
-[]
-[]
-170
-
 be|robban
 []
 [(), ('[FOR]', '[ILL]'), ('[ILL]',), ('[ILL]', '[INS]'), ('[ILL]', '[SUP]'), ('[INE]',), ('[INS]',), ('[INS]', '[SUB]'), ('[SUB]',), ('[SUP]',)]
@@ -4422,13 +4330,6 @@ be|süt
 []
 []
 483
-
-be|sűrít
-[]
-[('[ACC]',), ('[ACC]', '[INS]')]
-[]
-[]
-155
 
 be|sűrűsödik
 []
@@ -4941,13 +4842,6 @@ be|vés
 []
 230
 
-be|vésődik
-[]
-[(), ('[ILL]',)]
-[]
-[]
-145
-
 be|zsebel
 []
 [('[ACC]',), ('[ACC]', '[FOR]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]')]
@@ -5081,13 +4975,6 @@ be|áztat
 []
 67
 
-be|ékelődik
-[]
-[('[ILL]',)]
-[]
-[]
-250
-
 be|épít
 [('[ACC]',), ('[ACC]', '[ILL]')]
 [(), ('=közé', '[ACC]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[ILL]'), ('=szerint', '[ACC]', '[ILL]', '[SUB]'), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[ILL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[ILL]'), ('[ACC]', '[FOR]', '[ILL]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[INE]', '[INS]'), ('[ACC]', '[ILL]', '[INE]', '[SUP]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[ILL]', '[SUB]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[ILL]', '[TEM]'), ('[ACC]', '[ILL]', '[TER]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INS]')]
@@ -5217,13 +5104,6 @@ biciklizik
 biggyeszt
 []
 [(), ('=elé', '[ACC]'), ('[ACC]', '[SUB]'), ('[SUB]',)]
-[]
-[]
-0
-
-bilincsel
-[]
-[('[ACC]', '[ALL]')]
 []
 []
 0
@@ -5746,20 +5626,6 @@ burkol
 []
 0
 
-burkolódzik
-[]
-[('[ILL]',)]
-[]
-[]
-0
-
-buszozik
-[]
-[]
-[]
-[('INF',)]
-0
-
 butít
 []
 [(), ('[ACC]',)]
@@ -5856,13 +5722,6 @@ bányászik
 [(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[SUP]'), ('[INE]',)]
 []
 []
-0
-
-bátorkodik
-[]
-[]
-[]
-[('INF',)]
 0
 
 bátorít
@@ -6110,13 +5969,6 @@ bújtat
 []
 0
 
-búslakodik
-[]
-[(), ('[SUP]',)]
-[]
-[]
-0
-
 búsul
 []
 [(), ('=miatt',), ('[ACC]',), ('[INE]',), ('[SUP]',)]
@@ -6250,13 +6102,6 @@ cenzúráz
 []
 0
 
-cibál
-[]
-[(), ('[ACC]',), ('[ACC]', '[SUP]')]
-[]
-[]
-0
-
 cifráz
 []
 [(), ('[ACC]',), ('[ACC]', '[INS]')]
@@ -6337,13 +6182,6 @@ cirógat
 citál
 []
 [(), ('=elé',), ('=elé', '[ACC]'), ('[ACC]',), ('[ACC]', '[ELA]'), ('[ACC]', '[SUB]'), ('[ELA]',)]
-[]
-[]
-0
-
-civakodik
-[]
-[(), ('[INE]',), ('[INS]',), ('[SUP]',)]
 []
 []
 0
@@ -6544,13 +6382,6 @@ cselekszik
 []
 0
 
-cselez
-[]
-[()]
-[]
-[]
-0
-
 cselleng
 []
 [(), ('[INE]',), ('[SUP]',)]
@@ -6596,13 +6427,6 @@ cseng
 csenget
 []
 [(), ('[ACC]',), ('[ADE]',), ('[CAU]',), ('[DAT]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',)]
-[]
-[]
-0
-
-csepeg
-[]
-[(), ('[DEL]',), ('[ELA]',), ('[SUB]',)]
 []
 []
 0
@@ -7111,13 +6935,6 @@ csónakázik
 []
 0
 
-csóvál
-[('fej[PSe3][ACC]',)]
-[('[ACC]',)]
-[]
-[]
-0
-
 csökken
 [(), ('[INE]',), ('[INS]',), ('[SUB]',), ('százalék[INS]',)]
 [(), ('=alatt',), ('=alatt', '[DEL]', '[SUB]'), ('=alatt', '[INE]'), ('=alatt', '[INE]', '[SUB]'), ('=alatt', '[INS]'), ('=alatt', '[INS]', '[SUB]'), ('=alatt', '[INS]', '[SUP]'), ('=alá',), ('=alá', '[INE]'), ('=alá', '[SUB]'), ('=belül',), ('=ellenére',), ('=felé',), ('=felől',), ('=iránt',), ('=képest',), ('=képest', '[ACC]'), ('=képest', '[INE]'), ('=képest', '[INE]', '[INS]'), ('=képest', '[INS]'), ('=képest', '[SUP]'), ('=következtében',), ('=következtében', '[SUP]'), ('=közben',), ('=között',), ('=között', '[INE]'), ('=között', '[INS]'), ('=mellett',), ('=mellett', '[SUP]'), ('=miatt',), ('=miatt', '=szerint'), ('=miatt', '[INE]'), ('=miatt', '[INE]', '[INS]'), ('=miatt', '[SUB]'), ('=szemben',), ('=szerint',), ('=szerint', '[ADE]', '[SUB]'), ('=szerint', '[DAT]'), ('=szerint', '[DAT]', '[SUB]'), ('=szerint', '[DEL]', '[INE]', '[SUB]'), ('=szerint', '[DEL]', '[SUB]'), ('=szerint', '[INE]'), ('=szerint', '[INE]', '[INS]'), ('=szerint', '[INE]', '[SUB]'), ('=szerint', '[INS]'), ('=szerint', '[SUB]'), ('=szerint', '[SUP]'), ('=után',), ('=után', '[INE]'), ('=után', '[INS]'), ('=után', '[SUB]'), ('=után', '[SUP]'), ('=óta',), ('=óta', '[DEL]', '[SUB]'), ('=óta', '[INE]', '[INS]'), ('[ABL]',), ('[ABL]', '[INS]'), ('[ABL]', '[SUB]'), ('[ABL]', '[SUP]'), ('[ABL]', '[TER]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DEL]', '[SUB]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ADE]',), ('[ADE]', '[INE]', '[INS]'), ('[ADE]', '[INS]'), ('[ADE]', '[SUB]'), ('[ALL]',), ('[ALL]', '[INE]'), ('[ALL]', '[INS]'), ('[DAT]',), ('[DAT]', '[ELA]'), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[INS]'), ('[DAT]', '[INE]', '[SUB]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INS]'), ('[DAT]', '[INS]', '[SUP]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUP]'), ('[DEL]',), ('[DEL]', '[INE]', '[INS]', '[SUB]'), ('[DEL]', '[INE]', '[SUB]'), ('[DEL]', '[INS]', '[SUB]'), ('[DEL]', '[SUB]'), ('[DEL]', '[SUB]', '[SUP]'), ('[ELA]',), ('[ELA]', '[SUB]'), ('[FOR]',), ('[ILL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUB]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[SUB]'), ('[INE]', '[SUB]', '[SUP]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUB]', '[SUP]'), ('[INS]', '[SUP]'), ('[INS]', '[TEM]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUB]', '[TEM]'), ('[SUB]', '[TER]'), ('[SUP]',), ('[TEM]',), ('[TER]',)]
@@ -7275,13 +7092,6 @@ csügged
 csüng
 []
 [(), ('[DEL]',), ('[INE]',), ('[INE]', '[SUP]'), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUP]',)]
-[]
-[]
-0
-
-cukkol
-[]
-[(), ('[ACC]',)]
 []
 []
 0
@@ -7508,13 +7318,6 @@ dermed
 [(), ('[FAC]',), ('[ILL]',), ('[INE]',), ('[SUB]',), ('[SUP]',)]
 []
 []
-0
-
-derogál
-[]
-[]
-[]
-[('INF',)]
 0
 
 derít
@@ -8087,13 +7890,6 @@ dönt
 döntöget
 []
 [('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]')]
-[]
-[]
-0
-
-dördül
-[]
-[()]
 []
 []
 0
@@ -8672,13 +8468,6 @@ el|ballag
 [('INF',)]
 476
 
-el|barikádoz
-[]
-[('[ACC]', '[INE]'), ('[ACC]', '[INS]')]
-[]
-[]
-0
-
 el|beszél
 [('[ACC]',)]
 [(), ('=fölött',), ('=mellett',), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DEL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[DEL]',), ('[SUP]',)]
@@ -8924,13 +8713,6 @@ el|csattan
 []
 358
 
-el|csavar
-[]
-[('[ACC]',)]
-[]
-[]
-286
-
 el|csavarog
 []
 [()]
@@ -8987,26 +8769,12 @@ el|csodálkozik
 []
 1380
 
-el|csuklik
-[]
-[()]
-[]
-[]
-282
-
 el|csábít
 [('[ACC]',)]
 [(), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[INE]',), ('[INS]',)]
 [('[ACC]',)]
 []
 1337
-
-el|csépel
-[]
-[(), ('[ACC]',)]
-[]
-[]
-243
 
 el|csíp
 [('[ACC]',)]
@@ -9119,13 +8887,6 @@ el|dől
 [(), ('[INE]',), ('[SUP]',)]
 []
 11301
-
-el|egyenget
-[]
-[('[ACC]',)]
-[]
-[]
-154
 
 el|ejt
 [('[ACC]',)]
@@ -9897,13 +9658,6 @@ el|hurcol
 []
 1632
 
-el|hány
-[]
-[('[ACC]',)]
-[]
-[]
-293
-
 el|hárul
 []
 [(), ('=elől',), ('=elől', '[INS]'), ('[ELA]',), ('[INS]',)]
@@ -10051,13 +9805,6 @@ el|intéződik
 []
 154
 
-el|iramodik
-[]
-[]
-[]
-[('INF',)]
-107
-
 el|irigyel
 []
 [('[ACC]',)]
@@ -10092,13 +9839,6 @@ el|iszik
 []
 []
 527
-
-el|iszkol
-[]
-[()]
-[]
-[]
-190
 
 el|jegyez
 []
@@ -10190,13 +9930,6 @@ el|kap
 [('[ACC]',)]
 []
 11018
-
-el|kapar
-[]
-[('[ACC]',)]
-[]
-[]
-111
 
 el|kapkod
 []
@@ -10667,13 +10400,6 @@ el|lép
 []
 881
 
-el|lóg
-[]
-[('[ACC]',), ('[INS]',)]
-[]
-[]
-175
-
 el|lök
 []
 [(), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ACC]',)]
@@ -11073,26 +10799,12 @@ el|olvastat
 []
 130
 
-el|ordít
-[]
-[('[ACC]',)]
-[]
-[]
-170
-
 el|oroz
 []
 [('=elől', '[ACC]'), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]')]
 []
 []
 368
-
-el|oson
-[]
-[(), ('[SUP]',)]
-[]
-[]
-112
 
 el|oszlat
 [('[ACC]',)]
@@ -11184,13 +10896,6 @@ el|porlad
 []
 []
 265
-
-el|pucol
-[]
-[()]
-[]
-[]
-109
 
 el|puskáz
 []
@@ -11416,13 +11121,6 @@ el|röppen
 []
 244
 
-el|röpül
-[]
-[()]
-[]
-[]
-277
-
 el|rúg
 []
 [('[ABL]', '[ACC]'), ('[ACC]',)]
@@ -11605,13 +11303,6 @@ el|szegődik
 [('INF',)]
 304
 
-el|szelel
-[]
-[()]
-[]
-[]
-204
-
 el|szenderedik
 []
 [(), ('[INE]',)]
@@ -11625,13 +11316,6 @@ el|szenved
 [('[ACC]',)]
 []
 2682
-
-el|szerződik
-[]
-[(), ('[SUB]',)]
-[]
-[]
-167
 
 el|szigetel
 []
@@ -11766,13 +11450,6 @@ el|szédül
 []
 331
 
-el|szégyell
-[]
-[('[ACC]',)]
-[]
-[]
-642
-
 el|szív
 []
 [(), ('=elől', '[ACC]'), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]')]
@@ -11877,13 +11554,6 @@ el|sötétedik
 []
 []
 319
-
-el|sötétít
-[]
-[('[ACC]',)]
-[]
-[]
-202
 
 el|sötétül
 []
@@ -12564,13 +12234,6 @@ el|vonszol
 []
 186
 
-el|vontat
-[]
-[('[ACC]',)]
-[]
-[]
-231
-
 el|vonul
 [()]
 [(), ('=elől',), ('=előtt',), ('=előtt', '[SUB]'), ('=előtt', '[SUP]'), ('=fölött',), ('=nélkül',), ('=után',), ('[ABL]',), ('[ACC]',), ('[DEL]',), ('[ELA]',), ('[ILL]',), ('[ILL]', '[INS]'), ('[INE]',), ('[INS]',), ('[INS]', '[SUB]'), ('[SUB]',), ('[SUP]',), ('[TEM]',)]
@@ -13095,13 +12758,6 @@ előre|enged
 []
 []
 220
-
-előre|fut
-[]
-[('[ACC]',)]
-[]
-[]
-109
 
 előre|hajol
 []
@@ -13817,13 +13473,6 @@ erjed
 []
 0
 
-erjeszt
-[]
-[('[ACC]', '[ELA]')]
-[]
-[]
-0
-
 erőlködik
 []
 [(), ('[ACC]',), ('[INE]',), ('[INS]',), ('[SUP]',)]
@@ -13933,13 +13582,6 @@ eszik
 [(), ('[ACC]',)]
 [(), ('=alatt',), ('=alatt', '[ACC]'), ('=előtt',), ('=helyett', '[ACC]'), ('=mellett',), ('=nélkül',), ('=nélkül', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=után',), ('=után', '[ACC]'), ('=óta',), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ALL]',), ('[CAU]',), ('[DAT]',), ('[DAT]', '[ELA]'), ('[DEL]',), ('[ELA]',), ('[ELA]', '[INS]'), ('[ILL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUP]',), ('[TER]',)]
 [(), ('[ACC]',)]
-[]
-0
-
-eszik-iszik
-[]
-[('[ACC]',)]
-[]
 []
 0
 
@@ -14390,13 +14032,6 @@ fel|bocsát
 []
 []
 229
-
-fel|bolydul
-[]
-[()]
-[]
-[]
-283
 
 fel|bolygat
 []
@@ -14881,13 +14516,6 @@ fel|forrósodik
 []
 300
 
-fel|forrósít
-[]
-[('[ACC]',)]
-[]
-[]
-228
-
 fel|frissít
 []
 [(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]')]
@@ -15202,13 +14830,6 @@ fel|idéződik
 []
 []
 241
-
-fel|indul
-[]
-[(), ('[SUB]',)]
-[]
-[]
-123
 
 fel|ingerel
 []
@@ -15637,13 +15258,6 @@ fel|léptet
 []
 105
 
-fel|lök
-[]
-[(), ('[ACC]',)]
-[]
-[]
-576
-
 fel|lő
 []
 [('=szerint', '[ACC]'), ('[ACC]',), ('[ACC]', '[DEL]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]')]
@@ -15833,13 +15447,6 @@ fel|nyúl
 []
 24
 
-fel|nyúlik
-[]
-[('[ALL]',), ('[SUB]',)]
-[]
-[]
-192
-
 fel|néz
 [('[SUB]',)]
 [(), ('[ACC]',), ('[ACC]', '[SUB]'), ('[DEL]',), ('[ELA]',), ('[ELA]', '[SUB]'), ('[ILL]',), ('[INE]', '[SUB]'), ('[INS]',), ('[INS]', '[SUB]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUP]',)]
@@ -15902,13 +15509,6 @@ fel|olvaszt
 []
 []
 243
-
-fel|ordít
-[]
-[(), ('[INE]',)]
-[]
-[]
-339
 
 fel|oszlat
 [('[ACC]',)]
@@ -16470,20 +16070,6 @@ fel|tevődik
 []
 60
 
-fel|tol
-[]
-[('[ACC]', '[SUB]'), ('[ACC]', '[SUP]')]
-[]
-[]
-218
-
-fel|tornászik
-[]
-[('[ACC]',)]
-[]
-[]
-140
-
 fel|tornázik
 []
 [('[ACC]', '[DEL]', '[SUB]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]')]
@@ -16848,13 +16434,6 @@ fel|zaklat
 []
 439
 
-fel|zavar
-[]
-[(), ('[ACC]',), ('[ELA]',)]
-[]
-[]
-122
-
 fel|zokog
 []
 [()]
@@ -17044,13 +16623,6 @@ fel|öltöztet
 []
 435
 
-fel|önt
-[]
-[('[ACC]',), ('[ACC]', '[INS]')]
-[]
-[]
-831
-
 fel|ötlik
 []
 [(), ('[INE]',)]
@@ -17092,13 +16664,6 @@ fel|üt
 []
 []
 1631
-
-fel|üvölt
-[]
-[(), ('[INE]',)]
-[]
-[]
-260
 
 fel|őröl
 []
@@ -17278,13 +16843,6 @@ feszeget
 feszeng
 []
 [(), ('[ACC]',), ('[INE]',), ('[INE]', '[SUP]'), ('[SUP]',)]
-[]
-[]
-0
-
-feszélyez
-[]
-[(), ('[ACC]',)]
 []
 []
 0
@@ -17996,13 +17554,6 @@ furcsáll
 []
 0
 
-furdal
-[]
-[(), ('[ACC]',)]
-[]
-[]
-0
-
 furikázik
 []
 [(), ('[ACC]',), ('[INS]',), ('[INS]', '[SUP]'), ('[SUP]',)]
@@ -18192,20 +17743,6 @@ félre|fordít
 []
 170
 
-félre|hajt
-[]
-[('[ACC]',)]
-[]
-[]
-192
-
-félre|hív
-[]
-[(), ('[ACC]',)]
-[]
-[]
-205
-
 félre|húz
 []
 [(), ('[ACC]',), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]')]
@@ -18226,13 +17763,6 @@ félre|ismer
 []
 []
 279
-
-félre|lép
-[]
-[()]
-[]
-[]
-604
 
 félre|lök
 []
@@ -19837,13 +19367,6 @@ fülel
 []
 0
 
-füllent
-[]
-[(), ('[DAT]',)]
-[]
-[]
-0
-
 fürdet
 []
 [(), ('[ACC]',), ('[ACC]', '[INE]')]
@@ -20085,13 +19608,6 @@ gondoz
 gorombáskodik
 []
 [(), ('[INS]',)]
-[]
-[]
-0
-
-grasszál
-[]
-[()]
 []
 []
 0
@@ -20586,13 +20102,6 @@ görcsöl
 []
 0
 
-gördít
-[]
-[('=elé', '[ACC]'), ('[ACC]',)]
-[]
-[]
-0
-
 gördül
 []
 [(), ('=elé',), ('[ACC]',), ('[ILL]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
@@ -20638,13 +20147,6 @@ gúnyolódik
 gügyög
 []
 [(), ('[ACC]',), ('[DAT]',)]
-[]
-[]
-0
-
-gürcöl
-[]
-[()]
 []
 []
 0
@@ -20999,13 +20501,6 @@ hancúrozik
 []
 0
 
-handabandázik
-[]
-[()]
-[]
-[]
-0
-
 hangol
 []
 [(), ('=ellen', '[ACC]'), ('=ellen', '[ACC]', '[INS]'), ('=iránt', '[ACC]', '[SUB]'), ('[ACC]',), ('[ACC]', '[ALL]'), ('[ACC]', '[FAC]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]'), ('[INE]',), ('[INS]', '[SUB]'), ('[SUB]',)]
@@ -21300,13 +20795,6 @@ haza|hív
 []
 675
 
-haza|húz
-[]
-[()]
-[]
-[]
-101
-
 haza|indul
 []
 [(), ('=után',), ('=után', '[ELA]'), ('[ABL]',), ('[ACC]',), ('[DEL]',), ('[ELA]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',)]
@@ -21419,13 +20907,6 @@ haza|szállít
 []
 625
 
-haza|telefonál
-[]
-[(), ('[DAT]',)]
-[]
-[]
-166
-
 haza|települ
 []
 [(), ('[ELA]',), ('[INE]',), ('[SUP]',)]
@@ -21439,13 +20920,6 @@ haza|tér
 [()]
 [('INF',)]
 6121
-
-haza|ugrik
-[]
-[]
-[]
-[('INF',)]
-135
 
 haza|utaz
 []
@@ -21461,26 +20935,12 @@ haza|utazik
 [('INF',)]
 1674
 
-haza|vezet
-[]
-[(), ('[ACC]',)]
-[]
-[]
-99
-
 haza|visz
 [('[ACC]',)]
 [(), ('=helyett', '[ACC]'), ('=után', '[ACC]'), ('[ACC]',), ('[ACC]', '[ALL]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ALL]',), ('[DAT]',), ('[ELA]',), ('[ILL]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
 [('[ACC]',)]
 [('INF',)]
 3523
-
-haza|vág
-[]
-[(), ('[ACC]',)]
-[]
-[]
-259
 
 haza|vár
 []
@@ -22462,13 +21922,6 @@ hurcol
 []
 0
 
-huzakodik
-[]
-[('[INS]',)]
-[]
-[]
-0
-
 huzigál
 []
 [('[ACC]',), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]')]
@@ -22507,13 +21960,6 @@ hág
 hál
 []
 [(), ('=alatt',), ('[ADE]',), ('[DAT]',), ('[ILL]',), ('[INE]',), ('[INE]', '[SUP]'), ('[INS]',), ('[SUP]',)]
-[]
-[]
-0
-
-hálálkodik
-[]
-[(), ('[DAT]',)]
 []
 []
 0
@@ -23498,13 +22944,6 @@ imitál
 []
 0
 
-implikál
-[]
-[('[ACC]',)]
-[]
-[]
-0
-
 imponál
 []
 [(), ('[DAT]',), ('[DAT]', '[INS]'), ('[INS]',)]
@@ -23622,13 +23061,6 @@ ingerel
 [(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[INS]',), ('[INS]', '[SUB]'), ('[SUB]',)]
 [('[ACC]',)]
 []
-0
-
-ingázik
-[]
-[]
-[]
-[('INF',)]
 0
 
 inog
@@ -23757,13 +23189,6 @@ iparkodik
 [('INF',)]
 0
 
-iramodik
-[]
-[(), ('=után',)]
-[]
-[]
-0
-
 iratkozik
 []
 [(), ('[ILL]',), ('[SUB]',)]
@@ -23788,13 +23213,6 @@ irigyel
 irigykedik
 []
 [(), ('=miatt',), ('[ACC]',), ('[SUB]',), ('[SUP]',)]
-[]
-[]
-0
-
-irkál
-[]
-[('[ACC]',)]
 []
 []
 0
@@ -24597,20 +24015,6 @@ kapál
 []
 0
 
-kapálódzik
-[]
-[()]
-[]
-[]
-0
-
-kapálózik
-[]
-[(), ('[INE]',)]
-[]
-[]
-0
-
 karambolozik
 []
 [(), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUP]'), ('[INS]',), ('[SUP]',)]
@@ -24819,13 +24223,6 @@ kegyelmez
 [(), ('[DAT]',)]
 []
 []
-0
-
-kegyeskedik
-[]
-[]
-[]
-[('INF',)]
 0
 
 kegyetlenkedik
@@ -25423,13 +24820,6 @@ ki|ballag
 [('INF',)]
 221
 
-ki|belez
-[]
-[('[ACC]',)]
-[]
-[]
-197
-
 ki|beszél
 []
 [(), ('[ACC]',), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[DEL]',), ('[ELA]',)]
@@ -25619,13 +25009,6 @@ ki|bővül
 []
 1669
 
-ki|cipel
-[]
-[('[ACC]',), ('[ACC]', '[ELA]')]
-[]
-[]
-100
-
 ki|csal
 []
 [(), ('=szerint', '[ABL]', '[ACC]'), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[INS]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ACC]',), ('[ACC]', '[ELA]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]')]
@@ -25660,13 +25043,6 @@ ki|csavar
 []
 []
 617
-
-ki|cselez
-[]
-[('[ACC]',)]
-[]
-[]
-8
 
 ki|csempész
 []
@@ -26074,20 +25450,6 @@ ki|farag
 []
 239
 
-ki|fecseg
-[]
-[('[ACC]',)]
-[]
-[]
-271
-
-ki|fehéredik
-[]
-[()]
-[]
-[]
-237
-
 ki|fej
 []
 [('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[SUP]')]
@@ -26319,13 +25681,6 @@ ki|fúj
 []
 1138
 
-ki|fúr
-[]
-[('[ACC]',), ('[ACC]', '[INS]')]
-[]
-[]
-201
-
 ki|függeszt
 []
 [('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[SUP]',)]
@@ -26367,13 +25722,6 @@ ki|gazdálkodik
 []
 []
 470
-
-ki|golyóz
-[]
-[()]
-[]
-[]
-0
 
 ki|gombol
 []
@@ -26949,13 +26297,6 @@ ki|kever
 []
 299
 
-ki|keveredik
-[]
-[('[ELA]',)]
-[]
-[]
-204
-
 ki|kiabál
 []
 [(), ('[ACC]',), ('[DAT]',), ('[SUP]',)]
@@ -27159,13 +26500,6 @@ ki|következtet
 []
 205
 
-ki|közvetít
-[]
-[('[ACC]', '[DAT]'), ('[ACC]', '[SUB]')]
-[]
-[]
-109
-
 ki|közösít
 []
 [(), ('[ACC]',), ('[ACC]', '[ELA]')]
@@ -27340,13 +26674,6 @@ ki|magaslik
 []
 []
 370
-
-ki|magyaráz
-[]
-[('[ACC]',)]
-[]
-[]
-176
 
 ki|mar
 []
@@ -27733,13 +27060,6 @@ ki|olvas
 []
 718
 
-ki|olvaszt
-[]
-[('[ACC]',)]
-[]
-[]
-141
-
 ki|operál
 []
 [(), ('[ACC]',), ('[ACC]', '[ELA]')]
@@ -28013,13 +27333,6 @@ ki|rohan
 [('INF',)]
 1741
 
-ki|ruccan
-[]
-[]
-[]
-[('INF',)]
-104
-
 ki|rukkol
 []
 [(), ('[INE]', '[INS]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]')]
@@ -28033,13 +27346,6 @@ ki|rámol
 []
 []
 347
-
-ki|ráncigál
-[]
-[('[ACC]', '[ELA]')]
-[]
-[]
-154
 
 ki|rándul
 []
@@ -28243,13 +27549,6 @@ ki|szaggat
 []
 []
 141
-
-ki|szagol
-[]
-[('[ACC]',)]
-[]
-[]
-197
 
 ki|szakad
 []
@@ -28622,13 +27921,6 @@ ki|taszít
 []
 361
 
-ki|teker
-[]
-[('[ACC]',)]
-[]
-[]
-285
-
 ki|tekint
 []
 [(), ('[ACC]', '[DAT]'), ('[ELA]',), ('[ILL]',), ('[SUB]',), ('[SUP]',)]
@@ -28649,13 +27941,6 @@ ki|települ
 []
 []
 267
-
-ki|telik
-[]
-[(), ('[ABL]',), ('[ELA]',)]
-[]
-[]
-915
 
 ki|teljesedik
 []
@@ -30106,13 +29391,6 @@ kormányoz
 []
 0
 
-korog
-[]
-[()]
-[]
-[]
-0
-
 koronáz
 []
 [(), ('[ACC]',), ('[ACC]', '[FAC]'), ('[ACC]', '[FAC]', '[INE]'), ('[ACC]', '[FAC]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[INS]',)]
@@ -30200,13 +29478,6 @@ kotor
 kotorászik
 []
 [(), ('=közt',), ('=után',), ('=után', '[INE]'), ('[INE]',), ('[TER]',)]
-[]
-[]
-0
-
-kotródik
-[]
-[()]
 []
 []
 0
@@ -30503,13 +29774,6 @@ kávézik
 [(), ('[ACC]',), ('[INE]',), ('[INS]',), ('[SUP]',)]
 []
 []
-0
-
-kél
-[]
-[]
-[]
-[('INF',)]
 0
 
 kémkedik
@@ -30874,13 +30138,6 @@ kíván
 [(), ('=[DAT]', '[ACC]'), ('=alatt', '[ACC]'), ('=helyett', '[ACC]'), ('=között', '[ACC]'), ('=közül', '[ACC]'), ('=miatt', '[ACC]'), ('=szemben', '[ACC]'), ('=szerint', '[ACC]'), ('=után', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INS]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[DAT]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[DAT]', '[INE]'), ('[ACC]', '[ALL]', '[INE]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[INS]', '[SUB]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ESS]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ALL]',), ('[DAT]',), ('[DAT]', '[INS]'), ('[DEL]',), ('[ELA]',), ('[ILL]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
 [('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]')]
 [('INF',)]
-0
-
-kíváncsiskodik
-[]
-[()]
-[]
-[]
 0
 
 kívánkozik
@@ -31789,13 +31046,6 @@ lankad
 lanyhul
 []
 [(), ('[INE]',)]
-[]
-[]
-0
-
-lapogat
-[]
-[('[ACC]',)]
 []
 []
 0
@@ -33067,13 +32317,6 @@ le|hűt
 []
 1218
 
-le|igazol
-[]
-[(), ('[ACC]',)]
-[]
-[]
-3389
-
 le|igáz
 []
 [(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]')]
@@ -33269,13 +32512,6 @@ le|kopik
 []
 []
 634
-
-le|kopog
-[]
-[('[ACC]',), ('[ACC]', '[SUP]')]
-[]
-[]
-188
 
 le|kuporodik
 []
@@ -33521,13 +32757,6 @@ le|merül
 []
 []
 988
-
-le|meszel
-[]
-[(), ('[ACC]',)]
-[]
-[]
-156
 
 le|metsz
 []
@@ -33794,13 +33023,6 @@ le|porol
 []
 []
 938
-
-le|pottyant
-[]
-[('[ACC]',)]
-[]
-[]
-35
 
 le|potyog
 []
@@ -34117,20 +33339,6 @@ le|szedet
 []
 169
 
-le|szeg
-[]
-[('[ACC]',)]
-[]
-[]
-201
-
-le|szel
-[]
-[('[ACC]',)]
-[]
-[]
-3668
-
 le|szerel
 [('[ACC]',)]
 [(), ('=miatt',), ('=miatt', '[ACC]'), ('=múlva',), ('=szerint', '[ACC]'), ('=után',), ('=után', '[ACC]'), ('[ABL]',), ('[ACC]',), ('[ACC]', '[DEL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[FOR]',), ('[INE]',), ('[SUB]',), ('[SUP]',)]
@@ -34144,13 +33352,6 @@ le|szerepel
 []
 []
 794
-
-le|szerződik
-[]
-[(), ('[ALL]',)]
-[]
-[]
-864
 
 le|szerződtet
 []
@@ -34214,13 +33415,6 @@ le|számít
 []
 []
 315
-
-le|szárad
-[]
-[()]
-[]
-[]
-148
 
 le|százalékol
 []
@@ -34873,13 +34067,6 @@ le|zúdul
 []
 158
 
-le|zülleszt
-[]
-[('[ACC]',)]
-[]
-[]
-56
-
 le|züllik
 []
 [()]
@@ -35086,20 +34273,6 @@ likvidál
 limitál
 []
 [(), ('[ACC]',), ('[ACC]', '[INE]'), ('[INE]',)]
-[]
-[]
-0
-
-lincsel
-[]
-[('[ACC]',)]
-[]
-[]
-0
-
-linkel
-[]
-[()]
 []
 []
 0
@@ -35436,13 +34609,6 @@ lóbál
 lódul
 []
 [(), ('[ILL]',)]
-[]
-[]
-0
-
-lódít
-[]
-[()]
 []
 []
 0
@@ -36140,13 +35306,6 @@ meg|botlik
 []
 1041
 
-meg|botránkozik
-[]
-[(), ('[ACC]',), ('[SUP]',)]
-[]
-[]
-288
-
 meg|botránkoztat
 []
 [(), ('[ACC]',), ('[ACC]', '[INS]')]
@@ -36440,13 +35599,6 @@ meg|csókol
 [('[ACC]',)]
 []
 4567
-
-meg|csóvál
-[]
-[('[ACC]',)]
-[]
-[]
-424
 
 meg|csömörlik
 []
@@ -36833,13 +35985,6 @@ meg|enyhül
 []
 881
 
-meg|ered
-[]
-[(), ('[INE]',)]
-[]
-[]
-697
-
 meg|ereszkedik
 []
 [(), ('[SUP]',)]
@@ -36888,13 +36033,6 @@ meg|esik
 []
 []
 4370
-
-meg|esket
-[]
-[('[ACC]',)]
-[]
-[]
-191
 
 meg|esküszik
 []
@@ -36951,13 +36089,6 @@ meg|fedd
 []
 []
 339
-
-meg|fegyelmez
-[]
-[('[ACC]',)]
-[]
-[]
-103
 
 meg|fej
 []
@@ -37218,13 +36349,6 @@ meg|formáz
 []
 7
 
-meg|foszt
-[('[ABL]', '[ACC]')]
-[(), ('=miatt', '[ABL]', '[ACC]'), ('=szerint', '[ABL]', '[ACC]'), ('=szerint', '[ABL]', '[ACC]', '[INS]'), ('=után', '[ABL]', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[DAT]', '[INE]'), ('[ABL]', '[ACC]', '[ELA]'), ('[ABL]', '[ACC]', '[ILL]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INS]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ABL]', '[INS]'), ('[ABL]', '[SUB]'), ('[ACC]',), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]')]
-[('[ABL]', '[ACC]')]
-[]
-8580
-
 meg|fullad
 []
 [(), ('[ABL]',), ('[INE]',), ('[INE]', '[SUP]'), ('[INS]',), ('[SUB]',), ('[SUP]',)]
@@ -37301,13 +36425,6 @@ meg|fér
 []
 []
 1757
-
-meg|fésül
-[]
-[('[ACC]',)]
-[]
-[]
-134
 
 meg|fésülködik
 []
@@ -38597,13 +37714,6 @@ meg|köszön
 []
 12478
 
-meg|köszörül
-[]
-[('[ACC]',)]
-[]
-[]
-296
-
 meg|köt
 [('[ACC]',), ('szerződés[ACC]',)]
 [(), ('=belül', '[ACC]'), ('=előtt', '[ACC]'), ('=nélkül', '[ACC]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INS]'), ('=után', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[INS]', '[TER]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]'), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
@@ -38807,13 +37917,6 @@ meg|lágyul
 []
 171
 
-meg|lágyít
-[]
-[('[ACC]',)]
-[]
-[]
-170
-
 meg|lát
 [('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]')]
 [(), ('=alatt', '[ACC]'), ('=előtt', '[ACC]'), ('=felé', '[ACC]'), ('=keresztül', '[ACC]'), ('=közben', '[ACC]'), ('=közt', '[ACC]'), ('=között', '[ACC]'), ('=mellett', '[ACC]'), ('=mögött', '[ACC]'), ('=mögött', '[ACC]', '[INE]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=szerint', '[ACC]'), ('=után', '[ACC]'), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[SUP]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]', '[SUP]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INE]', '[TEM]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ELA]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
@@ -38862,13 +37965,6 @@ meg|lódul
 []
 []
 940
-
-meg|lódít
-[]
-[('[ACC]',)]
-[]
-[]
-180
 
 meg|lóg
 []
@@ -39619,13 +38715,6 @@ meg|puhít
 []
 130
 
-meg|pukkad
-[]
-[(), ('[ABL]',), ('[INE]',)]
-[]
-[]
-140
-
 meg|puszil
 []
 [('[ACC]',)]
@@ -39835,13 +38924,6 @@ meg|ritkít
 []
 []
 211
-
-meg|roggyan
-[]
-[()]
-[]
-[]
-624
 
 meg|rohad
 []
@@ -40185,13 +39267,6 @@ meg|szabadít
 [('[ABL]', '[ACC]')]
 []
 1935
-
-meg|szaggat
-[]
-[('[ACC]',)]
-[]
-[]
-143
 
 meg|szagol
 [('[ACC]',)]
@@ -40795,13 +39870,6 @@ meg|tapasztal
 []
 3309
 
-meg|tapint
-[]
-[('[ACC]',)]
-[]
-[]
-113
-
 meg|tapogat
 [('[ACC]',)]
 [(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]')]
@@ -41340,13 +40408,6 @@ meg|ver
 [('[ACC]',)]
 []
 11690
-
-meg|vereget
-[]
-[('[ACC]',)]
-[]
-[]
-696
 
 meg|veret
 []
@@ -42209,13 +41270,6 @@ mellé|tesz
 []
 220
 
-mellé|áll
-[]
-[()]
-[]
-[]
-170
-
 mellőz
 [('[ACC]',)]
 [(), ('=miatt', '[ACC]'), ('=szerint', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[INE]',)]
@@ -42342,23 +41396,9 @@ mered
 [('INF',)]
 0
 
-mereget
-[]
-[('[ACC]',)]
-[]
-[]
-0
-
 mereng
 []
 [(), ('=fölött',), ('[DEL]',), ('[INE]',), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUP]'), ('[SUP]',)]
-[]
-[]
-0
-
-mereszt
-[]
-[('[ACC]',), ('[ACC]', '[SUB]')]
 []
 []
 0
@@ -42527,13 +41567,6 @@ mocorog
 mocskol
 []
 [(), ('[ACC]',), ('[ACC]', '[DAT]')]
-[]
-[]
-0
-
-mocskolódik
-[]
-[()]
 []
 []
 0
@@ -42788,13 +41821,6 @@ mukkan
 [()]
 []
 []
-0
-
-mulaszt
-[]
-[(), ('[ACC]',), ('[ACC]', '[INE]'), ('[INE]',)]
-[]
-[('INF',)]
 0
 
 mulat
@@ -43504,13 +42530,6 @@ noszogat
 []
 0
 
-nyafog
-[]
-[()]
-[]
-[]
-0
-
 nyaggat
 []
 [(), ('[ACC]',), ('[ACC]', '[INS]'), ('[INS]',)]
@@ -44029,13 +43048,6 @@ oda|ajándékoz
 []
 5
 
-oda|biggyeszt
-[]
-[('[ACC]',)]
-[]
-[]
-79
-
 oda|búj
 []
 [('[ALL]',)]
@@ -44435,13 +43447,6 @@ oda|tart
 []
 390
 
-oda|tartozik
-[]
-[(), ('[ALL]',), ('[INE]',)]
-[]
-[]
-223
-
 oda|telepedik
 []
 [(), ('[ALL]',)]
@@ -44483,20 +43488,6 @@ oda|utaz
 []
 []
 0
-
-oda|utazik
-[]
-[()]
-[]
-[]
-79
-
-oda|vesz
-[]
-[()]
-[]
-[]
-105
 
 oda|veszik
 []
@@ -44946,13 +43937,6 @@ ott|hagy
 [('INF',)]
 10174
 
-ott|marad
-[]
-[]
-[]
-[('INF',)]
-628
-
 pakol
 []
 [(), ('[ACC]',), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]'), ('[ILL]',), ('[SUB]',)]
@@ -45117,13 +44101,6 @@ pattog
 pazarol
 []
 [(), ('[ACC]',), ('[ACC]', '[SUB]'), ('[INS]',), ('[SUB]',)]
-[]
-[]
-0
-
-pendül
-[]
-[()]
 []
 []
 0
@@ -47004,13 +45981,6 @@ ráncigál
 []
 0
 
-ráncol
-[]
-[(), ('[ACC]',)]
-[]
-[]
-0
-
 rándul
 []
 [(), ('[ACC]',), ('[ILL]',), ('[ILL]', '[INE]'), ('[SUB]',)]
@@ -47021,13 +45991,6 @@ rándul
 rándít
 []
 [('[ACC]',), ('[SUP]',)]
-[]
-[]
-0
-
-ráng
-[]
-[(), ('[INE]',)]
 []
 []
 0
@@ -48789,13 +47752,6 @@ serceg
 []
 0
 
-sereglik
-[]
-[()]
-[]
-[]
-0
-
 serken
 []
 [(), ('[ACC]',), ('[ACC]', '[SUB]'), ('[SUB]',), ('[SUP]',)]
@@ -49577,13 +48533,6 @@ szaporodik
 [()]
 [(), ('=alatt',), ('=között',), ('=által',), ('[ABL]',), ('[ACC]',), ('[ADE]',), ('[DEL]',), ('[DEL]', '[SUB]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INS]',), ('[SUB]',), ('[SUP]',)]
 [()]
-[]
-0
-
-szaporáz
-[]
-[('[ACC]',)]
-[]
 []
 0
 
@@ -50448,13 +49397,6 @@ szorítkozik
 []
 0
 
-szottyan
-[]
-[()]
-[]
-[('INF',)]
-0
-
 szponzorál
 []
 [(), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]')]
@@ -50656,13 +49598,6 @@ szán
 [(), ('=[DAT]', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[DAT]', '[INE]'), ('=szerint', '[ACC]', '[SUB]'), ('[ACC]',), ('[ACC]', '[ADE]', '[DAT]'), ('[ACC]', '[ADE]', '[SUB]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[ESS]'), ('[ACC]', '[DAT]', '[FOR]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[SUB]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]', '[SUB]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ESS]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[SUB]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUB]', '[TER]'), ('[ACC]', '[SUP]'), ('[DAT]',), ('[INE]',), ('[INE]', '[SUB]'), ('[SUB]',), ('[SUP]',)]
 [('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[SUB]')]
 [('INF',)]
-0
-
-szánakozik
-[]
-[(), ('[SUP]',)]
-[]
-[]
 0
 
 szándékol
@@ -51022,13 +49957,6 @@ szét|pattan
 []
 155
 
-szét|rebben
-[]
-[()]
-[]
-[]
-160
-
 szét|reped
 []
 [(), ('[SUP]',)]
@@ -51342,13 +50270,6 @@ szível
 [(), ('[ACC]',)]
 []
 []
-0
-
-szíveskedik
-[]
-[]
-[]
-[('INF',)]
 0
 
 szívlel
@@ -51918,13 +50839,6 @@ sürgölődik
 []
 0
 
-sürög
-[]
-[(), ('=körül',), ('[INE]',)]
-[]
-[]
-0
-
 sürög-forog
 []
 [(), ('=körül',), ('[INE]',), ('[INS]',)]
@@ -52089,13 +51003,6 @@ taktikázik
 tallózik
 []
 [(), ('=között',), ('[ELA]',), ('[INE]',)]
-[]
-[]
-0
-
-talpal
-[]
-[()]
 []
 []
 0
@@ -52526,13 +51433,6 @@ tele|rak
 []
 []
 338
-
-tele|szív
-[]
-[('[ACC]', '[INS]')]
-[]
-[]
-173
 
 tele|szór
 []
@@ -53304,13 +52204,6 @@ totyog
 []
 0
 
-tova|száll
-[]
-[()]
-[]
-[]
-190
-
 tova|tűnik
 []
 [(), ('[INS]',)]
@@ -53465,13 +52358,6 @@ tovább|keres
 []
 19
 
-tovább|képez
-[]
-[('[ACC]',), ('[ACC]', '[INE]')]
-[]
-[]
-169
-
 tovább|küld
 []
 [(), ('[ACC]',), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]')]
@@ -53499,13 +52385,6 @@ tovább|megy
 [()]
 [('INF',)]
 3737
-
-tovább|mond
-[]
-[('[ACC]',)]
-[]
-[]
-36
 
 tovább|működik
 []
@@ -53604,13 +52483,6 @@ tovább|utaz
 []
 []
 0
-
-tovább|utazik
-[]
-[('[SUB]',)]
-[]
-[]
-266
 
 tovább|vezet
 []
@@ -53713,13 +52585,6 @@ trombitál
 trágyáz
 []
 [(), ('[ACC]',)]
-[]
-[]
-0
-
-trécsel
-[]
-[()]
 []
 []
 0
@@ -54151,13 +53016,6 @@ térít
 []
 0
 
-térül-fordul
-[]
-[()]
-[]
-[]
-0
-
 tételez
 []
 [('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[FOR]')]
@@ -54231,13 +53089,6 @@ tölt
 töltöget
 []
 [(), ('[ACC]',), ('[ACC]', '[ILL]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[DAT]',)]
-[]
-[]
-0
-
-töm
-[]
-[(), ('[ACC]',), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INS]'), ('[ILL]',), ('[INS]',)]
 []
 []
 0
@@ -54452,13 +53303,6 @@ túl|hangsúlyoz
 []
 102
 
-túl|harsog
-[]
-[('[ACC]',)]
-[]
-[]
-147
-
 túl|jegyez
 []
 [('[ACC]',)]
@@ -54472,13 +53316,6 @@ túl|jut
 [('[SUP]',)]
 []
 3062
-
-túl|jár
-[]
-[('[SUP]',)]
-[]
-[]
-535
 
 túl|játszik
 []
@@ -54662,13 +53499,6 @@ túrázik
 []
 0
 
-tükröz
-[('[ACC]',)]
-[]
-[]
-[]
-0
-
 tükrözik
 []
 [(), ('=között', '[ACC]', '[INE]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[INE]'), ('[ACC]',), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]'), ('[INE]',)]
@@ -54721,13 +53551,6 @@ tüntet
 türelmetlenkedik
 []
 [(), ('[SUP]',)]
-[]
-[]
-0
-
-türtőztet
-[]
-[('[ACC]',)]
 []
 []
 0
@@ -54882,13 +53705,6 @@ unatkozik
 undorodik
 []
 [(), ('[ABL]',)]
-[]
-[]
-0
-
-undorít
-[]
-[()]
 []
 []
 0
@@ -56496,13 +55312,6 @@ vissza|pattan
 []
 524
 
-vissza|perel
-[]
-[('[ABL]', '[ACC]'), ('[ACC]',)]
-[]
-[]
-149
-
 vissza|pillant
 []
 [(), ('[ILL]',), ('[INE]', '[SUB]'), ('[INS]', '[SUB]'), ('[SUB]',)]
@@ -56530,13 +55339,6 @@ vissza|rendel
 []
 []
 666
-
-vissza|repül
-[]
-[(), ('[ILL]',)]
-[]
-[]
-267
 
 vissza|retten
 []
@@ -56671,13 +55473,6 @@ vissza|sír
 []
 664
 
-vissza|süllyed
-[]
-[('[ILL]',), ('[SUB]',)]
-[]
-[]
-255
-
 vissza|tart
 [('[ACC]',)]
 [(), ('=szerint', '[ABL]', '[ACC]'), ('=szerint', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INS]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[TER]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]'), ('[DAT]',), ('[INE]',), ('[INS]',), ('[TER]',)]
@@ -56705,13 +55500,6 @@ vissza|tesz
 [('[ACC]',)]
 [('INF',)]
 1590
-
-vissza|tol
-[]
-[('[ACC]',), ('[ACC]', '[ILL]'), ('[ACC]', '[SUB]')]
-[]
-[]
-258
 
 vissza|toloncol
 []
@@ -57171,13 +55959,6 @@ vizsgázik
 vizsgáztat
 []
 [(), ('[ACC]',), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[SUP]'), ('[ELA]',), ('[INE]',), ('[SUP]',)]
-[]
-[]
-0
-
-vizslat
-[]
-[('[ACC]',)]
 []
 []
 0
@@ -57700,13 +56481,6 @@ végig|játszik
 []
 1514
 
-végig|jön
-[]
-[('[SUP]',)]
-[]
-[]
-52
-
 végig|kutat
 []
 [('[ACC]',)]
@@ -58172,13 +56946,6 @@ zongorázik
 zsarol
 []
 [(), ('[ACC]',), ('[ACC]', '[INS]'), ('[INS]',)]
-[]
-[]
-0
-
-zsibbad
-[]
-[()]
 []
 []
 0
@@ -58806,13 +57573,6 @@ zümmög
 []
 0
 
-átalkodik
-[]
-[]
-[]
-[('INF',)]
-0
-
 átall
 []
 []
@@ -58890,13 +57650,6 @@ zümmög
 []
 184
 
-át|bukik
-[]
-[('[SUP]',)]
-[]
-[]
-184
-
 át|bámul
 []
 [('[SUP]',)]
@@ -58966,13 +57719,6 @@ zümmög
 []
 []
 360
-
-át|dolgoz
-[('[ACC]',)]
-[]
-[]
-[]
-15
 
 át|dolgozik
 []
@@ -59120,13 +57866,6 @@ zümmög
 [('[ACC]',)]
 []
 3602
-
-át|gyalogol
-[]
-[('[SUP]',)]
-[]
-[]
-132
 
 át|gyúr
 []
@@ -59884,13 +58623,6 @@ zümmög
 []
 953
 
-át|szellemül
-[]
-[()]
-[]
-[]
-128
-
 át|szerkeszt
 []
 [('[ACC]',)]
@@ -60052,13 +58784,6 @@ zümmög
 []
 802
 
-át|terel
-[]
-[('[ACC]', '[DEL]', '[SUB]'), ('[ACC]', '[SUB]')]
-[]
-[]
-326
-
 át|terjed
 []
 [(), ('[DAT]', '[SUB]'), ('[DEL]', '[SUB]'), ('[ILL]',), ('[INE]', '[SUB]'), ('[INS]', '[SUB]'), ('[SUB]',), ('[SUB]', '[SUP]')]
@@ -60171,13 +58896,6 @@ zümmög
 []
 0
 
-át|vergődik
-[]
-[(), ('[SUP]',)]
-[]
-[]
-184
-
 át|vesz
 [('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[SUP]'), ('hely[PSe3][ACC]',)]
 [(), ('=alatt', '[ACC]'), ('=belül', '[ACC]'), ('=előtt', '[ACC]'), ('=előtt', '[ACC]', '[INS]'), ('=fölött', '[ACC]'), ('=helyett', '[ACC]'), ('=helyett', '[ACC]', '[INE]'), ('=között', '[ABL]', '[ACC]'), ('=között', '[ACC]'), ('=közül', '[ACC]'), ('=mellett', '[ACC]'), ('=miatt', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=nélkül', '[ACC]', '[ELA]'), ('=szerint', '[ABL]', '[ACC]'), ('=szerint', '[ABL]', '[ACC]', '[INE]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INS]'), ('=szerint', '[ACC]', '[SUB]'), ('=szerint', '[ACC]', '[SUP]'), ('=után', '[ACC]'), ('=után', '[ACC]', '[DAT]'), ('=után', '[ACC]', '[INE]'), ('=után', '[ACC]', '[INE]', '[SUP]'), ('=után', '[ACC]', '[INS]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[ALL]'), ('[ABL]', '[ACC]', '[CAU]'), ('[ABL]', '[ACC]', '[CAU]', '[SUP]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[DAT]', '[INE]'), ('[ABL]', '[ACC]', '[DAT]', '[INS]'), ('[ABL]', '[ACC]', '[ELA]'), ('[ABL]', '[ACC]', '[FOR]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INE]', '[INS]'), ('[ABL]', '[ACC]', '[INE]', '[SUB]'), ('[ABL]', '[ACC]', '[INE]', '[SUP]'), ('[ABL]', '[ACC]', '[INE]', '[SUP]', '[TER]'), ('[ABL]', '[ACC]', '[INS]'), ('[ABL]', '[ACC]', '[INS]', '[SUP]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]', '[SUB]', '[SUP]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ABL]', '[ACC]', '[SUP]', '[TER]'), ('[ABL]', '[ACC]', '[TEM]'), ('[ABL]', '[INS]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[SUP]'), ('[ACC]', '[CAU]'), ('[ACC]', '[CAU]', '[DAT]'), ('[ACC]', '[CAU]', '[INE]'), ('[ACC]', '[CAU]', '[INE]', '[SUP]'), ('[ACC]', '[CAU]', '[SUP]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[SUB]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[ILL]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[FOR]', '[SUP]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INE]', '[TEM]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUB]', '[TEM]'), ('[ACC]', '[SUP]'), ('[ACC]', '[SUP]', '[TEM]'), ('[ACC]', '[SUP]', '[TER]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[DAT]',), ('[ELA]',), ('[ELA]', '[INE]'), ('[ILL]',), ('[INE]',), ('[INE]', '[SUP]'), ('[INS]',), ('[SUB]',), ('[SUP]',)]
@@ -60205,13 +58923,6 @@ zümmög
 []
 []
 193
-
-át|villan
-[]
-[(), ('[SUP]',)]
-[]
-[]
-237
 
 át|világít
 [('[ACC]',)]
@@ -60366,13 +59077,6 @@ zümmög
 [('[ACC]',)]
 []
 891
-
-át|értelmez
-[]
-[('[ACC]',), ('[ACC]', '[INE]')]
-[]
-[]
-194
 
 át|értékel
 []
@@ -60906,13 +59610,6 @@ zümmög
 []
 0
 
-értetlenkedik
-[]
-[()]
-[]
-[]
-0
-
 értetődik
 []
 [()]
@@ -60980,13 +59677,6 @@ zümmög
 [('[SUP]',)]
 [(), ('=mögött',), ('[ADE]',), ('[DAT]',), ('[DAT]', '[INE]'), ('[DAT]', '[SUP]'), ('[DEL]',), ('[ELA]',), ('[ELA]', '[SUP]'), ('[INE]',), ('[INE]', '[SUP]'), ('[SUB]',), ('[SUP]',)]
 [('[SUP]',)]
-[]
-0
-
-ésszerűsít
-[]
-[('[ACC]',)]
-[]
 []
 0
 
@@ -61319,13 +60009,6 @@ zümmög
 []
 0
 
-öregbít
-[]
-[('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]')]
-[]
-[]
-0
-
 öregedik
 []
 [(), ('=alatt', '[ACC]'), ('[ACC]',), ('[FAC]',), ('[INE]',), ('[INS]',), ('[SUB]',)]
@@ -61536,13 +60219,6 @@ zümmög
 []
 554
 
-össze|dug
-[]
-[('[ACC]',)]
-[]
-[]
-377
-
 össze|dől
 []
 [(), ('=alatt',), ('=következtében',), ('[ABL]',), ('[FOR]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
@@ -61563,13 +60239,6 @@ zümmög
 []
 []
 2264
-
-össze|esküszik
-[]
-[('[SUB]',)]
-[]
-[]
-304
 
 össze|eszkábál
 []
@@ -61605,13 +60274,6 @@ zümmög
 []
 []
 549
-
-össze|fon
-[]
-[('[ACC]',), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]')]
-[]
-[]
-312
 
 össze|fonódik
 []
@@ -61921,13 +60583,6 @@ zümmög
 []
 274
 
-össze|költözik
-[]
-[(), ('[INS]',)]
-[]
-[]
-510
-
 össze|köt
 [('[ACC]',), ('[ACC]', '[INS]')]
 [(), ('=keresztül', '[ACC]', '[INS]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[INS]'), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[INS]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[INS]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INS]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[INS]', '[TEM]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[INS]',), ('[SUP]',)]
@@ -62187,13 +60842,6 @@ zümmög
 []
 294
 
-össze|szorul
-[]
-[(), ('[INE]',), ('[SUB]',)]
-[]
-[]
-555
-
 össze|szorít
 []
 [(), ('[ACC]',), ('[ACC]', '[INS]')]
@@ -62214,13 +60862,6 @@ zümmög
 []
 []
 767
-
-össze|szólalkozik
-[]
-[(), ('[INS]',)]
-[]
-[]
-570
 
 össze|szűkül
 []
@@ -62570,13 +61211,6 @@ zümmög
 [(), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[DAT]', '[SUB]'), ('[INE]',), ('[INE]', '[SUB]'), ('[INS]',), ('[INS]', '[SUB]'), ('[SUB]',), ('[SUB]', '[SUP]')]
 [('[ACC]',), ('[ACC]', '[SUB]'), ('[SUB]',)]
 [('INF',)]
-0
-
-ötlik
-[]
-[('[ILL]',)]
-[]
-[]
 0
 
 ötvöz

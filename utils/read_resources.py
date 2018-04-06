@@ -4,11 +4,13 @@
 import sys
 import os
 import pickle
+import gzip
 
 from collections import defaultdict, Counter
 from concurrent.futures import ProcessPoolExecutor, wait
 
 from utils.correction_tables import is_verb_wrong, fix_verb, correct_postp
+from MetaMorphoHuEn.mmo_to_dict import process_mmo
 
 
 def get_freq_w_ind_for_frame(frames, frame):
@@ -28,7 +30,7 @@ def smart_append(verbs_dict, verb_elem, freqency, frame):
     verbs_dict[verb_elem].append([freqency, frame])
 
 
-def ige_szotar_process():
+def verb_dict_process():
     found_wrong_verbs = set()
     found_verbs = defaultdict(list)
     sumfreq = 0
@@ -196,34 +198,84 @@ def kagi_inflist_process():
     return sumfreq, found_verbs
 
 
+def mmo_process():
+    verb_dict = process_mmo()
+    verbs = defaultdict(list)
+    for verb, frames in verb_dict.items():
+        for mmoid, frame in frames.items():
+            fr = []
+            opt = []
+            for arg, feats in frame[0].items():  # TODO: opt=YES feature...
+                if arg == 'TV':
+                    continue
+                lex, case, postp = '', '', ''
+                if 'lex' in feats:
+                    lex = feats['lex'].strip('"')
+                if ':lex' in feats:
+                    lex = feats[':lex'].strip('"')
+                if 'postp' in feats:
+                    postp = '=' + feats['postp']
+                if 'case' in feats:
+                    case = '[' + feats['case'] + ']'
+                new_arg = lex+case+postp
+                if len(new_arg) == 0:
+                    if arg == 'SUBJ':
+                        continue
+                    new_arg = '@'
+                new_feats = {k: v for k, v in feats.items() if '-' != k and '-' != v}
+                new_feats['arg_name'] = arg
+                if ':opt' in new_feats:
+                    opt.append((new_feats, new_arg))
+                else:
+                    opt.append((new_feats, new_arg))
+                    fr.append((new_feats, new_arg))
+            fr.sort(key=lambda x: x[1])
+            meta = {'mmoid': mmoid, 'EN.VP': frame[1]}
+            verbs[verb].append((meta, tuple(fr)))
+            if len(opt) > 0:
+                opt.sort(key=lambda x: x[1])
+                verbs[verb].append((meta, tuple(opt)))
+    return len(verb_dict), verbs
+
+
+def dummy_process():
+    return 0, set(), {}
+
+
 def read_resources_parallel(pickled_name, overwrite=False):
-    with ProcessPoolExecutor(max_workers=5) as executor:
-        create_ige_szotar = executor.submit(ige_szotar_process)
+    with ProcessPoolExecutor(max_workers=6) as executor:
+        create_verb_dict = executor.submit(verb_dict_process)
         create_isz = executor.submit(isz_process)
         create_tade = executor.submit(tade_process)
         create_kagi_verbs = executor.submit(kagi_verbs_process)
         create_kagi_inflist = executor.submit(kagi_inflist_process)
+        create_mmo = executor.submit(mmo_process)
 
-    wait([create_ige_szotar, create_isz, create_kagi_verbs, create_kagi_inflist])
+    wait([create_verb_dict, create_isz, create_kagi_verbs, create_kagi_inflist, create_mmo])
 
-    verb_dict_sumfreq, verb_dict_wrong_verbs, verb_dict_verbs = create_ige_szotar.result()
+    verb_dict_sumfreq, verb_dict_wrong_verbs, verb_dict_verbs = create_verb_dict.result()
     isz_sumfreq, isz_wrong_verbs, isz_verbs = create_isz.result()
     tade_sumfreq, tade_wrong_verbs, tade_verbs = create_tade.result()
     kagi_sumfreq, kagi_wrong_verbs, kagi_verbs = create_kagi_verbs.result()
     inflist_sumfreq, inflist_verbs = create_kagi_inflist.result()
-    all_ige = set(verb_dict_verbs.keys()) | set(isz_verbs.keys()) | set(tade_verbs.keys()) | set(inflist_verbs.keys()) \
-        | set(kagi_verbs.keys())
+    mmo_sumfreq, mmo_verbs = create_mmo.result()
 
-    print('No. of Verbs (ige_szotar): ', len(verb_dict_verbs), verb_dict_sumfreq, len(verb_dict_wrong_verbs),
+    all_ige = set(verb_dict_verbs.keys()) | set(isz_verbs.keys()) | set(tade_verbs.keys()) | set(inflist_verbs.keys()) \
+        | set(kagi_verbs.keys()) | set(mmo_verbs.keys())
+
+    print('No. of Verbs (verb_dict): ', len(verb_dict_verbs), verb_dict_sumfreq, len(verb_dict_wrong_verbs),
           file=sys.stderr)
     print('No. of Verbs (isz): ', len(isz_verbs), isz_sumfreq, len(isz_wrong_verbs), file=sys.stderr)
     print('No. of Verbs (Tadé): ', len(tade_verbs), tade_sumfreq, len(tade_wrong_verbs), file=sys.stderr)
     print('No. of Verbs (kagi_verbal_complex): ', len(kagi_verbs), kagi_sumfreq, len(kagi_wrong_verbs), file=sys.stderr)
     print('No. of Verbs (inflist): ', len(inflist_verbs), inflist_sumfreq, file=sys.stderr)
+    print('No. of Verbs (MetaMorpho): ', len(mmo_verbs), mmo_sumfreq, file=sys.stderr)
     print('No. of Verbs (total): ', len(all_ige), file=sys.stderr)
 
     if overwrite or not os.path.exists(pickled_name):
-        pickle.dump((verb_dict_verbs, isz_verbs, tade_verbs, kagi_verbs, inflist_verbs), open(pickled_name, 'wb'))
+        pickle.dump(((verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq),
+                     (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige),
+                    gzip.open(pickled_name, 'wb'))
 
     return (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
-        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), all_ige
+        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige
