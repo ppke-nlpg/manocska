@@ -214,9 +214,11 @@ def mmo_process():
                 if ':lex' in feats:
                     lex = feats[':lex'].strip('"')
                 if 'postp' in feats:
-                    postp = '=' + feats['postp']
+                    postp = '=' + feats['postp'].strip('"')
                 if 'case' in feats:
                     case = '[' + feats['case'] + ']'
+                elif ':advtype' in feats:
+                    case = '[' + feats[':advtype'] + ']'
                 new_arg = lex+case+postp
                 if len(new_arg) == 0:
                     if arg == 'SUBJ':

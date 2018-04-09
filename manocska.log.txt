@@ -1,3 +1,12 @@
+Dropped: "gyökér, lomb és száraz ág 
+Dropped: "tömör, világos és egyszerű szöveget szeretnénk, és már fel is kértünk néhány jogi szakértőt egy kiegészítő jegyzőkönyv kidolgozására, mely a szubszidiaritásról, és az arányosságról szóló jegyzőkönyvek mintáját követné"-tájék
+No. of Verbs (verb_dict):  2185 6117057 47
+No. of Verbs (isz):  9589 18210335 477
+No. of Verbs (Tadé):  27159 8865936 4489
+No. of Verbs (kagi_verbal_complex):  27077 13713255 4
+No. of Verbs (inflist):  1506 8465995
+No. of Verbs (MetaMorpho):  13772 13772
+No. of Verbs (total):  43708
 abba|hagy
 [('[ACC]',)]
 [(), ('=előtt', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=után',), ('=után', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TER]',)]
@@ -141,6 +150,13 @@ aggaszt
 aggat
 []
 [('[ACC]',), ('[ACC]', '[ILL]'), ('[ACC]', '[SUB]'), ('[SUB]',)]
+[]
+[]
+0
+
+aggodalmaskodik
+[]
+[(), ('=miatt',)]
 []
 []
 0
@@ -4975,6 +4991,13 @@ be|áztat
 []
 67
 
+be|ékelődik
+[]
+[('[ILL]',)]
+[]
+[]
+250
+
 be|épít
 [('[ACC]',), ('[ACC]', '[ILL]')]
 [(), ('=közé', '[ACC]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[ILL]'), ('=szerint', '[ACC]', '[ILL]', '[SUB]'), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[ILL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[ILL]'), ('[ACC]', '[FOR]', '[ILL]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[INE]', '[INS]'), ('[ACC]', '[ILL]', '[INE]', '[SUP]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[ILL]', '[SUB]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[ILL]', '[TEM]'), ('[ACC]', '[ILL]', '[TER]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INS]')]
@@ -5969,6 +5992,13 @@ bújtat
 []
 0
 
+búslakodik
+[]
+[(), ('[SUP]',)]
+[]
+[]
+0
+
 búsul
 []
 [(), ('=miatt',), ('[ACC]',), ('[INE]',), ('[SUP]',)]
@@ -6182,6 +6212,13 @@ cirógat
 citál
 []
 [(), ('=elé',), ('=elé', '[ACC]'), ('[ACC]',), ('[ACC]', '[ELA]'), ('[ACC]', '[SUB]'), ('[ELA]',)]
+[]
+[]
+0
+
+civakodik
+[]
+[(), ('[INE]',), ('[INS]',), ('[SUP]',)]
 []
 []
 0
@@ -11449,6 +11486,13 @@ el|szédül
 []
 []
 331
+
+el|szégyell
+[]
+[('[ACC]',)]
+[]
+[]
+642
 
 el|szív
 []
@@ -24015,6 +24059,13 @@ kapál
 []
 0
 
+kapálózik
+[]
+[(), ('[INE]',)]
+[]
+[]
+0
+
 karambolozik
 []
 [(), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUP]'), ('[INS]',), ('[SUP]',)]
@@ -25449,6 +25500,13 @@ ki|farag
 []
 []
 239
+
+ki|fecseg
+[]
+[('[ACC]',)]
+[]
+[]
+271
 
 ki|fej
 []
@@ -32954,13 +33012,6 @@ le|oszt
 []
 219
 
-le|pakol
-[]
-[(), ('[ACC]',), ('[ACC]', '[DEL]')]
-[]
-[]
-213
-
 le|paktál
 []
 [()]
@@ -35305,6 +35356,13 @@ meg|botlik
 []
 []
 1041
+
+meg|botránkozik
+[]
+[(), ('[ACC]',), ('[SUP]',)]
+[]
+[]
+288
 
 meg|botránkoztat
 []
@@ -38924,6 +38982,13 @@ meg|ritkít
 []
 []
 211
+
+meg|roggyan
+[]
+[()]
+[]
+[]
+624
 
 meg|rohad
 []
@@ -55963,6 +56028,13 @@ vizsgáztat
 []
 0
 
+vizslat
+[]
+[('[ACC]',)]
+[]
+[]
+0
+
 voksol
 [('[SUB]',)]
 [(), ('=ellen',), ('=közül',), ('=mellett',), ('=mellett', '[ACC]'), ('=mellett', '[INE]'), ('=mellett', '[INE]', '[SUP]'), ('=mellett', '[INS]'), ('=mellett', '[SUP]'), ('=szerint', '[SUB]'), ('[ACC]',), ('[DEL]',), ('[ELA]', '[SUB]'), ('[INE]',), ('[INE]', '[SUB]'), ('[INE]', '[SUB]', '[SUP]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[TEM]',)]
@@ -59077,6 +59149,13 @@ zümmög
 [('[ACC]',)]
 []
 891
+
+át|értelmez
+[]
+[('[ACC]',), ('[ACC]', '[INE]')]
+[]
+[]
+194
 
 át|értékel
 []

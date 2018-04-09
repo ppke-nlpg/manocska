@@ -38,7 +38,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group()
 
-    group.add_argument('--XML', help='Generate XML format', action='store_false', default=False)
+    group.add_argument('--XML', help='Generate XML format', action='store_true', default=False)
     group.add_argument('--TSV', help='Generate TSV format', action='store_true', default=False)
     group.add_argument('--gen-patterns', help='Generate patterns', action='store_true', default=False)
 
@@ -51,7 +51,7 @@ if __name__ == '__main__':
 
 
 """
-time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k9,9nr -k1,2 | \
+time (python3 merge.py --TSV 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k9,9nr -k1,2 | \
 tee manocska.sorted.txt | grep -v $'[^\t ][=[]' > manocska.sorted.nolex.txt) &&
 cat manocska.sorted.txt | grep $'[^\t ][=[]' > manocska.sorted.lex.txt
 """
