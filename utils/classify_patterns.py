@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8, vim: expandtab:ts=4 -*-
 
-import pickle
+import os
+import sys
 import gzip
+import pickle
 
 from collections import defaultdict, Counter
 
@@ -71,10 +73,9 @@ def print_stuff(arr, filename):
 
 
 def gen_patterns(pickled_name, w_verb_dict=True, w_isz=True, w_tade=True, w_inflist=True, w_mmo=True):
-    c = Counter()
-    crev = defaultdict(str)
-    c2 = Counter()
-    # d = defaultdict(list)
+    frame_group_patt_to_id = Counter()
+    id_to_frame_group_patt = defaultdict(str)
+    frame_group_patt_count = Counter()
 
     prev_patt = defaultdict(Counter)
     patt_prev = defaultdict(Counter)
@@ -86,10 +87,10 @@ def gen_patterns(pickled_name, w_verb_dict=True, w_isz=True, w_tade=True, w_infl
     patt_prev_to_verb = defaultdict(Counter)
 
     (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
-    (inflist_verbs, inflist_sumfreq), _, (mmo_verbs, mmo_sumfreq), all_ige \
+        (inflist_verbs, inflist_sumfreq), _, (mmo_verbs, mmo_sumfreq), all_ige \
         = pickle.load(gzip.open(pickled_name))
 
-    all_ige = {}
+    all_ige = set()
 
     if w_verb_dict:
         all_ige |= set(verb_dict_verbs.keys())
@@ -115,127 +116,65 @@ def gen_patterns(pickled_name, w_verb_dict=True, w_isz=True, w_tade=True, w_infl
         prev_by_ige[verb].add(prev)
 
     for verb, prevs in sorted(prev_by_ige.items()):
-        print(verb)
+        print(verb, file=sys.stderr)
         for prev in sorted(prevs):
             if prev != 'X':
                 v = prev + '|' + verb
             else:
                 v = verb
-            print('', prev, sep='\t')
+            print('', prev, sep='\t', file=sys.stderr)
 
-            szotar_frames = tuple([frame[1] for frame in verb_dict_verbs[v]])
-            isz_frames = tuple([frame[1] for frame in isz_verbs[v]])
-            tade_frames = tuple([frame[1] for frame in tade_verbs[v]])
-            inflist_frames = tuple([frame[1] for frame in inflist_verbs[v]])
-            all_frame = set(szotar_frames) | set(isz_frames) | set(inflist_frames)
+            all_frame = set()
+            if w_verb_dict:
+                verb_dict_frames = tuple([frame[1] for frame in verb_dict_verbs[v]])
+                all_frame |= set(verb_dict_frames)
+
+            if w_isz:
+                isz_frames = tuple([frame[1] for frame in isz_verbs[v]])
+                all_frame |= set(isz_frames)
+
+            if w_inflist:
+                inflist_frames = tuple([frame[1] for frame in inflist_verbs[v]])
+                all_frame |= set(inflist_frames)
+
             if w_tade:
+                tade_frames = tuple([frame[1] for frame in tade_verbs[v]])
                 all_frame |= set(tade_frames)
+
+            if w_mmo:
+                mmo_frames = tuple(tuple(arg[1] for arg in frame[1]) for frame in mmo_verbs[verb])
+                all_frame |= set(mmo_frames)
+
             frames = sorted(preprocess_frames(all_frame))
             frames_str = str(frames)
-            if frames_str not in c:
-                crev[len(c)] = frames_str
-                c[frames_str] = len(c)
-                c2[frames_str] += 1
-                # d[tuple(frames)] = []
+            if frames_str not in frame_group_patt_to_id:
+                id_to_frame_group_patt[len(frame_group_patt_to_id)] = frames_str
+                frame_group_patt_to_id[frames_str] = len(frame_group_patt_to_id)
+                frame_group_patt_count[frames_str] += 1
 
+            # Without verb
             prev_patt[prev][frames_str] += 1
             patt_prev[frames_str][prev] += 1
 
+            # Without PreV
             verb_patt[verb][frames_str] += 1
             patt_verb[frames_str][verb] += 1
 
+            # Verb to prev and frame_group and vice versa
             verb_to_patt_prev[verb][(prev, frames_str)] += 1
             patt_prev_to_verb[(prev, frames_str)][verb] += 1
 
-            # for frame in frames:
-            #     print('', frame, sep='\t\t')
+            for frame in frames:
+                print('', frame, sep='\t\t', file=sys.stderr)
 
     # Print results
-    if w_tade:
-        print_stuff(prev_patt, 'prev_patt_w_tádé.txt')
-        print_stuff(patt_prev, 'patt_prev_w_tádé.txt')
+    if not os.path.exists('patterns'):
+        os.mkdir('patterns')
+    print_stuff(prev_patt, os.path.join('patterns', 'prev_patt.txt'))
+    print_stuff(patt_prev, os.path.join('patterns', 'patt_prev.txt'))
 
-        print_stuff(verb_patt, 'verb_patt_w_tádé.txt')
-        print_stuff(patt_verb, 'patt_verb_w_tádé.txt')
+    print_stuff(verb_patt, os.path.join('patterns', 'verb_patt.txt'))
+    print_stuff(patt_verb, os.path.join('patterns', 'patt_verb.txt'))
 
-        print_stuff(verb_to_patt_prev, 'verb_to_patt_prev_w_tádé.txt')
-        print_stuff(patt_prev_to_verb, 'patt_prev_to_verb_w_tádé.txt')
-    else:
-
-        print_stuff(prev_patt, 'prev_patt.txt')
-        print_stuff(patt_prev, 'patt_prev.txt')
-
-        print_stuff(verb_patt, 'verb_patt.txt')
-        print_stuff(patt_verb, 'patt_verb.txt')
-
-        print_stuff(verb_to_patt_prev, 'verb_to_patt_prev.txt')
-        print_stuff(patt_prev_to_verb, 'patt_prev_to_verb.txt')
-
-# Preliminary (alpha code) distance calculation between patterns
-
-
-"""
-print("ennyi", len(c), '\n\n')
-common = c2.most_common(10)
-a = '\n'.join(str(i) for i in common)
-print(a)
-
-pickle.dump(d, open('mintak.pcl', 'wb'))
-"""
-"""
-mintak = pickle.load(open('mintak.pcl', 'rb'))
-mintak_keys = set(mintak.keys())
-
-import distance
-max_dist = 5
-NOT_FOUND = 3
-maximum_dist = 3
-done = set()
-not_done = mintak_keys.copy()
-print(len(mintak_keys), file=sys.stderr)
-for m1 in sorted(mintak_keys):
-    not_done -= {m1}
-    for j, m2 in enumerate(not_done):
-        print('keys:', j,'/',len(not_done), file=sys.stderr)
-        if m1 == m2:
-            continue
-        if len(m1) < len(m2):
-            elso = m1
-            masodik = m2
-        else:
-            elso = m2
-            masodik = m1
-        dist = 0
-        occupied = set()
-        for i, elso_frame in enumerate(elso):
-            #print(i,'/', len(elso), file=sys.stderr)
-            maradek = set(masodik) - occupied
-            if len(maradek) > 0:
-                dk = set()
-                for masodik_frame in maradek:
-                    dis = distance.levenshtein(elso_frame, masodik_frame, max_dist=maximum_dist)
-                    if dis >= 0:
-                        dk.add((dis, masodik_frame))
-                if len(dk) > 0:
-                    cost, nyertes = min(dk, key=lambda x: x[0])
-                    occupied.add(nyertes)
-                    dist += cost
-                else:
-                    dist += NOT_FOUND
-            else:
-                dist += NOT_FOUND
-            if dist > max_dist:
-                break
-        if dist <= max_dist:
-            mintak[m1].append(m2)
-            mintak[m2].append(m1)
-    done.add(m1)
-    #if len(done) %  == 0:
-    print(len(done), file=sys.stderr)
-
-pickle.dump(d, open('hasonlo_mintak.pcl', 'wb'))
-for k, v in mintak.items():
-    if len(v) > 0:
-        print(k, v)
-
-"""
+    print_stuff(verb_to_patt_prev, os.path.join('patterns', 'verb_to_patt_prev.txt'))
+    print_stuff(patt_prev_to_verb, os.path.join('patterns', 'patt_prev_to_verb.txt'))

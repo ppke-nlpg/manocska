@@ -113,8 +113,8 @@ def prettify(elem):
 
 
 def print_entry_xml_fun(verb_index):
-    inf_node_index = dict()
-    no_inf_node_index = dict()
+    inf_node_index = {}
+    no_inf_node_index = {}
 
     def print_entry_xml(*args):
         verb, act_frame, (verb_dict_freq, verb_dict_sumfreq), (isz_freq, isz_sumfreq), (tade_freq, tade_sumfreq),\
@@ -196,7 +196,7 @@ def print_entry_xml_fun(verb_index):
 
 def add_child_with_attrs(root, elem_val, tag, key, vals, other_attrs=None, parent=None):
     """ElementTree helper function"""
-    elem_index = dict()
+    elem_index = {}
     if other_attrs is None:
         other_attrs = {}
     if parent is not None:
@@ -224,7 +224,7 @@ def merge_xml(*args):
     # Add verbs
     add_child_with_attrs(top, '', 'verb', 'lex', verbs.keys())
 
-    verb_index = dict()
+    verb_index = {}
     # Add PreVs
     for verb, prevs in verbs.items():
         # Select Verb (None if not found):
