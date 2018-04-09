@@ -120,3 +120,6 @@ tade/*
 !tade/*.md
 !tade/process.sh
 !tade/tade.kimenet.tsv
+
+MetaMorphoHuEn/*
+!MetaMorphoHuEn/*.md

@@ -112,7 +112,9 @@ def prettify(elem):
     return reparsed.toprettyxml(indent="  ")
 
 
-def print_entry_xml_fun(top):
+def print_entry_xml_fun(verb_index):
+    inf_node_index = dict()
+    no_inf_node_index = dict()
 
     def print_entry_xml(*args):
         verb, act_frame, (verb_dict_freq, verb_dict_sumfreq), (isz_freq, isz_sumfreq), (tade_freq, tade_sumfreq),\
@@ -120,17 +122,13 @@ def print_entry_xml_fun(top):
 
         mmo_compatible_frames = [frame for frame in mmo_frames if tuple(arg[1] for arg in frame[1]) == act_frame]
 
-        prev, just_the_verb = prev_split(verb)
         rank = '{0:1.20f}'.format(sum((verb_dict_freq / verb_dict_sumfreq, isz_freq / isz_sumfreq,
                                        tade_freq / tade_sumfreq, kagi_freq_rank, inflist_freq_rank, mmo_rank)))
         freq_dict = {'verb_dict': verb_dict_freq, 'isz': isz_freq, 'tade': tade_freq, 'finInf': inflist_freq,
                      'mmo': mmo_freq}
 
         # Locate subtree
-        prev_xpath = 'no_prev'
-        if prev != 'X':
-            prev_xpath = 'prevs/prev[@lex="{0}"]'.format(prev)
-        preve = top.find('verb[@lex="{0}"]/{1}'.format(just_the_verb, prev_xpath))
+        preve = verb_index[verb]
 
         # Has any arguments?
         if act_frame == ['???']:
@@ -139,37 +137,32 @@ def print_entry_xml_fun(top):
             return
 
         # Has INF argument or not...
-        if act_frame == ['INF']:
-            frame = preve.find('inf')
-            if frame is None:
-                frame = SubElement(preve, 'inf', rank=rank)
-            else:
-                frame.set('rank', rank)
+        if act_frame == ('INF',):
+            if verb not in inf_node_index:
+                inf_node_index[verb] = SubElement(preve, 'inf', rank=rank)
 
             # Add freqs
-            SubElement(frame, 'freqs', {k: str(v) for k, v in freq_dict.items() if v is not None and v > 0})
+            SubElement(inf_node_index[verb], 'freqs', {k: str(v) for k, v in freq_dict.items()
+                                                       if v is not None and v > 0})
 
         else:
-            infe = preve.find('no_inf')
-            if infe is None:
+            if verb not in no_inf_node_index:
                 infe = SubElement(preve, 'no_inf')
-            # Put Frames frame an arg and freqs
-            frames = infe.find('frames')
-            if frames is None:
-                frames = SubElement(infe, 'frames')
+                # Put Frames frame an arg and freqs
+                no_inf_node_index[verb] = SubElement(infe, 'frames')
 
             if len(mmo_compatible_frames) == 0:
-                create_frame_node(act_frame, frames, rank, freq_dict)
+                create_frame_node(act_frame, no_inf_node_index[verb], rank, freq_dict)
             else:
                 for mmo_frame in mmo_compatible_frames:
-                    create_frame_node(act_frame, frames, rank, freq_dict, mmo_frame)
+                    create_frame_node(act_frame, no_inf_node_index[verb], rank, freq_dict, mmo_frame)
 
-    def create_frame_node(act_frame, frames, rank, freq_dict, mmo_frame=None):
+    def create_frame_node(act_frame, frames, rank, freq_dict, mmo_frame=(None, ())):
         attrdict = {}
         # if mmo_frame is not None:
         #    attrdict = {'mmo_id': mmo_frame[0]['mmoid'], 'en': mmo_frame[0]['EN.VP']}
 
-        mmo_arg_dict = {arg[1]: arg[0] for arg in mmo_frame[1]}
+        mmo_arg_dict = {arg[1]: {ak.strip(':'): av.strip('"') for ak, av in arg[0].items()} for arg in mmo_frame[1]}
         frame = SubElement(frames, 'frame', rank=rank, **attrdict)
         args = SubElement(frame, 'args')
         # Add args
@@ -201,14 +194,16 @@ def print_entry_xml_fun(top):
     return print_entry_xml
 
 
-def add_child_with_attrs(root, tag, key, vals, other_attrs=None, parent=None):
+def add_child_with_attrs(root, elem_val, tag, key, vals, other_attrs=None, parent=None):
     """ElementTree helper function"""
+    elem_index = dict()
     if other_attrs is None:
         other_attrs = {}
     if parent is not None:
         root = SubElement(root, parent)
     for k, v in zip(repeat(key), sorted(vals, key=locale.strxfrm)):
-        SubElement(root, tag, **{k: v}, **other_attrs.get(v, {}))
+        elem_index['|'.join((v, elem_val))] = SubElement(root, tag, **{k: v}, **other_attrs.get(v, {}))
+    return elem_index
 
 
 def merge_xml(*args):
@@ -227,8 +222,9 @@ def merge_xml(*args):
     top = Element('manocska')
 
     # Add verbs
-    add_child_with_attrs(top, 'verb', 'lex', verbs.keys())
+    add_child_with_attrs(top, '', 'verb', 'lex', verbs.keys())
 
+    verb_index = dict()
     # Add PreVs
     for verb, prevs in verbs.items():
         # Select Verb (None if not found):
@@ -237,10 +233,10 @@ def merge_xml(*args):
             raise KeyError('Verb {0} not found!'.format(verb))
 
         if 'X' in prevs:
-            SubElement(ve, 'no_prev')
+            verb_index[verb] = SubElement(ve, 'no_prev')
             prevs.remove('X')
-        add_child_with_attrs(ve, 'prev', 'lex', prevs, parent='prevs')
+        verb_index.update(add_child_with_attrs(ve, verb, 'prev', 'lex', prevs, parent='prevs'))
 
     # Add frames
-    merge(*args, print_fun=print_entry_xml_fun(top))
+    merge(*args, print_fun=print_entry_xml_fun(verb_index))
     print(prettify(top))

@@ -29,7 +29,7 @@ else:
           (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige)
 
 # Generate Patterns (currently alpha state, disabled)
-# gen_patterns('resources.pcl')
+# gen_patterns('resources.pckl.gz')
 
 """
 time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k9,9nr -k1,2 | \

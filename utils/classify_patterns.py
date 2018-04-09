@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8, vim: expandtab:ts=4 -*-
 
-from collections import defaultdict, Counter
-
 import pickle
+import gzip
+
+from collections import defaultdict, Counter
 
 
 def preprocess_frames(frames) -> set:
@@ -69,7 +70,7 @@ def print_stuff(arr, filename):
                     print('', key, val, sep='\t', file=fname)
 
 
-def gen_patterns(pickled_name, w_tade=True):
+def gen_patterns(pickled_name, w_verb_dict=True, w_isz=True, w_tade=True, w_inflist=True, w_mmo=True):
     c = Counter()
     crev = defaultdict(str)
     c2 = Counter()
@@ -84,10 +85,25 @@ def gen_patterns(pickled_name, w_tade=True):
     verb_to_patt_prev = defaultdict(Counter)
     patt_prev_to_verb = defaultdict(Counter)
 
-    verb_dict_verbs, isz_verbs, tade_verbs, _, inflist_verbs = pickle.load(open(pickled_name, 'rb'))
+    (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
+    (inflist_verbs, inflist_sumfreq), _, (mmo_verbs, mmo_sumfreq), all_ige \
+        = pickle.load(gzip.open(pickled_name))
 
-    all_ige = set(verb_dict_verbs.keys()) | set(isz_verbs.keys()) | set(inflist_verbs.keys())
+    all_ige = {}
+
+    if w_verb_dict:
+        all_ige |= set(verb_dict_verbs.keys())
+
+    if w_isz:
+        all_ige |= set(isz_verbs.keys())
+
+    if w_inflist:
+        all_ige |= set(inflist_verbs.keys())
+
     if w_tade:
+        all_ige |= set(tade_verbs.keys())
+
+    if w_mmo:
         all_ige |= set(tade_verbs.keys())
 
     prev_by_ige = defaultdict(set)
