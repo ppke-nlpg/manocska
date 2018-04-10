@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8, vim: expandtab:ts=4 -*-
 
-import sys
 import os
-import pickle
+import sys
 import gzip
+import copy
+import pickle
 
+from itertools import combinations
 from collections import defaultdict, Counter
 from concurrent.futures import ProcessPoolExecutor, wait
 
@@ -205,7 +207,7 @@ def mmo_process():
         for mmoid, frame in frames.items():
             fr = []
             opt = []
-            for arg, feats in frame[0].items():  # TODO: opt=YES feature...
+            for arg, feats in frame[0].items():
                 if arg == 'TV':
                     continue
                 lex, case, postp = '', '', ''
@@ -223,20 +225,27 @@ def mmo_process():
                 if len(new_arg) == 0:
                     if arg == 'SUBJ':
                         continue
-                    new_arg = '@'
+                    new_arg = '_'
                 new_feats = {k: v for k, v in feats.items() if '-' != k and '-' != v}
                 new_feats['arg_name'] = arg
                 if ':opt' in new_feats:
                     opt.append((new_feats, new_arg))
                 else:
-                    opt.append((new_feats, new_arg))
                     fr.append((new_feats, new_arg))
-            fr.sort(key=lambda x: x[1])
+
             meta = {'mmoid': mmoid, 'EN.VP': frame[1]}
+
+            # Append without optional element
+            fr.sort(key=lambda x: x[1])
             verbs[verb].append((meta, tuple(fr)))
-            if len(opt) > 0:
-                opt.sort(key=lambda x: x[1])
-                verbs[verb].append((meta, tuple(opt)))
+
+            # Append all combinations of optimonal elements
+            for i in range(1, len(opt) + 1):
+                fr_act = copy.deepcopy(fr)
+                for c in combinations(opt, i):
+                    fr_act.extend(c)
+                    fr_act.sort(key=lambda x: x[1])
+                    verbs[verb].append((meta, tuple(fr_act)))
     return len(verb_dict), verbs
 
 
