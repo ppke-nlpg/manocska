@@ -39,16 +39,18 @@ def verb_dict_process():
     with open('ige_szotar/szotar.kimenet.txt', encoding='UTF-8') as verb_dict:
         for entry in verb_dict:
             entry = entry.strip().split('\t')
-            if len(entry) == 3:
-                verb, freq, example = entry
-                arguments = []
-            elif len(entry) >= 4:
-                verb, *arguments, freq, example = entry
+            if len(entry) < 3 and entry != ['']:
+                exit('verb_dict_error: {0}'.format(entry))
             elif entry == ['']:
                 break
-            else:
-                verb, arguments, freq = None, [], 0  # Dummy assignment to silence IDE
-                exit('verb_dict_error: {0}'.format(entry))
+
+            # No alternative forms among the verbs just among the lexical arguments
+            if len(entry) < 3:
+                verb, freq, example = entry
+                arguments = []
+            else:  # len(entry) >= 4
+                verb, *arguments, freq, example = entry
+
             freq = int(freq)
             if is_verb_wrong(verb):
                 found_wrong_verbs.add(verb)
@@ -72,14 +74,16 @@ def isz_process():
         for entry in isz:
             if not entry.startswith((' 0', 'Igeskicc')):
                 entry = entry.strip().split('\t')
+                if len(entry) < 2:
+                    exit('isz_error: {0}'.format(entry))
+
+                # No alternative forms among the verbs just among the lexical arguments
                 if len(entry) == 2:
                     verb, freq = entry
                     arguments = []
-                elif len(entry) >= 3:
+                else:  # len(entry) >= 3
                     verb, *arguments, freq = entry
-                else:
-                    verb, arguments, freq = None, [], 0  # Dummy assignment to silence IDE
-                    exit('isz_error: {0}'.format(entry))
+
                 freq = int(freq)
                 if is_verb_wrong(verb):
                     found_wrong_verbs.add(verb)
@@ -103,13 +107,14 @@ def tade_process():
     with open('tade/tade.kimenet.tsv', encoding='UTF-8') as tade:
         for entry in tade:
             entry = entry.strip().split('\t')
-            if len(entry) == 5:
-                verb, arguments, freq, igegyak, arany = entry
-                if arguments[0] == '@':
-                    arguments = ''
-            else:
-                verb, arguments, freq = None, [], 0  # Dummy assignment to silence IDE
+            if len(entry) != 5:
                 exit('tade_error: {0}'.format(entry))
+
+            # No alternative forms denoted by | as preverbs are denoted by |
+            verb, arguments, freq, verbfreq, arany = entry
+            if arguments[0] == '@':
+                arguments = ''
+
             arguments = tuple(arguments.split())
             freq = int(freq)
             if is_verb_wrong(verb):
@@ -157,47 +162,63 @@ def kagi_verbs_process():
     with open('kagi_verbal_complex/freqPrevFin.txt', encoding='UTF-8') as kagi:
         for entry in kagi:
             entry = entry.strip().split(' ')
-            if len(entry) == 2:
-                freq, verb_w_ik = entry
-            else:
-                verb_w_ik, freq = [], 0  # Dummy assignment to silence IDE
+
+            if len(entry) != 2:
                 exit('kagi_verbs_error: {0}'.format(entry))
-            ik, verb = verb_w_ik.split('+')
+
+            freq, verb_w_ik = entry
+            prev, verb = verb_w_ik.split('+')
             freq = int(freq)
-            if is_verb_wrong(verb):
-                found_wrong_verbs.add(verb)
-                continue
-            verb_new = fix_verb(verb)
-            if verb_new != verb:
-                found_wrong_verbs.add(verb)
-            verb = verb_new
-            found_verbs['{0}|{1}'.format(ik, verb)] = freq
-            sumfreq += freq
+
+            for v in verb.split('|'):
+                verb = '{0}|{1}'.format(prev, v)
+                if is_verb_wrong(verb):
+                    found_wrong_verbs.add(verb)
+                    continue
+                verb_new = fix_verb(verb)
+                if verb_new != verb:
+                    found_wrong_verbs.add(verb)
+                verb = verb_new
+                found_verbs[verb] = freq
+                sumfreq += freq
     return sumfreq, found_wrong_verbs, found_verbs
 
 
 def kagi_inflist_process():
     # TODO: document
+    found_wrong_verbs = set()
     found_verbs = defaultdict(list)
     sumfreq = 0
     with open('infinitival_constructions/FinInf.txt', encoding='UTF-8') as inflist:
         for entry in inflist:
             entry = entry.strip().split('\t')
-            if len(entry) >= 2:
-                freq, verb_w_ik = entry[:2]
-                if '+' in verb_w_ik:
-                    ik, verb = verb_w_ik.split('+')
-                    verb = '{0}|{1}'.format(ik, verb)
-                else:
-                    freq, verb = entry[:2]
-            else:
-                verb, freq = [], 0  # Dummy assignment to silence IDE
+            if len(entry) < 2:
                 exit('kagi_fininf_error: {0}'.format(entry))
+            freq, verb = entry[:2]
+
             freq = int(freq)
             arguments = ['INF']
-            smart_append(found_verbs, verb, freq, tuple(sorted(arguments)))
-            sumfreq += freq
-    return sumfreq, found_verbs
+
+            prev = ''
+            if '+' in verb:
+                prev, verb = verb.split('+')
+                prev += '|'
+
+            for v in verb.split('|'):
+                if len(prev) > 0:
+                    verb = '{0}|{1}'.format(prev, v)
+                else:
+                    verb = v
+                if is_verb_wrong(verb):
+                    found_wrong_verbs.add(verb)
+                    continue
+                verb_new = fix_verb(verb)
+                if verb_new != verb:
+                    found_wrong_verbs.add(verb)
+                verb = verb_new
+                smart_append(found_verbs, verb, freq, tuple(sorted(arguments)))
+                sumfreq += freq
+    return sumfreq, found_wrong_verbs, found_verbs
 
 
 def mmo_process():
@@ -246,7 +267,7 @@ def mmo_process():
                     fr_act.extend(c)
                     fr_act.sort(key=lambda x: x[1])
                     verbs[verb].append((meta, tuple(fr_act)))
-    return len(verb_dict), verbs
+    return len(verb_dict), {}, verbs  # Dummy wrong verbs list... TODO: research!
 
 
 def dummy_process():
@@ -268,25 +289,36 @@ def read_resources_parallel(pickled_name, overwrite=False):
     isz_sumfreq, isz_wrong_verbs, isz_verbs = create_isz.result()
     tade_sumfreq, tade_wrong_verbs, tade_verbs = create_tade.result()
     kagi_sumfreq, kagi_wrong_verbs, kagi_verbs = create_kagi_verbs.result()
-    inflist_sumfreq, inflist_verbs = create_kagi_inflist.result()
-    mmo_sumfreq, mmo_verbs = create_mmo.result()
+    inflist_sumfreq, inflist_wrong_verbs, inflist_verbs = create_kagi_inflist.result()
+    mmo_sumfreq, mmo_wrong_verbs, mmo_verbs = create_mmo.result()
 
-    all_ige = set(verb_dict_verbs.keys()) | set(isz_verbs.keys()) | set(tade_verbs.keys()) | set(inflist_verbs.keys()) \
-        | set(kagi_verbs.keys()) | set(mmo_verbs.keys())
+    all_verb = set(verb_dict_verbs.keys()) | set(isz_verbs.keys()) | set(tade_verbs.keys()) \
+        | set(inflist_verbs.keys()) | set(kagi_verbs.keys()) | set(mmo_verbs.keys())
+
+    all_wrong_verb = set(verb_dict_wrong_verbs) | set(isz_wrong_verbs) | set(tade_wrong_verbs) \
+        | set(inflist_wrong_verbs) | set(kagi_wrong_verbs) | set(mmo_wrong_verbs)
+
+    verbs_stat = Counter()
+    for v in all_verb:
+        c = sum(int(v in r) for r in (verb_dict_verbs.keys(), isz_verbs.keys(), tade_verbs.keys(), inflist_verbs.keys(),
+                                      kagi_verbs.keys(), mmo_verbs.keys()))
+        verbs_stat[c] += 1
 
     print('No. of Verbs (verb_dict): ', len(verb_dict_verbs), verb_dict_sumfreq, len(verb_dict_wrong_verbs),
           file=sys.stderr)
     print('No. of Verbs (isz): ', len(isz_verbs), isz_sumfreq, len(isz_wrong_verbs), file=sys.stderr)
     print('No. of Verbs (Tadé): ', len(tade_verbs), tade_sumfreq, len(tade_wrong_verbs), file=sys.stderr)
     print('No. of Verbs (kagi_verbal_complex): ', len(kagi_verbs), kagi_sumfreq, len(kagi_wrong_verbs), file=sys.stderr)
-    print('No. of Verbs (inflist): ', len(inflist_verbs), inflist_sumfreq, file=sys.stderr)
+    print('No. of Verbs (inflist): ', len(inflist_verbs), inflist_sumfreq, len(inflist_wrong_verbs), file=sys.stderr)
     print('No. of Verbs (MetaMorpho): ', len(mmo_verbs), mmo_sumfreq, file=sys.stderr)
-    print('No. of Verbs (total): ', len(all_ige), file=sys.stderr)
+    print('No. of Verbs (total): ', len(all_verb), len(all_wrong_verb), file=sys.stderr)
+    for k, v in verbs_stat.items():
+        print('No. of Verbs in {0} resource(s): '.format(k), v, file=sys.stderr)
 
     if overwrite or not os.path.exists(pickled_name):
         pickle.dump(((verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq),
-                     (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige),
+                     (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_verb),
                     gzip.open(pickled_name, 'wb'))
 
     return (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
-        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige
+        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_verb

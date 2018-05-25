@@ -211,6 +211,17 @@ def gen_patterns(pickled_name, w_verb_dict=True, w_isz=True, w_tade=True, w_infl
     patt_prev_freqs = {(patt, prev): freq for ((prev, verb), patt), freq in sorted(freqs_to_frames.items())}
     print_stuff(patt_prev, os.path.join('patterns', 'patt_prev.txt'), patt_prev_freqs)
 
+    # Another level of grouping
+    patt_prev_2nd = defaultdict(Counter)
+    all_patts = set(patt_prev.keys())
+    for prev, frames in prev_patt.items():
+        frames_tuple = tuple(frame for frame in sorted(frames.keys()))
+        patt_prev_2nd[frames_tuple][prev] += 1  # Ezt kéne kiírni...
+    print_stuff(patt_prev_2nd, os.path.join('patterns', 'patt_prev_2nd.txt'), defaultdict(tuple))
+
+    patt_prev_freqs = {(patt, prev): freq for ((prev, verb), patt), freq in sorted(freqs_to_frames.items())}
+    print_stuff(patt_prev, os.path.join('patterns', 'patt_prev.txt'), patt_prev_freqs)
+
     ################################################################################################
     verb_patt_freqs = {(verb, patt): freq for ((prev, verb), patt), freq in sorted(freqs_to_frames.items())}
     print_stuff(verb_patt, os.path.join('patterns', 'verb_patt.txt'), verb_patt_freqs)

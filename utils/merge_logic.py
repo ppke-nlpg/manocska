@@ -4,7 +4,7 @@
 import sys
 import locale
 import copy
-from collections import defaultdict
+from collections import defaultdict, Counter
 from itertools import repeat
 
 from xml.etree.ElementTree import Element, SubElement, tostring
@@ -77,10 +77,15 @@ def print_entry(*args):
 
 def merge(*args, print_fun=print_entry):
     (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
-        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige \
+        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_verb \
         = args
 
-    for verb in sorted(all_ige):
+    non_inf_all = 0
+    non_inf = Counter()
+    inf_all = 0
+    inf = Counter()
+
+    for verb in sorted(all_verb):
         all_frame = compute_all_frames(verb, verb_dict_verbs, isz_verbs, tade_verbs, inflist_verbs, kagi_verbs,
                                        mmo_verbs)
 
@@ -88,6 +93,8 @@ def merge(*args, print_fun=print_entry):
             kagi_freq, kagi_freq_rank = extract_kagi_freq_and_rank(verb, kagi_verbs, kagi_sumfreq)
             print_fun(verb, ['???'], (0, verb_dict_sumfreq), (0, isz_sumfreq), (0, tade_sumfreq),
                       (kagi_freq, kagi_freq_rank), (None, 0), (0, 0, mmo_verbs[verb]))
+            non_inf_all += 1
+            non_inf[1] += 1
 
         mmo_frames = set(tuple(arg[1] for arg in frame[1]) for frame in mmo_verbs[verb])
         for act_frame in sorted(all_frame):
@@ -99,9 +106,28 @@ def merge(*args, print_fun=print_entry):
             mmo_rank = mmo_freq/mmo_sumfreq
 
             kagi_freq, kagi_freq_rank = extract_kagi_freq_and_rank(verb, kagi_verbs, kagi_sumfreq)
+
+            # How many resource contanins the frame...
+            c = sum(int(f > 0) for f in (verb_dict_freq, isz_freq, tade_freq, inflist_freq_rank, mmo_freq,
+                                         kagi_freq_rank))
+            if act_frame == ('INF',):
+                inf_all += 1
+                inf[c] += 1
+            else:
+                non_inf_all += 1
+                non_inf[c] += 1
+
             print_fun(verb, act_frame, (verb_dict_freq, verb_dict_sumfreq), (isz_freq, isz_sumfreq),
                       (tade_freq, tade_sumfreq), (kagi_freq, kagi_freq_rank), (inflist_freq, inflist_freq_rank),
                       (mmo_freq, mmo_rank, mmo_verbs[verb]))
+
+    # Print some stats...
+    print('INF (all): ', inf_all, file=sys.stderr)
+    for k, v in inf.items():
+        print('INF ({0} resource(s)): '.format(k), v, file=sys.stderr)
+    print('NON-INF (all): ', non_inf_all, file=sys.stderr)
+    for k, v in non_inf.items():
+        print('NON-INF ({0} resource(s)): '.format(k), v, file=sys.stderr)
 
 
 def prettify(elem):
