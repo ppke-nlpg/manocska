@@ -299,10 +299,12 @@ def read_resources_parallel(pickled_name, overwrite=False):
         | set(inflist_wrong_verbs) | set(kagi_wrong_verbs) | set(mmo_wrong_verbs)
 
     verbs_stat = Counter()
+    verbs_stat_v = defaultdict(set)
     for v in all_verb:
-        c = sum(int(v in r) for r in (verb_dict_verbs.keys(), isz_verbs.keys(), tade_verbs.keys(), inflist_verbs.keys(),
-                                      kagi_verbs.keys(), mmo_verbs.keys()))
+        c = sum(int(v in r and (r != inflist_verbs.keys() or inflist_verbs.get(v, [[0]])[0][0] > 0)) for r in (verb_dict_verbs.keys(),
+                 isz_verbs.keys(), tade_verbs.keys(), inflist_verbs.keys(), kagi_verbs.keys(), mmo_verbs.keys()))
         verbs_stat[c] += 1
+        verbs_stat_v[c].add(v)
 
     print('No. of Verbs (verb_dict): ', len(verb_dict_verbs), verb_dict_sumfreq, len(verb_dict_wrong_verbs),
           file=sys.stderr)
@@ -314,6 +316,11 @@ def read_resources_parallel(pickled_name, overwrite=False):
     print('No. of Verbs (total): ', len(all_verb), len(all_wrong_verb), file=sys.stderr)
     for k, v in verbs_stat.items():
         print('No. of Verbs in {0} resource(s): '.format(k), v, file=sys.stderr)
+
+    for v in sorted(verbs_stat_v[5]):
+        print('In 5 resources:', v, file=sys.stderr)
+    for v in sorted(verbs_stat_v[6]):
+        print('In 6 resources:', v, file=sys.stderr)
 
     if overwrite or not os.path.exists(pickled_name):
         pickle.dump(((verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq),
