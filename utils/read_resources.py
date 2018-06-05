@@ -270,10 +270,6 @@ def mmo_process():
     return len(verb_dict), {}, verbs  # Dummy wrong verbs list... TODO: research!
 
 
-def dummy_process():
-    return 0, set(), {}
-
-
 def read_resources_parallel(pickled_name, overwrite=False):
     with ProcessPoolExecutor(max_workers=6) as executor:
         create_verb_dict = executor.submit(verb_dict_process)
@@ -293,16 +289,17 @@ def read_resources_parallel(pickled_name, overwrite=False):
     mmo_sumfreq, mmo_wrong_verbs, mmo_verbs = create_mmo.result()
 
     all_verb = set(verb_dict_verbs.keys()) | set(isz_verbs.keys()) | set(tade_verbs.keys()) \
-        | set(inflist_verbs.keys()) | set(kagi_verbs.keys()) | set(mmo_verbs.keys())
+        | set(kagi_verbs.keys()) | set(inflist_verbs.keys()) | set(mmo_verbs.keys())
 
     all_wrong_verb = set(verb_dict_wrong_verbs) | set(isz_wrong_verbs) | set(tade_wrong_verbs) \
-        | set(inflist_wrong_verbs) | set(kagi_wrong_verbs) | set(mmo_wrong_verbs)
+        | set(kagi_wrong_verbs) | set(inflist_wrong_verbs) | set(mmo_wrong_verbs)
 
     verbs_stat = Counter()
     verbs_stat_v = defaultdict(set)
     for v in all_verb:
-        c = sum(int(v in r and (r != inflist_verbs.keys() or inflist_verbs.get(v, [[0]])[0][0] > 0)) for r in (verb_dict_verbs.keys(),
-                 isz_verbs.keys(), tade_verbs.keys(), inflist_verbs.keys(), kagi_verbs.keys(), mmo_verbs.keys()))
+        c = sum(int(v in r and (r != inflist_verbs.keys() or inflist_verbs.get(v, [[0]])[0][0] > 0))
+                for r in (verb_dict_verbs.keys(),  isz_verbs.keys(), tade_verbs.keys(), kagi_verbs.keys(),
+                          inflist_verbs.keys(), mmo_verbs.keys()))
         verbs_stat[c] += 1
         verbs_stat_v[c].add(v)
 
@@ -324,8 +321,8 @@ def read_resources_parallel(pickled_name, overwrite=False):
 
     if overwrite or not os.path.exists(pickled_name):
         pickle.dump(((verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq),
-                     (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_verb),
+                     (kagi_verbs, kagi_sumfreq), (inflist_verbs, inflist_sumfreq), (mmo_verbs, mmo_sumfreq), all_verb),
                     gzip.open(pickled_name, 'wb'))
 
     return (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
-        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_verb
+           (kagi_verbs, kagi_sumfreq), (inflist_verbs, inflist_sumfreq), (mmo_verbs, mmo_sumfreq), all_verb

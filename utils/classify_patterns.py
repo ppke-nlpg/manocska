@@ -99,7 +99,7 @@ def gen_patterns(pickled_name, w_verb_dict=True, w_isz=True, w_tade=True, w_infl
     prev_patt_to_verb = defaultdict(Counter)
 
     (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
-        (inflist_verbs, inflist_sumfreq), _, (mmo_verbs, mmo_sumfreq), all_ige \
+        _, (inflist_verbs, inflist_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige \
         = pickle.load(gzip.open(pickled_name))
 
     all_ige = set()

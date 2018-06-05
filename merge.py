@@ -14,21 +14,21 @@ def main(args):
     if not args.read_pickle:
         # Read, Correct & Pickle
         (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
-                (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige \
-                = read_resources_parallel(args.pickle_name)
+            (kagi_verbs, kagi_sumfreq), (inflist_verbs, inflist_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige \
+            = read_resources_parallel(args.pickle_name)
     else:
         # Load Pickled resources
         (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
-                (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige \
+                (kagi_verbs, kagi_sumfreq), (inflist_verbs, inflist_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige \
                 = pickle.load(gzip.open(args.pickle_name))
 
     # Merge
     if args.XML:
         merge_xml((verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq),
-                  (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige)
+                  (kagi_verbs, kagi_sumfreq), (inflist_verbs, inflist_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige)
     elif args.TSV:
         merge((verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq),
-              (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige)
+              (kagi_verbs, kagi_sumfreq), (inflist_verbs, inflist_sumfreq), (mmo_verbs, mmo_sumfreq), all_ige)
     elif args.gen_patterns:
         # Generate Patterns (currently beta state)
         gen_patterns(args.pickle_name)

@@ -18,8 +18,17 @@ ez a file: light_verb_exceptions.txt
 light_verb_exception_verbs = {'bír', 'fog', 'kezd', 'kíván', 'mer', 'szeret', 'szokik', 'talál', 'tetszik',
                               'tud', 'van', 'lesz', 'lehet', 'nincs', 'sincs'}
 
-with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'light_verbs', 'light_verb_exceptions.txt'), encoding='UTF-8') as lve:
-    light_verb_exception_verbs_w_prev = {line.replace('+', '|') for line in lve.readlines()}
+light_verb_exception_verbs_w_prev = set()
+with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'light_verbs', 'light_verb_exceptions.txt'),
+          encoding='UTF-8') as lve:
+    for line in lve.readlines():
+        line = line.strip()
+        if '|' in line:
+            prev, verbs = line.split('+')
+            for v in verbs.split('|'):
+                light_verb_exception_verbs_w_prev.add('{0}|{1}'.format(prev, v))
+        else:
+            light_verb_exception_verbs_w_prev.add(line.replace('+', '|'))
 
 # TODO: ezt mergelni: jo_inf_lista.txt
 """

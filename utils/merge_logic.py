@@ -21,6 +21,15 @@ def prev_split(verb):
     return prev, verb
 
 
+def extract_kagi_freq_and_rank(verb, kagi_verbs, kagi_sumfreq):
+    kagi_freq = None
+    kagi_freq_rank = 0
+    if '|' in verb:
+        kagi_freq = kagi_verbs.get(verb, 0)
+        kagi_freq_rank = kagi_freq / kagi_sumfreq
+    return kagi_freq, kagi_freq_rank
+
+
 def extract_inflist_freq_rank(verb, act_frame, inflist_verbs, inflist_sumfreq):
     inflist_freq = None
     inflist_freq_rank = 0
@@ -34,16 +43,7 @@ def extract_inflist_freq_rank(verb, act_frame, inflist_verbs, inflist_sumfreq):
     return inflist_freq, inflist_freq_rank
 
 
-def extract_kagi_freq_and_rank(verb, kagi_verbs, kagi_sumfreq):
-    kagi_freq = None
-    kagi_freq_rank = 0
-    if '|' in verb:
-        kagi_freq = kagi_verbs.get(verb, 0)
-        kagi_freq_rank = kagi_freq / kagi_sumfreq
-    return kagi_freq, kagi_freq_rank
-
-
-def compute_all_frames(verb, verb_dict_verbs, isz_verbs, tade_verbs, inflist_verbs, kagi_verbs, mmo_verbs):
+def compute_all_frames(verb, verb_dict_verbs, isz_verbs, tade_verbs, kagi_verbs, inflist_verbs, mmo_verbs):
     verb_dict_frames = tuple([frame[1] for frame in verb_dict_verbs[verb]])
     isz_frames = tuple(frame[1] for frame in isz_verbs[verb])
     tade_frames = tuple(frame[1] for frame in tade_verbs[verb])
@@ -77,7 +77,7 @@ def print_entry(*args):
 
 def merge(*args, print_fun=print_entry):
     (verb_dict_verbs, verb_dict_sumfreq), (isz_verbs, isz_sumfreq), (tade_verbs, tade_sumfreq), \
-        (inflist_verbs, inflist_sumfreq), (kagi_verbs, kagi_sumfreq), (mmo_verbs, mmo_sumfreq), all_verb \
+        (kagi_verbs, kagi_sumfreq), (inflist_verbs, inflist_sumfreq), (mmo_verbs, mmo_sumfreq), all_verb \
         = args
 
     non_inf_all = 0
@@ -86,7 +86,7 @@ def merge(*args, print_fun=print_entry):
     inf = Counter()
 
     for verb in sorted(all_verb):
-        all_frame = compute_all_frames(verb, verb_dict_verbs, isz_verbs, tade_verbs, inflist_verbs, kagi_verbs,
+        all_frame = compute_all_frames(verb, verb_dict_verbs, isz_verbs, tade_verbs, kagi_verbs, inflist_verbs,
                                        mmo_verbs)
 
         if len(all_frame) == 0:
@@ -101,15 +101,14 @@ def merge(*args, print_fun=print_entry):
             verb_dict_freq = get_freq_w_ind_for_frame(verb_dict_verbs[verb], act_frame)[1]
             isz_freq = get_freq_w_ind_for_frame(isz_verbs[verb], act_frame)[1]
             tade_freq = get_freq_w_ind_for_frame(tade_verbs[verb], act_frame)[1]
+            kagi_freq, kagi_freq_rank = extract_kagi_freq_and_rank(verb, kagi_verbs, kagi_sumfreq)
             inflist_freq, inflist_freq_rank = extract_inflist_freq_rank(verb, act_frame, inflist_verbs, inflist_sumfreq)
             mmo_freq = int(act_frame in mmo_frames)
             mmo_rank = mmo_freq/mmo_sumfreq
 
-            kagi_freq, kagi_freq_rank = extract_kagi_freq_and_rank(verb, kagi_verbs, kagi_sumfreq)
-
             # How many resource contanins the frame...
-            c = sum(int(f > 0) for f in (verb_dict_freq, isz_freq, tade_freq, inflist_freq_rank, mmo_freq,
-                                         kagi_freq_rank))
+            c = sum(int(f > 0) for f in (verb_dict_freq, isz_freq, tade_freq, kagi_freq_rank,
+                                         inflist_freq_rank, mmo_freq))
             if act_frame == ('INF',):
                 inf_all += 1
                 inf[c] += 1
