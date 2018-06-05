@@ -11,7 +11,7 @@
 
 ### Közlemény
 
-Az adatbázis eredeti formájában jelenleg csak a fenti linkeken érhető el. Jelen tárolóban egy géppel könnyebben feldolgozható tartalmában megegyező változat érhető el, melyből a Manócska adatbázis épült." -> "Jelen tárolóban egy géppel könnyebben feldolgozható, tartalmában megegyező változat érhető el, melyből a Manócska adatbázis épült.
+Az adatbázis eredeti formájában jelenleg csak a fenti linkeken érhető el. Itt egy géppel könnyebben feldolgozható, tartalmában az eredetivel megegyező változat érhető el, melyből a Manócska adatbázis épült.
 
 # Licensz
 
@@ -35,3 +35,4 @@ In Proceedings of the 10th International Conference on Language Resources and Ev
         address   = {Paris, France},
         isbn      = {978-2-9517408-9-1}
     }
+

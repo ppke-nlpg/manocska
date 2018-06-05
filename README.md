@@ -2,13 +2,14 @@
 
 # Manócska – integrált igei vonzatkeret adatbázis
 
-A _Manócska_ adatbázis összefogja és harmonizálja a szabadon elérhető magyar nyelvű igei vonzatkeret adatbázisokat és az igékről elérhető információkat, melyek a következők:
+A _Manócska_ adatbázis összefogja és harmonizálja a magyar nyelvű igei vonzatkeret adatbázisokat és az igékről elérhető információkat, melyek a következők:
 
 - [_Magyar igei szerkezetek (szótár)_. Sass Bálint et al.](ige_szotar/README.md)
 - [28 millió szintaktikailag elemzett mondat és _500000 igei szerkezet (lista)_. Sass Bálint.](isz/README.md)
 - [_Tádé_ – Igei vonzatkeret-gyakorisági lista. Kornai András et al.](tade/README.md)
 - [_A magyar igei komplexumok vizsgálata_. Kalivoda Ágnes. (Mesterszakos szakdolgozat)](https://github.com/kagnes/hungarian_verbal_complex/)
 - [_Infinitívuszi szerkezetek a magyarban_. Kalivoda Ágnes.](https://github.com/kagnes/infinitival_constructions)
+- [_A MetaMorpho igei vonzatkeret adatbázisa_. Prószéky Gábor et al.](MetaMorphoHuEn/README.md)
 
 Tartalmazza az összes ige-igekötő-vonzatkeret hármast a fenti erőforrásokból származó gyakoriságokkal.
 
@@ -16,12 +17,12 @@ Tartalmazza az összes ige-igekötő-vonzatkeret hármast a fenti erőforrásokb
 
 ### Az erőforrás a következő fájlokból áll:
 
-- manocska.txt: ige és keret szerint rendezve
+- manocska.txt: a _Manócska_ adatbázis TSV formátumban (a sorok ige és keret szerint rendezve)
 - manocska.sorted.txt: rang szerint rendezve (ez adatbázisonként a keret előfordulásának és az összes keret előfordulásának hányadosa)
 - manocska.sorted.nolex.txt: rang szerint rendezve, a lexikálisan kötött argumentumot tartalmazó keretek __kihagyva__
 - manocska.sorted.lex.txt: rang szerint rendezve, __csak__ a lexikálisan kötött argumentumot tartalmazó keretek
-- manocska.log.txt: információk az összevonásról
-
+- manocska.log.txt: információk az összevonásról és néhány statisztika
+- manocska.xml.gz: a _Manócska_ adatbázis XML formátumban
 
 ### manocska.txt, manocska.sorted.txt, manocska.sorted.nolex.txt, manocska.sorted.lex.txt:
 
@@ -32,30 +33,19 @@ Tartalmazza az összes ige-igekötő-vonzatkeret hármast a fenti erőforrásokb
     - INF_ prefixummal az infinitív argumentumok
     - = jellel prefixálva a névutók
     - @ jelzi, ha nincs argumentum
-    - A lexikálisan kötött elemek szótöve és az eset illetve névutó közvetlenül kapcsolódik
+    - ??? olyan esetekben szerepel, amikor nincs információnk a vonzatkeretről
+    - a lexikálisan kötött elemek szótöve és az eset illetve névutó közvetlenül kapcsolódik
 - Harmadik mező: a keret frekvenciája a _Magyar igei szerkezetek (szótár)_ alapján
 - Negyedik mező: a keret frekvenciája a _500000 igei szerkezet (lista)_ alapján
 - Ötödik mező: a keret frekvenciája a _Tádé_ alapján
 - Hatodik mező: az (igekötős)ige frekvenciája _Kalivoda Ágnes Infinitívuszi szerkezetek a magyarban_ vizsgálata alapján (nem igekötős igékre None, minden keretre azonos)
 - Hetedik mező: az infinitívuszi vonzattal rendelkező igék frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (infinitívuszi vonzattal nem rendelkező igékre None, minden keretre azonos)
-- Nyolcadik mező: a rang
-
-
-### merge.log.txt:
-
-- Az igék száma az egyes adatbázisokban
-- Aztán az egyes igékhez a közös keretek száma (ahol volt ilyen):
-    - Mezőelválasztó: soremelés karakter (\n), rekordelválasztó: dupla soremelés karakter (\n\n)
-    - A keretek listái Python jelölésben vannak
-    - Első mező: az ige
-    - Második mező: a _Magyar igei szerkezetek (szótár)_ és az _500000 igei szerkezet_ című lista közös keretei az adott igéhez
-    - Harmadik mező: a _500000 igei szerkezet (lista)_ és a _Tádé_ közös keretei az adott igéhez
-    - Negyedik mező: a _Tádé_ és a _Magyar igei szerkezetek (szótár)_ közös keretei az adott igéhez
-    - Ötödik mező: az ige _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ szerinti frekvenciája
+- Nyolcadik mező: a keret frekvenciája a _MetaMorpho_ alapján
+- Kilencedik mező: a rang
 
 # Az erőforrás előállítása
 
-A reprodukálhatóságot könnyítendő a Manócska előállítható a többi erőforrás előfeldolgozott formátumainak felhasználásával, az alábbi parancsok segítségével (git clone --recursive ...).
+A reprodukálhatóságot könnyítendő a _Manócska_ előállítható a többi erőforrás előfeldolgozott formátumainak felhasználásával, az alábbi parancsok segítségével (git clone --recursive ...).
 A git repozitórium __nem tartalmazza az eredeti erőforrásokat__, melyek szükségesek a reprodukcióhoz, __azok licensze miatt__.
 
     time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k10,10nr -k1,2 | \
@@ -94,3 +84,4 @@ Vadász Noémi, Kalivoda Ágnes, Indig Balázs. _Egy egységesített magyar igei
     }
 
 A többi erőforrás hivatkozásához szükséges bibliográfiai adatokat lásd a fenti linkeken.
+
