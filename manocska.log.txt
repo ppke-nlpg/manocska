@@ -1,18 +1,17 @@
 Dropped: "gyökér, lomb és száraz ág 
 Dropped: "tömör, világos és egyszerű szöveget szeretnénk, és már fel is kértünk néhány jogi szakértőt egy kiegészítő jegyzőkönyv kidolgozására, mely a szubszidiaritásról, és az arányosságról szóló jegyzőkönyvek mintáját követné"-tájék
-No. of Verbs (verb_dict):  2185 6117057 47
-No. of Verbs (isz):  9589 18210335 477
-No. of Verbs (Tadé):  27159 8865936 4489
-No. of Verbs (kagi_verbal_complex):  26839 14082373 127
-No. of Verbs (inflist):  1503 8477281 2
+No. of Verbs (verb_dict):  2224 6117057 8
+No. of Verbs (isz):  9664 18210335 402
+No. of Verbs (Tadé):  27252 8865936 4398
+No. of Verbs (kagi_verbal_complex):  26922 14078157 0
+No. of Verbs (inflist):  1502 8476803 0
 No. of Verbs (MetaMorpho):  13772 13772
-No. of Verbs (total):  44183 4836
-No. of Verbs in 1 resource(s):  24278
-No. of Verbs in 2 resource(s):  9659
-No. of Verbs in 3 resource(s):  5034
-No. of Verbs in 4 resource(s):  3724
-No. of Verbs in 5 resource(s):  1475
-No. of Verbs in 6 resource(s):  13
+No. of Verbs (total):  44223 4724
+No. of Verbs in 1 resource(s):  24225
+No. of Verbs in 2 resource(s):  9678
+No. of Verbs in 3 resource(s):  5049
+No. of Verbs in 4 resource(s):  3747
+No. of Verbs in 5 resource(s):  1524
 In 5 resources: abba|hagy
 In 5 resources: abba|marad
 In 5 resources: ad
@@ -40,10 +39,12 @@ In 5 resources: bele|illik
 In 5 resources: bele|kapaszkodik
 In 5 resources: bele|kerül
 In 5 resources: bele|kever
+In 5 resources: bele|kezd
 In 5 resources: bele|megy
 In 5 resources: bele|nyugszik
 In 5 resources: bele|nyúl
 In 5 resources: bele|néz
+In 5 resources: bele|szeret
 In 5 resources: bele|szól
 In 5 resources: bele|tartozik
 In 5 resources: bele|tesz
@@ -53,6 +54,7 @@ In 5 resources: be|ad
 In 5 resources: be|avatkozik
 In 5 resources: be|bizonyít
 In 5 resources: be|csap
+In 5 resources: be|csuk
 In 5 resources: be|dob
 In 5 resources: be|dől
 In 5 resources: be|enged
@@ -60,6 +62,7 @@ In 5 resources: be|fagyaszt
 In 5 resources: be|fejez
 In 5 resources: be|fejeződik
 In 5 resources: be|fizet
+In 5 resources: be|fog
 In 5 resources: be|fogad
 In 5 resources: be|fut
 In 5 resources: be|fér
@@ -138,6 +141,7 @@ In 5 resources: bukik
 In 5 resources: buzdít
 In 5 resources: bátorít
 In 5 resources: bérel
+In 5 resources: bír
 In 5 resources: bízik
 In 5 resources: bújik
 In 5 resources: cipel
@@ -167,6 +171,7 @@ In 5 resources: el|beszélget
 In 5 resources: el|bocsát
 In 5 resources: el|borít
 In 5 resources: el|bánik
+In 5 resources: el|bír
 In 5 resources: el|bírál
 In 5 resources: el|búcsúzik
 In 5 resources: el|csábít
@@ -183,6 +188,7 @@ In 5 resources: el|fed
 In 5 resources: el|feled
 In 5 resources: el|feledkezik
 In 5 resources: el|felejt
+In 5 resources: el|fog
 In 5 resources: el|fogad
 In 5 resources: el|foglal
 In 5 resources: el|fogy
@@ -228,6 +234,7 @@ In 5 resources: el|kap
 In 5 resources: el|kel
 In 5 resources: el|kerget
 In 5 resources: el|kerül
+In 5 resources: el|kezd
 In 5 resources: el|kezdődik
 In 5 resources: el|koboz
 In 5 resources: el|képzel
@@ -290,6 +297,7 @@ In 5 resources: el|szán
 In 5 resources: el|sír
 In 5 resources: el|söpör
 In 5 resources: el|takar
+In 5 resources: el|talál
 In 5 resources: el|tart
 In 5 resources: el|tekint
 In 5 resources: el|telik
@@ -310,6 +318,7 @@ In 5 resources: el|tüntet
 In 5 resources: el|tűnik
 In 5 resources: el|tűr
 In 5 resources: el|utasít
+In 5 resources: el|van
 In 5 resources: el|vesz
 In 5 resources: el|veszik
 In 5 resources: el|veszt
@@ -396,6 +405,7 @@ In 5 resources: fel|fal
 In 5 resources: fel|fed
 In 5 resources: fel|fedez
 In 5 resources: fel|figyel
+In 5 resources: fel|fog
 In 5 resources: fel|függeszt
 In 5 resources: fel|gyorsul
 In 5 resources: fel|gyorsít
@@ -455,6 +465,7 @@ In 5 resources: fel|szed
 In 5 resources: fel|szerel
 In 5 resources: fel|számol
 In 5 resources: fel|szólít
+In 5 resources: fel|talál
 In 5 resources: fel|tartóztat
 In 5 resources: fel|tesz
 In 5 resources: fel|támad
@@ -496,6 +507,7 @@ In 5 resources: fenn|marad
 In 5 resources: fenn|tart
 In 5 resources: fenn|áll
 In 5 resources: fenyeget
+In 5 resources: fog
 In 5 resources: fontolgat
 In 5 resources: fordul
 In 5 resources: formál
@@ -548,18 +560,22 @@ In 5 resources: hisz
 In 5 resources: hord
 In 5 resources: hoz
 In 5 resources: hozzá|ad
+In 5 resources: hozzá|fog
 In 5 resources: hozzá|fér
 In 5 resources: hozzá|fűz
 In 5 resources: hozzá|jut
 In 5 resources: hozzá|járul
+In 5 resources: hozzá|kezd
 In 5 resources: hozzá|lát
 In 5 resources: hozzá|nyúl
 In 5 resources: hozzá|segít
+In 5 resources: hozzá|szokik
 In 5 resources: hozzá|szól
 In 5 resources: hozzá|tartozik
 In 5 resources: hozzá|tesz
 In 5 resources: hárul
 In 5 resources: hátra|hagy
+In 5 resources: hátra|van
 In 5 resources: hív
 In 5 resources: húz
 In 5 resources: húzódik
@@ -607,14 +623,15 @@ In 5 resources: kerít
 In 5 resources: kerül
 In 5 resources: ketté|vág
 In 5 resources: keveredik
+In 5 resources: kezd
 In 5 resources: kezdődik
-In 5 resources: kiabál
 In 5 resources: ki|ad
 In 5 resources: ki|alakul
 In 5 resources: ki|alakít
 In 5 resources: ki|bocsát
 In 5 resources: ki|bont
 In 5 resources: ki|bontakozik
+In 5 resources: ki|bír
 In 5 resources: ki|bök
 In 5 resources: ki|bújik
 In 5 resources: ki|bővít
@@ -636,6 +653,7 @@ In 5 resources: ki|fejleszt
 In 5 resources: ki|fejlődik
 In 5 resources: ki|fejt
 In 5 resources: ki|fizet
+In 5 resources: ki|fog
 In 5 resources: ki|foszt
 In 5 resources: ki|gondol
 In 5 resources: ki|gyullad
@@ -663,6 +681,7 @@ In 5 resources: ki|jön
 In 5 resources: ki|kap
 In 5 resources: ki|kapcsol
 In 5 resources: ki|kerül
+In 5 resources: ki|kezd
 In 5 resources: ki|kényszerít
 In 5 resources: ki|kér
 In 5 resources: ki|köp
@@ -706,6 +725,7 @@ In 5 resources: ki|számol
 In 5 resources: ki|számít
 In 5 resources: ki|szárad
 In 5 resources: ki|szűr
+In 5 resources: ki|talál
 In 5 resources: ki|tart
 In 5 resources: ki|terjed
 In 5 resources: ki|terjeszt
@@ -759,6 +779,7 @@ In 5 resources: készülődik
 In 5 resources: kételkedik
 In 5 resources: kínál
 In 5 resources: kísér
+In 5 resources: kíván
 In 5 resources: kölcsön|ad
 In 5 resources: költözik
 In 5 resources: könyörög
@@ -781,6 +802,7 @@ In 5 resources: küld
 In 5 resources: küszködik
 In 5 resources: lapul
 In 5 resources: lebeg
+In 5 resources: lesz
 In 5 resources: le|ad
 In 5 resources: le|becsül
 In 5 resources: le|beszél
@@ -796,6 +818,7 @@ In 5 resources: le|esik
 In 5 resources: le|fed
 In 5 resources: le|fegyverez
 In 5 resources: le|fekszik
+In 5 resources: le|fog
 In 5 resources: le|foglal
 In 5 resources: le|fordít
 In 5 resources: le|fényképez
@@ -830,8 +853,8 @@ In 5 resources: le|rombol
 In 5 resources: le|szakad
 In 5 resources: le|szavaz
 In 5 resources: le|szed
-In 5 resources: le|szel
 In 5 resources: le|szerel
+In 5 resources: le|szokik
 In 5 resources: le|száll
 In 5 resources: le|számol
 In 5 resources: le|szögez
@@ -926,6 +949,7 @@ In 5 resources: meg|fenyeget
 In 5 resources: meg|fertőz
 In 5 resources: meg|figyel
 In 5 resources: meg|fizet
+In 5 resources: meg|fog
 In 5 resources: meg|fogad
 In 5 resources: meg|fogalmaz
 In 5 resources: meg|fojt
@@ -992,6 +1016,7 @@ In 5 resources: meg|kaparint
 In 5 resources: meg|kedvel
 In 5 resources: meg|keres
 In 5 resources: meg|kerül
+In 5 resources: meg|kezd
 In 5 resources: meg|kezdődik
 In 5 resources: meg|kockáztat
 In 5 resources: meg|kér
@@ -1000,6 +1025,7 @@ In 5 resources: meg|kérdez
 In 5 resources: meg|kérdőjelez
 In 5 resources: meg|kímél
 In 5 resources: meg|kísérel
+In 5 resources: meg|kíván
 In 5 resources: meg|kóstol
 In 5 resources: meg|könnyít
 In 5 resources: meg|köszön
@@ -1013,6 +1039,7 @@ In 5 resources: meg|lel
 In 5 resources: meg|lep
 In 5 resources: meg|lepődik
 In 5 resources: meg|les
+In 5 resources: meg|lesz
 In 5 resources: meg|lát
 In 5 resources: meg|látogat
 In 5 resources: meg|látszik
@@ -1072,8 +1099,10 @@ In 5 resources: meg|szakít
 In 5 resources: meg|szavaz
 In 5 resources: meg|szeg
 In 5 resources: meg|szenved
+In 5 resources: meg|szeret
 In 5 resources: meg|szerez
 In 5 resources: meg|szervez
+In 5 resources: meg|szokik
 In 5 resources: meg|szorít
 In 5 resources: meg|száll
 In 5 resources: meg|számol
@@ -1090,6 +1119,7 @@ In 5 resources: meg|sérül
 In 5 resources: meg|süt
 In 5 resources: meg|tagad
 In 5 resources: meg|takarít
+In 5 resources: meg|talál
 In 5 resources: meg|tanul
 In 5 resources: meg|tanít
 In 5 resources: meg|tapasztal
@@ -1102,11 +1132,13 @@ In 5 resources: meg|terhel
 In 5 resources: meg|tervez
 In 5 resources: meg|testesít
 In 5 resources: meg|tesz
+In 5 resources: meg|tetszik
 In 5 resources: meg|tilt
 In 5 resources: meg|tisztel
 In 5 resources: meg|tisztít
 In 5 resources: meg|told
 In 5 resources: meg|torpan
+In 5 resources: meg|tud
 In 5 resources: meg|támad
 In 5 resources: meg|tárgyal
 In 5 resources: meg|térít
@@ -1120,6 +1152,7 @@ In 5 resources: meg|un
 In 5 resources: meg|vall
 In 5 resources: meg|valósul
 In 5 resources: meg|valósít
+In 5 resources: meg|van
 In 5 resources: meg|ver
 In 5 resources: meg|vesz
 In 5 resources: meg|vet
@@ -1172,6 +1205,7 @@ In 5 resources: mellékel
 In 5 resources: mellőz
 In 5 resources: menekül
 In 5 resources: ment
+In 5 resources: mer
 In 5 resources: mered
 In 5 resources: merít
 In 5 resources: minősül
@@ -1191,10 +1225,12 @@ In 5 resources: oda|ad
 In 5 resources: oda|figyel
 In 5 resources: oda|jön
 In 5 resources: oda|kerül
+In 5 resources: oda|lesz
 In 5 resources: oda|lép
 In 5 resources: oda|megy
 In 5 resources: oda|szól
 In 5 resources: oda|tesz
+In 5 resources: oda|van
 In 5 resources: oda|vet
 In 5 resources: oda|visz
 In 5 resources: oktat
@@ -1226,6 +1262,7 @@ In 5 resources: ráz
 In 5 resources: rá|ad
 In 5 resources: rá|beszél
 In 5 resources: rá|bukkan
+In 5 resources: rá|bír
 In 5 resources: rá|bíz
 In 5 resources: rá|döbben
 In 5 resources: rá|hagy
@@ -1237,6 +1274,7 @@ In 5 resources: rá|mutat
 In 5 resources: rá|nyom
 In 5 resources: rá|néz
 In 5 resources: rá|szól
+In 5 resources: rá|talál
 In 5 resources: rá|tesz
 In 5 resources: rá|tér
 In 5 resources: rá|vesz
@@ -1262,6 +1300,8 @@ In 5 resources: szembe|kerül
 In 5 resources: szembe|néz
 In 5 resources: szembe|száll
 In 5 resources: szembe|állít
+In 5 resources: szeret
+In 5 resources: szokik
 In 5 resources: szolgál
 In 5 resources: szorít
 In 5 resources: száll
@@ -1286,6 +1326,7 @@ In 5 resources: sért
 In 5 resources: sétál
 In 5 resources: sújt
 In 5 resources: süllyed
+In 5 resources: talál
 In 5 resources: találkozik
 In 5 resources: tanul
 In 5 resources: tanácsol
@@ -1300,6 +1341,7 @@ In 5 resources: teremt
 In 5 resources: terjed
 In 5 resources: tervez
 In 5 resources: tesz
+In 5 resources: tetszik
 In 5 resources: tilt
 In 5 resources: tolerál
 In 5 resources: tovább|ad
@@ -1307,6 +1349,7 @@ In 5 resources: tovább|fejleszt
 In 5 resources: tovább|folytat
 In 5 resources: tovább|megy
 In 5 resources: tovább|visz
+In 5 resources: tud
 In 5 resources: támad
 In 5 resources: támaszt
 In 5 resources: tár
@@ -1334,6 +1377,7 @@ In 5 resources: utol|ér
 In 5 resources: utál
 In 5 resources: utána|néz
 In 5 resources: vall
+In 5 resources: van
 In 5 resources: vesz
 In 5 resources: veszt
 In 5 resources: vezet
@@ -1342,6 +1386,7 @@ In 5 resources: vezérel
 In 5 resources: vissza|ad
 In 5 resources: vissza|esik
 In 5 resources: vissza|fizet
+In 5 resources: vissza|fog
 In 5 resources: vissza|fordul
 In 5 resources: vissza|hoz
 In 5 resources: vissza|hív
@@ -1405,6 +1450,7 @@ In 5 resources: át|alakít
 In 5 resources: át|csap
 In 5 resources: át|enged
 In 5 resources: át|esik
+In 5 resources: át|fog
 In 5 resources: át|fut
 In 5 resources: át|gondol
 In 5 resources: át|halad
@@ -1456,6 +1502,7 @@ In 5 resources: óvakodik
 In 5 resources: örvend
 In 5 resources: örül
 In 5 resources: össze|ad
+In 5 resources: össze|fog
 In 5 resources: össze|foglal
 In 5 resources: össze|függ
 In 5 resources: össze|gyűjt
@@ -1481,6 +1528,7 @@ In 5 resources: össze|áll
 In 5 resources: össze|állít
 In 5 resources: össze|ül
 In 5 resources: ösztönöz
+In 5 resources: újra|kezd
 In 5 resources: úszik
 In 5 resources: ügyel
 In 5 resources: ül
@@ -1488,19 +1536,6 @@ In 5 resources: üldöz
 In 5 resources: ültet
 In 5 resources: őriz
 In 5 resources: űz
-In 6 resources: be|csuk
-In 6 resources: bír
-In 6 resources: fog
-In 6 resources: kezd
-In 6 resources: kíván
-In 6 resources: lesz
-In 6 resources: mer
-In 6 resources: szeret
-In 6 resources: szokik
-In 6 resources: talál
-In 6 resources: tetszik
-In 6 resources: tud
-In 6 resources: van
 abba|hagy
 [('[ACC]',)]
 [(), ('=előtt', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=után',), ('=után', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TER]',)]
@@ -2614,6 +2649,13 @@ bele|feledkezik
 []
 379
 
+bele|fog
+[]
+[(), ('=után', '[ILL]'), ('[ACC]',), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[DAT]', '[ILL]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INS]'), ('[ILL]', '[SUB]'), ('[ILL]', '[SUP]')]
+[]
+[]
+1146
+
 bele|foglal
 []
 [('[ACC]', '[ILL]')]
@@ -2893,6 +2935,13 @@ bele|keveredik
 []
 []
 1699
+
+bele|kezd
+[('[ILL]',)]
+[(), ('[ACC]', '[ILL]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INS]'), ('[ILL]', '[SUB]'), ('[ILL]', '[SUP]'), ('[SUP]',), ('[TEM]',)]
+[('[ILL]',)]
+[]
+2147
 
 bele|kontárkodik
 []
@@ -3258,6 +3307,20 @@ bele|szalad
 []
 761
 
+bele|szeret
+[('[ILL]',)]
+[(), ('[ACC]', '[ILL]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INS]'), ('[ILL]', '[SUP]'), ('[ILL]', '[TEM]'), ('[INE]',), ('[SUB]',), ('[TEM]',)]
+[('[ILL]',)]
+[]
+3952
+
+bele|szokik
+[]
+[(), ('[ILL]',)]
+[]
+[]
+221
+
 bele|száll
 []
 [(), ('[ILL]',), ('[ILL]', '[INS]')]
@@ -3348,6 +3411,13 @@ bele|süpped
 []
 []
 201
+
+bele|talál
+[]
+[(), ('[ACC]', '[ILL]'), ('[ILL]',), ('[ILL]', '[INS]')]
+[]
+[]
+227
 
 bele|tanul
 []
@@ -4153,6 +4223,13 @@ be|fizet
 [('[ACC]',)]
 []
 6761
+
+be|fog
+[('[ACC]',), ('száj[PSe3][ACC]',)]
+[(), ('=elé', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[DAT]',), ('[ILL]',), ('[INE]',)]
+[('[ACC]',)]
+[]
+3054
 
 be|fogad
 [('[ACC]',)]
@@ -5855,6 +5932,13 @@ be|takarít
 []
 279
 
+be|talál
+[]
+[(), ('[ACC]',), ('[ILL]',), ('[ILL]', '[SUP]'), ('[INE]',), ('[SUP]',)]
+[]
+[]
+4390
+
 be|tanul
 []
 [('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]')]
@@ -6043,6 +6127,13 @@ be|toppan
 []
 []
 742
+
+be|tud
+[]
+[(), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[DAT]',)]
+[]
+[]
+196
 
 be|tuszkol
 []
@@ -7295,7 +7386,7 @@ bír
 [(), ('=[DAT]', '[INS]'), ('=előtt', '[INS]'), ('=miatt', '[ACC]'), ('=miatt', '[INS]'), ('=nélkül',), ('=nélkül', '[ACC]'), ('=szemben', '[INS]'), ('=szerint', '[ACC]'), ('=szerint', '[INE]', '[INS]'), ('=szerint', '[INS]'), ('=után', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]'), ('[ADE]', '[INS]'), ('[ALL]', '[INS]'), ('[DAT]',), ('[DAT]', '[INE]', '[INS]'), ('[DAT]', '[INS]'), ('[DAT]', '[INS]', '[SUB]'), ('[DEL]', '[INS]'), ('[ELA]',), ('[ELA]', '[INS]'), ('[ILL]', '[INS]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUB]'), ('[INE]', '[INS]', '[SUP]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[INS]', '[TEM]'), ('[INS]', '[TER]'), ('[SUB]',), ('[SUP]',), ('[TEM]',), ('[TER]',)]
 [('[ACC]',), ('[ACC]', '[SUB]'), ('[INS]',)]
 [('INF',)]
-5
+0
 
 bírságol
 []
@@ -9579,6 +9670,13 @@ egybe|esik
 []
 4612
 
+egybe|fog
+[]
+[('[ACC]',), ('[ACC]', '[SUP]')]
+[]
+[]
+117
+
 egybe|folyik
 []
 [(), ('[INE]',), ('[INS]',)]
@@ -10104,6 +10202,13 @@ el|bánik
 []
 1128
 
+el|bír
+[('[ACC]',)]
+[(), ('=nélkül', '[ACC]'), ('=szerint', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[INS]',)]
+[('[ACC]',)]
+[]
+2210
+
 el|bírál
 [('[ACC]',)]
 [(), ('=alatt', '[ACC]'), ('=belül', '[ACC]'), ('=kívül', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[INS]'), ('=szerint', '[ACC]', '[SUP]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[SUP]',)]
@@ -10565,6 +10670,13 @@ el|ferdít
 []
 []
 315
+
+el|fog
+[('[ACC]',)]
+[(), ('=alatt', '[ACC]'), ('=előtt', '[ACC]'), ('=iránt',), ('=közben', '[ACC]'), ('=közül', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=után', '[ACC]'), ('=után', '[ACC]', '[INE]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]', '[SUP]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUP]'), ('[SUB]',), ('[SUP]',), ('[TEM]',)]
+[('[ACC]',)]
+[]
+21456
 
 el|fogad
 [('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[FOR]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', 'bizottság[NOM]'), ('[ACC]', 'kormány[NOM]'), ('[ACC]', 'közgyűlés[NOM]'), ('[ACC]', 'országgyűlés[NOM]'), ('[ACC]', 'parlament[NOM]'), ('ajánlat[PSe3][ACC]',), ('indítvány[PSe3][ACC]', 'közgyűlés[NOM]'), ('javaslat[ACC]',), ('javaslat[ACC]', 'országgyűlés[NOM]'), ('javaslat[PSe3][ACC]',), ('parlament[NOM]', 'törvény[ACC]'), ('törvény[ACC]',), ('válasz[ACC]',), ('válasz[PSe3][ACC]',)]
@@ -11518,6 +11630,13 @@ el|keveredik
 []
 482
 
+el|kezd
+[('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]')]
+[(), ('=alatt', '[ACC]'), ('=belül', '[ACC]'), ('=ellen', '[ACC]'), ('=előtt', '[ACC]'), ('=között', '[ACC]'), ('=miatt', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INE]', '[INS]'), ('=szerint', '[ACC]', '[INS]'), ('=szerint', '[ACC]', '[SUP]'), ('=után',), ('=után', '[ACC]'), ('=után', '[ACC]', '[INE]'), ('=után', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[INE]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[SUP]'), ('[ACC]', '[ALL]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INE]', '[TER]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUB]', '[SUP]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[DAT]',), ('[DEL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUP]'), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',)]
+[('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]')]
+[]
+61257
+
 el|kezdődik
 [(), ('[INE]',), ('[SUP]',)]
 [(), ('=belül',), ('=előtt',), ('=között',), ('=között', '[INE]'), ('=szerint',), ('=szerint', '[INE]'), ('=után',), ('=után', '[INE]'), ('=után', '[INS]'), ('=után', '[SUP]'), ('[ABL]',), ('[ABL]', '[INE]'), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[ADE]',), ('[ADE]', '[INE]'), ('[ALL]',), ('[DAT]',), ('[DAT]', '[INE]'), ('[DAT]', '[SUP]'), ('[DEL]',), ('[ELA]',), ('[ILL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INE]', '[SUP]', '[TEM]'), ('[INE]', '[TEM]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUP]',), ('[SUP]', '[TEM]'), ('[TEM]',), ('[TER]',)]
@@ -11839,6 +11958,13 @@ el|les
 []
 []
 450
+
+el|lesz
+[]
+[('[TER]',)]
+[]
+[]
+28
 
 el|lobban
 []
@@ -12785,6 +12911,13 @@ el|szenved
 []
 2682
 
+el|szeret
+[]
+[(), ('[ACC]',)]
+[]
+[]
+216
+
 el|szigetel
 []
 [(), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ACC]',), ('[INE]',)]
@@ -12805,6 +12938,13 @@ el|szivárog
 []
 []
 214
+
+el|szokik
+[]
+[(), ('[ABL]',), ('[ABL]', '[INE]')]
+[]
+[]
+606
 
 el|szomorodik
 []
@@ -13085,6 +13225,13 @@ el|takarít
 []
 []
 868
+
+el|talál
+[('[ACC]',)]
+[(), ('=közt', '[ACC]'), ('=közül', '[ACC]'), ('=szerint', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ALL]',), ('[ALL]', '[SUP]'), ('[ILL]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
+[('[ACC]',)]
+[]
+5308
 
 el|tanul
 []
@@ -13519,6 +13666,13 @@ el|vakít
 []
 []
 488
+
+el|van
+[(), ('[INS]',)]
+[(), ('=alatt',), ('=elől',), ('=előtt',), ('=felé',), ('=között',), ('=miatt',), ('=mögött',), ('=nélkül',), ('=nélkül', '[TER]'), ('=szerint',), ('=által',), ('[ABL]',), ('[ABL]', '[INE]'), ('[ABL]', '[INS]'), ('[ABL]', '[SUP]'), ('[ABL]', '[TER]'), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ADE]',), ('[ALL]',), ('[DAT]',), ('[DAT]', '[INE]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUP]'), ('[DEL]',), ('[ELA]',), ('[ILL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[INS]', '[TER]'), ('[SUB]',), ('[SUP]',), ('[TER]',)]
+[(), ('[INS]',)]
+[]
+28
 
 el|varázsol
 []
@@ -15914,6 +16068,13 @@ fel|figyel
 []
 6442
 
+fel|fog
+[('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[FOR]')]
+[(), ('=alatt', '[ACC]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[DAT]'), ('=után', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[FOR]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[FOR]', '[SUB]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[DAT]',), ('[ELA]',), ('[FOR]',), ('[INE]',), ('[SUB]',), ('[SUP]',)]
+[('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[FOR]')]
+[]
+3328
+
 fel|fogad
 []
 [(), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[INE]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[DAT]',)]
@@ -17461,6 +17622,13 @@ fel|sül
 []
 236
 
+fel|talál
+[('[ACC]',)]
+[(), ('=szerint', '[ACC]'), ('[ACC]',), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[INE]',)]
+[('[ACC]',)]
+[]
+2414
+
 fel|tart
 []
 [(), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]')]
@@ -18470,11 +18638,11 @@ focizik
 0
 
 fog
-[(), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[FOR]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ALL]',), ('[ILL]',), ('[INS]', 'kéz[ACC]'), ('kar[PSe3][ACC]',), ('kéz[ACC]',), ('kéz[PSe3][ACC]',), ('száj[PSe3][ACC]',)]
-[(), ('=alatt',), ('=alatt', '[ACC]'), ('=alá', '[ACC]'), ('=ellen',), ('=ellen', '[ACC]'), ('=elé', '[ACC]'), ('=elől', '[ACC]'), ('=előtt', '[ACC]'), ('=helyett', '[ACC]'), ('=iránt',), ('=keresztül', '[ACC]'), ('=közben', '[ACC]'), ('=közé', '[ACC]'), ('=között', '[ACC]'), ('=közül', '[ACC]'), ('=közül', '[ACC]', '[SUB]'), ('=mellett',), ('=miatt',), ('=miatt', '[ACC]'), ('=miatt', '[ILL]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=nélkül', '[ALL]'), ('=szerint',), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INS]'), ('=szerint', '[ALL]'), ('=szerint', '[DAT]'), ('=után',), ('=után', '[ACC]'), ('=után', '[ACC]', '[DAT]', '[INS]'), ('=után', '[ACC]', '[INE]'), ('=után', '[ACC]', '[INS]'), ('=után', '[ALL]'), ('=után', '[ILL]'), ('=által',), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]', '[TER]'), ('[ABL]', '[ILL]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[INE]'), ('[ACC]', '[ALL]', '[INS]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[FOR]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[FAC]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[FOR]', '[SUB]'), ('[ACC]', '[FOR]', '[SUP]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[INE]', '[INS]'), ('[ACC]', '[ILL]', '[INE]', '[SUP]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[ILL]', '[SUB]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ADE]', '[ALL]'), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[DAT]', '[INE]'), ('[ALL]', '[DAT]', '[INS]'), ('[ALL]', '[ELA]'), ('[ALL]', '[INE]'), ('[ALL]', '[INE]', '[INS]'), ('[ALL]', '[INE]', '[SUP]'), ('[ALL]', '[INS]'), ('[ALL]', '[SUB]'), ('[ALL]', '[SUP]'), ('[ALL]', '[TEM]'), ('[CAU]',), ('[DAT]',), ('[DAT]', '[ILL]'), ('[DAT]', '[INE]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUP]'), ('[DAT]', '[TEM]'), ('[DEL]',), ('[ELA]',), ('[ELA]', '[ILL]'), ('[FOR]',), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INE]', '[INS]'), ('[ILL]', '[INE]', '[SUP]'), ('[ILL]', '[INS]'), ('[ILL]', '[SUB]'), ('[ILL]', '[SUP]'), ('[ILL]', '[TEM]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INE]', '[TEM]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUP]',), ('[SUP]', '[TEM]'), ('[TEM]',), ('[TER]',)]
-[(), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[FOR]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ALL]',), ('[ILL]',)]
+[('[ACC]',), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ILL]',), ('[INS]', 'kéz[ACC]'), ('kéz[ACC]',), ('kéz[PSe3][ACC]',)]
+[(), ('=alatt',), ('=alatt', '[ACC]'), ('=alá', '[ACC]'), ('=ellen',), ('=ellen', '[ACC]'), ('=elé', '[ACC]'), ('=előtt', '[ACC]'), ('=helyett', '[ACC]'), ('=közben', '[ACC]'), ('=közé', '[ACC]'), ('=között', '[ACC]'), ('=közül', '[ACC]', '[SUB]'), ('=miatt',), ('=miatt', '[ACC]'), ('=nélkül', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INS]'), ('=után',), ('=után', '[ACC]'), ('=után', '[ILL]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ILL]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[INE]', '[INS]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[ILL]', '[SUB]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ADE]', '[ALL]'), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[DAT]', '[INE]'), ('[ALL]', '[DAT]', '[INS]'), ('[ALL]', '[INE]'), ('[ALL]', '[INS]'), ('[ALL]', '[SUP]'), ('[DAT]',), ('[DAT]', '[ILL]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUB]'), ('[DEL]',), ('[ELA]',), ('[ELA]', '[ILL]'), ('[FOR]',), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INE]', '[INS]'), ('[ILL]', '[INE]', '[SUP]'), ('[ILL]', '[INS]'), ('[ILL]', '[SUB]'), ('[ILL]', '[SUP]'), ('[ILL]', '[TEM]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUP]',), ('[SUP]', '[TEM]'), ('[TEM]',), ('[TER]',)]
+[('[ACC]',), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ILL]',)]
 [('INF',)]
-5
+0
 
 fogad
 [(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[ACC]', 'öröm[INS]'), ('[INS]',)]
@@ -18977,6 +19145,13 @@ furcsáll
 [('[ACC]',)]
 [(), ('[ACC]',), ('[ACC]', '[INE]')]
 [('[ACC]',)]
+[]
+0
+
+furikázik
+[]
+[(), ('[ACC]',), ('[INS]',), ('[INS]', '[SUP]'), ('[SUP]',)]
+[]
 []
 0
 
@@ -19602,6 +19777,13 @@ föl|figyel
 []
 []
 522
+
+föl|fog
+[('[ACC]',)]
+[(), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[INS]',)]
+[('[ACC]',)]
+[]
+564
 
 föl|fordul
 []
@@ -20267,6 +20449,13 @@ föl|sóhajt
 []
 []
 120
+
+föl|talál
+[]
+[(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]')]
+[]
+[]
+259
 
 föl|tart
 []
@@ -22263,6 +22452,13 @@ haza|szállít
 []
 625
 
+haza|talál
+[]
+[(), ('=után',), ('[INE]',)]
+[]
+[]
+384
+
 haza|települ
 []
 [(), ('[ELA]',), ('[INE]',), ('[SUP]',)]
@@ -22893,6 +23089,13 @@ hozzá|csatol
 []
 481
 
+hozzá|fog
+[('[ALL]',)]
+[(), ('=nélkül', '[ALL]'), ('=után', '[ALL]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[INE]'), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[ELA]'), ('[ALL]', '[INE]'), ('[ALL]', '[INE]', '[INS]'), ('[ALL]', '[INE]', '[SUP]'), ('[ALL]', '[INS]'), ('[ALL]', '[SUB]'), ('[ALL]', '[SUP]'), ('[INE]',), ('[INS]',)]
+[('[ALL]',)]
+[]
+1239
+
 hozzá|fordul
 []
 [(), ('[CAU]',), ('[INE]',), ('[INE]', '[INS]'), ('[INS]',)]
@@ -23012,6 +23215,13 @@ hozzá|kever
 []
 478
 
+hozzá|kezd
+[('[ALL]',)]
+[(), ('=után', '[ALL]'), ('[ABL]', '[ALL]'), ('[ACC]', '[ALL]'), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[DAT]', '[SUP]'), ('[ALL]', '[ELA]'), ('[ALL]', '[INE]'), ('[ALL]', '[INE]', '[INS]'), ('[ALL]', '[INS]'), ('[ALL]', '[INS]', '[SUP]'), ('[ALL]', '[SUP]'), ('[ALL]', '[TEM]'), ('[DAT]',), ('[INE]',)]
+[('[ALL]',)]
+[]
+1295
+
 hozzá|képzel
 []
 [('[ACC]',), ('[ACC]', '[ALL]')]
@@ -23095,6 +23305,13 @@ hozzá|simul
 []
 []
 152
+
+hozzá|szokik
+[('[ALL]',)]
+[(), ('=alatt',), ('=alatt', '[ALL]'), ('[ALL]',), ('[ALL]', '[INE]'), ('[ALL]', '[INS]'), ('[ALL]', '[SUP]')]
+[('[ALL]',)]
+[]
+3411
 
 hozzá|szoktat
 []
@@ -23424,6 +23641,13 @@ hátra|szól
 []
 []
 235
+
+hátra|van
+[()]
+[(), ('[ACC]',), ('[ADE]',), ('[ALL]',), ('[DAT]',), ('[ELA]',), ('[INE]',), ('[INS]',), ('[SUP]',), ('[TER]',)]
+[()]
+[]
+1868
 
 hátra|vet
 []
@@ -23942,6 +24166,13 @@ ide|számít
 []
 []
 60
+
+ide|talál
+[]
+[()]
+[]
+[]
+249
 
 ide|tart
 []
@@ -25989,10 +26220,10 @@ kevesell
 
 kezd
 [(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ALL]',), ('[ILL]',), ('[INE]',), ('[INS]',)]
-[(), ('=[DAT]', '[ACC]'), ('=alatt', '[ACC]'), ('=alatt', '[ACC]', '[INE]'), ('=belül', '[ABL]', '[ACC]'), ('=belül', '[ACC]'), ('=belül', '[ACC]', '[INE]'), ('=belül', '[ACC]', '[SUP]'), ('=ellen',), ('=ellen', '[ACC]'), ('=ellen', '[ACC]', '[INE]'), ('=ellen', '[ACC]', '[INS]'), ('=ellen', '[ACC]', '[SUP]'), ('=ellen', '[ILL]'), ('=ellenére', '[ACC]'), ('=előtt', '[ACC]'), ('=előtt', '[ACC]', '[INS]'), ('=előtt', '[ILL]'), ('=között',), ('=között', '[ACC]'), ('=között', '[ACC]', '[INE]', '[SUP]'), ('=között', '[ACC]', '[SUP]'), ('=közül', '[ACC]'), ('=közül', '[ACC]', '[INE]'), ('=mellett', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=miatt', '[ACC]', '[INS]'), ('=miatt', '[ILL]'), ('=múlva', '=szerint', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül',), ('=nélkül', '=szerint', '[ACC]'), ('=nélkül', '[ACC]'), ('=nélkül', '[ALL]'), ('=nélkül', '[ILL]'), ('=szemben', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[DEL]'), ('=szerint', '[ACC]', '[DEL]', '[SUP]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INE]', '[INS]'), ('=szerint', '[ACC]', '[INE]', '[SUP]'), ('=szerint', '[ACC]', '[INS]'), ('=szerint', '[ACC]', '[SUP]'), ('=szerint', '[ACC]', '[TEM]'), ('=szerint', '[ILL]'), ('=szerint', '[ILL]', '[INE]'), ('=szerint', '[INS]'), ('=után',), ('=után', '[ACC]'), ('=után', '[ACC]', '[INE]'), ('=után', '[ACC]', '[INE]', '[INS]'), ('=után', '[ACC]', '[INE]', '[SUP]'), ('=után', '[ACC]', '[INS]'), ('=után', '[ACC]', '[INS]', '[SUP]'), ('=után', '[ACC]', '[SUB]'), ('=után', '[ACC]', '[SUP]'), ('=után', '[ALL]'), ('=után', '[ILL]'), ('=után', '[ILL]', '[INE]'), ('=után', '[ILL]', '[SUP]'), ('=után', '[INE]', '[INS]'), ('=által', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INE]', '[INS]'), ('[ABL]', '[ACC]', '[INS]'), ('[ABL]', '[ACC]', '[INS]', '[SUP]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ABL]', '[ALL]'), ('[ABL]', '[ILL]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[FOR]'), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ADE]', '[INS]'), ('[ACC]', '[ADE]', '[SUP]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[INE]'), ('[ACC]', '[ALL]', '[INS]'), ('[ACC]', '[ALL]', '[SUB]'), ('[ACC]', '[ALL]', '[SUP]'), ('[ACC]', '[CAU]'), ('[ACC]', '[CAU]', '[INS]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[DEL]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[INS]', '[SUB]'), ('[ACC]', '[DAT]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[INE]', '[INS]'), ('[ACC]', '[DEL]', '[INE]', '[SUP]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[DEL]', '[INS]', '[SUB]'), ('[ACC]', '[DEL]', '[INS]', '[SUP]'), ('[ACC]', '[DEL]', '[SUB]'), ('[ACC]', '[DEL]', '[SUB]', '[SUP]'), ('[ACC]', '[DEL]', '[SUP]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[INE]', '[INS]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[FOR]', '[INE]', '[INS]'), ('[ACC]', '[FOR]', '[INE]', '[SUP]'), ('[ACC]', '[FOR]', '[INS]'), ('[ACC]', '[FOR]', '[SUP]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[ILL]', '[SUB]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]', '[SUP]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INE]', '[SUP]', '[TEM]'), ('[ACC]', '[INE]', '[TEM]'), ('[ACC]', '[INE]', '[TER]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUB]', '[SUP]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[INS]', '[TEM]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[SUP]', '[TEM]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ADE]', '[ILL]'), ('[ADE]', '[ILL]', '[INE]'), ('[ADE]', '[INS]'), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[DAT]', '[SUP]'), ('[ALL]', '[ELA]'), ('[ALL]', '[ILL]'), ('[ALL]', '[INE]'), ('[ALL]', '[INE]', '[INS]'), ('[ALL]', '[INS]'), ('[ALL]', '[INS]', '[SUP]'), ('[ALL]', '[SUB]'), ('[ALL]', '[SUP]'), ('[ALL]', '[TEM]'), ('[CAU]', '[ILL]'), ('[DAT]',), ('[DAT]', '[ILL]'), ('[DAT]', '[INE]'), ('[DAT]', '[INS]'), ('[DEL]',), ('[DEL]', '[ILL]'), ('[ELA]',), ('[ELA]', '[ILL]'), ('[FOR]',), ('[FOR]', '[ILL]'), ('[FOR]', '[INE]'), ('[FOR]', '[SUP]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INE]', '[INS]'), ('[ILL]', '[INE]', '[SUB]'), ('[ILL]', '[INE]', '[SUP]'), ('[ILL]', '[INS]'), ('[ILL]', '[INS]', '[SUB]'), ('[ILL]', '[INS]', '[SUP]'), ('[ILL]', '[SUB]'), ('[ILL]', '[SUB]', '[SUP]'), ('[ILL]', '[SUP]'), ('[ILL]', '[TER]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[INS]', '[TEM]'), ('[SUB]',), ('[SUP]',), ('[SUP]', '[TEM]'), ('[TEM]',)]
+[(), ('=alatt', '[ACC]'), ('=ellen',), ('=ellen', '[ACC]'), ('=ellen', '[ACC]', '[INE]'), ('=ellen', '[ACC]', '[INS]'), ('=ellen', '[ACC]', '[SUP]'), ('=ellen', '[ILL]'), ('=előtt', '[ACC]'), ('=előtt', '[ACC]', '[INS]'), ('=előtt', '[ILL]'), ('=között',), ('=között', '[ACC]'), ('=közül', '[ACC]'), ('=mellett', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=miatt', '[ACC]', '[INS]'), ('=miatt', '[ILL]'), ('=múlva', '[ACC]'), ('=nélkül',), ('=nélkül', '[ACC]'), ('=nélkül', '[ALL]'), ('=nélkül', '[ILL]'), ('=szemben', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[DEL]', '[SUP]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INE]', '[SUP]'), ('=szerint', '[ACC]', '[INS]'), ('=szerint', '[ILL]'), ('=szerint', '[ILL]', '[INE]'), ('=szerint', '[INS]'), ('=után',), ('=után', '[ACC]'), ('=után', '[ACC]', '[INE]'), ('=után', '[ACC]', '[INS]'), ('=után', '[ACC]', '[SUP]'), ('=után', '[ALL]'), ('=után', '[ILL]'), ('=után', '[ILL]', '[INE]'), ('=után', '[ILL]', '[SUP]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[INE]', '[INS]'), ('[ABL]', '[ACC]', '[INS]'), ('[ABL]', '[ILL]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[FOR]'), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ADE]', '[INS]'), ('[ACC]', '[ADE]', '[SUP]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[INS]'), ('[ACC]', '[CAU]'), ('[ACC]', '[CAU]', '[INS]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[INS]', '[SUB]'), ('[ACC]', '[DAT]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[INE]', '[INS]'), ('[ACC]', '[DEL]', '[INE]', '[SUP]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[DEL]', '[INS]', '[SUB]'), ('[ACC]', '[DEL]', '[INS]', '[SUP]'), ('[ACC]', '[DEL]', '[SUP]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[FOR]', '[INE]', '[INS]'), ('[ACC]', '[FOR]', '[INS]'), ('[ACC]', '[FOR]', '[SUP]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[ILL]', '[SUB]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[INS]', '[TEM]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[SUP]', '[TEM]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ADE]', '[ILL]'), ('[ADE]', '[ILL]', '[INE]'), ('[ADE]', '[INS]'), ('[ALL]',), ('[ALL]', '[ILL]'), ('[ALL]', '[INE]'), ('[ALL]', '[INE]', '[INS]'), ('[ALL]', '[INS]'), ('[ALL]', '[SUB]'), ('[ALL]', '[SUP]'), ('[CAU]', '[ILL]'), ('[DAT]',), ('[DAT]', '[ILL]'), ('[DAT]', '[INE]'), ('[DAT]', '[INS]'), ('[DEL]',), ('[DEL]', '[ILL]'), ('[ELA]',), ('[ELA]', '[ILL]'), ('[FOR]',), ('[FOR]', '[ILL]'), ('[FOR]', '[INE]'), ('[FOR]', '[SUP]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INE]', '[INS]'), ('[ILL]', '[INE]', '[SUB]'), ('[ILL]', '[INE]', '[SUP]'), ('[ILL]', '[INS]'), ('[ILL]', '[INS]', '[SUB]'), ('[ILL]', '[INS]', '[SUP]'), ('[ILL]', '[SUB]'), ('[ILL]', '[SUB]', '[SUP]'), ('[ILL]', '[SUP]'), ('[ILL]', '[TER]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[INS]', '[TEM]'), ('[SUB]',), ('[SUP]',), ('[SUP]', '[TEM]'), ('[TEM]',)]
 [(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ALL]',), ('[ILL]',), ('[INE]',), ('[INS]',)]
 [('INF',)]
-16
+0
 
 kezdeményez
 [('[ACC]',), ('[ACC]', '[INE]')]
@@ -26041,7 +26272,7 @@ kiabál
 [(), ('=alatt',), ('=ellen',), ('=miatt',), ('=után',), ('=után', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[CAU]',), ('[DAT]',), ('[DEL]',), ('[ELA]',), ('[ILL]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
 [(), ('[ACC]',)]
 []
-2524
+0
 
 kicsinyít
 []
@@ -26308,6 +26539,13 @@ ki|bérel
 []
 []
 871
+
+ki|bír
+[('[ACC]',)]
+[(), ('=nélkül',), ('=nélkül', '[ACC]'), ('=szerint', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]'), ('[INS]',), ('[INS]', '[TER]'), ('[TER]',)]
+[('[ACC]',)]
+[]
+4936
 
 ki|bök
 [('[ACC]',)]
@@ -26889,6 +27127,13 @@ ki|fizetődik
 []
 []
 262
+
+ki|fog
+[('[ACC]',)]
+[(), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[INS]',), ('[INS]', '[SUP]'), ('[SUP]',)]
+[('[ACC]',)]
+[]
+1984
 
 ki|fogy
 []
@@ -27625,6 +27870,13 @@ ki|kever
 []
 299
 
+ki|kezd
+[('[ACC]',)]
+[(), ('=szerint', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[INS]',)]
+[('[ACC]',)]
+[]
+1588
+
 ki|kiált
 []
 [(), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUP]'), ('[DAT]',), ('[ELA]',), ('[SUP]',)]
@@ -28037,6 +28289,13 @@ ki|ment
 [('[ACC]',)]
 []
 1536
+
+ki|mer
+[]
+[(), ('[ACC]',), ('[ACC]', '[ELA]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INS]')]
+[]
+[]
+169
 
 ki|mered
 []
@@ -28920,6 +29179,13 @@ ki|szerel
 []
 378
 
+ki|szeret
+[]
+[(), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ELA]',)]
+[]
+[]
+72
+
 ki|szervez
 []
 [('=alól', '[ACC]'), ('[ACC]',)]
@@ -29165,6 +29431,13 @@ ki|takarít
 []
 1013
 
+ki|talál
+[('[ACC]',), ('[ACC]', '[SUB]'), ('valami[ACC]',)]
+[(), ('=[DAT]', '[ACC]'), ('=ellen', '[ACC]'), ('=helyett', '[ACC]'), ('=között', '[ACC]'), ('=miatt', '[ACC]'), ('=nélkül', '[ACC]'), ('=szerint', '[ACC]'), ('=után', '[ACC]'), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[INE]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ESS]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[DAT]',), ('[DEL]',), ('[ELA]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
+[('[ACC]',), ('[ACC]', '[SUB]')]
+[]
+12445
+
 ki|tanul
 []
 [(), ('=alatt', '[ACC]'), ('=után', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[DAT]',)]
@@ -29326,6 +29599,13 @@ ki|tesz
 []
 7925
 
+ki|tetszik
+[]
+[(), ('[DAT]',), ('[DAT]', '[INE]'), ('[ELA]',)]
+[]
+[]
+0
+
 ki|tilt
 []
 [(), ('=miatt', '[ACC]', '[DEL]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[INS]'), ('[DEL]',), ('[ELA]',)]
@@ -29367,6 +29647,13 @@ ki|tombol
 []
 []
 193
+
+ki|tud
+[]
+[(), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[DAT]',), ('[DEL]',), ('[ELA]',), ('[INE]',), ('[SUB]',), ('[SUP]',)]
+[]
+[]
+0
 
 ki|tudódik
 []
@@ -29626,6 +29913,13 @@ ki|vall
 []
 []
 74
+
+ki|van
+[]
+[(), ('=alatt',), ('=előtt',), ('=fölött',), ('=közül',), ('=mellett',), ('=miatt',), ('=mögött',), ('=szerint',), ('=szerint', '[DAT]'), ('=után',), ('[ABL]',), ('[ABL]', '[DAT]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[ADE]',), ('[ADE]', '[DAT]'), ('[ADE]', '[INE]'), ('[ALL]',), ('[CAU]',), ('[DAT]',), ('[DAT]', '[INE]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUP]'), ('[DAT]', '[TEM]'), ('[DEL]',), ('[ELA]',), ('[ELA]', '[INE]'), ('[ELA]', '[SUP]'), ('[FOR]',), ('[ILL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUP]',), ('[TEM]',), ('[TER]',)]
+[]
+[]
+31
 
 ki|vasal
 []
@@ -31421,10 +31715,10 @@ kísért
 
 kíván
 [('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('nap[ACC]',)]
-[(), ('=[DAT]', '[ACC]'), ('=alatt', '[ACC]'), ('=helyett', '[ACC]'), ('=között', '[ACC]'), ('=közül', '[ACC]'), ('=miatt', '[ACC]'), ('=szemben', '[ACC]'), ('=szerint', '[ACC]'), ('=után', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INS]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[DAT]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[DAT]', '[INE]'), ('[ACC]', '[ALL]', '[INE]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[INS]', '[SUB]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ESS]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ALL]',), ('[DAT]',), ('[DAT]', '[INS]'), ('[DEL]',), ('[ELA]',), ('[ILL]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
+[(), ('=[DAT]', '[ACC]'), ('=alatt', '[ACC]'), ('=helyett', '[ACC]'), ('=között', '[ACC]'), ('=közül', '[ACC]'), ('=miatt', '[ACC]'), ('=szemben', '[ACC]'), ('=szerint', '[ACC]'), ('=után', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INS]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[DAT]', '[INE]'), ('[ACC]', '[ALL]', '[INE]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[INS]', '[SUB]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ESS]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ALL]',), ('[DAT]',), ('[DAT]', '[INS]'), ('[DEL]',), ('[ELA]',), ('[ILL]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
 [('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]')]
 [('INF',)]
-7
+0
 
 kívánkozik
 []
@@ -31776,6 +32070,13 @@ körül|bástyáz
 []
 0
 
+körül|fog
+[]
+[(), ('[ACC]',), ('[ACC]', '[FOR]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]')]
+[]
+[]
+495
+
 körül|határol
 []
 [(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]')]
@@ -32118,6 +32419,13 @@ közre|bocsát
 []
 []
 112
+
+közre|fog
+[]
+[(), ('=által',), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]')]
+[]
+[]
+465
 
 közre|játszik
 [('[INE]',)]
@@ -32509,7 +32817,7 @@ lehet
 []
 []
 [('INF',)]
-152
+0
 
 lejt
 []
@@ -32635,7 +32943,7 @@ lesz
 [(), ('=[DAT]',), ('=[DAT]', '[DAT]'), ('=[DAT]', '[FAC]'), ('=[DAT]', '[INE]'), ('=[DAT]', '[INE]', '[INS]'), ('=[DAT]', '[SUB]'), ('=[DAT]', '[SUP]'), ('=alatt',), ('=alatt', '=szerint'), ('=alatt', '[DAT]'), ('=alatt', '[INE]'), ('=alatt', '[SUB]'), ('=alatt', '[SUP]'), ('=alatt', '[TEM]'), ('=alá',), ('=alól',), ('=belül',), ('=belül', '[INE]'), ('=belül', '[SUP]'), ('=együtt',), ('=ellenére',), ('=ellenére', '[INE]'), ('=előtt',), ('=előtt', '[DAT]'), ('=előtt', '[DAT]', '[INE]'), ('=előtt', '[FAC]'), ('=előtt', '[INE]'), ('=felett',), ('=fogva',), ('=fölött',), ('=helyett',), ('=helyett', '[SUP]'), ('=iránt', '[INS]'), ('=keresztül',), ('=keresztül', '[INE]'), ('=képest',), ('=kívül',), ('=kívül', '[INE]'), ('=kívül', '[SUP]'), ('=körül',), ('=következtében',), ('=közben',), ('=közt',), ('=között',), ('=között', '=szerint', '[SUP]'), ('=között', '[ACC]'), ('=között', '[DAT]'), ('=között', '[DEL]'), ('=között', '[INE]'), ('=között', '[INE]', '[SUP]'), ('=között', '[INS]'), ('=között', '[SUB]'), ('=között', '[SUP]'), ('=közül',), ('=közül', '[INE]'), ('=közül', '[INE]', '[TEM]'), ('=közül', '[INS]'), ('=közül', '[SUP]'), ('=mellett',), ('=mellett', '[DAT]'), ('=mellett', '[DAT]', '[INE]'), ('=mellett', '[ELA]'), ('=mellett', '[INE]'), ('=mellett', '[INE]', '[INS]'), ('=mellett', '[SUB]'), ('=mellett', '[SUP]'), ('=miatt',), ('=miatt', '[ADE]', '[INS]'), ('=miatt', '[DAT]'), ('=miatt', '[ELA]'), ('=miatt', '[INE]'), ('=miatt', '[INS]'), ('=miatt', '[SUB]'), ('=miatt', '[SUP]'), ('=mögött',), ('=múlva',), ('=nélkül',), ('=nélkül', '[DAT]'), ('=nélkül', '[INE]'), ('=nélkül', '[INS]'), ('=nélkül', '[SUP]'), ('=részére',), ('=révén',), ('=szemben',), ('=szemben', '[INE]'), ('=szerint',), ('=szerint', '=után', '[SUB]'), ('=szerint', '[ABL]'), ('=szerint', '[ABL]', '[SUP]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[INE]', '[SUP]'), ('=szerint', '[ADE]'), ('=szerint', '[ADE]', '[INE]'), ('=szerint', '[ALL]'), ('=szerint', '[DAT]'), ('=szerint', '[DAT]', '[INE]'), ('=szerint', '[DAT]', '[SUP]'), ('=szerint', '[DEL]'), ('=szerint', '[ELA]'), ('=szerint', '[ELA]', '[INE]'), ('=szerint', '[INE]'), ('=szerint', '[INE]', '[INS]'), ('=szerint', '[INE]', '[INS]', '[SUB]'), ('=szerint', '[INE]', '[SUB]'), ('=szerint', '[INE]', '[SUP]'), ('=szerint', '[INS]'), ('=szerint', '[INS]', '[SUB]'), ('=szerint', '[SUB]'), ('=szerint', '[SUB]', '[SUP]'), ('=szerint', '[SUP]'), ('=szerint', '[TER]'), ('=túl',), ('=túl', '[SUP]'), ('=után',), ('=után', '[ACC]', '[INE]'), ('=után', '[DAT]'), ('=után', '[DAT]', '[SUB]'), ('=után', '[DAT]', '[SUP]'), ('=után', '[ELA]'), ('=után', '[INE]'), ('=után', '[INE]', '[SUB]'), ('=után', '[INE]', '[SUP]'), ('=után', '[INS]'), ('=után', '[SUB]'), ('=után', '[SUP]'), ('=által',), ('=által', '[FAC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ADE]'), ('[ABL]', '[DAT]'), ('[ABL]', '[DAT]', '[TER]'), ('[ABL]', '[FOR]'), ('[ABL]', '[INE]'), ('[ABL]', '[INE]', '[SUB]'), ('[ABL]', '[INE]', '[SUP]'), ('[ABL]', '[INE]', '[SUP]', '[TER]'), ('[ABL]', '[INS]'), ('[ABL]', '[INS]', '[SUB]'), ('[ABL]', '[SUB]', '[TER]'), ('[ABL]', '[SUP]'), ('[ABL]', '[TEM]'), ('[ABL]', '[TER]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[FAC]', '[SUP]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ADE]',), ('[ADE]', '[DAT]'), ('[ADE]', '[ELA]'), ('[ADE]', '[INE]'), ('[ADE]', '[INE]', '[INS]'), ('[ADE]', '[INS]', '[SUB]'), ('[ADE]', '[INS]', '[SUP]'), ('[ADE]', '[SUB]'), ('[ADE]', '[SUP]'), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[FAC]'), ('[ALL]', '[INE]'), ('[ALL]', '[INE]', '[SUB]'), ('[ALL]', '[INS]'), ('[ALL]', '[SUB]'), ('[ALL]', '[SUP]'), ('[CAU]',), ('[CAU]', '[INE]'), ('[CAU]', '[SUB]'), ('[DAT]',), ('[DAT]', '[DEL]'), ('[DAT]', '[DEL]', '[INE]'), ('[DAT]', '[ELA]'), ('[DAT]', '[ELA]', '[INE]'), ('[DAT]', '[FAC]'), ('[DAT]', '[FAC]', '[INE]'), ('[DAT]', '[FOR]'), ('[DAT]', '[FOR]', '[INE]'), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[INS]'), ('[DAT]', '[INE]', '[SUB]'), ('[DAT]', '[INE]', '[SUB]', '[SUP]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INS]'), ('[DAT]', '[INS]', '[SUB]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUB]', '[SUP]'), ('[DAT]', '[SUP]'), ('[DAT]', '[TEM]'), ('[DEL]',), ('[DEL]', '[INE]'), ('[DEL]', '[INS]'), ('[DEL]', '[SUB]'), ('[DEL]', '[SUB]', '[SUP]'), ('[DEL]', '[SUP]'), ('[ELA]',), ('[ELA]', '[FAC]'), ('[ELA]', '[FOR]'), ('[ELA]', '[INE]'), ('[ELA]', '[INE]', '[SUB]'), ('[ELA]', '[INS]'), ('[ELA]', '[SUB]'), ('[ELA]', '[SUP]'), ('[ESS]',), ('[FAC]',), ('[FAC]', '[INE]'), ('[FAC]', '[SUP]'), ('[FOR]',), ('[FOR]', '[INE]'), ('[FOR]', '[SUB]'), ('[FOR]', '[SUP]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INS]'), ('[ILL]', '[SUB]'), ('[ILL]', '[SUP]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUB]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[INS]', '[TEM]'), ('[INE]', '[SUB]'), ('[INE]', '[SUB]', '[SUP]'), ('[INE]', '[SUP]'), ('[INE]', '[SUP]', '[TEM]'), ('[INE]', '[SUP]', '[TER]'), ('[INE]', '[TER]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUB]', '[SUP]'), ('[INS]', '[SUP]'), ('[INS]', '[TER]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUB]', '[SUP]', '[TEM]'), ('[SUB]', '[TEM]'), ('[SUB]', '[TER]'), ('[SUP]',), ('[SUP]', '[TEM]'), ('[SUP]', '[TER]'), ('[TEM]',), ('[TER]',)]
 [(), ('=[DAT]',), ('=alatt',), ('=között',), ('=mellett',), ('=miatt',), ('=nélkül',), ('=szerint',), ('=szerint', '[INE]'), ('=után',), ('[ABL]',), ('[ACC]',), ('[ADE]',), ('[ALL]',), ('[DAT]',), ('[ELA]',), ('[FAC]',), ('[ILL]',), ('[INE]',), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[SUP]', '[TEM]'), ('[TEM]',), ('[TER]',)]
 [('INF',)]
-21
+0
 
 levegőzik
 []
@@ -33168,6 +33476,13 @@ le|fizet
 []
 []
 621
+
+le|fog
+[('[ACC]',)]
+[(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[INE]',)]
+[('[ACC]',)]
+[]
+1607
 
 le|fogad
 []
@@ -34590,6 +34905,13 @@ le|szerződtet
 []
 853
 
+le|szokik
+[('[DEL]',)]
+[(), ('[ACC]',), ('[DEL]',), ('[DEL]', '[INE]'), ('[DEL]', '[INS]'), ('[DEL]', '[SUP]'), ('[INS]',)]
+[('[DEL]',)]
+[]
+1656
+
 le|szoktat
 []
 [(), ('[ACC]',), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[INS]'), ('[DEL]',)]
@@ -34946,6 +35268,13 @@ le|torkol
 []
 []
 202
+
+le|tud
+[]
+[(), ('=alatt', '[ACC]'), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]')]
+[]
+[]
+933
 
 le|táboroz
 []
@@ -37467,6 +37796,13 @@ meg|fizettet
 []
 280
 
+meg|fog
+[('[ACC]',), ('kar[PSe3][ACC]',), ('kéz[PSe3][ACC]',)]
+[(), ('=alatt', '[ACC]'), ('=előtt', '[ACC]'), ('=keresztül', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=után', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[DAT]',), ('[INE]',), ('[INS]',), ('[SUP]',)]
+[('[ACC]',)]
+[]
+10511
+
 meg|fogad
 [('[ACC]',)]
 [(), ('=szerint', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[DAT]',), ('[INS]',)]
@@ -38650,6 +38986,13 @@ meg|kever
 []
 369
 
+meg|kezd
+[('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]')]
+[(), ('=[DAT]', '[ACC]'), ('=alatt', '[ACC]', '[INE]'), ('=belül', '[ABL]', '[ACC]'), ('=belül', '[ACC]'), ('=belül', '[ACC]', '[INE]'), ('=belül', '[ACC]', '[SUP]'), ('=ellen', '[ACC]'), ('=ellen', '[ACC]', '[INS]'), ('=ellen', '[ACC]', '[SUP]'), ('=ellenére', '[ACC]'), ('=előtt', '[ACC]'), ('=előtt', '[ACC]', '[INS]'), ('=között', '[ACC]'), ('=között', '[ACC]', '[SUP]'), ('=közül', '[ACC]'), ('=közül', '[ACC]', '[INE]'), ('=mellett', '[ACC]'), ('=miatt', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül', '=szerint', '[ACC]'), ('=nélkül', '[ACC]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[DEL]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INE]', '[SUP]'), ('=szerint', '[ACC]', '[INS]'), ('=szerint', '[ACC]', '[SUP]'), ('=szerint', '[ACC]', '[TEM]'), ('=után', '[ACC]'), ('=után', '[ACC]', '[INE]'), ('=után', '[ACC]', '[INE]', '[INS]'), ('=után', '[ACC]', '[INE]', '[SUP]'), ('=után', '[ACC]', '[INS]'), ('=után', '[ACC]', '[INS]', '[SUP]'), ('=után', '[ACC]', '[SUB]'), ('=után', '[ACC]', '[SUP]'), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INS]'), ('[ABL]', '[ACC]', '[INS]', '[SUP]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ADE]', '[INS]'), ('[ACC]', '[ADE]', '[SUP]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[INE]'), ('[ACC]', '[ALL]', '[SUB]'), ('[ACC]', '[ALL]', '[SUP]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[DEL]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[DEL]', '[INS]', '[SUP]'), ('[ACC]', '[DEL]', '[SUB]', '[SUP]'), ('[ACC]', '[DEL]', '[SUP]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[INE]', '[INS]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[FOR]', '[INE]', '[SUP]'), ('[ACC]', '[FOR]', '[SUP]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]', '[SUP]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INE]', '[SUP]', '[TEM]'), ('[ACC]', '[INE]', '[TEM]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[SUP]', '[TEM]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ALL]', '[INE]'), ('[ILL]',), ('[INE]',), ('[INE]', '[SUP]'), ('[INS]',), ('[SUP]',)]
+[('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]')]
+[]
+31014
+
 meg|kezdődik
 [(), ('[INE]',), ('[INS]',), ('[SUP]',)]
 [(), ('=[DAT]',), ('=alatt',), ('=belül',), ('=ellen',), ('=ellenére',), ('=előtt',), ('=előtt', '[INE]'), ('=előtt', '[INS]'), ('=előtt', '[SUP]'), ('=között',), ('=között', '[DEL]'), ('=között', '[INE]'), ('=között', '[INE]', '[SUP]'), ('=között', '[INS]'), ('=mellett', '[SUP]'), ('=miatt',), ('=miatt', '[INE]', '[SUP]'), ('=múlva',), ('=nélkül', '[INE]'), ('=szerint',), ('=szerint', '=után'), ('=szerint', '[INE]'), ('=szerint', '[INE]', '[INS]'), ('=szerint', '[INS]'), ('=szerint', '[SUP]'), ('=után',), ('=után', '[INE]'), ('=után', '[INE]', '[INS]'), ('=után', '[INE]', '[SUP]'), ('=után', '[INS]'), ('=után', '[SUP]'), ('[ABL]',), ('[ABL]', '[INE]'), ('[ABL]', '[INE]', '[SUP]'), ('[ABL]', '[INS]'), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[ADE]',), ('[ALL]',), ('[CAU]',), ('[DAT]',), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[INS]'), ('[DAT]', '[INE]', '[SUB]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INS]'), ('[DAT]', '[INS]', '[SUP]'), ('[DAT]', '[SUP]'), ('[DEL]',), ('[DEL]', '[INE]'), ('[DEL]', '[INE]', '[SUP]'), ('[DEL]', '[SUP]'), ('[ELA]',), ('[ELA]', '[INE]'), ('[FAC]',), ('[ILL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUB]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[INS]', '[TEM]'), ('[INE]', '[SUB]'), ('[INE]', '[SUB]', '[SUP]'), ('[INE]', '[SUP]'), ('[INE]', '[TEM]'), ('[INE]', '[TER]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[INS]', '[TEM]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUP]',), ('[SUP]', '[TEM]'), ('[TEM]',), ('[TER]',)]
@@ -38867,6 +39210,13 @@ meg|kísért
 []
 128
 
+meg|kíván
+[('[ACC]',)]
+[(), ('=szerint', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INS]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[INE]',)]
+[('[ACC]',)]
+[]
+3870
+
 meg|kóstol
 [('[ACC]',)]
 [(), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]')]
@@ -39083,6 +39433,13 @@ meg|les
 [('[ACC]',)]
 []
 895
+
+meg|lesz
+[(), ('=nélkül',), ('[INE]',)]
+[(), ('=belül',), ('[INE]',), ('[INS]',)]
+[(), ('[INE]',)]
+[]
+3890
 
 meg|lincsel
 []
@@ -40610,6 +40967,13 @@ meg|szerepel
 []
 0
 
+meg|szeret
+[('[ACC]',)]
+[(), ('=miatt', '[ACC]'), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[DAT]',), ('[INE]',), ('[SUB]',)]
+[('[ACC]',)]
+[]
+4117
+
 meg|szerettet
 []
 [('[ACC]',), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INS]'), ('[INS]',)]
@@ -40672,6 +41036,13 @@ meg|szimatol
 []
 []
 138
+
+meg|szokik
+[('[ACC]',)]
+[(), ('=alatt',), ('=alatt', '[ACC]'), ('=után', '[ACC]'), ('=óta', '[ACC]'), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]'), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
+[('[ACC]',)]
+[]
+10045
 
 meg|szolgál
 []
@@ -41044,6 +41415,13 @@ meg|takarít
 []
 1195
 
+meg|talál
+[('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]')]
+[(), ('=[DAT]', '[ACC]'), ('=[DAT]', '[ACC]', '[INE]'), ('=alatt',), ('=alatt', '[ACC]'), ('=alatt', '[ACC]', '[INE]'), ('=alatt', '[ACC]', '[INS]'), ('=alatt', '[ACC]', '[SUP]'), ('=belül', '[ACC]'), ('=előtt', '[ACC]'), ('=helyett', '[ACC]'), ('=közben', '[ACC]'), ('=közben', '[ACC]', '[INE]'), ('=közt', '[ACC]'), ('=között',), ('=között', '[ABL]', '[ACC]'), ('=között', '[ACC]'), ('=között', '[ACC]', '[DAT]'), ('=között', '[ACC]', '[INE]'), ('=között', '[ACC]', '[INS]'), ('=között', '[ACC]', '[SUP]'), ('=közül', '[ACC]'), ('=közül', '[ACC]', '[INE]'), ('=mellett', '[ACC]'), ('=mellett', '[ACC]', '[INE]'), ('=mellett', '[ACC]', '[SUP]'), ('=miatt', '[ACC]'), ('=mögött', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=nélkül', '[ACC]', '[INE]'), ('=révén', '[ACC]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[DAT]', '[INE]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INE]', '[SUP]'), ('=szerint', '[ACC]', '[SUP]'), ('=után',), ('=után', '[ACC]'), ('=után', '[ACC]', '[INE]'), ('=után', '[ACC]', '[INE]', '[INS]'), ('=után', '[ACC]', '[INS]'), ('=után', '[ACC]', '[INS]', '[SUP]'), ('=által', '[ACC]'), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INE]', '[SUB]'), ('[ABL]', '[ACC]', '[INE]', '[TER]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ABL]', '[ACC]', '[TER]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[ALL]'), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ADE]', '[INE]', '[SUP]'), ('[ACC]', '[ADE]', '[INS]'), ('[ACC]', '[ADE]', '[SUP]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[DAT]'), ('[ACC]', '[ALL]', '[INE]'), ('[ACC]', '[ALL]', '[SUP]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[SUB]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[SUB]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]', '[SUP]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INE]', '[TEM]'), ('[ACC]', '[INE]', '[TER]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[SUP]', '[TEM]'), ('[ACC]', '[SUP]', '[TER]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[DAT]',), ('[DAT]', '[INE]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUP]'), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',), ('[TER]',)]
+[('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]')]
+[]
+54925
+
 meg|találkozik
 []
 [(), ('[INE]',), ('[INS]',)]
@@ -41247,6 +41625,13 @@ meg|tesz
 []
 59315
 
+meg|tetszik
+[('[DAT]',)]
+[(), ('[ACC]',), ('[DAT]',), ('[DAT]', '[SUP]'), ('[ELA]',), ('[INE]',), ('[SUB]',), ('[SUP]',)]
+[('[DAT]',)]
+[]
+164
+
 meg|tetéz
 []
 [('[ACC]',), ('[ACC]', '[INS]')]
@@ -41337,6 +41722,13 @@ meg|tréfál
 []
 []
 784
+
+meg|tud
+[('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', 'elnök[PSe3][ABL]'), ('[ACC]', 'igazgató[PSe3][ABL]'), ('[ACC]', 'vezető[PSe3][ABL]')]
+[(), ('=alatt', '[ACC]'), ('=belül', '[ACC]'), ('=előtt', '[ACC]'), ('=előtt', '[ACC]', '[INS]'), ('=keresztül', '[ACC]'), ('=közben', '[ACC]'), ('=között', '[ACC]'), ('=mellett', '[ACC]'), ('=múlva',), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=révén', '[ACC]'), ('=szerint',), ('=után',), ('=után', '[ACC]'), ('=után', '[ACC]', '[INS]'), ('=által', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DEL]'), ('[ABL]', '[ACC]', '[ELA]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ABL]', '[SUP]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[DEL]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[ELA]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[INE]', '[SUP]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[DEL]', '[SUP]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[DAT]',), ('[DEL]',), ('[DEL]', '[INE]'), ('[DEL]', '[SUP]'), ('[ELA]',), ('[ELA]', '[INE]'), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',)]
+[('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]')]
+[]
+36563
 
 meg|tudakol
 []
@@ -41603,6 +41995,13 @@ meg|valósít
 [('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]')]
 []
 7341
+
+meg|van
+[(), ('[ALL]',), ('[DAT]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',)]
+[(), ('=[DAT]',), ('=alatt',), ('=belül',), ('=ellenére',), ('=előtt',), ('=előtt', '[INE]'), ('=helyett',), ('=iránt',), ('=képest',), ('=közt',), ('=között',), ('=közül',), ('=mellett',), ('=miatt',), ('=mögött',), ('=nélkül',), ('=nélkül', '[TER]'), ('=szemben',), ('=szerint',), ('=szerint', '[DAT]'), ('=szerint', '[INE]'), ('=szerint', '[SUB]'), ('=szerint', '[SUP]'), ('=után',), ('=után', '[INE]', '[INS]'), ('=által',), ('=óta',), ('[ABL]',), ('[ABL]', '[DAT]'), ('[ABL]', '[INS]'), ('[ABL]', '[SUP]'), ('[ABL]', '[TER]'), ('[ACC]',), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ADE]', '[DAT]'), ('[ADE]', '[INE]'), ('[ADE]', '[SUP]'), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[DAT]', '[INE]'), ('[ALL]', '[INE]'), ('[ALL]', '[SUP]'), ('[CAU]',), ('[DAT]',), ('[DAT]', '[DEL]'), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[INS]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUP]'), ('[DAT]', '[TEM]'), ('[DAT]', '[TER]'), ('[DEL]',), ('[DEL]', '[INE]'), ('[DEL]', '[INS]'), ('[DEL]', '[SUB]'), ('[DEL]', '[SUP]'), ('[ELA]',), ('[ELA]', '[INE]'), ('[ELA]', '[SUP]'), ('[FOR]',), ('[ILL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INE]', '[TEM]'), ('[INE]', '[TER]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[INS]', '[TER]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUP]',), ('[TEM]',), ('[TER]',)]
+[(), ('[ALL]',), ('[DAT]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',)]
+[]
+3890
 
 meg|varr
 []
@@ -42479,6 +42878,13 @@ mellé|beszél
 []
 546
 
+mellé|fog
+[]
+[(), ('[INE]',), ('[INS]',)]
+[]
+[]
+373
+
 mellé|tesz
 []
 [('[ACC]',), ('[ACC]', '[INE]')]
@@ -42607,10 +43013,10 @@ mentet
 
 mer
 [('[ACC]',)]
-[(), ('=után',), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ALL]',), ('[DAT]',), ('[DEL]',), ('[ILL]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TER]',)]
+[(), ('=után',), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ALL]',), ('[DAT]',), ('[DEL]',), ('[ILL]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TER]',)]
 [('[ACC]',)]
 [('INF',)]
-7
+0
 
 mered
 [('[SUB]',)]
@@ -43459,6 +43865,13 @@ neki|feszül
 []
 278
 
+neki|fog
+[]
+[(), ('[ACC]', '[DAT]'), ('[ALL]',), ('[DAT]',), ('[DAT]', '[INS]'), ('[DAT]', '[SUP]')]
+[]
+[]
+767
+
 neki|fut
 []
 [(), ('[DAT]', '[INS]')]
@@ -43486,6 +43899,13 @@ neki|iramodik
 []
 []
 218
+
+neki|kezd
+[]
+[(), ('[DAT]',)]
+[]
+[]
+675
 
 neki|lendül
 []
@@ -44474,6 +44894,13 @@ oda|küld
 []
 295
 
+oda|lesz
+[()]
+[('[CAU]',)]
+[]
+[]
+31
+
 oda|lát
 []
 [('[DEL]',), ('[ELA]',)]
@@ -44628,6 +45055,13 @@ oda|súg
 []
 494
 
+oda|talál
+[]
+[(), ('[ALL]',), ('[INS]',)]
+[]
+[]
+261
+
 oda|tapad
 []
 [(), ('[ALL]',), ('[SUB]',)]
@@ -44683,6 +45117,13 @@ oda|utaz
 []
 []
 0
+
+oda|van
+[()]
+[(), ('=szerint',), ('[ABL]',), ('[ACC]',), ('[ALL]',), ('[CAU]',), ('[DAT]',), ('[DEL]',), ('[ILL]',), ('[INE]',), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',), ('[TER]',)]
+[()]
+[]
+31
 
 oda|veszik
 []
@@ -46189,6 +46630,13 @@ rajta|kap
 []
 1326
 
+rajta|van
+[]
+[(), ('[SUP]',)]
+[]
+[]
+17
+
 rajta|veszt
 []
 [()]
@@ -47288,6 +47736,13 @@ rá|bámul
 []
 255
 
+rá|bír
+[('[ACC]', '[SUB]')]
+[(), ('[ACC]',), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[INS]', '[SUB]'), ('[SUB]',)]
+[('[ACC]', '[SUB]')]
+[]
+939
+
 rá|bíz
 [('[ACC]',), ('[ACC]', '[SUB]')]
 [(), ('[ACC]',), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[SUB]',)]
@@ -47511,6 +47966,13 @@ rá|fizet
 []
 []
 718
+
+rá|fog
+[]
+[(), ('[ACC]',), ('[ACC]', '[SUB]'), ('[SUB]',)]
+[]
+[]
+577
 
 rá|fordul
 []
@@ -47784,6 +48246,13 @@ rá|kerül
 []
 []
 1156
+
+rá|kezd
+[]
+[(), ('[ACC]',), ('[SUB]',)]
+[]
+[]
+671
 
 rá|kiabál
 []
@@ -48121,6 +48590,13 @@ rá|szed
 []
 371
 
+rá|szokik
+[]
+[(), ('[INE]',), ('[INE]', '[SUB]'), ('[SUB]',)]
+[]
+[]
+757
+
 rá|szoktat
 []
 [('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[SUB]'), ('[SUB]',)]
@@ -48190,6 +48666,13 @@ rá|süt
 []
 []
 418
+
+rá|talál
+[('[SUB]',)]
+[(), ('=alatt', '[SUB]'), ('=között', '[SUB]'), ('=után',), ('=után', '[SUB]'), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ADE]', '[SUB]'), ('[DAT]', '[SUB]'), ('[ELA]', '[SUB]'), ('[INE]',), ('[INE]', '[INS]', '[SUB]'), ('[INE]', '[SUB]'), ('[INE]', '[SUB]', '[SUP]'), ('[INE]', '[SUP]'), ('[INS]', '[SUB]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUP]',)]
+[('[SUB]',)]
+[]
+3643
 
 rá|tapad
 []
@@ -49078,7 +49561,7 @@ sincs
 []
 []
 [('INF',)]
-42
+0
 
 sirat
 [('[ACC]',)]
@@ -49990,6 +50473,13 @@ szembe|száll
 []
 2440
 
+szembe|talál
+[]
+[('[ACC]',), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUP]')]
+[]
+[]
+416
+
 szembe|találkozik
 []
 [(), ('[ACC]', '[INS]'), ('[INE]', '[INS]'), ('[INS]',), ('[INS]', '[SUP]')]
@@ -50194,11 +50684,11 @@ szerepeltet
 0
 
 szeret
-[(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', 'ember[NOM]'), ('[ILL]',), ('egymás[ACC]',), ('ember[ACC]',)]
-[(), ('=[DAT]', '[ACC]'), ('=alatt', '[ACC]'), ('=belül', '[ACC]'), ('=ellenére', '[ACC]'), ('=előtt', '[ACC]'), ('=fogva', '[ACC]'), ('=fölött', '[ACC]'), ('=helyett', '[ACC]'), ('=kívül', '[ACC]'), ('=közben', '[ACC]'), ('=közt', '[ACC]'), ('=között', '[ACC]'), ('=közül', '[ACC]'), ('=mellett', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=nélkül',), ('=nélkül', '[ACC]'), ('=szemben', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[INE]'), ('=után',), ('=után', '[ACC]'), ('=által', '[ACC]'), ('=óta', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[TER]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[INS]'), ('[ACC]', '[ALL]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ESS]'), ('[ACC]', '[FAC]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ALL]',), ('[CAU]',), ('[DAT]',), ('[DAT]', '[INE]'), ('[DEL]',), ('[ELA]',), ('[FOR]',), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INS]'), ('[ILL]', '[SUP]'), ('[ILL]', '[TEM]'), ('[INE]',), ('[INE]', '[INS]'), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',), ('[TER]',)]
-[(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ILL]',)]
+[(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', 'ember[NOM]'), ('egymás[ACC]',), ('ember[ACC]',)]
+[(), ('=[DAT]', '[ACC]'), ('=alatt', '[ACC]'), ('=belül', '[ACC]'), ('=ellenére', '[ACC]'), ('=előtt', '[ACC]'), ('=fogva', '[ACC]'), ('=fölött', '[ACC]'), ('=helyett', '[ACC]'), ('=kívül', '[ACC]'), ('=közt', '[ACC]'), ('=között', '[ACC]'), ('=közül', '[ACC]'), ('=mellett', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=nélkül',), ('=nélkül', '[ACC]'), ('=szemben', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[INE]'), ('=után',), ('=után', '[ACC]'), ('=óta', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[TER]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[INS]'), ('[ACC]', '[ALL]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ESS]'), ('[ACC]', '[FAC]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ALL]',), ('[CAU]',), ('[DAT]',), ('[DAT]', '[INE]'), ('[DEL]',), ('[ELA]',), ('[FOR]',), ('[ILL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',), ('[TER]',)]
+[(), ('[ACC]',), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]')]
 [('INF',)]
-10
+0
 
 szeretkezik
 []
@@ -50432,11 +50922,11 @@ szocializál
 0
 
 szokik
-[('[ACC]',), ('[ALL]',), ('[DEL]',)]
-[(), ('=alatt',), ('=alatt', '[ACC]'), ('=alatt', '[ALL]'), ('=előtt',), ('=előtt', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=után',), ('=után', '[ACC]'), ('=óta', '[ACC]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[INE]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[INE]'), ('[ALL]', '[INS]'), ('[ALL]', '[SUP]'), ('[DAT]',), ('[DEL]',), ('[DEL]', '[INE]'), ('[DEL]', '[INS]'), ('[DEL]', '[SUP]'), ('[ELA]',), ('[ILL]',), ('[INE]',), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',)]
-[('[ACC]',), ('[ALL]',), ('[DEL]',)]
+[('[ACC]',)]
+[(), ('=előtt',), ('=előtt', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=után', '[ACC]'), ('[ABL]',), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ADE]',), ('[ALL]',), ('[ALL]', '[INE]'), ('[ALL]', '[SUP]'), ('[DAT]',), ('[DEL]',), ('[ELA]',), ('[ILL]',), ('[INE]',), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',)]
+[('[ACC]',)]
 [('INF',)]
-5
+0
 
 szoktat
 []
@@ -52161,11 +52651,11 @@ tallózik
 0
 
 talál
-[(), ('=között', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ACC]', 'maga[DAT]'), ('[ACC]', 'sor[PSe3][SUP]'), ('[INE]', '[SUB]'), ('[SUB]',), ('[SUB]', 'megoldás[ACC]'), ('egymás[SUB]',), ('megoldás[ACC]',), ('valami[ACC]',)]
-[(), ('=[DAT]', '[ACC]'), ('=[DAT]', '[ACC]', '[INE]'), ('=alatt',), ('=alatt', '[ACC]'), ('=alatt', '[ACC]', '[INE]'), ('=alatt', '[ACC]', '[INE]', '[INS]'), ('=alatt', '[ACC]', '[INE]', '[SUP]'), ('=alatt', '[ACC]', '[INS]'), ('=alatt', '[ACC]', '[SUP]'), ('=alatt', '[SUB]'), ('=belül', '[ACC]'), ('=ellen', '[ACC]'), ('=ellenére', '[ACC]'), ('=ellenére', '[ACC]', '[DAT]'), ('=ellenére', '[ACC]', '[INE]'), ('=előtt',), ('=előtt', '[ACC]'), ('=előtt', '[ACC]', '[INE]'), ('=előtt', '[ACC]', '[SUP]'), ('=fölött', '[ACC]'), ('=helyett', '[ACC]'), ('=helyett', '[ACC]', '[DAT]'), ('=helyett', '[ACC]', '[INE]'), ('=helyett', '[ACC]', '[SUP]'), ('=keresztül', '[ACC]', '[INE]'), ('=kívül',), ('=kívül', '[ACC]'), ('=kívül', '[ACC]', '[INE]'), ('=kívül', '[ACC]', '[SUP]'), ('=körül', '[ACC]'), ('=közben',), ('=közben', '[ACC]'), ('=közben', '[ACC]', '[INE]'), ('=közben', '[ACC]', '[SUP]'), ('=közben', '[SUB]'), ('=közt',), ('=közt', '[ACC]'), ('=közt', '[ACC]', '[INE]'), ('=között',), ('=között', '[ABL]', '[ACC]'), ('=között', '[ACC]'), ('=között', '[ACC]', '[ADE]'), ('=között', '[ACC]', '[ALL]'), ('=között', '[ACC]', '[DAT]'), ('=között', '[ACC]', '[DAT]', '[INE]'), ('=között', '[ACC]', '[DEL]'), ('=között', '[ACC]', '[ELA]'), ('=között', '[ACC]', '[INE]'), ('=között', '[ACC]', '[INE]', '[INS]'), ('=között', '[ACC]', '[INE]', '[SUB]'), ('=között', '[ACC]', '[INE]', '[SUP]'), ('=között', '[ACC]', '[INS]'), ('=között', '[ACC]', '[SUB]'), ('=között', '[ACC]', '[SUP]'), ('=között', '[INE]'), ('=között', '[SUB]'), ('=közül', '[ACC]'), ('=közül', '[ACC]', '[DAT]'), ('=közül', '[ACC]', '[DAT]', '[INE]'), ('=közül', '[ACC]', '[DAT]', '[SUB]'), ('=közül', '[ACC]', '[INE]'), ('=közül', '[ACC]', '[SUP]'), ('=mellett',), ('=mellett', '[ACC]'), ('=mellett', '[ACC]', '[DAT]', '[INE]'), ('=mellett', '[ACC]', '[INE]'), ('=mellett', '[ACC]', '[INE]', '[INS]'), ('=mellett', '[ACC]', '[INE]', '[SUB]'), ('=mellett', '[ACC]', '[INE]', '[SUP]'), ('=mellett', '[ACC]', '[INS]'), ('=mellett', '[ACC]', '[SUP]'), ('=mellett', '[INE]'), ('=mellé',), ('=mentén', '[ACC]'), ('=miatt', '[ACC]'), ('=miatt', '[ACC]', '[DAT]'), ('=miatt', '[ACC]', '[INE]'), ('=mögött', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=nélkül', '[ACC]', '[INE]'), ('=nélkül', '[SUB]'), ('=révén', '[ACC]'), ('=szemben', '[ACC]'), ('=szemben', '[ACC]', '[DAT]'), ('=szemben', '[ACC]', '[INE]', '[INS]'), ('=szemben', '[ACC]', '[INS]'), ('=szemben', '[ACC]', '[INS]', '[SUP]'), ('=szerint',), ('=szerint', '=után', '[ACC]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[ADE]'), ('=szerint', '[ACC]', '[ALL]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[DAT]', '[INE]'), ('=szerint', '[ACC]', '[DAT]', '[SUB]'), ('=szerint', '[ACC]', '[DAT]', '[SUP]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INE]', '[INS]'), ('=szerint', '[ACC]', '[INE]', '[SUB]'), ('=szerint', '[ACC]', '[INE]', '[SUP]'), ('=szerint', '[ACC]', '[INS]'), ('=szerint', '[ACC]', '[SUB]'), ('=szerint', '[ACC]', '[SUB]', '[SUP]'), ('=szerint', '[ACC]', '[SUP]'), ('=szerint', '[INE]', '[SUB]'), ('=szerint', '[SUB]'), ('=túl', '[ACC]', '[DAT]'), ('=után',), ('=után', '[ACC]'), ('=után', '[ACC]', '[DAT]'), ('=után', '[ACC]', '[DAT]', '[INE]'), ('=után', '[ACC]', '[INE]'), ('=után', '[ACC]', '[INE]', '[INS]'), ('=után', '[ACC]', '[INS]'), ('=után', '[ACC]', '[INS]', '[SUP]'), ('=után', '[ACC]', '[SUB]'), ('=után', '[ACC]', '[SUP]'), ('=után', '[ILL]'), ('=után', '[INE]'), ('=után', '[INE]', '[SUB]'), ('=után', '[SUB]'), ('=által', '[ACC]'), ('=óta', '[ACC]'), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[DAT]', '[INE]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INE]', '[SUB]'), ('[ABL]', '[ACC]', '[INE]', '[SUP]'), ('[ABL]', '[ACC]', '[INE]', '[TER]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]', '[SUB]', '[SUP]'), ('[ABL]', '[ACC]', '[SUB]', '[TER]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ABL]', '[ACC]', '[TER]'), ('[ABL]', '[SUB]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[ALL]'), ('[ACC]', '[ADE]', '[DAT]'), ('[ACC]', '[ADE]', '[DAT]', '[INE]'), ('[ACC]', '[ADE]', '[ELA]'), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ADE]', '[INE]', '[INS]'), ('[ACC]', '[ADE]', '[INE]', '[SUB]'), ('[ACC]', '[ADE]', '[INE]', '[SUP]'), ('[ACC]', '[ADE]', '[INS]'), ('[ACC]', '[ADE]', '[SUB]'), ('[ACC]', '[ADE]', '[SUP]'), ('[ACC]', '[ADE]', '[TEM]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[DAT]'), ('[ACC]', '[ALL]', '[DAT]', '[INE]'), ('[ACC]', '[ALL]', '[DAT]', '[SUP]'), ('[ACC]', '[ALL]', '[ELA]'), ('[ACC]', '[ALL]', '[FOR]'), ('[ACC]', '[ALL]', '[INE]'), ('[ACC]', '[ALL]', '[INE]', '[INS]'), ('[ACC]', '[ALL]', '[INE]', '[SUP]'), ('[ACC]', '[ALL]', '[INS]'), ('[ACC]', '[ALL]', '[SUB]'), ('[ACC]', '[ALL]', '[SUP]'), ('[ACC]', '[CAU]'), ('[ACC]', '[CAU]', '[DAT]'), ('[ACC]', '[CAU]', '[INE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[DEL]'), ('[ACC]', '[DAT]', '[DEL]', '[INE]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[ELA]', '[INE]'), ('[ACC]', '[DAT]', '[ELA]', '[SUB]'), ('[ACC]', '[DAT]', '[ELA]', '[SUP]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[INE]', '[SUB]'), ('[ACC]', '[DAT]', '[INE]', '[SUB]', '[SUP]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[INS]', '[SUB]'), ('[ACC]', '[DAT]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUB]', '[SUP]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DAT]', '[SUP]', '[TEM]'), ('[ACC]', '[DAT]', '[TEM]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[ELA]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[INE]', '[INS]'), ('[ACC]', '[DEL]', '[INE]', '[SUB]'), ('[ACC]', '[DEL]', '[INE]', '[SUP]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[DEL]', '[SUB]'), ('[ACC]', '[DEL]', '[SUP]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[INE]', '[SUP]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[ELA]', '[TEM]'), ('[ACC]', '[ESS]'), ('[ACC]', '[ESS]', '[INE]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[INE]', '[INS]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[ILL]', '[SUB]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]', '[SUP]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INE]', '[SUP]', '[TEM]'), ('[ACC]', '[INE]', '[SUP]', '[TER]'), ('[ACC]', '[INE]', '[TEM]'), ('[ACC]', '[INE]', '[TER]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUB]', '[SUP]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUB]', '[SUP]', '[TEM]'), ('[ACC]', '[SUB]', '[TEM]'), ('[ACC]', '[SUP]'), ('[ACC]', '[SUP]', '[TEM]'), ('[ACC]', '[SUP]', '[TER]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ADE]', '[INE]'), ('[ADE]', '[INE]', '[SUB]'), ('[ADE]', '[SUB]'), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[INE]'), ('[ALL]', '[INE]', '[SUB]'), ('[ALL]', '[INS]'), ('[ALL]', '[SUB]'), ('[ALL]', '[SUP]'), ('[DAT]',), ('[DAT]', '[ELA]'), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[SUB]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUB]', '[SUP]'), ('[DAT]', '[SUP]'), ('[DEL]',), ('[DEL]', '[INE]'), ('[DEL]', '[SUB]'), ('[ELA]',), ('[ELA]', '[ILL]'), ('[ELA]', '[INE]'), ('[ELA]', '[INE]', '[SUB]'), ('[ELA]', '[SUB]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INS]'), ('[ILL]', '[SUB]'), ('[ILL]', '[SUP]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUB]'), ('[INE]', '[INS]', '[SUB]', '[SUP]'), ('[INE]', '[SUB]'), ('[INE]', '[SUB]', '[SUP]'), ('[INE]', '[SUB]', '[TER]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUB]', '[SUP]'), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUB]', '[TEM]'), ('[SUB]', '[TER]'), ('[SUP]',), ('[TEM]',), ('[TER]',)]
+[(), ('=között', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ACC]', 'maga[DAT]'), ('[ACC]', 'sor[PSe3][SUP]'), ('[INE]', '[SUB]'), ('[SUB]',), ('[SUB]', 'megoldás[ACC]'), ('egymás[SUB]',), ('megoldás[ACC]',)]
+[(), ('=[DAT]', '[ACC]'), ('=[DAT]', '[ACC]', '[INE]'), ('=alatt',), ('=alatt', '[ACC]'), ('=alatt', '[ACC]', '[INE]'), ('=alatt', '[ACC]', '[INE]', '[SUP]'), ('=alatt', '[ACC]', '[INS]'), ('=alatt', '[ACC]', '[SUP]'), ('=belül', '[ACC]'), ('=ellen', '[ACC]'), ('=ellenére', '[ACC]'), ('=ellenére', '[ACC]', '[DAT]'), ('=ellenére', '[ACC]', '[INE]'), ('=előtt',), ('=előtt', '[ACC]'), ('=előtt', '[ACC]', '[INE]'), ('=előtt', '[ACC]', '[SUP]'), ('=fölött', '[ACC]'), ('=helyett', '[ACC]'), ('=helyett', '[ACC]', '[INE]'), ('=helyett', '[ACC]', '[SUP]'), ('=keresztül', '[ACC]', '[INE]'), ('=kívül',), ('=kívül', '[ACC]'), ('=kívül', '[ACC]', '[INE]'), ('=kívül', '[ACC]', '[SUP]'), ('=körül', '[ACC]'), ('=közben',), ('=közben', '[ACC]'), ('=közben', '[ACC]', '[INE]'), ('=közben', '[ACC]', '[SUP]'), ('=közben', '[SUB]'), ('=közt',), ('=közt', '[ACC]'), ('=közt', '[ACC]', '[INE]'), ('=között',), ('=között', '[ABL]', '[ACC]'), ('=között', '[ACC]'), ('=között', '[ACC]', '[ADE]'), ('=között', '[ACC]', '[ALL]'), ('=között', '[ACC]', '[DAT]'), ('=között', '[ACC]', '[DAT]', '[INE]'), ('=között', '[ACC]', '[DEL]'), ('=között', '[ACC]', '[ELA]'), ('=között', '[ACC]', '[INE]'), ('=között', '[ACC]', '[INE]', '[INS]'), ('=között', '[ACC]', '[INE]', '[SUB]'), ('=között', '[ACC]', '[INE]', '[SUP]'), ('=között', '[ACC]', '[INS]'), ('=között', '[ACC]', '[SUB]'), ('=között', '[ACC]', '[SUP]'), ('=között', '[INE]'), ('=között', '[SUB]'), ('=közül', '[ACC]'), ('=közül', '[ACC]', '[DAT]'), ('=közül', '[ACC]', '[DAT]', '[INE]'), ('=közül', '[ACC]', '[DAT]', '[SUB]'), ('=közül', '[ACC]', '[INE]'), ('=közül', '[ACC]', '[SUP]'), ('=mellett',), ('=mellett', '[ACC]'), ('=mellett', '[ACC]', '[DAT]', '[INE]'), ('=mellett', '[ACC]', '[INE]'), ('=mellett', '[ACC]', '[INE]', '[SUB]'), ('=mellett', '[ACC]', '[INE]', '[SUP]'), ('=mellett', '[ACC]', '[INS]'), ('=mellett', '[ACC]', '[SUP]'), ('=mellett', '[INE]'), ('=mellé',), ('=mentén', '[ACC]'), ('=miatt', '[ACC]'), ('=miatt', '[ACC]', '[DAT]'), ('=miatt', '[ACC]', '[INE]'), ('=mögött', '[ACC]'), ('=múlva', '[ACC]'), ('=nélkül', '[ACC]'), ('=szemben', '[ACC]'), ('=szemben', '[ACC]', '[DAT]'), ('=szemben', '[ACC]', '[INE]', '[INS]'), ('=szemben', '[ACC]', '[INS]'), ('=szemben', '[ACC]', '[INS]', '[SUP]'), ('=szerint',), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[ADE]'), ('=szerint', '[ACC]', '[ALL]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[DAT]', '[INE]'), ('=szerint', '[ACC]', '[DAT]', '[SUB]'), ('=szerint', '[ACC]', '[DAT]', '[SUP]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INE]', '[SUB]'), ('=szerint', '[ACC]', '[INE]', '[SUP]'), ('=szerint', '[ACC]', '[INS]'), ('=szerint', '[ACC]', '[SUB]'), ('=szerint', '[ACC]', '[SUB]', '[SUP]'), ('=szerint', '[ACC]', '[SUP]'), ('=szerint', '[INE]', '[SUB]'), ('=szerint', '[SUB]'), ('=túl', '[ACC]', '[DAT]'), ('=után', '[ACC]'), ('=után', '[ACC]', '[DAT]'), ('=után', '[ACC]', '[DAT]', '[INE]'), ('=után', '[ACC]', '[INE]'), ('=után', '[ACC]', '[INE]', '[INS]'), ('=után', '[ACC]', '[INS]'), ('=után', '[ACC]', '[SUB]'), ('=után', '[ACC]', '[SUP]'), ('=után', '[ILL]'), ('=után', '[INE]'), ('=után', '[INE]', '[SUB]'), ('=után', '[SUB]'), ('=által', '[ACC]'), ('=óta', '[ACC]'), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[DAT]', '[INE]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INE]', '[SUB]'), ('[ABL]', '[ACC]', '[INE]', '[SUP]'), ('[ABL]', '[ACC]', '[INE]', '[TER]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]', '[SUB]', '[SUP]'), ('[ABL]', '[ACC]', '[SUB]', '[TER]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ABL]', '[ACC]', '[TER]'), ('[ABL]', '[SUB]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[ALL]'), ('[ACC]', '[ADE]', '[DAT]'), ('[ACC]', '[ADE]', '[DAT]', '[INE]'), ('[ACC]', '[ADE]', '[ELA]'), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ADE]', '[INE]', '[INS]'), ('[ACC]', '[ADE]', '[INE]', '[SUB]'), ('[ACC]', '[ADE]', '[INE]', '[SUP]'), ('[ACC]', '[ADE]', '[INS]'), ('[ACC]', '[ADE]', '[SUB]'), ('[ACC]', '[ADE]', '[SUP]'), ('[ACC]', '[ADE]', '[TEM]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[DAT]'), ('[ACC]', '[ALL]', '[DAT]', '[INE]'), ('[ACC]', '[ALL]', '[DAT]', '[SUP]'), ('[ACC]', '[ALL]', '[ELA]'), ('[ACC]', '[ALL]', '[FOR]'), ('[ACC]', '[ALL]', '[INE]'), ('[ACC]', '[ALL]', '[INE]', '[SUP]'), ('[ACC]', '[ALL]', '[INS]'), ('[ACC]', '[ALL]', '[SUB]'), ('[ACC]', '[ALL]', '[SUP]'), ('[ACC]', '[CAU]'), ('[ACC]', '[CAU]', '[DAT]'), ('[ACC]', '[CAU]', '[INE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[DEL]'), ('[ACC]', '[DAT]', '[DEL]', '[INE]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[ELA]', '[INE]'), ('[ACC]', '[DAT]', '[ELA]', '[SUB]'), ('[ACC]', '[DAT]', '[ELA]', '[SUP]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[INE]', '[SUB]'), ('[ACC]', '[DAT]', '[INE]', '[SUB]', '[SUP]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[INS]', '[SUB]'), ('[ACC]', '[DAT]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUB]', '[SUP]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DAT]', '[SUP]', '[TEM]'), ('[ACC]', '[DAT]', '[TEM]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[ELA]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[INE]', '[INS]'), ('[ACC]', '[DEL]', '[INE]', '[SUB]'), ('[ACC]', '[DEL]', '[INE]', '[SUP]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[DEL]', '[SUB]'), ('[ACC]', '[DEL]', '[SUP]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[INE]', '[SUP]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[ELA]', '[TEM]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[INE]', '[INS]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[ILL]', '[SUB]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]', '[SUP]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INE]', '[SUP]', '[TEM]'), ('[ACC]', '[INE]', '[SUP]', '[TER]'), ('[ACC]', '[INE]', '[TEM]'), ('[ACC]', '[INE]', '[TER]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUB]', '[SUP]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUB]', '[SUP]', '[TEM]'), ('[ACC]', '[SUP]'), ('[ACC]', '[SUP]', '[TEM]'), ('[ACC]', '[SUP]', '[TER]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ADE]', '[INE]'), ('[ADE]', '[INE]', '[SUB]'), ('[ADE]', '[SUB]'), ('[ALL]',), ('[ALL]', '[INE]'), ('[ALL]', '[INE]', '[SUB]'), ('[ALL]', '[SUB]'), ('[ALL]', '[SUP]'), ('[DAT]',), ('[DAT]', '[ELA]'), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[SUB]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUB]', '[SUP]'), ('[DAT]', '[SUP]'), ('[DEL]',), ('[DEL]', '[INE]'), ('[DEL]', '[SUB]'), ('[ELA]',), ('[ELA]', '[ILL]'), ('[ELA]', '[INE]'), ('[ELA]', '[INE]', '[SUB]'), ('[ELA]', '[SUB]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[SUB]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUB]'), ('[INE]', '[SUB]'), ('[INE]', '[SUB]', '[SUP]'), ('[INE]', '[SUB]', '[TER]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUB]', '[SUP]'), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUB]', '[TEM]'), ('[SUB]', '[TER]'), ('[SUP]',), ('[TEM]',), ('[TER]',)]
 [(), ('=között', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[INE]', '[SUB]'), ('[SUB]',)]
 [('INF',)]
-10
+0
 
 találgat
 [('[ACC]',)]
@@ -52956,7 +53446,7 @@ tetszik
 [(), ('=alatt',), ('=előtt',), ('=előtt', '[DAT]'), ('=képest', '[DAT]'), ('=között',), ('=közül',), ('=közül', '[DAT]'), ('=mellett', '[DAT]'), ('=miatt',), ('=nélkül',), ('=nélkül', '[DAT]'), ('=szerint',), ('=szerint', '[DAT]'), ('=után',), ('=után', '[DAT]'), ('=óta',), ('[ABL]',), ('[ABL]', '[DAT]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[FAC]'), ('[ACC]', '[FAC]', '[INE]'), ('[ACC]', '[INE]'), ('[ADE]',), ('[ADE]', '[DAT]'), ('[ALL]',), ('[ALL]', '[DAT]'), ('[CAU]',), ('[CAU]', '[DAT]'), ('[DAT]',), ('[DAT]', '[DEL]'), ('[DAT]', '[ELA]'), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUP]'), ('[DAT]', '[TEM]'), ('[DEL]',), ('[ELA]',), ('[FOR]',), ('[ILL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INS]',), ('[SUB]',), ('[SUP]',), ('[TEM]',), ('[TER]',)]
 [(), ('[DAT]',)]
 [('INF',)]
-14
+0
 
 tettet
 []
@@ -53736,11 +54226,11 @@ trónol
 0
 
 tud
-[('=szerint', '[ACC]'), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ACC]', 'elnök[PSe3][ABL]'), ('[ACC]', 'ember[NOM]'), ('[ACC]', 'fene[NOM]'), ('[ACC]', 'igazgató[PSe3][ABL]'), ('[ACC]', 'isten[NOM]'), ('[ACC]', 'jó[NOM]'), ('[ACC]', 'maga[NOM]'), ('[ACC]', 'mindenki[NOM]'), ('[ACC]', 'senki[NOM]'), ('[ACC]', 'vezető[PSe3][ABL]'), ('[ACC]', 'ön[NOM]'), ('[ACC]', 'úr[NOM]'), ('[DEL]',), ('[DEL]', 'annyi[ACC]'), ('[DEL]', 'kevés[ACC]'), ('[DEL]', 'minden[ACC]'), ('[DEL]', 'semmi[ACC]'), ('[DEL]', 'több[ACC]'), ('[DEL]', 'valami[ACC]'), ('annyi[ACC]',), ('minden[ACC]',), ('név[PSe3][ACC]',), ('semmi[ACC]',), ('több[ACC]',), ('valami[ACC]',)]
-[(), ('=[DAT]',), ('=[DAT]', '[ACC]'), ('=alatt',), ('=alatt', '[ACC]'), ('=alá', '[ACC]'), ('=belül',), ('=belül', '[ACC]'), ('=ellen',), ('=ellen', '[ACC]'), ('=ellenére',), ('=ellenére', '[ACC]'), ('=előtt',), ('=előtt', '[ACC]'), ('=előtt', '[ACC]', '[INS]'), ('=előtt', '[DEL]'), ('=előtt', '[INS]'), ('=felől',), ('=felől', '[ACC]'), ('=fogva', '[ACC]'), ('=helyett', '[ACC]'), ('=keresztül', '[ACC]'), ('=képest', '[ACC]'), ('=kívül',), ('=kívül', '[ACC]'), ('=kívül', '[DEL]'), ('=következtében', '[ACC]'), ('=közben', '[ACC]'), ('=közt', '[ACC]'), ('=között',), ('=között', '[ACC]'), ('=között', '[DEL]'), ('=közül',), ('=közül', '[ACC]'), ('=közül', '[DEL]'), ('=mellett',), ('=mellett', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=mögött',), ('=mögött', '[ACC]'), ('=mögött', '[ACC]', '[INE]'), ('=múlva',), ('=múlva', '[ACC]'), ('=nélkül',), ('=nélkül', '[ACC]'), ('=révén', '[ACC]'), ('=szemben', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[DEL]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[SUB]'), ('=szerint', '[DAT]'), ('=szerint', '[DAT]', '[DEL]'), ('=szerint', '[DEL]'), ('=szerint', '[DEL]', '[INE]'), ('=szerint', '[INE]'), ('=szerint', '[SUP]'), ('=túl', '[ACC]'), ('=után',), ('=után', '[ACC]'), ('=után', '[ACC]', '[DEL]'), ('=után', '[ACC]', '[INS]'), ('=által', '[ACC]'), ('=óta',), ('=óta', '[ACC]'), ('=óta', '[DEL]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[DEL]'), ('[ABL]', '[ACC]', '[ELA]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ABL]', '[ACC]', '[TER]'), ('[ABL]', '[DEL]'), ('[ABL]', '[SUP]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[DEL]'), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[DAT]'), ('[ACC]', '[ALL]', '[ELA]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[DEL]'), ('[ACC]', '[DAT]', '[DEL]', '[INS]'), ('[ACC]', '[DAT]', '[DEL]', '[SUP]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DAT]', '[TEM]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[ELA]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[INE]', '[INS]'), ('[ACC]', '[DEL]', '[INE]', '[SUP]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[DEL]', '[SUB]'), ('[ACC]', '[DEL]', '[SUP]'), ('[ACC]', '[DEL]', '[TEM]'), ('[ACC]', '[DEL]', '[TER]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[ESS]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ADE]', '[DEL]'), ('[ALL]',), ('[ALL]', '[DEL]'), ('[CAU]',), ('[DAT]',), ('[DAT]', '[DEL]'), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUP]'), ('[DEL]',), ('[DEL]', '[ELA]'), ('[DEL]', '[FOR]'), ('[DEL]', '[INE]'), ('[DEL]', '[INE]', '[INS]'), ('[DEL]', '[INE]', '[SUP]'), ('[DEL]', '[INS]'), ('[DEL]', '[SUB]'), ('[DEL]', '[SUP]'), ('[DEL]', '[TEM]'), ('[DEL]', '[TER]'), ('[ELA]',), ('[ELA]', '[INE]'), ('[ELA]', '[SUB]'), ('[ESS]',), ('[FOR]',), ('[ILL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUP]',), ('[SUP]', '[TEM]'), ('[TEM]',), ('[TER]',)]
+[('=szerint', '[ACC]'), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ACC]', 'ember[NOM]'), ('[ACC]', 'fene[NOM]'), ('[ACC]', 'isten[NOM]'), ('[ACC]', 'jó[NOM]'), ('[ACC]', 'maga[NOM]'), ('[ACC]', 'mindenki[NOM]'), ('[ACC]', 'senki[NOM]'), ('[ACC]', 'ön[NOM]'), ('[ACC]', 'úr[NOM]'), ('[DEL]',), ('[DEL]', 'annyi[ACC]'), ('[DEL]', 'kevés[ACC]'), ('[DEL]', 'minden[ACC]'), ('[DEL]', 'semmi[ACC]'), ('[DEL]', 'több[ACC]'), ('[DEL]', 'valami[ACC]'), ('annyi[ACC]',), ('minden[ACC]',), ('név[PSe3][ACC]',), ('semmi[ACC]',), ('több[ACC]',), ('valami[ACC]',)]
+[(), ('=[DAT]',), ('=[DAT]', '[ACC]'), ('=alatt',), ('=alatt', '[ACC]'), ('=alá', '[ACC]'), ('=belül',), ('=belül', '[ACC]'), ('=ellen',), ('=ellen', '[ACC]'), ('=ellenére',), ('=ellenére', '[ACC]'), ('=előtt',), ('=előtt', '[ACC]'), ('=előtt', '[DEL]'), ('=felől',), ('=felől', '[ACC]'), ('=fogva', '[ACC]'), ('=helyett', '[ACC]'), ('=képest', '[ACC]'), ('=kívül',), ('=kívül', '[ACC]'), ('=kívül', '[DEL]'), ('=következtében', '[ACC]'), ('=közben', '[ACC]'), ('=közt', '[ACC]'), ('=között',), ('=között', '[ACC]'), ('=között', '[DEL]'), ('=közül',), ('=közül', '[ACC]'), ('=közül', '[DEL]'), ('=mellett',), ('=mellett', '[ACC]'), ('=miatt',), ('=miatt', '[ACC]'), ('=mögött',), ('=mögött', '[ACC]'), ('=mögött', '[ACC]', '[INE]'), ('=múlva', '[ACC]'), ('=nélkül',), ('=nélkül', '[ACC]'), ('=szerint',), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[DEL]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[SUB]'), ('=szerint', '[DAT]'), ('=szerint', '[DAT]', '[DEL]'), ('=szerint', '[DEL]'), ('=szerint', '[DEL]', '[INE]'), ('=szerint', '[INE]'), ('=szerint', '[SUP]'), ('=után',), ('=után', '[ACC]'), ('=után', '[ACC]', '[DEL]'), ('=által', '[ACC]'), ('=óta',), ('=óta', '[ACC]'), ('=óta', '[DEL]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ABL]', '[ACC]', '[TER]'), ('[ABL]', '[DEL]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[DEL]'), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[ELA]'), ('[ACC]', '[CAU]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[DEL]'), ('[ACC]', '[DAT]', '[DEL]', '[SUP]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DAT]', '[TEM]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[ELA]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[DEL]', '[SUB]'), ('[ACC]', '[DEL]', '[SUP]'), ('[ACC]', '[DEL]', '[TEM]'), ('[ACC]', '[DEL]', '[TER]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[ESS]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ADE]', '[DEL]'), ('[ALL]',), ('[ALL]', '[DEL]'), ('[CAU]',), ('[DAT]',), ('[DAT]', '[DEL]'), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUP]'), ('[DEL]',), ('[DEL]', '[ELA]'), ('[DEL]', '[FOR]'), ('[DEL]', '[INE]'), ('[DEL]', '[INE]', '[INS]'), ('[DEL]', '[INE]', '[SUP]'), ('[DEL]', '[INS]'), ('[DEL]', '[SUB]'), ('[DEL]', '[SUP]'), ('[DEL]', '[TEM]'), ('[DEL]', '[TER]'), ('[ELA]',), ('[ELA]', '[SUB]'), ('[ESS]',), ('[FOR]',), ('[ILL]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[SUP]'), ('[INS]',), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUP]',), ('[TEM]',), ('[TER]',)]
 [('=szerint', '[ACC]'), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[DEL]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[DEL]',)]
 [('INF',)]
-196
+0
 
 tudakol
 [('[ACC]',)]
@@ -54575,6 +55065,13 @@ túl|tesz
 []
 2056
 
+túl|van
+[]
+[(), ('=szerint', '[SUP]'), ('[DAT]', '[SUP]'), ('[INE]', '[SUP]'), ('[INS]', '[SUP]'), ('[SUP]',)]
+[]
+[]
+79
+
 túl|zsúfol
 []
 [('[ACC]',)]
@@ -55129,11 +55626,11 @@ valósít
 0
 
 van
-[(), ('=[DAT]',), ('=[SUP]',), ('=alatt',), ('=ellen',), ('=előtt',), ('=közt',), ('=között',), ('=között', 'különbség[NOM]'), ('=közül',), ('=mellett',), ('=miatt',), ('=mögött',), ('=nélkül',), ('=szerint',), ('=szerint', '[INE]'), ('=után',), ('Magyarország[SUP]',), ('Magyarország[SUP]', '[INE]'), ('[ABL]',), ('[ADE]',), ('[ADE]', '[INE]'), ('[ADE]', 'több[NOM]'), ('[ALL]',), ('[ALL]', 'elegendő[NOM]'), ('[CAU]',), ('[CAU]', 'felelős[NOM]'), ('[DAT]',), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[INS]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUP]'), ('[DAT]', 'fontos[NOM]'), ('[DAT]', 'jó[NOM]'), ('[DAT]', 'köszönhető[NOM]'), ('[DAT]', 'tudat[PSe3][INE]'), ('[DEL]', 'döntés[NOM]'), ('[DEL]', 'szó[NOM]'), ('[DEL]', 'vita[NOM]'), ('[ELA]',), ('[ELA]', '[INE]'), ('[FOR]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INE]', '[TEM]'), ('[INE]', '[TER]'), ('[INE]', 'bizonyos[NOM]'), ('[INE]', 'biztos[NOM]'), ('[INE]', 'dolog[NOM]'), ('[INE]', 'egyetértés[NOM]'), ('[INE]', 'ember[NOM]'), ('[INE]', 'erő[NOM]'), ('[INE]', 'hely[NOM]'), ('[INE]', 'helyzet[NOM]'), ('[INE]', 'hiba[NOM]'), ('[INE]', 'hiány[NOM]'), ('[INE]', 'idő[PSe3][SUP]'), ('[INE]', 'igazság[NOM]'), ('[INE]', 'ilyen[NOM]'), ('[INE]', 'jó[NOM]'), ('[INE]', 'különbség[NOM]'), ('[INE]', 'magyar[NOM]'), ('[INE]', 'otthon[NOM]'), ('[INE]', 'semmi[NOM]'), ('[INE]', 'szó[NOM]'), ('[INE]', 'több[NOM]'), ('[INE]', 'érdekelt[NOM]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[INS]', '[TEM]'), ('[INS]', 'baj[NOM]'), ('[INS]', 'elégedett[NOM]'), ('[INS]', 'gond[NOM]'), ('[INS]', 'kapcsolat[INE]'), ('[INS]', 'probléma[NOM]'), ('[INS]', 'tele[NOM]'), ('[INS]', 'teli[NOM]'), ('[INS]', 'tiszta[INE]'), ('[INS]', 'viszony[INE]'), ('[INS]', 'összefüggés[INE]'), ('[INS]', 'összhang[INE]'), ('[SUB]',), ('[SUB]', '[TEM]'), ('[SUB]', 'alkalmas[NOM]'), ('[SUB]', 'bizonyíték[NOM]'), ('[SUB]', 'büszke[NOM]'), ('[SUB]', 'esély[NOM]'), ('[SUB]', 'garancia[NOM]'), ('[SUB]', 'hajlandó[NOM]'), ('[SUB]', 'hatás[INS]'), ('[SUB]', 'idő[NOM]'), ('[SUB]', 'igény[NOM]'), ('[SUB]', 'jellemző[NOM]'), ('[SUB]', 'jó[NOM]'), ('[SUB]', 'képes[NOM]'), ('[SUB]', 'kíváncsi[NOM]'), ('[SUB]', 'lehetőség[NOM]'), ('[SUB]', 'mód[NOM]'), ('[SUB]', 'ok[NOM]'), ('[SUB]', 'példa[NOM]'), ('[SUB]', 'pénz[NOM]'), ('[SUB]', 'remény[NOM]'), ('[SUB]', 'szükség[NOM]'), ('[SUB]', 'tekintet[INS]'), ('[SUB]', 'válasz[NOM]'), ('[SUP]',), ('[SUP]', '[TEM]'), ('[SUP]', 'ember[NOM]'), ('[SUP]', 'hangsúly[NOM]'), ('[TEM]',), ('[TEM]', 'baj[NOM]'), ('[TEM]', 'szó[NOM]'), ('[TER]',), ('adat[NOM]',), ('alkalom[NOM]',), ('amilyen[NOM]',), ('annyi[NOM]',), ('anyag[NOM]',), ('asszony[NOM]',), ('baj[INE]',), ('baj[NOM]',), ('barát[NOM]',), ('beteg[NOM]',), ('birtok[PSe3][INE]',), ('biztos[NOM]',), ('boldog[NOM]',), ('bolond[NOM]',), ('buta[NOM]',), ('bácsi[NOM]',), ('büszke[NOM]',), ('bűnös[NOM]',), ('család[NOM]',), ('csapat[NOM]',), ('csend[NOM]',), ('csoda[NOM]',), ('csoport[NOM]',), ('csönd[NOM]',), ('cég[NOM]',), ('cél[NOM]',), ('dollár[NOM]',), ('dolog[DEL]', 'szó[NOM]'), ('dolog[NOM]',), ('döntés[NOM]',), ('egy[NOM]',), ('egyetlen[NOM]',), ('egyszerű[NOM]',), ('egyértelmű[NOM]',), ('egész[NOM]',), ('elnök[NOM]',), ('első[NOM]',), ('elég[NOM]',), ('elégedett[NOM]',), ('ember[NOM]',), ('ennyi[NOM]',), ('eredmény[NOM]',), ('eredményes[NOM]',), ('erő[NOM]',), ('erős[NOM]',), ('esemény[NOM]',), ('eset[NOM]',), ('eset[PSe3][INE]',), ('feladat[NOM]',), ('felszólaló[NOM]',), ('fiatal[NOM]',), ('film[NOM]',), ('fiú[NOM]',), ('folyamat[INE]',), ('fontos[NOM]',), ('forint[NOM]',), ('furcsa[NOM]',), ('fáradt[NOM]',), ('férfi[NOM]',), ('föld[NOM]',), ('gazdag[NOM]',), ('gond[NOM]',), ('gondolat[NOM]',), ('gyenge[NOM]',), ('gyerek[NOM]',), ('gyermek[NOM]',), ('gyors[NOM]',), ('halott[NOM]',), ('hang[NOM]',), ('határ[NOM]',), ('hely[NOM]',), ('hely[PSe3][SUP]',), ('hely[SUP]',), ('helyes[NOM]',), ('helyzet[INE]',), ('helyzet[NOM]',), ('hiba[NOM]',), ('hibás[NOM]',), ('hideg[NOM]',), ('hosszú[NOM]',), ('háború[NOM]',), ('ház[NOM]',), ('hülye[NOM]',), ('idegen[NOM]',), ('ideges[NOM]',), ('idő[INE]',), ('idő[NOM]',), ('idő[PSe3][SUP]',), ('időszak[NOM]',), ('igaz[NOM]',), ('igazi[NOM]',), ('igazság[NOM]',), ('ilyen[NOM]',), ('intézmény[NOM]',), ('iskola[NOM]',), ('isten[NOM]',), ('javaslat[NOM]',), ('jel[NOM]',), ('jelentkező[NOM]',), ('jellegű[NOM]',), ('jellemző[NOM]',), ('jelzés[NOM]',), ('játék[NOM]',), ('jó[NOM]',), ('katona[NOM]',), ('kedves[NOM]',), ('kettő[NOM]',), ('kevés[NOM]',), ('kicsi[NOM]',), ('király[NOM]',), ('kis[NOM]',), ('kivétel[NOM]',), ('kommunista[NOM]',), ('kormány[NOM]',), ('kutya[NOM]',), ('kép[NOM]',), ('képviselő[NOM]',), ('kérdés[DEL]', 'szó[NOM]'), ('kérdés[NOM]',), ('kész[NOM]',), ('késő[NOM]',), ('kéz[PSe3][INE]',), ('kíváncsi[NOM]',), ('költő[NOM]',), ('könnyű[NOM]',), ('könyv[NOM]',), ('következő[NOM]',), ('különbség[NOM]',), ('lehetséges[NOM]',), ('lehetőség[NOM]',), ('lány[NOM]',), ('látható[NOM]',), ('lélek[NOM]',), ('lényeg[NOM]',), ('lépés[NOM]',), ('magas[NOM]',), ('magyar[NOM]',), ('meglepő[NOM]',), ('megoldás[NOM]',), ('meleg[NOM]',), ('mese[NOM]',), ('milyen[NOM]',), ('mindegy[NOM]',), ('minden[NOM]',), ('miniszter[NOM]',), ('miniszterelnök[NOM]',), ('munka[NOM]',), ('más[DEL]', 'szó[NOM]'), ('nagy[NOM]',), ('nap[NOM]',), ('nehéz[NOM]',), ('nyertes[NOM]',), ('nyilvánvaló[NOM]',), ('nyugodt[NOM]',), ('nyár[NOM]',), ('nép[NOM]',), ('nő[NOM]',), ('ok[NOM]',), ('okos[NOM]',), ('olyan[NOM]',), ('optimista[NOM]',), ('ország[INE]',), ('ország[NOM]',), ('orvos[NOM]',), ('otthon[NOM]',), ('pap[NOM]',), ('pillanat[NOM]',), ('politikus[NOM]',), ('pont[NOM]',), ('probléma[NOM]',), ('program[NOM]',), ('párt[NOM]',), ('példa[NOM]',), ('pénz[NOM]',), ('remény[NOM]',), ('rend[INE]',), ('rend[PSe3][SUP]',), ('rendszer[NOM]',), ('rendőr[NOM]',), ('rossz[NOM]',), ('rég[NOM]',), ('régi[NOM]',), ('részeg[NOM]',), ('semmi[NOM]',), ('senki[NOM]',), ('sikeres[NOM]',), ('sok[NOM]',), ('szabad[NOM]',), ('szabály[NOM]',), ('szakember[NOM]',), ('szavazás[NOM]',), ('szegény[NOM]',), ('szempont[NOM]',), ('személy[NOM]',), ('szerelmes[NOM]',), ('szerencsés[NOM]',), ('szervezet[NOM]',), ('szomorú[NOM]',), ('szám[NOM]',), ('százalék[NOM]',), ('százalékos[NOM]',), ('szép[NOM]',), ('színész[NOM]',), ('szíves[NOM]',), ('szó[NOM]',), ('szó[NOM]', 'ügy[DEL]'), ('sötét[NOM]',), ('tag[NOM]',), ('tanár[NOM]',), ('tele[NOM]',), ('természetes[NOM]',), ('terv[NOM]',), ('terület[NOM]',), ('tiszta[NOM]',), ('tulajdon[PSe3][INE]',), ('tél[NOM]',), ('téma[NOM]',), ('típus[NOM]',), ('több[NOM]',), ('törvény[NOM]',), ('utolsó[NOM]',), ('vasárnap[NOM]',), ('vendég[NOM]',), ('verseny[NOM]',), ('vicc[NOM]',), ('világ[NOM]',), ('világ[SUP]',), ('világos[NOM]',), ('vita[NOM]',), ('válasz[NOM]',), ('választás[NOM]',), ('várható[NOM]',), ('város[NOM]',), ('vég[PSe3][SUP]',), ('vélemény[NOM]',), ('véletlen[NOM]',), ('víz[NOM]',), ('zavar[INE]',), ('zsidó[NOM]',), ('áldozat[NOM]',), ('állam[NOM]',), ('állampolgár[NOM]',), ('állapot[INE]',), ('állat[NOM]',), ('álmos[NOM]',), ('ártatlan[NOM]',), ('éhes[NOM]',), ('élet[NOM]',), ('élmény[NOM]',), ('érdekes[NOM]',), ('érzés[NOM]',), ('év[INE]',), ('év[INS]',), ('év[NOM]',), ('éves[NOM]',), ('író[NOM]',), ('óra[NOM]',), ('öreg[NOM]',), ('ötlet[NOM]',), ('új[NOM]',), ('úr[NOM]',), ('út[NOM]',), ('út[SUP]',), ('ügy[NOM]',), ('üres[NOM]',)]
-[(), ('=[DAT]',), ('=[DAT]', '=közül', '[SUP]'), ('=[DAT]', '=szerint'), ('=[DAT]', '[ACC]'), ('=[DAT]', '[ACC]', '[INE]'), ('=[DAT]', '[DAT]'), ('=[DAT]', '[DAT]', '[INS]'), ('=[DAT]', '[INE]'), ('=[DAT]', '[INE]', '[SUB]'), ('=[DAT]', '[INE]', '[SUP]'), ('=[DAT]', '[INS]'), ('=[DAT]', '[INS]', '[SUP]'), ('=[DAT]', '[SUP]'), ('=alatt',), ('=alatt', '=szerint'), ('=alatt', '=szerint', '[DAT]'), ('=alatt', '[ABL]'), ('=alatt', '[ACC]'), ('=alatt', '[ACC]', '[INE]'), ('=alatt', '[ACC]', '[INS]'), ('=alatt', '[ACC]', '[SUP]'), ('=alatt', '[ADE]'), ('=alatt', '[ADE]', '[SUP]'), ('=alatt', '[DAT]'), ('=alatt', '[DAT]', '[INE]'), ('=alatt', '[DAT]', '[INE]', '[INS]'), ('=alatt', '[DAT]', '[INS]'), ('=alatt', '[INE]'), ('=alatt', '[INE]', '[INS]'), ('=alatt', '[INE]', '[SUB]'), ('=alatt', '[INE]', '[SUP]'), ('=alatt', '[INS]'), ('=alatt', '[SUB]'), ('=alatt', '[SUB]', '[SUP]'), ('=alatt', '[SUP]'), ('=alatt', '[TEM]'), ('=alul',), ('=alá',), ('=alá', '[DAT]'), ('=alól',), ('=belül',), ('=belül', '=között', '[INE]'), ('=belül', '[DAT]', '[INE]'), ('=belül', '[DAT]', '[SUP]'), ('=belül', '[INE]'), ('=belül', '[INS]'), ('=belül', '[SUP]'), ('=belül', '[TEM]'), ('=együtt',), ('=ellen',), ('=ellen', '=mellett'), ('=ellen', '[ACC]'), ('=ellen', '[DAT]'), ('=ellen', '[INE]'), ('=ellen', '[INE]', '[INS]'), ('=ellen', '[INE]', '[SUP]'), ('=ellen', '[INS]'), ('=ellen', '[SUP]'), ('=ellenére',), ('=ellenére', '[DAT]'), ('=ellenére', '[DAT]', '[INE]'), ('=ellenére', '[INE]'), ('=ellenére', '[INE]', '[INS]'), ('=ellenére', '[INS]'), ('=ellenére', '[SUP]'), ('=elé',), ('=elől',), ('=előtt',), ('=előtt', '=mögött'), ('=előtt', '=után'), ('=előtt', '[ACC]'), ('=előtt', '[ACC]', '[INE]'), ('=előtt', '[ACC]', '[INE]', '[INS]'), ('=előtt', '[ADE]', '[INS]'), ('=előtt', '[DAT]'), ('=előtt', '[DAT]', '[INE]'), ('=előtt', '[DAT]', '[INS]'), ('=előtt', '[DAT]', '[SUP]'), ('=előtt', '[INE]'), ('=előtt', '[INE]', '[INS]'), ('=előtt', '[INE]', '[INS]', '[SUP]'), ('=előtt', '[INE]', '[SUB]'), ('=előtt', '[INE]', '[SUP]'), ('=előtt', '[INS]'), ('=előtt', '[INS]', '[SUB]'), ('=előtt', '[INS]', '[SUP]'), ('=előtt', '[SUB]'), ('=előtt', '[SUP]'), ('=előtt', '[TEM]'), ('=fele',), ('=felett',), ('=felett', '[DAT]'), ('=felé',), ('=felül',), ('=felől',), ('=felől', '[INE]'), ('=fogva',), ('=fogva', '[ACC]'), ('=fogva', '[INE]'), ('=folytán',), ('=fölé',), ('=fölött',), ('=fölött', '=szerint', '[INE]'), ('=fölött', '[DAT]'), ('=fölött', '[INE]'), ('=fölött', '[INS]'), ('=helyett',), ('=helyett', '[INE]'), ('=helyett', '[SUP]'), ('=iránt',), ('=iránt', '[INE]'), ('=iránt', '[INS]'), ('=keresztül',), ('=keresztül', '[ABL]', '[TER]'), ('=keresztül', '[DAT]'), ('=képest',), ('=képest', '[ALL]'), ('=képest', '[ALL]', '[INS]'), ('=képest', '[DAT]'), ('=képest', '[INE]'), ('=képest', '[INE]', '[INS]'), ('=képest', '[INE]', '[SUP]'), ('=képest', '[SUP]'), ('=kívül',), ('=kívül', '[ACC]', '[INE]'), ('=kívül', '[DAT]'), ('=kívül', '[DAT]', '[INE]'), ('=kívül', '[DAT]', '[INE]', '[SUP]'), ('=kívül', '[DAT]', '[SUP]'), ('=kívül', '[INE]'), ('=kívül', '[INE]', '[SUP]'), ('=kívül', '[SUP]'), ('=kívül', '[TEM]'), ('=körül',), ('=körül', '[INE]'), ('=körül', '[SUP]'), ('=körül', '[TEM]'), ('=következtében',), ('=következtében', '[INE]'), ('=közben',), ('=közt',), ('=közt', '=között'), ('=közt', '=szerint'), ('=közt', '[ACC]'), ('=közt', '[DAT]'), ('=közt', '[DEL]'), ('=közt', '[DEL]', '[SUP]'), ('=közt', '[ELA]'), ('=közt', '[INE]'), ('=közt', '[INS]'), ('=közt', '[SUP]'), ('=közt', '[TER]'), ('=közé',), ('=között',), ('=között', '=mellett'), ('=között', '=miatt', '[INE]'), ('=között', '=szerint'), ('=között', '=szerint', '[DAT]'), ('=között', '=szerint', '[ELA]'), ('=között', '=szerint', '[INE]'), ('=között', '=szerint', '[SUP]'), ('=között', '=után'), ('=között', '=által'), ('=között', '=óta'), ('=között', '[ABL]', '[INE]'), ('=között', '[ABL]', '[SUB]'), ('=között', '[ABL]', '[TER]'), ('=között', '[ACC]'), ('=között', '[ACC]', '[DAT]'), ('=között', '[ACC]', '[INE]'), ('=között', '[ACC]', '[INE]', '[INS]'), ('=között', '[ACC]', '[INS]'), ('=között', '[ACC]', '[SUP]'), ('=között', '[ACC]', '[TER]'), ('=között', '[ADE]'), ('=között', '[ALL]', '[INE]'), ('=között', '[DAT]'), ('=között', '[DAT]', '[INE]'), ('=között', '[DAT]', '[INE]', '[INS]'), ('=között', '[DAT]', '[INE]', '[SUP]'), ('=között', '[DAT]', '[INS]'), ('=között', '[DAT]', '[SUB]'), ('=között', '[DAT]', '[SUP]'), ('=között', '[DEL]'), ('=között', '[DEL]', '[INE]'), ('=között', '[DEL]', '[SUP]'), ('=között', '[ELA]'), ('=között', '[FOR]'), ('=között', '[ILL]'), ('=között', '[INE]'), ('=között', '[INE]', '[INS]'), ('=között', '[INE]', '[INS]', '[SUP]'), ('=között', '[INE]', '[SUB]'), ('=között', '[INE]', '[SUP]'), ('=között', '[INS]'), ('=között', '[INS]', '[SUB]'), ('=között', '[INS]', '[SUP]'), ('=között', '[SUB]'), ('=között', '[SUB]', '[SUP]'), ('=között', '[SUP]'), ('=között', '[TEM]'), ('=közül',), ('=közül', '=szerint', '[INE]'), ('=közül', '[ACC]'), ('=közül', '[DAT]'), ('=közül', '[DAT]', '[INE]'), ('=közül', '[DAT]', '[SUB]'), ('=közül', '[INE]'), ('=közül', '[INE]', '[SUP]'), ('=közül', '[INS]'), ('=közül', '[SUB]'), ('=közül', '[SUB]', '[SUP]'), ('=közül', '[SUP]'), ('=mellett',), ('=mellett', '[ACC]'), ('=mellett', '[ACC]', '[INE]'), ('=mellett', '[ACC]', '[INE]', '[SUP]'), ('=mellett', '[ACC]', '[SUP]'), ('=mellett', '[ALL]', '[SUB]'), ('=mellett', '[DAT]'), ('=mellett', '[DAT]', '[INE]'), ('=mellett', '[DAT]', '[INE]', '[SUP]'), ('=mellett', '[DAT]', '[INS]'), ('=mellett', '[DAT]', '[SUP]'), ('=mellett', '[DEL]', '[SUP]'), ('=mellett', '[INE]'), ('=mellett', '[INE]', '[INS]'), ('=mellett', '[INE]', '[SUB]'), ('=mellett', '[INE]', '[SUP]'), ('=mellett', '[INS]'), ('=mellett', '[INS]', '[SUP]'), ('=mellett', '[SUB]'), ('=mellett', '[SUP]'), ('=mellett', '[TEM]'), ('=mellé',), ('=mentén',), ('=mentén', '[DAT]'), ('=mentén', '[INE]', '[SUP]'), ('=miatt',), ('=miatt', '=szerint', '[INE]'), ('=miatt', '=szerint', '[INE]', '[SUB]'), ('=miatt', '=szerint', '[SUP]'), ('=miatt', '=óta', '[INE]'), ('=miatt', '[ACC]'), ('=miatt', '[ACC]', '[SUB]'), ('=miatt', '[ADE]'), ('=miatt', '[ADE]', '[INE]'), ('=miatt', '[ADE]', '[INS]'), ('=miatt', '[DAT]'), ('=miatt', '[DAT]', '[INE]'), ('=miatt', '[DAT]', '[SUB]'), ('=miatt', '[ELA]', '[INE]'), ('=miatt', '[INE]'), ('=miatt', '[INE]', '[INS]'), ('=miatt', '[INE]', '[INS]', '[SUB]'), ('=miatt', '[INE]', '[INS]', '[SUP]'), ('=miatt', '[INE]', '[SUB]'), ('=miatt', '[INE]', '[SUP]'), ('=miatt', '[INS]'), ('=miatt', '[INS]', '[SUP]'), ('=miatt', '[SUB]'), ('=miatt', '[SUB]', '[SUP]'), ('=miatt', '[SUP]'), ('=miatt', '[TEM]'), ('=mögött',), ('=mögött', '[ACC]'), ('=mögött', '[DAT]'), ('=mögött', '[INE]'), ('=mögött', '[INE]', '[SUP]'), ('=mögött', '[INS]'), ('=mögött', '[INS]', '[SUP]'), ('=múlva',), ('=nélkül',), ('=nélkül', '[ACC]'), ('=nélkül', '[DEL]', '[INE]'), ('=nélkül', '[INE]'), ('=nélkül', '[INE]', '[INS]'), ('=nélkül', '[SUB]'), ('=nélkül', '[SUP]'), ('=nélkül', '[TER]'), ('=részére',), ('=révén',), ('=révén', '[INE]'), ('=révén', '[INS]'), ('=szemben',), ('=szemben', '[ACC]'), ('=szemben', '[DAT]'), ('=szemben', '[DAT]', '[INE]'), ('=szemben', '[DAT]', '[INE]', '[INS]'), ('=szemben', '[DAT]', '[INS]'), ('=szemben', '[INE]'), ('=szemben', '[INE]', '[INS]'), ('=szemben', '[INE]', '[SUP]'), ('=szemben', '[INS]'), ('=szemben', '[INS]', '[SUP]'), ('=szemben', '[SUP]'), ('=szerint',), ('=szerint', '=után'), ('=szerint', '=óta', '[INE]'), ('=szerint', '[ABL]'), ('=szerint', '[ABL]', '[DAT]', '[INE]'), ('=szerint', '[ABL]', '[INE]'), ('=szerint', '[ABL]', '[SUB]'), ('=szerint', '[ABL]', '[SUP]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[DAT]', '[INE]'), ('=szerint', '[ACC]', '[DAT]', '[SUB]'), ('=szerint', '[ACC]', '[DEL]'), ('=szerint', '[ACC]', '[ILL]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INE]', '[SUB]'), ('=szerint', '[ACC]', '[INE]', '[SUP]'), ('=szerint', '[ACC]', '[INS]'), ('=szerint', '[ACC]', '[SUB]'), ('=szerint', '[ACC]', '[SUP]'), ('=szerint', '[ADE]'), ('=szerint', '[ADE]', '[DAT]'), ('=szerint', '[ADE]', '[INE]'), ('=szerint', '[ADE]', '[INE]', '[INS]'), ('=szerint', '[ADE]', '[INS]'), ('=szerint', '[ADE]', '[SUP]'), ('=szerint', '[ALL]'), ('=szerint', '[ALL]', '[DAT]'), ('=szerint', '[ALL]', '[SUB]'), ('=szerint', '[ALL]', '[SUB]', '[SUP]'), ('=szerint', '[DAT]'), ('=szerint', '[DAT]', '[DEL]'), ('=szerint', '[DAT]', '[DEL]', '[INE]'), ('=szerint', '[DAT]', '[ELA]'), ('=szerint', '[DAT]', '[INE]'), ('=szerint', '[DAT]', '[INE]', '[INS]'), ('=szerint', '[DAT]', '[INE]', '[SUB]'), ('=szerint', '[DAT]', '[INE]', '[SUP]'), ('=szerint', '[DAT]', '[INS]'), ('=szerint', '[DAT]', '[INS]', '[SUP]'), ('=szerint', '[DAT]', '[SUB]'), ('=szerint', '[DAT]', '[SUB]', '[SUP]'), ('=szerint', '[DAT]', '[SUP]'), ('=szerint', '[DAT]', '[TEM]'), ('=szerint', '[DAT]', '[TER]'), ('=szerint', '[DEL]'), ('=szerint', '[DEL]', '[INE]'), ('=szerint', '[DEL]', '[SUP]'), ('=szerint', '[ELA]'), ('=szerint', '[ELA]', '[INE]'), ('=szerint', '[ELA]', '[SUB]'), ('=szerint', '[ELA]', '[SUP]'), ('=szerint', '[ILL]'), ('=szerint', '[ILL]', '[SUP]'), ('=szerint', '[INE]'), ('=szerint', '[INE]', '[INS]'), ('=szerint', '[INE]', '[INS]', '[SUB]'), ('=szerint', '[INE]', '[SUB]'), ('=szerint', '[INE]', '[SUB]', '[SUP]'), ('=szerint', '[INE]', '[SUP]'), ('=szerint', '[INS]'), ('=szerint', '[INS]', '[SUB]'), ('=szerint', '[INS]', '[SUP]'), ('=szerint', '[SUB]'), ('=szerint', '[SUB]', '[SUP]'), ('=szerint', '[SUB]', '[TER]'), ('=szerint', '[SUP]'), ('=szerint', '[SUP]', '[TEM]'), ('=szerint', '[SUP]', '[TER]'), ('=szerint', '[TEM]'), ('=szerint', '[TER]'), ('=túl',), ('=túl', '[ALL]'), ('=túl', '[INE]'), ('=túl', '[SUP]'), ('=után',), ('=után', '[ACC]'), ('=után', '[ACC]', '[DAT]', '[INE]'), ('=után', '[ACC]', '[INE]'), ('=után', '[ACC]', '[INE]', '[INS]'), ('=után', '[ACC]', '[INS]'), ('=után', '[ACC]', '[SUB]'), ('=után', '[DAT]'), ('=után', '[DAT]', '[INE]'), ('=után', '[DAT]', '[INE]', '[INS]'), ('=után', '[DAT]', '[INS]'), ('=után', '[DAT]', '[INS]', '[SUB]'), ('=után', '[DAT]', '[SUB]'), ('=után', '[DAT]', '[SUP]'), ('=után', '[INE]'), ('=után', '[INE]', '[INS]'), ('=után', '[INE]', '[INS]', '[SUP]'), ('=után', '[INE]', '[SUB]'), ('=után', '[INE]', '[SUP]'), ('=után', '[INS]'), ('=után', '[INS]', '[SUB]'), ('=után', '[INS]', '[SUP]'), ('=után', '[SUB]'), ('=után', '[SUB]', '[SUP]'), ('=után', '[SUP]'), ('=után', '[TEM]'), ('=végett',), ('=által',), ('=által', '[ACC]', '[SUP]'), ('=által', '[ALL]', '[INE]'), ('=által', '[DAT]'), ('=által', '[DAT]', '[INE]'), ('=által', '[DAT]', '[SUB]'), ('=által', '[DAT]', '[SUP]'), ('=által', '[INE]'), ('=által', '[INE]', '[INS]'), ('=által', '[INE]', '[SUB]'), ('=által', '[INS]'), ('=óta',), ('=óta', '[ACC]', '[DAT]'), ('=óta', '[ACC]', '[INE]'), ('=óta', '[ACC]', '[SUB]'), ('=óta', '[DAT]'), ('=óta', '[DAT]', '[INE]'), ('=óta', '[DAT]', '[INE]', '[INS]'), ('=óta', '[INE]'), ('=óta', '[INE]', '[INS]'), ('=óta', '[INE]', '[SUB]'), ('=óta', '[INE]', '[SUP]'), ('=óta', '[INS]'), ('=óta', '[INS]', '[SUP]'), ('=óta', '[SUB]'), ('=óta', '[SUP]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INE]', '[TER]'), ('[ABL]', '[ACC]', '[INS]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ABL]', '[ACC]', '[TER]'), ('[ABL]', '[ADE]'), ('[ABL]', '[ADE]', '[DAT]'), ('[ABL]', '[ALL]'), ('[ABL]', '[ALL]', '[SUB]'), ('[ABL]', '[DAT]'), ('[ABL]', '[DAT]', '[DEL]'), ('[ABL]', '[DAT]', '[INE]'), ('[ABL]', '[DAT]', '[INE]', '[SUB]'), ('[ABL]', '[DAT]', '[INE]', '[SUP]'), ('[ABL]', '[DAT]', '[INE]', '[TER]'), ('[ABL]', '[DAT]', '[INS]'), ('[ABL]', '[DAT]', '[SUB]'), ('[ABL]', '[DAT]', '[SUP]'), ('[ABL]', '[DAT]', '[SUP]', '[TER]'), ('[ABL]', '[DAT]', '[TER]'), ('[ABL]', '[ELA]'), ('[ABL]', '[ELA]', '[INE]'), ('[ABL]', '[ELA]', '[TER]'), ('[ABL]', '[ILL]'), ('[ABL]', '[INE]'), ('[ABL]', '[INE]', '[INS]'), ('[ABL]', '[INE]', '[INS]', '[SUP]'), ('[ABL]', '[INE]', '[INS]', '[TER]'), ('[ABL]', '[INE]', '[SUB]'), ('[ABL]', '[INE]', '[SUB]', '[SUP]'), ('[ABL]', '[INE]', '[SUB]', '[TER]'), ('[ABL]', '[INE]', '[SUP]'), ('[ABL]', '[INE]', '[SUP]', '[TER]'), ('[ABL]', '[INE]', '[TER]'), ('[ABL]', '[INS]'), ('[ABL]', '[INS]', '[SUB]'), ('[ABL]', '[INS]', '[SUB]', '[SUP]'), ('[ABL]', '[INS]', '[SUP]'), ('[ABL]', '[INS]', '[TER]'), ('[ABL]', '[SUB]'), ('[ABL]', '[SUB]', '[SUP]'), ('[ABL]', '[SUB]', '[SUP]', '[TER]'), ('[ABL]', '[SUB]', '[TER]'), ('[ABL]', '[SUP]'), ('[ABL]', '[SUP]', '[TER]'), ('[ABL]', '[TEM]'), ('[ABL]', '[TER]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[DAT]'), ('[ACC]', '[ADE]', '[DAT]', '[INE]'), ('[ACC]', '[ADE]', '[DAT]', '[SUB]'), ('[ACC]', '[ADE]', '[ILL]'), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ADE]', '[INE]', '[INS]'), ('[ACC]', '[ADE]', '[INE]', '[SUB]'), ('[ACC]', '[ADE]', '[INS]'), ('[ACC]', '[ADE]', '[SUB]'), ('[ACC]', '[ADE]', '[SUP]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[DAT]'), ('[ACC]', '[ALL]', '[DAT]', '[INE]'), ('[ACC]', '[ALL]', '[DAT]', '[SUB]'), ('[ACC]', '[ALL]', '[INE]'), ('[ACC]', '[ALL]', '[INE]', '[SUB]'), ('[ACC]', '[ALL]', '[INS]', '[SUB]'), ('[ACC]', '[ALL]', '[SUB]'), ('[ACC]', '[ALL]', '[SUP]'), ('[ACC]', '[CAU]'), ('[ACC]', '[CAU]', '[DAT]'), ('[ACC]', '[CAU]', '[INS]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[DEL]'), ('[ACC]', '[DAT]', '[DEL]', '[INE]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[ELA]', '[INE]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[DAT]', '[ILL]', '[INE]'), ('[ACC]', '[DAT]', '[ILL]', '[SUP]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[INE]', '[SUB]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INE]', '[TEM]'), ('[ACC]', '[DAT]', '[INE]', '[TER]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[INS]', '[SUB]'), ('[ACC]', '[DAT]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUB]', '[SUP]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DAT]', '[TEM]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[ILL]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[DEL]', '[SUB]'), ('[ACC]', '[DEL]', '[SUP]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[INE]', '[SUP]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[ESS]'), ('[ACC]', '[FAC]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[FOR]', '[SUP]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[INE]', '[SUB]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[ILL]', '[SUB]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]', '[SUP]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INE]', '[TEM]'), ('[ACC]', '[INE]', '[TER]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[INS]', '[TER]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUB]', '[TEM]'), ('[ACC]', '[SUP]'), ('[ACC]', '[SUP]', '[TEM]'), ('[ACC]', '[SUP]', '[TER]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ADE]', '[ALL]'), ('[ADE]', '[ALL]', '[INE]'), ('[ADE]', '[DAT]'), ('[ADE]', '[DAT]', '[ELA]'), ('[ADE]', '[DAT]', '[INE]'), ('[ADE]', '[DAT]', '[INE]', '[INS]'), ('[ADE]', '[DAT]', '[INE]', '[SUP]'), ('[ADE]', '[DAT]', '[INS]'), ('[ADE]', '[DAT]', '[INS]', '[SUB]'), ('[ADE]', '[DAT]', '[SUB]'), ('[ADE]', '[DAT]', '[SUP]'), ('[ADE]', '[DEL]'), ('[ADE]', '[DEL]', '[INE]'), ('[ADE]', '[DEL]', '[SUB]'), ('[ADE]', '[ELA]'), ('[ADE]', '[ELA]', '[INE]'), ('[ADE]', '[FOR]'), ('[ADE]', '[ILL]'), ('[ADE]', '[INE]'), ('[ADE]', '[INE]', '[INS]'), ('[ADE]', '[INE]', '[INS]', '[SUB]'), ('[ADE]', '[INE]', '[INS]', '[SUP]'), ('[ADE]', '[INE]', '[SUB]'), ('[ADE]', '[INE]', '[SUP]'), ('[ADE]', '[INE]', '[TEM]'), ('[ADE]', '[INE]', '[TER]'), ('[ADE]', '[INS]'), ('[ADE]', '[INS]', '[SUB]'), ('[ADE]', '[INS]', '[SUP]'), ('[ADE]', '[SUB]'), ('[ADE]', '[SUB]', '[SUP]'), ('[ADE]', '[SUP]'), ('[ADE]', '[TEM]'), ('[ADE]', '[TER]'), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[DAT]', '[INE]'), ('[ALL]', '[DAT]', '[INE]', '[INS]'), ('[ALL]', '[DAT]', '[INE]', '[SUB]'), ('[ALL]', '[DAT]', '[INE]', '[SUP]'), ('[ALL]', '[DAT]', '[INS]'), ('[ALL]', '[DAT]', '[INS]', '[SUB]'), ('[ALL]', '[DAT]', '[SUB]'), ('[ALL]', '[DAT]', '[SUB]', '[SUP]'), ('[ALL]', '[DAT]', '[SUP]'), ('[ALL]', '[DAT]', '[TER]'), ('[ALL]', '[ELA]', '[SUB]'), ('[ALL]', '[ILL]'), ('[ALL]', '[ILL]', '[INE]'), ('[ALL]', '[ILL]', '[SUB]'), ('[ALL]', '[INE]'), ('[ALL]', '[INE]', '[INS]'), ('[ALL]', '[INE]', '[INS]', '[SUB]'), ('[ALL]', '[INE]', '[SUB]'), ('[ALL]', '[INE]', '[SUP]'), ('[ALL]', '[INS]'), ('[ALL]', '[INS]', '[SUB]'), ('[ALL]', '[INS]', '[SUP]'), ('[ALL]', '[SUB]'), ('[ALL]', '[SUB]', '[SUP]'), ('[ALL]', '[SUP]'), ('[ALL]', '[TEM]'), ('[ALL]', '[TER]'), ('[CAU]',), ('[CAU]', '[DAT]', '[SUP]'), ('[CAU]', '[ELA]'), ('[CAU]', '[INE]'), ('[CAU]', '[INE]', '[INS]'), ('[CAU]', '[INS]'), ('[CAU]', '[SUB]'), ('[CAU]', '[SUP]'), ('[CAU]', '[TEM]'), ('[DAT]',), ('[DAT]', '[DEL]'), ('[DAT]', '[DEL]', '[INE]'), ('[DAT]', '[DEL]', '[INE]', '[INS]'), ('[DAT]', '[DEL]', '[INE]', '[SUP]'), ('[DAT]', '[DEL]', '[INE]', '[TEM]'), ('[DAT]', '[DEL]', '[INS]'), ('[DAT]', '[DEL]', '[INS]', '[SUP]'), ('[DAT]', '[DEL]', '[SUB]'), ('[DAT]', '[DEL]', '[SUP]'), ('[DAT]', '[DEL]', '[TER]'), ('[DAT]', '[ELA]'), ('[DAT]', '[ELA]', '[INE]'), ('[DAT]', '[ELA]', '[INE]', '[INS]'), ('[DAT]', '[ELA]', '[INE]', '[SUB]'), ('[DAT]', '[ELA]', '[INE]', '[SUP]'), ('[DAT]', '[ELA]', '[INS]'), ('[DAT]', '[ELA]', '[SUB]'), ('[DAT]', '[ELA]', '[SUP]'), ('[DAT]', '[ESS]'), ('[DAT]', '[FAC]', '[INE]', '[SUP]'), ('[DAT]', '[FOR]'), ('[DAT]', '[FOR]', '[INE]'), ('[DAT]', '[FOR]', '[INE]', '[INS]'), ('[DAT]', '[FOR]', '[INE]', '[SUP]'), ('[DAT]', '[FOR]', '[SUB]'), ('[DAT]', '[FOR]', '[SUP]'), ('[DAT]', '[ILL]'), ('[DAT]', '[ILL]', '[INE]'), ('[DAT]', '[ILL]', '[INE]', '[INS]'), ('[DAT]', '[ILL]', '[INE]', '[SUB]'), ('[DAT]', '[ILL]', '[INE]', '[SUP]'), ('[DAT]', '[ILL]', '[INS]'), ('[DAT]', '[ILL]', '[SUB]'), ('[DAT]', '[ILL]', '[SUP]'), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[INS]'), ('[DAT]', '[INE]', '[INS]', '[SUB]'), ('[DAT]', '[INE]', '[INS]', '[SUP]'), ('[DAT]', '[INE]', '[INS]', '[TER]'), ('[DAT]', '[INE]', '[SUB]'), ('[DAT]', '[INE]', '[SUB]', '[SUP]'), ('[DAT]', '[INE]', '[SUB]', '[TEM]'), ('[DAT]', '[INE]', '[SUB]', '[TER]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INE]', '[TEM]'), ('[DAT]', '[INE]', '[TER]'), ('[DAT]', '[INS]'), ('[DAT]', '[INS]', '[SUB]'), ('[DAT]', '[INS]', '[SUB]', '[SUP]'), ('[DAT]', '[INS]', '[SUP]'), ('[DAT]', '[INS]', '[TER]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUB]', '[SUP]'), ('[DAT]', '[SUB]', '[TEM]'), ('[DAT]', '[SUB]', '[TER]'), ('[DAT]', '[SUP]'), ('[DAT]', '[SUP]', '[TEM]'), ('[DAT]', '[SUP]', '[TER]'), ('[DAT]', '[TEM]'), ('[DAT]', '[TER]'), ('[DEL]',), ('[DEL]', '[ELA]'), ('[DEL]', '[ELA]', '[INE]'), ('[DEL]', '[ELA]', '[SUB]'), ('[DEL]', '[ELA]', '[SUP]'), ('[DEL]', '[FOR]'), ('[DEL]', '[ILL]'), ('[DEL]', '[INE]'), ('[DEL]', '[INE]', '[INS]'), ('[DEL]', '[INE]', '[SUB]'), ('[DEL]', '[INE]', '[SUB]', '[SUP]'), ('[DEL]', '[INE]', '[SUP]'), ('[DEL]', '[INS]'), ('[DEL]', '[INS]', '[SUB]'), ('[DEL]', '[INS]', '[SUP]'), ('[DEL]', '[SUB]'), ('[DEL]', '[SUB]', '[SUP]'), ('[DEL]', '[SUP]'), ('[DEL]', '[TEM]'), ('[DEL]', '[TER]'), ('[ELA]',), ('[ELA]', '[ILL]'), ('[ELA]', '[INE]'), ('[ELA]', '[INE]', '[INS]'), ('[ELA]', '[INE]', '[SUB]'), ('[ELA]', '[INE]', '[SUP]'), ('[ELA]', '[INS]'), ('[ELA]', '[INS]', '[SUB]'), ('[ELA]', '[INS]', '[SUP]'), ('[ELA]', '[SUB]'), ('[ELA]', '[SUB]', '[SUP]'), ('[ELA]', '[SUP]'), ('[ELA]', '[TEM]'), ('[ELA]', '[TER]'), ('[ESS]',), ('[ESS]', '[INE]'), ('[ESS]', '[INE]', '[INS]'), ('[FAC]',), ('[FAC]', '[INE]'), ('[FAC]', '[INE]', '[SUB]'), ('[FAC]', '[INS]'), ('[FOR]',), ('[FOR]', '[INE]'), ('[FOR]', '[INE]', '[INS]'), ('[FOR]', '[INE]', '[INS]', '[SUP]'), ('[FOR]', '[INE]', '[SUB]'), ('[FOR]', '[INE]', '[SUP]'), ('[FOR]', '[INS]'), ('[FOR]', '[INS]', '[SUP]'), ('[FOR]', '[SUB]'), ('[FOR]', '[SUP]'), ('[FOR]', '[TEM]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INE]', '[INS]'), ('[ILL]', '[INE]', '[INS]', '[SUB]'), ('[ILL]', '[INE]', '[SUB]'), ('[ILL]', '[INE]', '[SUP]'), ('[ILL]', '[INS]'), ('[ILL]', '[INS]', '[SUB]'), ('[ILL]', '[INS]', '[SUP]'), ('[ILL]', '[SUB]'), ('[ILL]', '[SUB]', '[SUP]'), ('[ILL]', '[SUP]'), ('[ILL]', '[TEM]'), ('[ILL]', '[TER]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUB]'), ('[INE]', '[INS]', '[SUB]', '[SUP]'), ('[INE]', '[INS]', '[SUB]', '[TEM]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[INS]', '[SUP]', '[TEM]'), ('[INE]', '[INS]', '[SUP]', '[TER]'), ('[INE]', '[INS]', '[TEM]'), ('[INE]', '[INS]', '[TER]'), ('[INE]', '[SUB]'), ('[INE]', '[SUB]', '[SUP]'), ('[INE]', '[SUP]'), ('[INE]', '[SUP]', '[TEM]'), ('[INE]', '[SUP]', '[TER]'), ('[INE]', '[TEM]'), ('[INE]', '[TER]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUB]', '[SUP]'), ('[INS]', '[SUB]', '[TEM]'), ('[INS]', '[SUP]'), ('[INS]', '[SUP]', '[TEM]'), ('[INS]', '[SUP]', '[TER]'), ('[INS]', '[TEM]'), ('[INS]', '[TER]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUB]', '[SUP]', '[TEM]'), ('[SUB]', '[SUP]', '[TER]'), ('[SUB]', '[TEM]'), ('[SUB]', '[TER]'), ('[SUP]',), ('[SUP]', '[TEM]'), ('[SUP]', '[TER]'), ('[TEM]',), ('[TEM]', '[TER]'), ('[TER]',)]
-[(), ('=[DAT]',), ('=alatt',), ('=ellen',), ('=előtt',), ('=közt',), ('=között',), ('=közül',), ('=mellett',), ('=miatt',), ('=mögött',), ('=nélkül',), ('=szerint',), ('=szerint', '[INE]'), ('=után',), ('[ABL]',), ('[ADE]',), ('[ADE]', '[INE]'), ('[ALL]',), ('[CAU]',), ('[DAT]',), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[INS]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUP]'), ('[ELA]',), ('[ELA]', '[INE]'), ('[FOR]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INE]', '[TEM]'), ('[INE]', '[TER]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[INS]', '[TEM]'), ('[SUB]',), ('[SUB]', '[TEM]'), ('[SUP]',), ('[SUP]', '[TEM]'), ('[TEM]',), ('[TER]',)]
+[(), ('=[DAT]',), ('=[SUP]',), ('=alatt',), ('=ellen',), ('=előtt',), ('=közt',), ('=között',), ('=között', 'különbség[NOM]'), ('=közül',), ('=mellett',), ('=miatt',), ('=mögött',), ('=nélkül',), ('=szerint',), ('=szerint', '[INE]'), ('=után',), ('Magyarország[SUP]',), ('Magyarország[SUP]', '[INE]'), ('[ABL]',), ('[ADE]',), ('[ADE]', '[INE]'), ('[ADE]', 'több[NOM]'), ('[ALL]', 'elegendő[NOM]'), ('[CAU]',), ('[CAU]', 'felelős[NOM]'), ('[DAT]',), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[INS]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUP]'), ('[DAT]', 'fontos[NOM]'), ('[DAT]', 'jó[NOM]'), ('[DAT]', 'köszönhető[NOM]'), ('[DAT]', 'tudat[PSe3][INE]'), ('[DEL]', 'döntés[NOM]'), ('[DEL]', 'szó[NOM]'), ('[DEL]', 'vita[NOM]'), ('[ELA]',), ('[ELA]', '[INE]'), ('[FOR]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INE]', '[TEM]'), ('[INE]', '[TER]'), ('[INE]', 'bizonyos[NOM]'), ('[INE]', 'biztos[NOM]'), ('[INE]', 'dolog[NOM]'), ('[INE]', 'egyetértés[NOM]'), ('[INE]', 'ember[NOM]'), ('[INE]', 'erő[NOM]'), ('[INE]', 'hely[NOM]'), ('[INE]', 'helyzet[NOM]'), ('[INE]', 'hiba[NOM]'), ('[INE]', 'hiány[NOM]'), ('[INE]', 'idő[PSe3][SUP]'), ('[INE]', 'igazság[NOM]'), ('[INE]', 'ilyen[NOM]'), ('[INE]', 'jó[NOM]'), ('[INE]', 'különbség[NOM]'), ('[INE]', 'magyar[NOM]'), ('[INE]', 'otthon[NOM]'), ('[INE]', 'semmi[NOM]'), ('[INE]', 'szó[NOM]'), ('[INE]', 'több[NOM]'), ('[INE]', 'érdekelt[NOM]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[INS]', '[TEM]'), ('[INS]', 'baj[NOM]'), ('[INS]', 'elégedett[NOM]'), ('[INS]', 'gond[NOM]'), ('[INS]', 'kapcsolat[INE]'), ('[INS]', 'probléma[NOM]'), ('[INS]', 'tele[NOM]'), ('[INS]', 'teli[NOM]'), ('[INS]', 'tiszta[INE]'), ('[INS]', 'viszony[INE]'), ('[INS]', 'összefüggés[INE]'), ('[INS]', 'összhang[INE]'), ('[SUB]',), ('[SUB]', '[TEM]'), ('[SUB]', 'alkalmas[NOM]'), ('[SUB]', 'bizonyíték[NOM]'), ('[SUB]', 'büszke[NOM]'), ('[SUB]', 'esély[NOM]'), ('[SUB]', 'garancia[NOM]'), ('[SUB]', 'hajlandó[NOM]'), ('[SUB]', 'hatás[INS]'), ('[SUB]', 'idő[NOM]'), ('[SUB]', 'igény[NOM]'), ('[SUB]', 'jellemző[NOM]'), ('[SUB]', 'jó[NOM]'), ('[SUB]', 'képes[NOM]'), ('[SUB]', 'kíváncsi[NOM]'), ('[SUB]', 'lehetőség[NOM]'), ('[SUB]', 'mód[NOM]'), ('[SUB]', 'ok[NOM]'), ('[SUB]', 'példa[NOM]'), ('[SUB]', 'pénz[NOM]'), ('[SUB]', 'remény[NOM]'), ('[SUB]', 'szükség[NOM]'), ('[SUB]', 'tekintet[INS]'), ('[SUB]', 'válasz[NOM]'), ('[SUP]',), ('[SUP]', '[TEM]'), ('[SUP]', 'ember[NOM]'), ('[SUP]', 'hangsúly[NOM]'), ('[TEM]',), ('[TEM]', 'baj[NOM]'), ('[TEM]', 'szó[NOM]'), ('[TER]',), ('adat[NOM]',), ('alkalom[NOM]',), ('amilyen[NOM]',), ('annyi[NOM]',), ('anyag[NOM]',), ('asszony[NOM]',), ('baj[INE]',), ('baj[NOM]',), ('barát[NOM]',), ('beteg[NOM]',), ('birtok[PSe3][INE]',), ('biztos[NOM]',), ('boldog[NOM]',), ('bolond[NOM]',), ('buta[NOM]',), ('bácsi[NOM]',), ('büszke[NOM]',), ('bűnös[NOM]',), ('család[NOM]',), ('csapat[NOM]',), ('csend[NOM]',), ('csoda[NOM]',), ('csoport[NOM]',), ('csönd[NOM]',), ('cég[NOM]',), ('cél[NOM]',), ('dollár[NOM]',), ('dolog[DEL]', 'szó[NOM]'), ('dolog[NOM]',), ('döntés[NOM]',), ('egy[NOM]',), ('egyetlen[NOM]',), ('egyszerű[NOM]',), ('egyértelmű[NOM]',), ('egész[NOM]',), ('elnök[NOM]',), ('első[NOM]',), ('elég[NOM]',), ('elégedett[NOM]',), ('ember[NOM]',), ('ennyi[NOM]',), ('eredmény[NOM]',), ('eredményes[NOM]',), ('erő[NOM]',), ('erős[NOM]',), ('esemény[NOM]',), ('eset[NOM]',), ('eset[PSe3][INE]',), ('feladat[NOM]',), ('felszólaló[NOM]',), ('fiatal[NOM]',), ('film[NOM]',), ('fiú[NOM]',), ('folyamat[INE]',), ('fontos[NOM]',), ('forint[NOM]',), ('furcsa[NOM]',), ('fáradt[NOM]',), ('férfi[NOM]',), ('föld[NOM]',), ('gazdag[NOM]',), ('gond[NOM]',), ('gondolat[NOM]',), ('gyenge[NOM]',), ('gyerek[NOM]',), ('gyermek[NOM]',), ('gyors[NOM]',), ('halott[NOM]',), ('hang[NOM]',), ('határ[NOM]',), ('hely[NOM]',), ('hely[PSe3][SUP]',), ('hely[SUP]',), ('helyes[NOM]',), ('helyzet[INE]',), ('helyzet[NOM]',), ('hiba[NOM]',), ('hibás[NOM]',), ('hideg[NOM]',), ('hosszú[NOM]',), ('háború[NOM]',), ('ház[NOM]',), ('hülye[NOM]',), ('idegen[NOM]',), ('ideges[NOM]',), ('idő[INE]',), ('idő[NOM]',), ('idő[PSe3][SUP]',), ('időszak[NOM]',), ('igaz[NOM]',), ('igazi[NOM]',), ('igazság[NOM]',), ('ilyen[NOM]',), ('intézmény[NOM]',), ('iskola[NOM]',), ('isten[NOM]',), ('javaslat[NOM]',), ('jel[NOM]',), ('jelentkező[NOM]',), ('jellegű[NOM]',), ('jellemző[NOM]',), ('jelzés[NOM]',), ('játék[NOM]',), ('jó[NOM]',), ('katona[NOM]',), ('kedves[NOM]',), ('kettő[NOM]',), ('kevés[NOM]',), ('kicsi[NOM]',), ('király[NOM]',), ('kis[NOM]',), ('kivétel[NOM]',), ('kommunista[NOM]',), ('kormány[NOM]',), ('kutya[NOM]',), ('kép[NOM]',), ('képviselő[NOM]',), ('kérdés[DEL]', 'szó[NOM]'), ('kérdés[NOM]',), ('kész[NOM]',), ('késő[NOM]',), ('kéz[PSe3][INE]',), ('kíváncsi[NOM]',), ('költő[NOM]',), ('könnyű[NOM]',), ('könyv[NOM]',), ('következő[NOM]',), ('különbség[NOM]',), ('lehetséges[NOM]',), ('lehetőség[NOM]',), ('lány[NOM]',), ('látható[NOM]',), ('lélek[NOM]',), ('lényeg[NOM]',), ('lépés[NOM]',), ('magas[NOM]',), ('magyar[NOM]',), ('meglepő[NOM]',), ('megoldás[NOM]',), ('meleg[NOM]',), ('mese[NOM]',), ('milyen[NOM]',), ('mindegy[NOM]',), ('minden[NOM]',), ('miniszter[NOM]',), ('miniszterelnök[NOM]',), ('munka[NOM]',), ('más[DEL]', 'szó[NOM]'), ('nagy[NOM]',), ('nap[NOM]',), ('nehéz[NOM]',), ('nyertes[NOM]',), ('nyilvánvaló[NOM]',), ('nyugodt[NOM]',), ('nyár[NOM]',), ('nép[NOM]',), ('nő[NOM]',), ('ok[NOM]',), ('okos[NOM]',), ('olyan[NOM]',), ('optimista[NOM]',), ('ország[INE]',), ('ország[NOM]',), ('orvos[NOM]',), ('otthon[NOM]',), ('pap[NOM]',), ('pillanat[NOM]',), ('politikus[NOM]',), ('pont[NOM]',), ('probléma[NOM]',), ('program[NOM]',), ('párt[NOM]',), ('példa[NOM]',), ('pénz[NOM]',), ('remény[NOM]',), ('rend[INE]',), ('rend[PSe3][SUP]',), ('rendszer[NOM]',), ('rendőr[NOM]',), ('rossz[NOM]',), ('rég[NOM]',), ('régi[NOM]',), ('részeg[NOM]',), ('semmi[NOM]',), ('senki[NOM]',), ('sikeres[NOM]',), ('sok[NOM]',), ('szabad[NOM]',), ('szabály[NOM]',), ('szakember[NOM]',), ('szavazás[NOM]',), ('szegény[NOM]',), ('szempont[NOM]',), ('személy[NOM]',), ('szerelmes[NOM]',), ('szerencsés[NOM]',), ('szervezet[NOM]',), ('szomorú[NOM]',), ('szám[NOM]',), ('százalék[NOM]',), ('százalékos[NOM]',), ('szép[NOM]',), ('színész[NOM]',), ('szíves[NOM]',), ('szó[NOM]',), ('szó[NOM]', 'ügy[DEL]'), ('sötét[NOM]',), ('tag[NOM]',), ('tanár[NOM]',), ('tele[NOM]',), ('természetes[NOM]',), ('terv[NOM]',), ('terület[NOM]',), ('tiszta[NOM]',), ('tulajdon[PSe3][INE]',), ('tél[NOM]',), ('téma[NOM]',), ('típus[NOM]',), ('több[NOM]',), ('törvény[NOM]',), ('utolsó[NOM]',), ('vasárnap[NOM]',), ('vendég[NOM]',), ('verseny[NOM]',), ('vicc[NOM]',), ('világ[NOM]',), ('világ[SUP]',), ('világos[NOM]',), ('vita[NOM]',), ('válasz[NOM]',), ('választás[NOM]',), ('várható[NOM]',), ('város[NOM]',), ('vég[PSe3][SUP]',), ('vélemény[NOM]',), ('véletlen[NOM]',), ('víz[NOM]',), ('zavar[INE]',), ('zsidó[NOM]',), ('áldozat[NOM]',), ('állam[NOM]',), ('állampolgár[NOM]',), ('állapot[INE]',), ('állat[NOM]',), ('álmos[NOM]',), ('ártatlan[NOM]',), ('éhes[NOM]',), ('élet[NOM]',), ('élmény[NOM]',), ('érdekes[NOM]',), ('érzés[NOM]',), ('év[INE]',), ('év[INS]',), ('év[NOM]',), ('éves[NOM]',), ('író[NOM]',), ('óra[NOM]',), ('öreg[NOM]',), ('ötlet[NOM]',), ('új[NOM]',), ('úr[NOM]',), ('út[NOM]',), ('út[SUP]',), ('ügy[NOM]',), ('üres[NOM]',)]
+[(), ('=[DAT]',), ('=[DAT]', '=közül', '[SUP]'), ('=[DAT]', '=szerint'), ('=[DAT]', '[ACC]'), ('=[DAT]', '[ACC]', '[INE]'), ('=[DAT]', '[DAT]'), ('=[DAT]', '[DAT]', '[INS]'), ('=[DAT]', '[INE]'), ('=[DAT]', '[INE]', '[SUB]'), ('=[DAT]', '[INE]', '[SUP]'), ('=[DAT]', '[INS]'), ('=[DAT]', '[INS]', '[SUP]'), ('=[DAT]', '[SUP]'), ('=alatt',), ('=alatt', '=szerint'), ('=alatt', '=szerint', '[DAT]'), ('=alatt', '[ABL]'), ('=alatt', '[ACC]'), ('=alatt', '[ACC]', '[INE]'), ('=alatt', '[ACC]', '[INS]'), ('=alatt', '[ACC]', '[SUP]'), ('=alatt', '[ADE]'), ('=alatt', '[ADE]', '[SUP]'), ('=alatt', '[DAT]'), ('=alatt', '[DAT]', '[INE]'), ('=alatt', '[DAT]', '[INE]', '[INS]'), ('=alatt', '[DAT]', '[INS]'), ('=alatt', '[INE]'), ('=alatt', '[INE]', '[INS]'), ('=alatt', '[INE]', '[SUB]'), ('=alatt', '[INE]', '[SUP]'), ('=alatt', '[INS]'), ('=alatt', '[SUB]'), ('=alatt', '[SUB]', '[SUP]'), ('=alatt', '[SUP]'), ('=alatt', '[TEM]'), ('=alul',), ('=alá',), ('=alá', '[DAT]'), ('=alól',), ('=belül',), ('=belül', '=között', '[INE]'), ('=belül', '[DAT]', '[INE]'), ('=belül', '[DAT]', '[SUP]'), ('=belül', '[INE]'), ('=belül', '[INS]'), ('=belül', '[SUP]'), ('=belül', '[TEM]'), ('=együtt',), ('=ellen',), ('=ellen', '=mellett'), ('=ellen', '[ACC]'), ('=ellen', '[DAT]'), ('=ellen', '[INE]'), ('=ellen', '[INE]', '[INS]'), ('=ellen', '[INE]', '[SUP]'), ('=ellen', '[INS]'), ('=ellen', '[SUP]'), ('=ellenére',), ('=ellenére', '[DAT]'), ('=ellenére', '[DAT]', '[INE]'), ('=ellenére', '[INE]'), ('=ellenére', '[INE]', '[INS]'), ('=ellenére', '[INS]'), ('=ellenére', '[SUP]'), ('=elé',), ('=elől',), ('=előtt',), ('=előtt', '=mögött'), ('=előtt', '=után'), ('=előtt', '[ACC]'), ('=előtt', '[ACC]', '[INE]'), ('=előtt', '[ACC]', '[INE]', '[INS]'), ('=előtt', '[ADE]', '[INS]'), ('=előtt', '[DAT]'), ('=előtt', '[DAT]', '[INE]'), ('=előtt', '[DAT]', '[INS]'), ('=előtt', '[DAT]', '[SUP]'), ('=előtt', '[INE]'), ('=előtt', '[INE]', '[INS]'), ('=előtt', '[INE]', '[INS]', '[SUP]'), ('=előtt', '[INE]', '[SUB]'), ('=előtt', '[INE]', '[SUP]'), ('=előtt', '[INS]'), ('=előtt', '[INS]', '[SUB]'), ('=előtt', '[INS]', '[SUP]'), ('=előtt', '[SUB]'), ('=előtt', '[SUP]'), ('=előtt', '[TEM]'), ('=fele',), ('=felett',), ('=felett', '[DAT]'), ('=felé',), ('=felül',), ('=felől',), ('=felől', '[INE]'), ('=fogva',), ('=fogva', '[ACC]'), ('=fogva', '[INE]'), ('=folytán',), ('=fölé',), ('=fölött',), ('=fölött', '=szerint', '[INE]'), ('=fölött', '[DAT]'), ('=fölött', '[INE]'), ('=fölött', '[INS]'), ('=helyett',), ('=helyett', '[INE]'), ('=helyett', '[SUP]'), ('=iránt',), ('=iránt', '[INE]'), ('=iránt', '[INS]'), ('=keresztül',), ('=keresztül', '[ABL]', '[TER]'), ('=keresztül', '[DAT]'), ('=képest',), ('=képest', '[ALL]'), ('=képest', '[ALL]', '[INS]'), ('=képest', '[DAT]'), ('=képest', '[INE]'), ('=képest', '[INE]', '[INS]'), ('=képest', '[INE]', '[SUP]'), ('=képest', '[SUP]'), ('=kívül',), ('=kívül', '[ACC]', '[INE]'), ('=kívül', '[DAT]'), ('=kívül', '[DAT]', '[INE]'), ('=kívül', '[DAT]', '[INE]', '[SUP]'), ('=kívül', '[DAT]', '[SUP]'), ('=kívül', '[INE]'), ('=kívül', '[INE]', '[SUP]'), ('=kívül', '[SUP]'), ('=kívül', '[TEM]'), ('=körül',), ('=körül', '[INE]'), ('=körül', '[SUP]'), ('=körül', '[TEM]'), ('=következtében',), ('=következtében', '[INE]'), ('=közben',), ('=közt',), ('=közt', '=között'), ('=közt', '=szerint'), ('=közt', '[ACC]'), ('=közt', '[DAT]'), ('=közt', '[DEL]'), ('=közt', '[DEL]', '[SUP]'), ('=közt', '[ELA]'), ('=közt', '[INE]'), ('=közt', '[INS]'), ('=közt', '[SUP]'), ('=közt', '[TER]'), ('=közé',), ('=között',), ('=között', '=mellett'), ('=között', '=miatt', '[INE]'), ('=között', '=szerint'), ('=között', '=szerint', '[DAT]'), ('=között', '=szerint', '[ELA]'), ('=között', '=szerint', '[INE]'), ('=között', '=szerint', '[SUP]'), ('=között', '=után'), ('=között', '=által'), ('=között', '=óta'), ('=között', '[ABL]', '[INE]'), ('=között', '[ABL]', '[SUB]'), ('=között', '[ABL]', '[TER]'), ('=között', '[ACC]'), ('=között', '[ACC]', '[DAT]'), ('=között', '[ACC]', '[INE]'), ('=között', '[ACC]', '[INE]', '[INS]'), ('=között', '[ACC]', '[INS]'), ('=között', '[ACC]', '[SUP]'), ('=között', '[ACC]', '[TER]'), ('=között', '[ADE]'), ('=között', '[ALL]', '[INE]'), ('=között', '[DAT]'), ('=között', '[DAT]', '[INE]'), ('=között', '[DAT]', '[INE]', '[INS]'), ('=között', '[DAT]', '[INE]', '[SUP]'), ('=között', '[DAT]', '[INS]'), ('=között', '[DAT]', '[SUB]'), ('=között', '[DAT]', '[SUP]'), ('=között', '[DEL]'), ('=között', '[DEL]', '[INE]'), ('=között', '[DEL]', '[SUP]'), ('=között', '[ELA]'), ('=között', '[FOR]'), ('=között', '[ILL]'), ('=között', '[INE]'), ('=között', '[INE]', '[INS]'), ('=között', '[INE]', '[INS]', '[SUP]'), ('=között', '[INE]', '[SUB]'), ('=között', '[INE]', '[SUP]'), ('=között', '[INS]'), ('=között', '[INS]', '[SUB]'), ('=között', '[INS]', '[SUP]'), ('=között', '[SUB]'), ('=között', '[SUB]', '[SUP]'), ('=között', '[SUP]'), ('=között', '[TEM]'), ('=közül',), ('=közül', '=szerint', '[INE]'), ('=közül', '[ACC]'), ('=közül', '[DAT]'), ('=közül', '[DAT]', '[INE]'), ('=közül', '[DAT]', '[SUB]'), ('=közül', '[INE]'), ('=közül', '[INE]', '[SUP]'), ('=közül', '[INS]'), ('=közül', '[SUB]'), ('=közül', '[SUB]', '[SUP]'), ('=közül', '[SUP]'), ('=mellett',), ('=mellett', '[ACC]'), ('=mellett', '[ACC]', '[INE]'), ('=mellett', '[ACC]', '[INE]', '[SUP]'), ('=mellett', '[ACC]', '[SUP]'), ('=mellett', '[ALL]', '[SUB]'), ('=mellett', '[DAT]'), ('=mellett', '[DAT]', '[INE]'), ('=mellett', '[DAT]', '[INE]', '[SUP]'), ('=mellett', '[DAT]', '[INS]'), ('=mellett', '[DAT]', '[SUP]'), ('=mellett', '[DEL]', '[SUP]'), ('=mellett', '[INE]'), ('=mellett', '[INE]', '[INS]'), ('=mellett', '[INE]', '[SUB]'), ('=mellett', '[INE]', '[SUP]'), ('=mellett', '[INS]'), ('=mellett', '[INS]', '[SUP]'), ('=mellett', '[SUB]'), ('=mellett', '[SUP]'), ('=mellett', '[TEM]'), ('=mentén',), ('=mentén', '[DAT]'), ('=mentén', '[INE]', '[SUP]'), ('=miatt',), ('=miatt', '=szerint', '[INE]'), ('=miatt', '=szerint', '[INE]', '[SUB]'), ('=miatt', '=szerint', '[SUP]'), ('=miatt', '=óta', '[INE]'), ('=miatt', '[ACC]'), ('=miatt', '[ACC]', '[SUB]'), ('=miatt', '[ADE]'), ('=miatt', '[ADE]', '[INE]'), ('=miatt', '[ADE]', '[INS]'), ('=miatt', '[DAT]'), ('=miatt', '[DAT]', '[INE]'), ('=miatt', '[DAT]', '[SUB]'), ('=miatt', '[ELA]', '[INE]'), ('=miatt', '[INE]'), ('=miatt', '[INE]', '[INS]'), ('=miatt', '[INE]', '[INS]', '[SUB]'), ('=miatt', '[INE]', '[INS]', '[SUP]'), ('=miatt', '[INE]', '[SUB]'), ('=miatt', '[INE]', '[SUP]'), ('=miatt', '[INS]'), ('=miatt', '[INS]', '[SUP]'), ('=miatt', '[SUB]'), ('=miatt', '[SUB]', '[SUP]'), ('=miatt', '[SUP]'), ('=miatt', '[TEM]'), ('=mögött',), ('=mögött', '[ACC]'), ('=mögött', '[DAT]'), ('=mögött', '[INE]'), ('=mögött', '[INE]', '[SUP]'), ('=mögött', '[INS]'), ('=mögött', '[INS]', '[SUP]'), ('=múlva',), ('=nélkül',), ('=nélkül', '[ACC]'), ('=nélkül', '[DEL]', '[INE]'), ('=nélkül', '[INE]'), ('=nélkül', '[INE]', '[INS]'), ('=nélkül', '[SUB]'), ('=nélkül', '[SUP]'), ('=részére',), ('=révén',), ('=révén', '[INE]'), ('=révén', '[INS]'), ('=szemben',), ('=szemben', '[ACC]'), ('=szemben', '[DAT]'), ('=szemben', '[DAT]', '[INE]'), ('=szemben', '[DAT]', '[INE]', '[INS]'), ('=szemben', '[DAT]', '[INS]'), ('=szemben', '[INE]'), ('=szemben', '[INE]', '[INS]'), ('=szemben', '[INE]', '[SUP]'), ('=szemben', '[INS]'), ('=szemben', '[INS]', '[SUP]'), ('=szemben', '[SUP]'), ('=szerint',), ('=szerint', '=után'), ('=szerint', '=óta', '[INE]'), ('=szerint', '[ABL]'), ('=szerint', '[ABL]', '[DAT]', '[INE]'), ('=szerint', '[ABL]', '[INE]'), ('=szerint', '[ABL]', '[SUB]'), ('=szerint', '[ABL]', '[SUP]'), ('=szerint', '[ACC]'), ('=szerint', '[ACC]', '[DAT]'), ('=szerint', '[ACC]', '[DAT]', '[INE]'), ('=szerint', '[ACC]', '[DAT]', '[SUB]'), ('=szerint', '[ACC]', '[DEL]'), ('=szerint', '[ACC]', '[ILL]'), ('=szerint', '[ACC]', '[INE]'), ('=szerint', '[ACC]', '[INE]', '[SUB]'), ('=szerint', '[ACC]', '[INE]', '[SUP]'), ('=szerint', '[ACC]', '[INS]'), ('=szerint', '[ACC]', '[SUB]'), ('=szerint', '[ACC]', '[SUP]'), ('=szerint', '[ADE]'), ('=szerint', '[ADE]', '[DAT]'), ('=szerint', '[ADE]', '[INE]'), ('=szerint', '[ADE]', '[INE]', '[INS]'), ('=szerint', '[ADE]', '[INS]'), ('=szerint', '[ADE]', '[SUP]'), ('=szerint', '[ALL]'), ('=szerint', '[ALL]', '[DAT]'), ('=szerint', '[ALL]', '[SUB]'), ('=szerint', '[ALL]', '[SUB]', '[SUP]'), ('=szerint', '[DAT]'), ('=szerint', '[DAT]', '[DEL]'), ('=szerint', '[DAT]', '[DEL]', '[INE]'), ('=szerint', '[DAT]', '[ELA]'), ('=szerint', '[DAT]', '[INE]'), ('=szerint', '[DAT]', '[INE]', '[INS]'), ('=szerint', '[DAT]', '[INE]', '[SUB]'), ('=szerint', '[DAT]', '[INE]', '[SUP]'), ('=szerint', '[DAT]', '[INS]'), ('=szerint', '[DAT]', '[INS]', '[SUP]'), ('=szerint', '[DAT]', '[SUB]'), ('=szerint', '[DAT]', '[SUB]', '[SUP]'), ('=szerint', '[DAT]', '[SUP]'), ('=szerint', '[DAT]', '[TEM]'), ('=szerint', '[DAT]', '[TER]'), ('=szerint', '[DEL]'), ('=szerint', '[DEL]', '[INE]'), ('=szerint', '[DEL]', '[SUP]'), ('=szerint', '[ELA]'), ('=szerint', '[ELA]', '[INE]'), ('=szerint', '[ELA]', '[SUB]'), ('=szerint', '[ELA]', '[SUP]'), ('=szerint', '[ILL]'), ('=szerint', '[ILL]', '[SUP]'), ('=szerint', '[INE]'), ('=szerint', '[INE]', '[INS]'), ('=szerint', '[INE]', '[INS]', '[SUB]'), ('=szerint', '[INE]', '[SUB]'), ('=szerint', '[INE]', '[SUB]', '[SUP]'), ('=szerint', '[INE]', '[SUP]'), ('=szerint', '[INS]'), ('=szerint', '[INS]', '[SUB]'), ('=szerint', '[INS]', '[SUP]'), ('=szerint', '[SUB]'), ('=szerint', '[SUB]', '[SUP]'), ('=szerint', '[SUB]', '[TER]'), ('=szerint', '[SUP]'), ('=szerint', '[SUP]', '[TEM]'), ('=szerint', '[SUP]', '[TER]'), ('=szerint', '[TEM]'), ('=szerint', '[TER]'), ('=túl',), ('=túl', '[ALL]'), ('=túl', '[INE]'), ('=túl', '[SUP]'), ('=után',), ('=után', '[ACC]'), ('=után', '[ACC]', '[DAT]', '[INE]'), ('=után', '[ACC]', '[INE]'), ('=után', '[ACC]', '[INE]', '[INS]'), ('=után', '[ACC]', '[INS]'), ('=után', '[ACC]', '[SUB]'), ('=után', '[DAT]'), ('=után', '[DAT]', '[INE]'), ('=után', '[DAT]', '[INE]', '[INS]'), ('=után', '[DAT]', '[INS]'), ('=után', '[DAT]', '[INS]', '[SUB]'), ('=után', '[DAT]', '[SUB]'), ('=után', '[DAT]', '[SUP]'), ('=után', '[INE]'), ('=után', '[INE]', '[INS]'), ('=után', '[INE]', '[INS]', '[SUP]'), ('=után', '[INE]', '[SUB]'), ('=után', '[INE]', '[SUP]'), ('=után', '[INS]'), ('=után', '[INS]', '[SUB]'), ('=után', '[INS]', '[SUP]'), ('=után', '[SUB]'), ('=után', '[SUB]', '[SUP]'), ('=után', '[SUP]'), ('=után', '[TEM]'), ('=végett',), ('=által',), ('=által', '[ACC]', '[SUP]'), ('=által', '[ALL]', '[INE]'), ('=által', '[DAT]'), ('=által', '[DAT]', '[SUB]'), ('=által', '[DAT]', '[SUP]'), ('=által', '[INE]'), ('=által', '[INE]', '[INS]'), ('=által', '[INE]', '[SUB]'), ('=által', '[INS]'), ('=óta',), ('=óta', '[ACC]', '[DAT]'), ('=óta', '[ACC]', '[INE]'), ('=óta', '[ACC]', '[SUB]'), ('=óta', '[DAT]'), ('=óta', '[DAT]', '[INE]'), ('=óta', '[DAT]', '[INE]', '[INS]'), ('=óta', '[INE]'), ('=óta', '[INE]', '[INS]'), ('=óta', '[INE]', '[SUB]'), ('=óta', '[INE]', '[SUP]'), ('=óta', '[INS]'), ('=óta', '[INS]', '[SUP]'), ('=óta', '[SUB]'), ('=óta', '[SUP]'), ('[ABL]',), ('[ABL]', '[ACC]'), ('[ABL]', '[ACC]', '[DAT]'), ('[ABL]', '[ACC]', '[INE]'), ('[ABL]', '[ACC]', '[INE]', '[TER]'), ('[ABL]', '[ACC]', '[INS]'), ('[ABL]', '[ACC]', '[SUB]'), ('[ABL]', '[ACC]', '[SUP]'), ('[ABL]', '[ACC]', '[TER]'), ('[ABL]', '[ADE]'), ('[ABL]', '[ADE]', '[DAT]'), ('[ABL]', '[ALL]'), ('[ABL]', '[ALL]', '[SUB]'), ('[ABL]', '[DAT]'), ('[ABL]', '[DAT]', '[DEL]'), ('[ABL]', '[DAT]', '[INE]'), ('[ABL]', '[DAT]', '[INE]', '[SUB]'), ('[ABL]', '[DAT]', '[INE]', '[SUP]'), ('[ABL]', '[DAT]', '[INE]', '[TER]'), ('[ABL]', '[DAT]', '[INS]'), ('[ABL]', '[DAT]', '[SUB]'), ('[ABL]', '[DAT]', '[SUP]'), ('[ABL]', '[DAT]', '[SUP]', '[TER]'), ('[ABL]', '[DAT]', '[TER]'), ('[ABL]', '[ELA]'), ('[ABL]', '[ELA]', '[INE]'), ('[ABL]', '[ELA]', '[TER]'), ('[ABL]', '[ILL]'), ('[ABL]', '[INE]'), ('[ABL]', '[INE]', '[INS]'), ('[ABL]', '[INE]', '[INS]', '[SUP]'), ('[ABL]', '[INE]', '[INS]', '[TER]'), ('[ABL]', '[INE]', '[SUB]'), ('[ABL]', '[INE]', '[SUB]', '[SUP]'), ('[ABL]', '[INE]', '[SUB]', '[TER]'), ('[ABL]', '[INE]', '[SUP]'), ('[ABL]', '[INE]', '[SUP]', '[TER]'), ('[ABL]', '[INE]', '[TER]'), ('[ABL]', '[INS]'), ('[ABL]', '[INS]', '[SUB]'), ('[ABL]', '[INS]', '[SUB]', '[SUP]'), ('[ABL]', '[INS]', '[SUP]'), ('[ABL]', '[INS]', '[TER]'), ('[ABL]', '[SUB]'), ('[ABL]', '[SUB]', '[SUP]'), ('[ABL]', '[SUB]', '[SUP]', '[TER]'), ('[ABL]', '[SUB]', '[TER]'), ('[ABL]', '[SUP]'), ('[ABL]', '[SUP]', '[TER]'), ('[ABL]', '[TEM]'), ('[ABL]', '[TER]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ADE]', '[DAT]'), ('[ACC]', '[ADE]', '[DAT]', '[INE]'), ('[ACC]', '[ADE]', '[DAT]', '[SUB]'), ('[ACC]', '[ADE]', '[ILL]'), ('[ACC]', '[ADE]', '[INE]'), ('[ACC]', '[ADE]', '[INE]', '[INS]'), ('[ACC]', '[ADE]', '[INE]', '[SUB]'), ('[ACC]', '[ADE]', '[INS]'), ('[ACC]', '[ADE]', '[SUB]'), ('[ACC]', '[ADE]', '[SUP]'), ('[ACC]', '[ALL]'), ('[ACC]', '[ALL]', '[DAT]'), ('[ACC]', '[ALL]', '[DAT]', '[INE]'), ('[ACC]', '[ALL]', '[DAT]', '[SUB]'), ('[ACC]', '[ALL]', '[INE]'), ('[ACC]', '[ALL]', '[INE]', '[SUB]'), ('[ACC]', '[ALL]', '[INS]', '[SUB]'), ('[ACC]', '[ALL]', '[SUB]'), ('[ACC]', '[ALL]', '[SUP]'), ('[ACC]', '[CAU]'), ('[ACC]', '[CAU]', '[DAT]'), ('[ACC]', '[CAU]', '[INS]'), ('[ACC]', '[DAT]'), ('[ACC]', '[DAT]', '[DEL]'), ('[ACC]', '[DAT]', '[DEL]', '[INE]'), ('[ACC]', '[DAT]', '[ELA]'), ('[ACC]', '[DAT]', '[ELA]', '[INE]'), ('[ACC]', '[DAT]', '[ILL]'), ('[ACC]', '[DAT]', '[ILL]', '[INE]'), ('[ACC]', '[DAT]', '[ILL]', '[SUP]'), ('[ACC]', '[DAT]', '[INE]'), ('[ACC]', '[DAT]', '[INE]', '[INS]'), ('[ACC]', '[DAT]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[INE]', '[SUB]'), ('[ACC]', '[DAT]', '[INE]', '[SUP]'), ('[ACC]', '[DAT]', '[INE]', '[TEM]'), ('[ACC]', '[DAT]', '[INE]', '[TER]'), ('[ACC]', '[DAT]', '[INS]'), ('[ACC]', '[DAT]', '[INS]', '[SUB]'), ('[ACC]', '[DAT]', '[INS]', '[SUP]'), ('[ACC]', '[DAT]', '[SUB]'), ('[ACC]', '[DAT]', '[SUB]', '[SUP]'), ('[ACC]', '[DAT]', '[SUP]'), ('[ACC]', '[DAT]', '[TEM]'), ('[ACC]', '[DEL]'), ('[ACC]', '[DEL]', '[ILL]'), ('[ACC]', '[DEL]', '[INE]'), ('[ACC]', '[DEL]', '[INS]'), ('[ACC]', '[DEL]', '[SUB]'), ('[ACC]', '[DEL]', '[SUP]'), ('[ACC]', '[ELA]'), ('[ACC]', '[ELA]', '[INE]'), ('[ACC]', '[ELA]', '[INE]', '[SUP]'), ('[ACC]', '[ELA]', '[INS]'), ('[ACC]', '[ELA]', '[SUB]'), ('[ACC]', '[ELA]', '[SUP]'), ('[ACC]', '[ESS]'), ('[ACC]', '[FAC]'), ('[ACC]', '[FOR]'), ('[ACC]', '[FOR]', '[INE]'), ('[ACC]', '[FOR]', '[SUP]'), ('[ACC]', '[ILL]'), ('[ACC]', '[ILL]', '[INE]'), ('[ACC]', '[ILL]', '[INE]', '[SUB]'), ('[ACC]', '[ILL]', '[INS]'), ('[ACC]', '[ILL]', '[SUB]'), ('[ACC]', '[ILL]', '[SUP]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[INS]', '[SUB]'), ('[ACC]', '[INE]', '[INS]', '[SUP]'), ('[ACC]', '[INE]', '[SUB]'), ('[ACC]', '[INE]', '[SUB]', '[SUP]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INE]', '[TEM]'), ('[ACC]', '[INE]', '[TER]'), ('[ACC]', '[INS]'), ('[ACC]', '[INS]', '[SUB]'), ('[ACC]', '[INS]', '[SUP]'), ('[ACC]', '[INS]', '[TER]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUB]', '[SUP]'), ('[ACC]', '[SUB]', '[TEM]'), ('[ACC]', '[SUP]'), ('[ACC]', '[SUP]', '[TEM]'), ('[ACC]', '[SUP]', '[TER]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[ADE]',), ('[ADE]', '[ALL]'), ('[ADE]', '[ALL]', '[INE]'), ('[ADE]', '[DAT]'), ('[ADE]', '[DAT]', '[ELA]'), ('[ADE]', '[DAT]', '[INE]'), ('[ADE]', '[DAT]', '[INE]', '[INS]'), ('[ADE]', '[DAT]', '[INE]', '[SUP]'), ('[ADE]', '[DAT]', '[INS]'), ('[ADE]', '[DAT]', '[INS]', '[SUB]'), ('[ADE]', '[DAT]', '[SUB]'), ('[ADE]', '[DAT]', '[SUP]'), ('[ADE]', '[DEL]'), ('[ADE]', '[DEL]', '[INE]'), ('[ADE]', '[DEL]', '[SUB]'), ('[ADE]', '[ELA]'), ('[ADE]', '[ELA]', '[INE]'), ('[ADE]', '[FOR]'), ('[ADE]', '[ILL]'), ('[ADE]', '[INE]'), ('[ADE]', '[INE]', '[INS]'), ('[ADE]', '[INE]', '[INS]', '[SUB]'), ('[ADE]', '[INE]', '[INS]', '[SUP]'), ('[ADE]', '[INE]', '[SUB]'), ('[ADE]', '[INE]', '[SUP]'), ('[ADE]', '[INE]', '[TEM]'), ('[ADE]', '[INE]', '[TER]'), ('[ADE]', '[INS]'), ('[ADE]', '[INS]', '[SUB]'), ('[ADE]', '[INS]', '[SUP]'), ('[ADE]', '[SUB]'), ('[ADE]', '[SUB]', '[SUP]'), ('[ADE]', '[SUP]'), ('[ADE]', '[TEM]'), ('[ADE]', '[TER]'), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[DAT]', '[INE]'), ('[ALL]', '[DAT]', '[INE]', '[INS]'), ('[ALL]', '[DAT]', '[INE]', '[SUB]'), ('[ALL]', '[DAT]', '[INE]', '[SUP]'), ('[ALL]', '[DAT]', '[INS]'), ('[ALL]', '[DAT]', '[INS]', '[SUB]'), ('[ALL]', '[DAT]', '[SUB]'), ('[ALL]', '[DAT]', '[SUB]', '[SUP]'), ('[ALL]', '[DAT]', '[SUP]'), ('[ALL]', '[DAT]', '[TER]'), ('[ALL]', '[ELA]', '[SUB]'), ('[ALL]', '[ILL]'), ('[ALL]', '[ILL]', '[INE]'), ('[ALL]', '[ILL]', '[SUB]'), ('[ALL]', '[INE]'), ('[ALL]', '[INE]', '[INS]'), ('[ALL]', '[INE]', '[INS]', '[SUB]'), ('[ALL]', '[INE]', '[SUB]'), ('[ALL]', '[INE]', '[SUP]'), ('[ALL]', '[INS]'), ('[ALL]', '[INS]', '[SUB]'), ('[ALL]', '[INS]', '[SUP]'), ('[ALL]', '[SUB]'), ('[ALL]', '[SUB]', '[SUP]'), ('[ALL]', '[SUP]'), ('[ALL]', '[TEM]'), ('[ALL]', '[TER]'), ('[CAU]',), ('[CAU]', '[DAT]', '[SUP]'), ('[CAU]', '[ELA]'), ('[CAU]', '[INE]'), ('[CAU]', '[INE]', '[INS]'), ('[CAU]', '[INS]'), ('[CAU]', '[SUB]'), ('[CAU]', '[SUP]'), ('[CAU]', '[TEM]'), ('[DAT]',), ('[DAT]', '[DEL]'), ('[DAT]', '[DEL]', '[INE]'), ('[DAT]', '[DEL]', '[INE]', '[INS]'), ('[DAT]', '[DEL]', '[INE]', '[SUP]'), ('[DAT]', '[DEL]', '[INE]', '[TEM]'), ('[DAT]', '[DEL]', '[INS]'), ('[DAT]', '[DEL]', '[INS]', '[SUP]'), ('[DAT]', '[DEL]', '[SUB]'), ('[DAT]', '[DEL]', '[SUP]'), ('[DAT]', '[DEL]', '[TER]'), ('[DAT]', '[ELA]'), ('[DAT]', '[ELA]', '[INE]'), ('[DAT]', '[ELA]', '[INE]', '[INS]'), ('[DAT]', '[ELA]', '[INE]', '[SUB]'), ('[DAT]', '[ELA]', '[INE]', '[SUP]'), ('[DAT]', '[ELA]', '[INS]'), ('[DAT]', '[ELA]', '[SUB]'), ('[DAT]', '[ELA]', '[SUP]'), ('[DAT]', '[ESS]'), ('[DAT]', '[FAC]', '[INE]', '[SUP]'), ('[DAT]', '[FOR]'), ('[DAT]', '[FOR]', '[INE]'), ('[DAT]', '[FOR]', '[INE]', '[INS]'), ('[DAT]', '[FOR]', '[INE]', '[SUP]'), ('[DAT]', '[FOR]', '[SUB]'), ('[DAT]', '[FOR]', '[SUP]'), ('[DAT]', '[ILL]'), ('[DAT]', '[ILL]', '[INE]'), ('[DAT]', '[ILL]', '[INE]', '[INS]'), ('[DAT]', '[ILL]', '[INE]', '[SUB]'), ('[DAT]', '[ILL]', '[INE]', '[SUP]'), ('[DAT]', '[ILL]', '[INS]'), ('[DAT]', '[ILL]', '[SUB]'), ('[DAT]', '[ILL]', '[SUP]'), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[INS]'), ('[DAT]', '[INE]', '[INS]', '[SUB]'), ('[DAT]', '[INE]', '[INS]', '[SUP]'), ('[DAT]', '[INE]', '[INS]', '[TER]'), ('[DAT]', '[INE]', '[SUB]'), ('[DAT]', '[INE]', '[SUB]', '[SUP]'), ('[DAT]', '[INE]', '[SUB]', '[TEM]'), ('[DAT]', '[INE]', '[SUB]', '[TER]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INE]', '[TEM]'), ('[DAT]', '[INE]', '[TER]'), ('[DAT]', '[INS]'), ('[DAT]', '[INS]', '[SUB]'), ('[DAT]', '[INS]', '[SUB]', '[SUP]'), ('[DAT]', '[INS]', '[SUP]'), ('[DAT]', '[INS]', '[TER]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUB]', '[SUP]'), ('[DAT]', '[SUB]', '[TEM]'), ('[DAT]', '[SUB]', '[TER]'), ('[DAT]', '[SUP]'), ('[DAT]', '[SUP]', '[TEM]'), ('[DAT]', '[SUP]', '[TER]'), ('[DAT]', '[TEM]'), ('[DAT]', '[TER]'), ('[DEL]',), ('[DEL]', '[ELA]'), ('[DEL]', '[ELA]', '[INE]'), ('[DEL]', '[ELA]', '[SUB]'), ('[DEL]', '[ELA]', '[SUP]'), ('[DEL]', '[FOR]'), ('[DEL]', '[ILL]'), ('[DEL]', '[INE]'), ('[DEL]', '[INE]', '[INS]'), ('[DEL]', '[INE]', '[SUB]'), ('[DEL]', '[INE]', '[SUB]', '[SUP]'), ('[DEL]', '[INE]', '[SUP]'), ('[DEL]', '[INS]'), ('[DEL]', '[INS]', '[SUB]'), ('[DEL]', '[INS]', '[SUP]'), ('[DEL]', '[SUB]'), ('[DEL]', '[SUB]', '[SUP]'), ('[DEL]', '[SUP]'), ('[DEL]', '[TEM]'), ('[DEL]', '[TER]'), ('[ELA]',), ('[ELA]', '[ILL]'), ('[ELA]', '[INE]'), ('[ELA]', '[INE]', '[INS]'), ('[ELA]', '[INE]', '[SUB]'), ('[ELA]', '[INE]', '[SUP]'), ('[ELA]', '[INS]'), ('[ELA]', '[INS]', '[SUB]'), ('[ELA]', '[INS]', '[SUP]'), ('[ELA]', '[SUB]'), ('[ELA]', '[SUB]', '[SUP]'), ('[ELA]', '[SUP]'), ('[ELA]', '[TEM]'), ('[ELA]', '[TER]'), ('[ESS]',), ('[ESS]', '[INE]'), ('[FAC]',), ('[FAC]', '[INE]'), ('[FAC]', '[INE]', '[SUB]'), ('[FAC]', '[INS]'), ('[FOR]',), ('[FOR]', '[INE]'), ('[FOR]', '[INE]', '[INS]'), ('[FOR]', '[INE]', '[INS]', '[SUP]'), ('[FOR]', '[INE]', '[SUB]'), ('[FOR]', '[INE]', '[SUP]'), ('[FOR]', '[INS]'), ('[FOR]', '[INS]', '[SUP]'), ('[FOR]', '[SUB]'), ('[FOR]', '[SUP]'), ('[FOR]', '[TEM]'), ('[ILL]',), ('[ILL]', '[INE]'), ('[ILL]', '[INE]', '[INS]'), ('[ILL]', '[INE]', '[INS]', '[SUB]'), ('[ILL]', '[INE]', '[SUB]'), ('[ILL]', '[INE]', '[SUP]'), ('[ILL]', '[INS]'), ('[ILL]', '[INS]', '[SUB]'), ('[ILL]', '[INS]', '[SUP]'), ('[ILL]', '[SUB]'), ('[ILL]', '[SUB]', '[SUP]'), ('[ILL]', '[SUP]'), ('[ILL]', '[TEM]'), ('[ILL]', '[TER]'), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUB]'), ('[INE]', '[INS]', '[SUB]', '[SUP]'), ('[INE]', '[INS]', '[SUB]', '[TEM]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[INS]', '[SUP]', '[TEM]'), ('[INE]', '[INS]', '[SUP]', '[TER]'), ('[INE]', '[INS]', '[TEM]'), ('[INE]', '[INS]', '[TER]'), ('[INE]', '[SUB]'), ('[INE]', '[SUB]', '[SUP]'), ('[INE]', '[SUP]'), ('[INE]', '[SUP]', '[TEM]'), ('[INE]', '[SUP]', '[TER]'), ('[INE]', '[TEM]'), ('[INE]', '[TER]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUB]', '[SUP]'), ('[INS]', '[SUB]', '[TEM]'), ('[INS]', '[SUP]'), ('[INS]', '[SUP]', '[TEM]'), ('[INS]', '[SUP]', '[TER]'), ('[INS]', '[TEM]'), ('[INS]', '[TER]'), ('[SUB]',), ('[SUB]', '[SUP]'), ('[SUB]', '[SUP]', '[TEM]'), ('[SUB]', '[SUP]', '[TER]'), ('[SUB]', '[TEM]'), ('[SUB]', '[TER]'), ('[SUP]',), ('[SUP]', '[TEM]'), ('[SUP]', '[TER]'), ('[TEM]',), ('[TEM]', '[TER]'), ('[TER]',)]
+[(), ('=[DAT]',), ('=alatt',), ('=ellen',), ('=előtt',), ('=közt',), ('=között',), ('=közül',), ('=mellett',), ('=miatt',), ('=mögött',), ('=nélkül',), ('=szerint',), ('=szerint', '[INE]'), ('=után',), ('[ABL]',), ('[ADE]',), ('[ADE]', '[INE]'), ('[CAU]',), ('[DAT]',), ('[DAT]', '[INE]'), ('[DAT]', '[INE]', '[INS]'), ('[DAT]', '[INE]', '[SUP]'), ('[DAT]', '[INS]'), ('[DAT]', '[SUB]'), ('[DAT]', '[SUP]'), ('[ELA]',), ('[ELA]', '[INE]'), ('[FOR]',), ('[INE]',), ('[INE]', '[INS]'), ('[INE]', '[INS]', '[SUP]'), ('[INE]', '[SUB]'), ('[INE]', '[SUP]'), ('[INE]', '[TEM]'), ('[INE]', '[TER]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[INS]', '[TEM]'), ('[SUB]',), ('[SUB]', '[TEM]'), ('[SUP]',), ('[SUP]', '[TEM]'), ('[TEM]',), ('[TER]',)]
 [('INF',)]
-17
+0
 
 variál
 []
@@ -55926,6 +56423,13 @@ vissza|fizet
 []
 3641
 
+vissza|fog
+[('[ACC]',)]
+[(), ('=miatt', '[ACC]'), ('=szerint', '[ACC]'), ('[ABL]', '[ACC]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[INE]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ACC]', '[TEM]'), ('[ACC]', '[TER]'), ('[INE]',)]
+[('[ACC]',)]
+[]
+4977
+
 vissza|fogad
 []
 [(), ('[ACC]',), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[SUP]'), ('[ILL]',)]
@@ -56576,6 +57080,13 @@ vissza|sír
 []
 []
 664
+
+vissza|talál
+[]
+[(), ('[ALL]',), ('[ALL]', '[DAT]'), ('[ALL]', '[INE]'), ('[ALL]', '[INS]'), ('[ILL]',), ('[SUB]',)]
+[]
+[]
+805
 
 vissza|tart
 [('[ACC]',)]
@@ -58873,6 +59384,13 @@ zümmög
 []
 191
 
+át|fog
+[('[ACC]',)]
+[(), ('=szerint', '[ACC]'), ('[ABL]', '[ACC]', '[TER]'), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[DAT]'), ('[ACC]', '[ELA]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[INS]',)]
+[('[ACC]',)]
+[]
+1561
+
 át|fogalmaz
 []
 [(), ('[ACC]',), ('[ACC]', '[SUB]')]
@@ -59852,6 +60370,13 @@ zümmög
 []
 []
 1664
+
+át|tetszik
+[]
+[(), ('[SUP]',)]
+[]
+[]
+0
 
 át|tevődik
 []
@@ -61302,6 +61827,13 @@ zümmög
 []
 249
 
+össze|fog
+[(), ('[ACC]',)]
+[(), ('=ellen',), ('=után',), ('[ACC]',), ('[ACC]', '[ADE]'), ('[ACC]', '[ELA]'), ('[ACC]', '[FAC]'), ('[ACC]', '[FOR]'), ('[ACC]', '[ILL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[INS]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[ACC]', '[SUB]'), ('[ACC]', '[SUP]'), ('[ALL]',), ('[CAU]',), ('[DAT]',), ('[DAT]', '[INE]'), ('[DAT]', '[INS]'), ('[INE]',), ('[INE]', '[INS]'), ('[INS]',), ('[INS]', '[SUB]'), ('[INS]', '[SUP]'), ('[SUB]',), ('[SUP]',)]
+[(), ('[ACC]',)]
+[]
+6476
+
 össze|fogdos
 []
 [('[ACC]', '[INS]')]
@@ -61883,6 +62415,13 @@ zümmög
 []
 294
 
+össze|szokik
+[]
+[(), ('[INE]',), ('[INS]',)]
+[]
+[]
+490
+
 össze|szorít
 []
 [(), ('[ACC]',), ('[ACC]', '[INS]')]
@@ -62394,6 +62933,13 @@ zümmög
 []
 251
 
+újra|kezd
+[('[ACC]',)]
+[(), ('=után', '[ACC]'), ('[ACC]',), ('[ACC]', '[DAT]'), ('[ACC]', '[DEL]'), ('[ACC]', '[INE]'), ('[ACC]', '[INE]', '[SUP]'), ('[ACC]', '[INS]'), ('[INE]',), ('[INS]',)]
+[('[ACC]',)]
+[]
+1633
+
 újra|kezdődik
 []
 [(), ('[INE]',), ('[INS]',), ('[SUP]',)]
@@ -62828,12 +63374,12 @@ zümmög
 []
 0
 
-INF (all):  3111
-INF (1 resource(s)):  1795
-INF (2 resource(s)):  1316
-NON-INF (all):  968208
-NON-INF (1 resource(s)):  558900
-NON-INF (2 resource(s)):  352103
-NON-INF (3 resource(s)):  49311
-NON-INF (4 resource(s)):  6547
-NON-INF (5 resource(s)):  1347
+INF (all):  3159
+INF (1 resource(s)):  1800
+INF (2 resource(s)):  1359
+NON-INF (all):  974207
+NON-INF (1 resource(s)):  556044
+NON-INF (2 resource(s)):  359813
+NON-INF (3 resource(s)):  50336
+NON-INF (4 resource(s)):  6622
+NON-INF (5 resource(s)):  1392
