@@ -11,7 +11,7 @@ from itertools import combinations
 from collections import defaultdict, Counter
 from concurrent.futures import ProcessPoolExecutor, wait
 
-from utils.correction_tables import is_verb_wrong, fix_verb, correct_postp
+from utils.correction_tables import is_verb_wrong, fix_verb, correct_args
 from MetaMorphoHuEn.mmo_to_dict import process_mmo
 
 
@@ -60,7 +60,7 @@ def verb_dict_process():
                 found_wrong_verbs.add(verb)
             verb = verb_new
             arguments = [i.replace(' =', '=') for i in arguments]  # Because at the end args will be separated by spaces
-            arguments = correct_postp(arguments)
+            arguments = correct_args(arguments)
             smart_append(found_verbs, verb, freq, tuple(sorted(arguments)))
             sumfreq += freq
     return sumfreq, found_wrong_verbs, found_verbs
@@ -94,7 +94,7 @@ def isz_process():
                 verb = verb_new
                 # Because at the end args will be separated by spaces
                 arguments = [i.replace(' =', '=') for i in arguments]
-                arguments = correct_postp(arguments)
+                arguments = correct_args(arguments)
                 smart_append(found_verbs, verb, freq, tuple(sorted(arguments)))
                 sumfreq += freq
     return sumfreq, found_wrong_verbs, found_verbs
@@ -148,7 +148,7 @@ def tade_process():
                 # sumfreq += freq
                 # arguments = ['INF_' + inf]
                 arguments = ['INF']
-            arguments = correct_postp(arguments)
+            arguments = correct_args(arguments)
             smart_append(found_verbs, verb, freq, tuple(sorted(arguments)))  # Here stuff can be non uniq...
 
             sumfreq += freq

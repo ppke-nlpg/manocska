@@ -2,6 +2,7 @@
 # -*- coding: utf-8, vim: expandtab:ts=4 -*-
 
 import os
+import re
 
 """
 These verbs never occur with verbal particle.
@@ -875,9 +876,17 @@ postp_to_postp = {'afelett': 'felett', 'amellett': 'mellett', 'anélkül': 'nél
                   'ezelőtt': 'előtt', 'eziránt': 'iránt'}
 
 
-def correct_postp(frame):
+number_re = re.compile('([0-9]*|[0-9]*-[0-9]*|[0-9]*\.|[0-9]*-(a|e|es|as|ai|je|os))[=[]')
+
+
+def correct_args(frame):
     new_frame = []
     for arg in frame:
+        if number_re.match(arg):  # Kill number args!
+            if '=' in arg:
+                arg = '=' + arg.split('=', maxsplit=1)[1]
+            else:
+                arg = '[' + arg.split('[', maxsplit=1)[1]
         if '=' in arg:
             prefix, postp = arg.split('=',  maxsplit=1)
             if postp in not_postp:
@@ -885,6 +894,12 @@ def correct_postp(frame):
             postp = postp_to_case.get(postp, postp)
             postp = postp_to_case2.get(postp, postp)
             postp = postp_to_postp.get(postp, postp)
-            arg = '='.join((prefix, postp))
+            if postp == '[-]':
+                continue  # Drop bad arg
+            if postp.startswith('['):
+                glue = ''
+            else:
+                glue = '='
+            arg = glue.join((prefix, postp))
         new_frame.append(arg)
     return new_frame
