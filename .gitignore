@@ -114,7 +114,7 @@ isz/*
 !isz/*.md
 !isz/igeiszerkezet-lista.kimenet.txt
 
-mazsola_adatbazis/*
+mazsola_adatbazis*
 
 tade/*
 !tade/*.md
