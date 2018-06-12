@@ -901,5 +901,7 @@ def correct_args(frame):
             else:
                 glue = '='
             arg = glue.join((prefix, postp))
+        if arg.startswith('@'):
+            continue  # Drop arg, bad ISZ entry from Mazsola conversion
         new_frame.append(arg)
     return new_frame
