@@ -9,7 +9,7 @@ A _Manócska_ adatbázis összefogja és harmonizálja a magyar nyelvű igei von
 - [_Tádé_ – Igei vonzatkeret-gyakorisági lista. Kornai András et al.](tade/README.md)
 - [_A magyar igei komplexumok vizsgálata_. Kalivoda Ágnes. (Mesterszakos szakdolgozat)](https://github.com/kagnes/hungarian_verbal_complex/)
 - [_Infinitívuszi szerkezetek a magyarban_. Kalivoda Ágnes.](https://github.com/kagnes/infinitival_constructions)
-- [_A MetaMorpho igei vonzatkeret adatbázisa_. Prószéky Gábor et al.](MetaMorphoHuEn/README.md)
+- [_A MetaMorpho magyar-angol változatának igei vonzatkeret adatbázisa_. Prószéky Gábor et al.](MetaMorphoHuEn/README.md)
 
 Tartalmazza az összes ige-igekötő-vonzatkeret hármast a fenti erőforrásokból származó gyakoriságokkal.
 
@@ -29,7 +29,7 @@ Tartalmazza az összes ige-igekötő-vonzatkeret hármast a fenti erőforrásokb
 - Minden mező Tab-bal van elválasztva
 - Első mező: az ige (igekötő |-al van elválasztva)
 - Második mező: az argumentumok szóközzel elválasztva
-    - az esetek [Humor kódban](http://www.morphologic.hu/downloads/publications/na/2006_mszny_jobbhumor_na-pt.pdf) vannak megadva (a [PSe3] minden személyű birtokost egységesen jelöl)
+    - az esetek [_emMorph_-szerű kódban](https://e-magyar.hu/hu/textmodules/emmorph_codelist) vannak megadva (a [Poss] minden személyű birtokost egységesen jelöl)
     - INF_ prefixummal az infinitív argumentumok
     - = jellel prefixálva a névutók
     - @ jelzi, ha nincs argumentum
@@ -48,14 +48,13 @@ Tartalmazza az összes ige-igekötő-vonzatkeret hármast a fenti erőforrásokb
 A reprodukálhatóságot könnyítendő a _Manócska_ előállítható a többi erőforrás előfeldolgozott formátumainak felhasználásával, az alábbi parancsok segítségével (git clone --recursive ...).
 A git repozitórium __nem tartalmazza az eredeti erőforrásokat__, melyek szükségesek a reprodukcióhoz, __azok licensze miatt__.
 
-    time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k10,10nr -k1,2 | \
+    time (python3 merge.py --TSV 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k9,9nr -k1,2 | \
     tee manocska.sorted.txt | grep -v $'[^\t ][=[]' > manocska.sorted.nolex.txt) &&
     cat manocska.sorted.txt | grep $'[^\t ][=[]' > manocska.sorted.lex.txt
 
-
 # Licensz
 
-Felhasználható oktatási, kutatási és magáncélra. Ez esetben __a _Manócska_ által felhasznált összes erőforrást hivatkozni kell__.
+Felhasználható oktatási, kutatási és magáncélra. Ez esetben __a _Manócska_ által felhasznált összes erőforrást a szerzők kérésének megfelelően kell hivatkozni__.
 Továbbiakban a Manócska készítése során felhasznált erőforrások jogtulajdonosainak álláspontja a mértékadó.
 
 A _Manócska_ a következő bibliográfiai bejegyzések egyikével hivatkozható:

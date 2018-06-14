@@ -1,4 +1,4 @@
-# A MetaMorpho igei vonzatkeret adatbázisa
+# A MetaMorpho magyar-angol változatának igei vonzatkeret adatbázisa
 
 A _MetaMorpho_ egy szabályalapú, üzleti céllal készült fordítórendszer magyar nyelvre. Ennek része egy igei vonzatkereteket tartalmazó adatbázis, amely komoly nyelvészeti megfontolással készült. A pontos magyar--angol fordítás érdekében az egyes kereteket gazdagon ellátták lexikális, szintaktikai és szemantikai jellegű információval. Az erőforrás az egyes keretek gyakoriságára vonatkozó információt nem tartalmaz.
 

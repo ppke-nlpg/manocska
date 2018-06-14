@@ -7,7 +7,7 @@ _Manócska_ contains all Hungarian verb frame databases, these are as follows:
 - [_Tádé_ – A frequency list of verb frames. András Kornai et al.](tade/README.en.md)
 - [_A frequency list of verb frames_. Ágnes Kalivoda. (MA thesis)](https://github.com/kagnes/hungarian_verbal_complex/)
 - [_Infinitival constructions in Hungarian_. Ágnes Kalivoda.](https://github.com/kagnes/infinitival_constructions)
-- [_The verb frame database of MetaMorpho_. Gábor Prószéky et al.](MetaMorphoHuEn/README.en.md)
+- [_The verb frame database of the hungarian-english variant of MetaMorpho_. Gábor Prószéky et al.](MetaMorphoHuEn/README.en.md)
 
 It contains 'verb – verbal particle – argument frame' triplets with their frequencies in the above mentioned resources.
 
@@ -27,7 +27,7 @@ It contains 'verb – verbal particle – argument frame' triplets with their fr
 - every field is separated by Tab
 - 1st field: the verb lemma (the verbal particle is separated by pipe, |)
 - 2nd field: arguments, separated by space
-    - the cases are represented with [Humor tags](http://www.morphologic.hu/downloads/publications/na/2006_mszny_jobbhumor_na-pt.pdf) ([PSe3] stands for every person and number in possessive, 'e' means singular, 't' means plural)
+    - the cases are represented with [_emMorph_-like tags](https://e-magyar.hu/hu/textmodules/emmorph_codelist) ([Poss] stands for every person and number in possessive, 'e' means singular, 't' means plural)
     - the INF_ prefix stands for the infinitival argument
     - = is placed before the postpositions
     - @ means that the verb does not have any arguments
@@ -46,14 +46,13 @@ It contains 'verb – verbal particle – argument frame' triplets with their fr
 In order to facilitate reproducibility, _Manócska_ can be created with the following commands, using the preprocessed formats of the other resources (git clone --recursive ...).
 The git repository __does not contain__ the original resources needed for reproduction, __due to their licences__.
 
-    time (python3 merge.py 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k10,10nr -k1,2 | \
+    time (python3 merge.py --TSV 2> manocska.log.txt | tee manocska.txt | sort --parallel=$(nproc) -t$'\t' -k9,9nr -k1,2 | \
     tee manocska.sorted.txt | grep -v $'[^\t ][=[]' > manocska.sorted.nolex.txt) &&
     cat manocska.sorted.txt | grep $'[^\t ][=[]' > manocska.sorted.lex.txt
 
-
 # Licence
 
-_Manócska_ can be used for education, research and private projects. Please refer to __every resource__ used by _Manócska_. In every other case, you should keep yourself to the licences set by the resources' creators.
+_Manócska_ can be used for education, research and private projects. Please refer to __every resource__ used by _Manócska_ according to their authors original request. In every other case, you should keep yourself to the licences set by the resources' creators.
 
 To cite _Manócska_ use one of the following bibliographic entries:
 

@@ -1,4 +1,4 @@
-# The verb frame database of MetaMorpho
+# The verb frame database of the hungarian-english variant of MetaMorpho
 
 _MetaMorpho_ is a rule-based commercial machine translation system for Hungarian. Its verb frame database was created by linguistic experts who wanted to achieve a high coverage on the Hungarian verb frame constructions in a granularity which was needed for the unambiguous translation to English. Thus, these rules have numerous lexical, syntactic and semantic constraints in order to unambiguously encode the verb frames and to explicitly isolate the verb senses. The resource does not contain verb frame frequencies.
 
