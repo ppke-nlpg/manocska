@@ -4,3 +4,6 @@
 [submodule "infinitival_constructions"]
 	path = infinitival_constructions
 	url = https://github.com/kagnes/infinitival_constructions
+[submodule "isz/emmorphpy"]
+	path = isz/emmorphpy
+	url = https://github.com/ppke-nlpg/emmorphpy.git

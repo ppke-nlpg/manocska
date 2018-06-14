@@ -224,6 +224,13 @@ def kagi_inflist_process():
 def mmo_process():
     verb_dict = process_mmo()
     verbs = defaultdict(list)
+    conv_case = {'[ABL]': '[Abl]', '[ACC]': '[Acc]', '[ADE]': '[Ade]', '[ALL]': '[All]', '[CAU]': '[Cau]',
+                 '[DAT]': '[Dat]', '[DEL]': '[Del]', '[ELA]': '[Ela]', '[ESS]': '[Ess]', '[ESSMOD]': '[_Manner/Adv]',
+                 '[FAC]': '[Transl]', '[FOR]': '[EssFor]', '[GEN]': '[Dat]', '[ILL]': '[Ill]', '[INE]': '[Ine]',
+                 '[INS]': '[Ins]', '[NOM]': '[Nom]', '[SOC]': '[_Com:stUl/Adv]', '[SUB]': '[Subl]', '[SUP]': '[Supe]',
+                 '[TEM]': '[Temp]', '[TER]': '[Ter]', '[FROM]': '[_From]', '[FROMTO]': '[_Fromto]',
+                 '[MANNER]': '[_Manner]', '[PLACE]': '[_Place]', '[SZAM]': '[_Advz_Quant:szám/Adv]', '[TO]': '[_To]',
+                 '': ''}
     for verb, frames in verb_dict.items():
         for mmoid, frame in frames.items():
             fr = []
@@ -234,14 +241,19 @@ def mmo_process():
                 lex, case, postp = '', '', ''
                 if 'lex' in feats:
                     lex = feats['lex'].strip('"')
-                if ':lex' in feats:
+                elif ':lex' in feats:
                     lex = feats[':lex'].strip('"')
                 if 'postp' in feats:
                     postp = '=' + feats['postp'].strip('"')
+                elif 'padv' in feats:
+                    postp = '=' + feats['padv'].strip('"')
                 if 'case' in feats:
                     case = '[' + feats['case'] + ']'
                 elif ':advtype' in feats:
                     case = '[' + feats[':advtype'] + ']'
+                if case != '' and postp != '':
+                    case = ''  # [Supe] túl, [Supe] kívül, etc. -> túl, kívül
+                case = conv_case[case]  # Convert Humor case to emMorph-like case formalism
                 new_arg = lex+case+postp
                 if len(new_arg) == 0:
                     if arg == 'SUBJ':

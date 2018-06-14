@@ -31,12 +31,6 @@ with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'light
         else:
             light_verb_exception_verbs_w_prev.add(line.replace('+', '|'))
 
-# TODO: ezt mergelni: jo_inf_lista.txt
-"""
-Először merge aztán "manócskajavítás"
-Az összes perjelest kiválogatni.
-"""
-
 """
 Incorrect verbal particle splitting
 and
@@ -46,9 +40,11 @@ splitted -> unsplitted
 not_prev_verbs = {'alá|z', 'át|all', 'bele|s', 'bele|z', 'elé|g', 'elé|r', 'elő|z', 'fel|el',
                   'le|l', 'le|p', 'le|s', 'le|sz', 'rá|g', 'rá|z', 'tele|l', 'teli|k', }
 
-not_prev_verbs2 = {'fel|esel', 'szembe|sül', 'észre|vételez', 'mellé|kel', 'ellen|őriz', 'ki|vitelez',
+not_prev_verbs2 = {'fel|esel', 'szembe|sül', 'észre|vételez', 'mellé|kel', 'ellen|őriz', 'ellen|őriztet', 'ki|vitelez',
                    'ellen|súlyoz', 'fel|ejt', 'ki|abál', 'ki|fogásol', 'be|folyásol', 'szemre|hány', 'szemre|vételez',
-                   'nagyot|hall', 'bé|küld', 'bé|lel', 'be|cserkel', 'bé|kél', 'ki|józanul'}
+                   'nagyot|hall', 'bé|küld', 'bé|lel', 'be|cserkel', 'bé|kél', 'ki|józanul', 'vissz|hangoz',
+                   'túl|órázik', 'túl|óráz', 'rá|dióz', 'pán|céloz', 'nyug|díjaz', 'fel|vételiz', 'el|lenez',
+                   'ellen|pontoz', 'ellen|tételez'}
 
 """
 Good verbs, that have false verbal particle analysis
@@ -573,14 +569,14 @@ wrong_verbs2 = {'ajánlat', 'al', 'alat', 'alázat', 'áldozat', 'asztat', 'bí'
                 'emlékezet', 'fedezet', 'fejezet', 'fek', 'gyalázat', 'gyülekezet', 'hálózat', 'határozat', 'fürödik',
                 'bűzöl', 'hírhed', 'idézet', 'igyekezet', 'jár--kelt', 'jutat', 'kereset', 'kétel', 'hivat', 'irogat',
                 'bíztat', 'kockázat', 'korlatoz', 'köll', 'környezet', 'kötelezet', 'kötet', 'közalkalmaz', 'kultúrál',
-                'kuporg', 'letet', 'magyarázat', 'normál', 'nyilatkozat', 'nyug', 'oszolik',
+                'kuporg', 'letet', 'le|tet', 'magyarázat', 'normál', 'nyilatkozat', 'nyug', 'oszolik',
                 'pályázat', 'romol', 'sarkallik', 'seregel', 'sorozat', 'szavazat', 'szégyenel', 'szeretet',
                 'szervezet', 'szövetkezet', 'születet', 'táblázat', 'tagozat', 'tervezet',
                 'ugor', 'vadászat', 'változat', 'van--van', 'veszélyeztetet', 'vigyázat', 'fokozat', 'el|jutat'}
 
 wrong_verbs3 = {'benézik', 'érdekképvis', 'észre|ve', 'fel|éte', 'hal|hallik', 'ihlet|ihlik', 'készt|késztet', 'lessz',
                 'liz', 'lizik', 'ihlet|ihlik', 'méltó', 'méltö', 'nagyméltó', 'sokal', 'tellik', 'véghez', 'vérá',
-                'viszszahú'}
+                'viszszahú', 'meg|létez'}
 
 
 """
@@ -827,47 +823,47 @@ not_postp = {'adódóan', 'beálltával', 'bekövetkeztével', 'egyidőben', 'el
              'virradólag', 'vonatkozólag'}
 
 # Not postpositional phrase -> case
-postp_to_case = {'belőle': '[ELA]', 'inneni': '[NOM]', 'közelében': '[INE]', 'rajta': '[SUP]'}
+postp_to_case = {'belőle': '[Ela]', 'inneni': '[Nom]', 'közelében': '[Ine]', 'rajta': '[Supe]'}
 
 # "Adjective postpositional phrase" -> case
-postp_to_case2 = {'afölötti': '[NOM]', 'alatti': '[NOM]', 'alattiak': '[NOM]', 'alattiakat': '[ACC]',
-                  'alattiakban': '[INE]', 'alattiaknak': '[DAT]', 'alattiaknál': '[ADE]', 'alattiakon': '[SUP]',
-                  'alattijuktól': '[ABL]', 'alattinak': '[DAT]', 'alattira': '[SUB]', 'alattit': '[ACC]',
-                  'alattival': '[INS]', 'alóli': '[NOM]', 'általi': '[NOM]', 'azelőtti': '[NOM]',
-                  'azelőttihez': '[ALL]', 'azelőttire': '[SUB]', 'azelőttit': '[ACC]', 'belüli': '[NOM]',
-                  'belülinek': '[DAT]', 'belülivel': '[INS]', 'elleni': '[NOM]', 'elleniek': '[NOM]',
-                  'ellenieket': '[ACC]', 'ellenit': '[ACC]', 'ellenivel': '[INS]', 'előtti': '[NOM]',
-                  'előttihez': '[ALL]', 'előttije': '[NOM]', 'előttinek': '[DAT]', 'előttinél': '[ADE]',
-                  'előttire': '[SUB]', 'előttiség': '[NOM]', 'előttit': '[ACC]', 'előttitől': '[ABL]',
-                  'előttivé': '[FAC]', 'előttivel': '[INS]', 'ezelőtti': '[NOM]', 'ezelőttiekénél': '[ADE]',
-                  'ezelőttiekkel': '[INS]', 'ezelőttiektől': '[ABL]', 'ezelőttihez': '[ALL]', 'ezelőttinek': '[DAT]',
-                  'ezelőttinél': '[ADE]', 'ezelőttire': '[SUB]', 'ezelőttit': '[ACC]', 'ezelőttitől': '[ABL]',
-                  'ezelőttivel': '[INS]', 'feletti': '[NOM]', 'felettiek': '[NOM]', 'felettieket': '[ACC]',
-                  'felettiekkel': '[INS]', 'felettieknek': '[DAT]', 'felettieknél': '[ADE]', 'felettiekről': '[DEL]',
-                  'felettije': '[NOM]', 'felettinek': '[DAT]', 'felettire': '[SUB]', 'felettit': '[ACC]',
-                  'felettivel': '[INS]', 'felőli': '[NOM]', 'felüli': '[NOM]', 'felüliek': '[NOM]',
-                  'felüliekkel': '[INS]', 'felülieknek': '[DAT]', 'felülieknél': '[ADE]', 'felüliekre': '[SUB]',
-                  'felülit': '[ACC]', 'fölötti': '[NOM]', 'fölöttiek': '[NOM]', 'fölöttieket': '[ACC]',
-                  'fölöttiekkel': '[INS]', 'fölöttieknél': '[ADE]', 'fölöttiekre': '[SUB]', 'fölöttire': '[SUB]',
-                  'fölüliek': '[NOM]', 'helyetti': '[NOM]', 'Iránt': '[-]', 'iránti': '[NOM]', 'képesti': '[NOM]',
-                  'keresztüli': '[NOM]', 'kívüli': '[NOM]', 'kívüliek': '[NOM]', 'kívülieket': '[ACC]',
-                  'kívüliekkel': '[INS]', 'kívüliként': '[FOR]', 'kívülisége': '[NOM]', 'kívüliségére': '[SUB]',
-                  'kívülivé': '[FAC]', 'kívülivel': '[INS]', 'körüli': '[NOM]', 'körüliek': '[NOM]',
-                  'körüliekkel': '[INS]', 'körüliektől': '[ABL]', 'körülire': '[SUB]', 'körüliről': '[DEL]',
-                  'körülit': '[ACC]', 'közbeni': '[NOM]', 'közelről': '[-]', 'közötti': '[NOM]', 'közöttiek': '[NOM]',
-                  'közöttiekből': '[ELA]', 'közöttieké': '[NOM]', 'közöttieket': '[ACC]', 'közöttieknek': '[DAT]',
-                  'közöttieknél': '[ADE]', 'közöttiekre': '[SUB]', 'közöttin': '[SUP]', 'közöttinek': '[DAT]',
-                  'közöttinél': '[ADE]', 'közöttire': '[SUB]', 'közti': '[NOM]', 'köztiek': '[NOM]', 'közüli': '[NOM]',
-                  'melletti': '[NOM]', 'miatti': '[NOM]', 'mögötti': '[NOM]', 'nélküli': '[NOM]', 'nélkülibe': '[ILL]',
-                  'nélküliből': '[ELA]', 'nélküliek': '[NOM]', 'nélkülieké': '[NOM]', 'nélkülieknél': '[ADE]',
-                  'nélküliekre': '[SUB]', 'nélkülinek': '[DAT]', 'nélkülit': '[ACC]', 'nélkülivé': '[FAC]',
-                  'számára': '[DAT]', 'számodra': '[DAT]', 'számomra': '[DAT]', 'számunkra': '[DAT]',
-                  'szembeni': '[NOM]', 'szemközti': '[NOM]', 'szerinti': '[NOM]', 'szerintiek': '[NOM]',
-                  'szerintiekkel': '[INS]', 'szerintiektől': '[ABL]', 'szerintinek': '[DAT]', 'szerintire': '[SUB]',
-                  'szerintiről': '[DEL]', 'szerintit': '[ACC]', 'szerintitől': '[ABL]', 'szerintivé': '[FAC]',
-                  'szerintivel': '[INS]', 'túli': '[NOM]', 'túliak': '[NOM]', 'túliaké': '[NOM]', 'túliakig': '[TER]',
-                  'túliakkal': '[INS]', 'túliaknak': '[DAT]', 'utáni': '[NOM]', 'utániak': '[NOM]',
-                  'utániakat': '[ACC]', 'utánira': '[SUB]'}
+postp_to_case2 = {'afölötti': '[Nom]', 'alatti': '[Nom]', 'alattiak': '[Nom]', 'alattiakat': '[Acc]',
+                  'alattiakban': '[Ine]', 'alattiaknak': '[Dat]', 'alattiaknál': '[Ade]', 'alattiakon': '[Supe]',
+                  'alattijuktól': '[Abl]', 'alattinak': '[Dat]', 'alattira': '[Subl]', 'alattit': '[Acc]',
+                  'alattival': '[Ins]', 'alóli': '[Nom]', 'általi': '[Nom]', 'azelőtti': '[Nom]',
+                  'azelőttihez': '[All]', 'azelőttire': '[Subl]', 'azelőttit': '[Acc]', 'belüli': '[Nom]',
+                  'belülinek': '[Dat]', 'belülivel': '[Ins]', 'elleni': '[Nom]', 'elleniek': '[Nom]',
+                  'ellenieket': '[Acc]', 'ellenit': '[Acc]', 'ellenivel': '[Ins]', 'előtti': '[Nom]',
+                  'előttihez': '[All]', 'előttije': '[Nom]', 'előttinek': '[Dat]', 'előttinél': '[Ade]',
+                  'előttire': '[Subl]', 'előttiség': '[Nom]', 'előttit': '[Acc]', 'előttitől': '[Abl]',
+                  'előttivé': '[Transl]', 'előttivel': '[Ins]', 'ezelőtti': '[Nom]', 'ezelőttiekénél': '[Ade]',
+                  'ezelőttiekkel': '[Ins]', 'ezelőttiektől': '[Abl]', 'ezelőttihez': '[All]', 'ezelőttinek': '[Dat]',
+                  'ezelőttinél': '[Ade]', 'ezelőttire': '[Subl]', 'ezelőttit': '[Acc]', 'ezelőttitől': '[Abl]',
+                  'ezelőttivel': '[Ins]', 'feletti': '[Nom]', 'felettiek': '[Nom]', 'felettieket': '[Acc]',
+                  'felettiekkel': '[Ins]', 'felettieknek': '[Dat]', 'felettieknél': '[Ade]', 'felettiekről': '[Del]',
+                  'felettije': '[Nom]', 'felettinek': '[Dat]', 'felettire': '[Subl]', 'felettit': '[Acc]',
+                  'felettivel': '[Ins]', 'felőli': '[Nom]', 'felüli': '[Nom]', 'felüliek': '[Nom]',
+                  'felüliekkel': '[Ins]', 'felülieknek': '[Dat]', 'felülieknél': '[Ade]', 'felüliekre': '[Subl]',
+                  'felülit': '[Acc]', 'fölötti': '[Nom]', 'fölöttiek': '[Nom]', 'fölöttieket': '[Acc]',
+                  'fölöttiekkel': '[Ins]', 'fölöttieknél': '[Ade]', 'fölöttiekre': '[Subl]', 'fölöttire': '[Subl]',
+                  'fölüliek': '[Nom]', 'helyetti': '[Nom]', 'Iránt': '[-]', 'iránti': '[Nom]', 'képesti': '[Nom]',
+                  'keresztüli': '[Nom]', 'kívüli': '[Nom]', 'kívüliek': '[Nom]', 'kívülieket': '[Acc]',
+                  'kívüliekkel': '[Ins]', 'kívüliként': '[EssFor]', 'kívülisége': '[Nom]', 'kívüliségére': '[Subl]',
+                  'kívülivé': '[Transl]', 'kívülivel': '[Ins]', 'körüli': '[Nom]', 'körüliek': '[Nom]',
+                  'körüliekkel': '[Ins]', 'körüliektől': '[Abl]', 'körülire': '[Subl]', 'körüliről': '[Del]',
+                  'körülit': '[Acc]', 'közbeni': '[Nom]', 'közelről': '[-]', 'közötti': '[Nom]', 'közöttiek': '[Nom]',
+                  'közöttiekből': '[Ela]', 'közöttieké': '[Nom]', 'közöttieket': '[Acc]', 'közöttieknek': '[Dat]',
+                  'közöttieknél': '[Ade]', 'közöttiekre': '[Subl]', 'közöttin': '[Supe]', 'közöttinek': '[Dat]',
+                  'közöttinél': '[Ade]', 'közöttire': '[Subl]', 'közti': '[Nom]', 'köztiek': '[Nom]', 'közüli': '[Nom]',
+                  'melletti': '[Nom]', 'miatti': '[Nom]', 'mögötti': '[Nom]', 'nélküli': '[Nom]', 'nélkülibe': '[Ill]',
+                  'nélküliből': '[Ela]', 'nélküliek': '[Nom]', 'nélkülieké': '[Nom]', 'nélkülieknél': '[Ade]',
+                  'nélküliekre': '[Subl]', 'nélkülinek': '[Dat]', 'nélkülit': '[Acc]', 'nélkülivé': '[Transl]',
+                  'számára': '[Dat]', 'számodra': '[Dat]', 'számomra': '[Dat]', 'számunkra': '[Dat]',
+                  'szembeni': '[Nom]', 'szemközti': '[Nom]', 'szerinti': '[Nom]', 'szerintiek': '[Nom]',
+                  'szerintiekkel': '[Ins]', 'szerintiektől': '[Abl]', 'szerintinek': '[Dat]', 'szerintire': '[Subl]',
+                  'szerintiről': '[Del]', 'szerintit': '[Acc]', 'szerintitől': '[Abl]', 'szerintivé': '[Transl]',
+                  'szerintivel': '[Ins]', 'túli': '[Nom]', 'túliak': '[Nom]', 'túliaké': '[Nom]', 'túliakig': '[Ter]',
+                  'túliakkal': '[Ins]', 'túliaknak': '[Dat]', 'utáni': '[Nom]', 'utániak': '[Nom]',
+                  'utániakat': '[Acc]', 'utánira': '[Subl]'}
 
 # Correct postpositional phrase -> delete reflexiveness
 postp_to_postp = {'afelett': 'felett', 'amellett': 'mellett', 'anélkül': 'nélkül', 'aszerint': 'szerint',

@@ -111,6 +111,8 @@ ige_szotar/*
 !ige_szotar/*.md
 
 isz/*
+!isz/*.py
+!isz/emmorphpy
 !isz/*.md
 !isz/igeiszerkezet-lista.kimenet.txt
 
