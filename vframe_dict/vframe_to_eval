@@ -1,5 +1,4 @@
-abálhat	ki:X
-abál	ki:X,meg:X
+abál	meg:X
 ábrándíthat	ki:X
 ábrándít	ki:X
 ábrándozhat	el:X
@@ -370,7 +369,6 @@ bazsalyog	vissza:X
 becéz	agyon:X,körül:X
 becsmérel	le:X
 becstelenít	meg:X
-becsuk	X:?
 becsül	alá:X,alul:X,előre:X,felül:X,fel:X,föl:X,le:X,meg:X,túl:X
 becsülhet	alá:X,fel:X,le:X,meg:X,túl:X
 becsültet	fel:X,meg:X
@@ -468,7 +466,7 @@ bimbózik	ki:X
 bírál	el:X,felül:X,fölül:X,meg:X
 bírálhat	el:X,felül:X,fölül:X,meg:X
 bíráltat	felül:X
-bírhat	X:?,el:X,ki:X,le:X,rá:X
+bírhat	X:?,el:X,ki:X,rá:X
 birizgál	meg:X
 birkózhat	meg:X
 birkózik	el:X,ki:X,le:X,meg:X,végig:X
@@ -476,7 +474,7 @@ bírságolhat	meg:X
 bírságol	meg:X
 birtokol	el:X
 birtokolhat	el:X
-bír	X:?,el:X,fel:X,ki:X,le:X,meg:X,rá:X,végig:X
+bír	X:?,el:X,ki:X,rá:X
 bitangol	el:X
 bitorol	el:X
 bizakodik	el:X
@@ -1101,7 +1099,7 @@ csúfoltat	meg:X
 csúful	el:X
 csukat	be:X,le:X
 csukathat	le:X
-csuk	be:X,el:X,fel:X,ki:X,le:X,oda:X,össze:X,rá:X,szét:X,vissza:X
+csuk	be:?,el:X,fel:X,ki:X,le:X,oda:X,össze:X,rá:X,szét:X,vissza:X
 csukhat	be:X,le:X,össze:X
 csuklik	be:X,el-el:X,előre:X,el:X,félre:X,fel:X,föl:X,hátra:X,ide:X,ki:X,le-le:X,le:X,meg-meg:X,meg:X,össze:X,rá:X,vissza:X
 csukódhat	be:X
@@ -2075,7 +2073,7 @@ fogódik	be:X,el:X
 fogódzkodik	meg:X,össze:X
 fogózik	bele:X,belé:X,meg:X,össze:X
 fogózkodik	meg:X
-fog	X:?,át:X,bele:?,belé:X,be:X,egybe:X,el-el:X,el:X,félre:X,fel:X,föl:X,hátra:X,hozzá:?,ki:X,körbe:X,körül:X,közre:X,le:X,meg-meg:X,meg:X,mellé:X,neki:?,oda:X,össze:X,rá:X,vissza:X
+fog	X:?,át:X,bele:?,belé:X,be:X,egybe:X,el-el:X,el:X,fel:X,föl:X,hozzá:?,ki:X,körül:X,közre:X,le:X,meg-meg:X,meg:X,mellé:X,neki:?,oda:X,össze:X,rá:X,vissza:X
 fogyaszt	alul:X,el:X,ki:X,le:X,meg:X,túl:X
 fogyaszthat	el:X,le:X
 fogyat	el:X,ki:X
@@ -3750,7 +3748,7 @@ kezdődhet	el:X,meg:X,újra:X
 kezdődhetik	el:X,meg:X
 kezdődik	X:?,el:?,meg:X,újra:X
 kezdődődik	meg:X
-kezd	X:?,bele:?,belé:X,be:X,el:?,hozzá:?,ki:X,le:X,meg:?,neki:?,rá:?,újra:X
+kezd	X:?,bele:?,belé:X,el:?,hozzá:?,ki:X,meg:?,neki:?,rá:?,újra:X
 kezel	alul:X,elő:X,el:X,félre:X,ki:X,le:X,meg:X,túl:X,végig:X
 kezelget	el:X
 kezelhet	le:X
@@ -3801,7 +3799,7 @@ kíváncsiskodik	be:X
 kívánhat	X:?,meg:X
 kívánkozik	X:?,bele:X,be:X,el:X,fel:X,haza:X,hozzá:X,ide:X,ki:X,le:X,oda:X,vissza:X
 kívántatik	X:?,meg:X
-kíván	X:?,el:X,fel:X,meg:?,vissza:X
+kíván	X:?,meg:?
 klikkelhet	rá:X
 klikkel	oda:X,rá:X
 klónozik	le:X
@@ -4345,7 +4343,7 @@ leshet	X:?,bele:X,el:X,ki:X,le:X,meg:X
 leskel	ki-ki:X,ki:X
 leskelődik	ki:X
 lesz|van	el:X,ki:X,meg:X,oda:X,túl:X
-lesz	X:?,el:X,fel:X,ide:X,ki:X,le:X,meg:X,oda:X,túl:X
+lesz	X:?,el:X,ki:X,meg:X,oda:X,túl:X
 létezik	X:?
 levelezget	el:X
 levelezik	el:X,ki:X,le:X
@@ -4675,7 +4673,7 @@ mérkőzhet	meg:X
 mérkőzik	meg:X
 merül	alá:X,bele:X,belé:X,be:X,el:?,elő:X,fel-fel:X,fel:X,föl-föl:X,föl:X,ki:X,le:?,meg:X,vissza:X
 merülhet	alá:X,bele:X,el:X,fel:X,föl:X,ki:X,le:X
-mer	X:?,bele:X,be:X,el:X,fel:X,föl:X,ki:X,le:X,meg:X,oda:X,rá:X,tele:X,teli:X,vissza:X
+mer	X:?,bele:X,be:X,el:X,ki:X,le:X,rá:X,tele:X,teli:X,vissza:X
 mesél	át:X,be:X,el:X,tovább:X,újra:X,végig:X
 mesélget	el:X
 mesélhet	el:X
@@ -6693,7 +6691,7 @@ szeretget	meg:X
 szerethet	X:?,bele:X,meg:X
 szerettethet	meg:X
 szerettet	meg:X
-szeret	X:?,agyon:X,bele:X,belé:X,el:X,ki:X,meg:X,túl:X,vissza:X,viszont:X
+szeret	X:?,agyon:X,bele:X,belé:X,el:X,ki:X,meg:X,vissza:X,viszont:X
 szerez	be:X,el:X,hozzá:X,közbe:X,meg:X,össze:X,vissza:X
 szerezhet	X:?,be:X,meg:X,vissza:X
 szereztet	be:X,közbe:X,meg:X
@@ -6794,7 +6792,7 @@ szobázik	elő:X
 szobáztat	elő:X
 szocializál	alul:X
 szokhat	bele:X,el:X,hozzá:X,le:X,meg:X,össze:X,rá:X,vissza:X
-szokik	X:?,át:X,bele:X,be:X,elő:X,el:X,fel:X,hozzá:X,ide:X,ki:X,le:X,meg:X,oda:X,össze:X,rá:X,vissza:X
+szokik	X:?,át:X,bele:X,el:X,hozzá:X,ide:X,le:X,meg:X,oda:X,össze:X,rá:X,vissza:X
 szoktat	át:X,bele:X,be:X,el:X,hozzá:X,ide:X,le:X,meg:X,oda:X,össze:X,rá:X,vissza:X
 szoktathat	hozzá:X,le:X
 szólal	fel:X,föl:X,meg-meg:X,meg:X
@@ -6993,7 +6991,7 @@ találkoztat	össze:X
 találódik	fel:X,ki:X
 találtatik	meg:X
 találtat	X:?,ki:X,meg:X,rá:X
-talál	X:?,be-be:X,bele:X,be:X,el:X,fel:X,föl:X,haza:X,ide:X,ki:X,le:X,meg:X,mellé:X,oda:X,össze:X,rá:X,reá:X,szembe:X,vissza:X
+talál	X:?,be-be:X,bele:X,be:X,el:X,fel:X,föl:X,haza:X,ide:X,ki:X,le:X,meg:X,mellé:X,oda:X,rá:X,reá:X,szembe:X,vissza:X
 talicskázik	el:X,ki:X
 tallózik	be:X
 talpal	bele:X,le:X,meg:X,végig:X
@@ -7337,7 +7335,7 @@ tetszet	meg:X
 tetszet|tetszik	meg:X
 tetszhet	ki:X,meg:X
 tetszik|tetszet	meg:X
-tetszik	X:?,át:X,meg:X,vissza:X
+tetszik	X:?,meg:X,vissza:X
 tet|tesz	fölül:X
 tettet	ki:X,meg:X,össze:X,tönkre:X
 tetvesedik	el:X,meg:X

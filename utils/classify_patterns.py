@@ -20,21 +20,21 @@ def preprocess_frames(frames, verb, freqs) -> set:
                     new_frame = frame
                     break
                 if '|' in arg and '=' in arg:
-                    arg = arg.replace('ország-világ=előtt|ország-világ[NOM]', 'ország-világ=előtt').\
-                        replace('frakcióvezető-helyettes[NOM]|frakcióvezető-helyettes=szerint',
-                                'frakcióvezető-helyettes[PSe3]=szerint').\
-                        replace('frakcióvezető-helyettes[NOM]|frakcióvezető-helyettes[PSe3]=szerint',
-                                'frakcióvezető-helyettes[PSe3]=szerint').\
-                        replace('telek[NOM]|tél=belül', 'tél=belül').\
-                        replace('közvélemény-kutatás=szerint|közvélemény-kutatás[NOM]', 'közvélemény-kutatás=szerint').\
-                        replace('ország-világ=előtt|ország-világ[NOM]', 'ország-világ=előtt').\
-                        replace('képviselő-testület=elé|képviselő-testület[NOM]', 'képviselő-testület=elé').\
-                        replace('ország-világ=elé|ország-világ[NOM]', 'ország-világ=elé').\
-                        replace('jelleg[NOM]|jellég[PSe3]=fogva', 'jellég[PSe3]=fogva')
+                    arg = arg.replace('ország-világ=előtt|ország-világ[Nom]', 'ország-világ=előtt').\
+                        replace('frakcióvezető-helyettes[Nom]|frakcióvezető-helyettes=szerint',
+                                'frakcióvezető-helyettes[Poss]=szerint').\
+                        replace('frakcióvezető-helyettes[Nom]|frakcióvezető-helyettes[Poss]=szerint',
+                                'frakcióvezető-helyettes[Poss]=szerint').\
+                        replace('telek[Nom]|tél=belül', 'tél=belül').\
+                        replace('közvélemény-kutatás=szerint|közvélemény-kutatás[Nom]', 'közvélemény-kutatás=szerint').\
+                        replace('ország-világ=előtt|ország-világ[Nom]', 'ország-világ=előtt').\
+                        replace('képviselő-testület=elé|képviselő-testület[Nom]', 'képviselő-testület=elé').\
+                        replace('ország-világ=elé|ország-világ[Nom]', 'ország-világ=elé').\
+                        replace('jelleg[Nom]|jellég[Poss]=fogva', 'jellég[Poss]=fogva')
 
-                arg = arg.replace('[PSe3]', '').replace('=felé|felé[NOM]', '=felé'). \
-                    replace('=közé|közé[NOM]', '=közé'). \
-                    replace('=mellé|mellé[NOM]', '=mellé')
+                arg = arg.replace('[Poss]', '').replace('=felé|felé[Nom]', '=felé'). \
+                    replace('=közé|közé[Nom]', '=közé'). \
+                    replace('=mellé|mellé[Nom]', '=mellé')
 
                 if '|' not in arg and '=' in arg:
                     arg = '=' + arg.split('=')[1]
@@ -42,14 +42,14 @@ def preprocess_frames(frames, verb, freqs) -> set:
                     try:
                         arg = '[' + arg.split('[')[1]
                     except IndexError:
-                        arg = '[NOM]'
+                        arg = '[Nom]'
                 if '|' in arg and '=' not in arg:
                     s = set()
                     for e in arg.split('|'):
                         try:
                             v = '[' + e.split('[')[1]
                         except IndexError:
-                            v = '[NOM]'
+                            v = '[Nom]'
                         if len(v) > 0:
                             s.add(v)
                     if len(s) > 1:
@@ -117,7 +117,7 @@ def gen_patterns(pickled_name, w_verb_dict=True, w_isz=True, w_tade=True, w_infl
         all_ige |= set(inflist_verbs.keys())
 
     if w_mmo:
-        all_ige |= set(tade_verbs.keys())
+        all_ige |= set(mmo_verbs.keys())
 
     prev_by_ige = defaultdict(set)
     for verb in sorted(all_ige):
@@ -211,17 +211,6 @@ def gen_patterns(pickled_name, w_verb_dict=True, w_isz=True, w_tade=True, w_infl
     patt_prev_freqs = {(patt, prev): freq for ((prev, verb), patt), freq in sorted(freqs_to_frames.items())}
     print_stuff(patt_prev, os.path.join('patterns', 'patt_prev.txt'), patt_prev_freqs)
 
-    # Another level of grouping
-    patt_prev_2nd = defaultdict(Counter)
-    all_patts = set(patt_prev.keys())
-    for prev, frames in prev_patt.items():
-        frames_tuple = tuple(frame for frame in sorted(frames.keys()))
-        patt_prev_2nd[frames_tuple][prev] += 1  # Ezt kéne kiírni...
-    print_stuff(patt_prev_2nd, os.path.join('patterns', 'patt_prev_2nd.txt'), defaultdict(tuple))
-
-    patt_prev_freqs = {(patt, prev): freq for ((prev, verb), patt), freq in sorted(freqs_to_frames.items())}
-    print_stuff(patt_prev, os.path.join('patterns', 'patt_prev.txt'), patt_prev_freqs)
-
     ################################################################################################
     verb_patt_freqs = {(verb, patt): freq for ((prev, verb), patt), freq in sorted(freqs_to_frames.items())}
     print_stuff(verb_patt, os.path.join('patterns', 'verb_patt.txt'), verb_patt_freqs)
@@ -240,58 +229,3 @@ def gen_patterns(pickled_name, w_verb_dict=True, w_isz=True, w_tade=True, w_infl
                 key1=lambda x: x)
 
     return frame_group_patt_count
-
-
-def compute_distance(mintak):
-    # Preliminary (alpha code) distance calculation between patterns
-    mintak_keys = set(mintak.keys())
-
-    import distance
-    max_dist = 5
-    not_found = 3
-    maximum_dist = 3
-    done = set()
-    not_done = mintak_keys.copy()
-    print(len(mintak_keys), file=sys.stderr)
-    for m1 in sorted(mintak_keys):
-        not_done -= {m1}
-        for j, m2 in enumerate(not_done):
-            print('keys:', j, '/', len(not_done), file=sys.stderr)
-            if m1 == m2:
-                continue
-            if len(m1) < len(m2):
-                elso = m1
-                masodik = m2
-            else:
-                elso = m2
-                masodik = m1
-            dist = 0
-            occupied = set()
-            for i, elso_frame in enumerate(elso):
-                maradek = set(masodik) - occupied
-                if len(maradek) > 0:
-                    dk = set()
-                    for masodik_frame in maradek:
-                        dis = distance.levenshtein(elso_frame, masodik_frame, max_dist=maximum_dist)
-                        if dis >= 0:
-                            dk.add((dis, masodik_frame))
-                    if len(dk) > 0:
-                        cost, nyertes = min(dk, key=lambda x: x[0])
-                        occupied.add(nyertes)
-                        dist += cost
-                    else:
-                        dist += not_found
-                else:
-                    dist += not_found
-                if dist > max_dist:
-                    break
-            if dist <= max_dist:
-                mintak[m1].append(m2)
-                mintak[m2].append(m1)
-        done.add(m1)
-        print(len(done), file=sys.stderr)
-
-    pickle.dump(mintak, gzip.open('hasonlo_mintak.pcl', 'wb'))
-    for k, v in mintak.items():
-        if len(v) > 0:
-            print(k, v)
