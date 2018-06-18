@@ -117,7 +117,7 @@ def gen_patterns(pickled_name, w_verb_dict=True, w_isz=True, w_tade=True, w_infl
         all_ige |= set(inflist_verbs.keys())
 
     if w_mmo:
-        all_ige |= set(mmo_verbs.keys())
+        all_ige |= set(tade_verbs.keys())
 
     prev_by_ige = defaultdict(set)
     for verb in sorted(all_ige):

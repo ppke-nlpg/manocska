@@ -202,7 +202,6 @@ def kagi_inflist_process():
             prev = ''
             if '+' in verb:
                 prev, verb = verb.split('+')
-                prev += '|'
 
             for v in verb.split('|'):
                 if len(prev) > 0:
