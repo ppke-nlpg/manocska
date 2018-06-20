@@ -6,10 +6,10 @@ No. of Verbs (Tadé):  27252 8865936 4398
 No. of Verbs (kagi_verbal_complex):  26922 14078157 1
 No. of Verbs (inflist):  1500 8475969 2
 No. of Verbs (MetaMorpho):  13772 13772
-No. of Verbs (total):  43472 4709
-No. of Verbs in 1 resource(s):  23367
-No. of Verbs in 2 resource(s):  9761
-No. of Verbs in 3 resource(s):  5038
+No. of Verbs (total):  43474 4709
+No. of Verbs in 1 resource(s):  23369
+No. of Verbs in 2 resource(s):  9763
+No. of Verbs in 3 resource(s):  5036
 No. of Verbs in 4 resource(s):  3524
 No. of Verbs in 5 resource(s):  1456
 No. of Verbs in 6 resource(s):  326
@@ -10174,6 +10174,13 @@ ellenez
 [('INF',)]
 0
 
+ellenjegyez
+[]
+[(), ('[Acc]',), ('[Acc]', '[Dat]'), ('[Acc]', '[Ine]'), ('[Acc]', '[Ins]')]
+[]
+[]
+0
+
 ellenkezik
 [('[Ins]',)]
 [(), ('=szerint', '[Ins]'), ('[Acc]',), ('[Acc]', '[Ins]'), ('[Dat]', '[Ins]'), ('[Ine]',), ('[Ine]', '[Ins]'), ('[Ins]',)]
@@ -10194,13 +10201,6 @@ ellent|mond
 [('[Dat]',)]
 []
 7041
-
-ellen|jegyez
-[]
-[(), ('[Acc]',), ('[Acc]', '[Dat]'), ('[Acc]', '[Ine]'), ('[Acc]', '[Ins]')]
-[]
-[]
-0
 
 ellen|szegül
 []
@@ -19414,13 +19414,6 @@ furcsáll
 []
 0
 
-furikázik
-[]
-[(), ('[Acc]',), ('[Ins]',), ('[Ins]', '[Supe]'), ('[Supe]',)]
-[]
-[]
-0
-
 furulyázik
 []
 [(), ('[Ine]',)]
@@ -24517,13 +24510,6 @@ ide|vesz
 []
 45
 
-ide|vezet
-[]
-[(), ('[Acc]',), ('[Ine]',)]
-[]
-[]
-89
-
 ide|vonz
 []
 [(), ('[Acc]',)]
@@ -26578,13 +26564,6 @@ kifogásol
 kisebbít
 []
 [(), ('[Acc]',), ('[Acc]', '[Ine]'), ('[Acc]', '[Ins]')]
-[]
-[]
-0
-
-kivitelez
-[]
-[(), ('[Acc]',), ('[Acc]', '[Ine]'), ('[Acc]', '[Ins]'), ('[Ine]',), ('[Ins]',)]
 []
 []
 0
@@ -30340,6 +30319,13 @@ ki|visz
 [('[Acc]',)]
 [('INF',)]
 5017
+
+ki|vitelez
+[]
+[(), ('[Acc]',), ('[Acc]', '[Ine]'), ('[Acc]', '[Ins]'), ('[Ine]',), ('[Ins]',)]
+[]
+[]
+0
 
 ki|vizsgál
 [('[Acc]',)]
@@ -36203,13 +36189,6 @@ lop
 lopakodik
 []
 [(), ('[All]',), ('[Ill]',), ('[Ine]',), ('[Subl]',), ('[Supe]',)]
-[]
-[]
-0
-
-lopkod
-[]
-[(), ('[Acc]',)]
 []
 []
 0
@@ -63658,9 +63637,9 @@ INF (all):  2797
 INF (1 resource(s)):  1053
 INF (2 resource(s)):  1384
 INF (3 resource(s)):  360
-NON-INF (all):  966957
-NON-INF (1 resource(s)):  550738
-NON-INF (2 resource(s)):  357922
-NON-INF (3 resource(s)):  50283
-NON-INF (4 resource(s)):  6623
-NON-INF (5 resource(s)):  1391
+NON-INF (all):  966988
+NON-INF (1 resource(s)):  550767
+NON-INF (2 resource(s)):  357923
+NON-INF (3 resource(s)):  50287
+NON-INF (4 resource(s)):  6619
+NON-INF (5 resource(s)):  1392

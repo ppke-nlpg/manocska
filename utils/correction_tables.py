@@ -40,11 +40,11 @@ splitted -> unsplitted
 not_prev_verbs = {'alá|z', 'át|all', 'bele|s', 'bele|z', 'elé|g', 'elé|r', 'elő|z', 'fel|el',
                   'le|l', 'le|p', 'le|s', 'le|sz', 'rá|g', 'rá|z', 'tele|l', 'teli|k', }
 
-not_prev_verbs2 = {'fel|esel', 'szembe|sül', 'észre|vételez', 'mellé|kel', 'ellen|őriz', 'ellen|őriztet', 'ki|vitelez',
+not_prev_verbs2 = {'fel|esel', 'szembe|sül', 'észre|vételez', 'mellé|kel', 'ellen|őriz', 'ellen|őriztet',
                    'ellen|súlyoz', 'fel|ejt', 'ki|abál', 'ki|fogásol', 'be|folyásol', 'szemre|hány', 'szemre|vételez',
                    'nagyot|hall', 'bé|küld', 'bé|lel', 'be|cserkel', 'bé|kél', 'ki|józanul', 'vissz|hangoz',
                    'túl|órázik', 'túl|óráz', 'rá|dióz', 'pán|céloz', 'nyug|díjaz', 'fel|vételiz', 'el|lenez',
-                   'ellen|pontoz', 'ellen|tételez'}
+                   'ellen|pontoz', 'ellen|tételez', 'ellen|jegyez'}
 
 """
 Good verbs, that have false verbal particle analysis
@@ -635,7 +635,7 @@ not_prev_verbs3 = \
       'ki|kopog', 'külön|áll', 'vissza|vigyorog', 'ki|csuk', 'le|kicsinyel', 'le|nyomódik', 'ki|gázol',
       'mellé|talál', 'be|tűr', 'fel|mázol', 'fel|esküszik', 'egybe|állít', 'meg|fingat', 'körül|jártat',
       'át|származik', 'meg|tízszerez', 'el|gondolkoztat', 'fel|baktat', 'össze|hunyorít',
-      'vissza|csempész', 'túl|fizet', 'rá|pipál', 'ellen|jegyez', 'meg|őrződik', 'le|perdül', 'abba|marad',
+      'vissza|csempész', 'túl|fizet', 'rá|pipál', 'meg|őrződik', 'le|perdül', 'abba|marad',
       'be|rezel', 'bele|csavar', 'haza|szólít', 'át|pofoz', 'ki|kísérletez', 'hozzá|kap',
       'meg|vonul', 'össze|forrad', 'át|olvad', 'el|agyabugyál', 'ketté|fűrészel', 'le|halkul', 'túl|kiált',
       'el|vermel', 'számon|kér', 'le|bámul', 'át|csempész', 'le|ordít', 'hátra|fut', 'be|hurcolkodik',
@@ -646,7 +646,7 @@ not_prev_verbs3 = \
       'le|részegít', 'fel|habzsol', 'be|horpaszt', 'rá|biccent', 'el|barikádoz', 'meg|népesül',
       'be|szállingózik', 'le|lógat', 'bele|bődül', 'meg|kövesedik', 'ki|mélyül', 'oda|vár', 'össze|sül',
       'meg|dupláz', 'fel|hangosodik', 'alá|kanyarít', 'ki|szédeleg', 'el|vérez', 'le|előlegez',
-      'ki|öblösödik', 'el|dörren', 'be|kocog', 'össze|tölt', 'vissza|származtat', 'át|tart',
+      'ki|öblösödik', 'el|dörren', 'be|kocog', 'össze|tölt', 'vissza|származtat', 'át|tart', 'ki|vitelez',
       'össze|halmozódik', 'ki|fűződik', 'meg|pályáz', 'meg|forraszt', 'össze|ront', 'össze|gázol',
       'elő|keveredik', 'keresztül|bújik', 'ki|zúdít', 'meg|elevenül', 'le|hull', 'be|kíván',
       'meg|csalatkozik', 'nyilván|tart', 'ki|hull', 'körbe|hord', 'le|szakadozik', 'el|vitorlázik',
