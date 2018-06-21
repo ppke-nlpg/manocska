@@ -1,17 +1,17 @@
 Dropped: "gyökér, lomb és száraz ág 
 Dropped: "tömör, világos és egyszerű szöveget szeretnénk, és már fel is kértünk néhány jogi szakértőt egy kiegészítő jegyzőkönyv kidolgozására, mely a szubszidiaritásról, és az arányosságról szóló jegyzőkönyvek mintáját követné"-tájék
-No. of Verbs (verb_dict):  2224 6117057 8
-No. of Verbs (isz):  9665 18210685 389
-No. of Verbs (Tadé):  27252 8865936 4398
-No. of Verbs (kagi_verbal_complex):  26922 14078157 1
-No. of Verbs (inflist):  1500 8475969 2
+No. of Verbs (verb_dict):  2226 6117935 6
+No. of Verbs (isz):  9668 18212244 386
+No. of Verbs (Tadé):  27254 8866796 4396
+No. of Verbs (kagi_verbal_complex):  26920 14078057 0
+No. of Verbs (inflist):  1502 8476803 0
 No. of Verbs (MetaMorpho):  13772 13772
-No. of Verbs (total):  43474 4709
-No. of Verbs in 1 resource(s):  23369
+No. of Verbs (total):  43474 4706
+No. of Verbs in 1 resource(s):  23366
 No. of Verbs in 2 resource(s):  9763
-No. of Verbs in 3 resource(s):  5036
-No. of Verbs in 4 resource(s):  3524
-No. of Verbs in 5 resource(s):  1456
+No. of Verbs in 3 resource(s):  5039
+No. of Verbs in 4 resource(s):  3523
+No. of Verbs in 5 resource(s):  1457
 No. of Verbs in 6 resource(s):  326
 In 5 resources: abba|marad
 In 5 resources: ad
@@ -560,6 +560,7 @@ In 5 resources: jelentkezik
 In 5 resources: jut
 In 5 resources: jár
 In 5 resources: járul
+In 5 resources: jól|esik
 In 5 resources: jóvá|hagy
 In 5 resources: jön
 In 5 resources: kap
@@ -6793,6 +6794,13 @@ be|árnyékol
 []
 1513
 
+be|árul
+[]
+[(), ('[Dat]',)]
+[]
+[]
+179
+
 be|ás
 []
 [(), ('[Acc]',), ('[Acc]', '[Ill]'), ('[Acc]', '[Ine]'), ('[Acc]', '[Supe]')]
@@ -8039,13 +8047,6 @@ citál
 []
 0
 
-civakodik
-[]
-[(), ('[Ine]',), ('[Ins]',), ('[Supe]',)]
-[]
-[]
-0
-
 cizellál
 []
 [(), ('[Acc]',)]
@@ -8889,13 +8890,6 @@ csörömpöl
 csúfol
 []
 [(), ('=miatt', '[Acc]'), ('[Acc]',), ('[Acc]', '[Dat]'), ('[Acc]', '[Dat]', '[Ine]'), ('[Acc]', '[Ine]'), ('[Acc]', '[Ins]'), ('[Dat]',), ('[Dat]', '[Ine]'), ('[Ins]',)]
-[]
-[]
-0
-
-csúfolódik
-[]
-[(), ('[Ins]',)]
 []
 []
 0
@@ -10129,6 +10123,13 @@ egyértelműsít
 []
 [('[Acc]',), ('[Acc]', '[Ine]')]
 []
+[]
+0
+
+együtt|jár
+[('[Ins]',)]
+[(), ('[Acc]',), ('[Dat]', '[Ins]'), ('[Ine]', '[Ins]'), ('[Ins]',), ('[Ins]', '[Subl]'), ('[Ins]', '[Supe]')]
+[('[Ins]',)]
 []
 0
 
@@ -24510,6 +24511,13 @@ ide|vesz
 []
 45
 
+ide|vezet
+[]
+[(), ('[Acc]',), ('[Ine]',)]
+[]
+[]
+89
+
 ide|vonz
 []
 [(), ('[Acc]',)]
@@ -25523,6 +25531,13 @@ játszódik
 [(), ('=között',), ('=után',), ('[Acc]', '[Ine]'), ('[Dat]', '[Supe]'), ('[Ine]',), ('[Ine]', '[Supe]'), ('[Ins]',), ('[Supe]',)]
 [('[Ine]',)]
 []
+0
+
+jól|esik
+[(), ('[Dat]',)]
+[(), ('=után',), ('[Acc]',), ('[Dat]',), ('[Dat]', '[Ine]'), ('[Ine]',), ('[Ins]',), ('[Subl]',), ('[Supe]',)]
+[(), ('[Dat]',)]
+[('INF',)]
 0
 
 jósol
@@ -36193,6 +36208,13 @@ lopakodik
 []
 0
 
+lopkod
+[]
+[(), ('[Acc]',)]
+[]
+[]
+0
+
 lovagol
 []
 [(), ('[Acc]',), ('[Acc]', '[Ine]'), ('[Acc]', '[Ins]'), ('[Acc]', '[Supe]'), ('[Ine]',), ('[Ine]', '[Ins]'), ('[Ine]', '[Supe]'), ('[Ins]',), ('[Ins]', '[Supe]'), ('[Supe]',), ('[Ter]',)]
@@ -36457,6 +36479,13 @@ lök
 [(), ('=elé',), ('=elé', '[Acc]'), ('=közé', '[Acc]'), ('[Acc]',), ('[Acc]', '[All]'), ('[Acc]', '[Dat]'), ('[Acc]', '[Ela]'), ('[Acc]', '[Ill]'), ('[Acc]', '[Ill]', '[Ins]'), ('[Acc]', '[Ine]'), ('[Acc]', '[Ins]'), ('[Acc]', '[Subl]'), ('[Acc]', '[Supe]'), ('[Ill]',), ('[Subl]',), ('[Supe]',)]
 []
 [('INF',)]
+0
+
+lökdös
+[]
+[(), ('[Acc]',), ('[Acc]', '[Ill]'), ('[Acc]', '[Ine]'), ('[Acc]', '[Ins]')]
+[]
+[]
 0
 
 lökdösődik
@@ -50438,6 +50467,13 @@ szaladgál
 []
 0
 
+szalajt
+[]
+[('[Acc]',), ('[Acc]', '[Cau]')]
+[]
+[]
+0
+
 szalaszt
 []
 []
@@ -52723,6 +52759,13 @@ süllyed
 süllyeszt
 []
 [(), ('=alá', '[Acc]'), ('[Acc]',), ('[Acc]', '[Ill]'), ('[Acc]', '[Ill]', '[Supe]'), ('[Acc]', '[Subl]'), ('[Acc]', '[Transl]'), ('[Ill]',)]
+[]
+[]
+0
+
+sündörög
+[]
+[(), ('=körül',), ('=körül', '[Acc]')]
 []
 []
 0
@@ -55364,7 +55407,7 @@ túlórázik
 [(), ('[Acc]',)]
 []
 []
-89
+0
 
 túr
 []
@@ -59895,6 +59938,13 @@ zümmög
 []
 782
 
+át|húzódik
+[]
+[(), ('[Ill]',), ('[Subl]',), ('[Supe]',)]
+[]
+[]
+430
+
 át|indul
 []
 [('[Subl]', '[Supe]')]
@@ -63633,13 +63683,13 @@ zümmög
 []
 0
 
-INF (all):  2797
-INF (1 resource(s)):  1053
-INF (2 resource(s)):  1384
+INF (all):  2799
+INF (1 resource(s)):  1054
+INF (2 resource(s)):  1385
 INF (3 resource(s)):  360
-NON-INF (all):  966988
-NON-INF (1 resource(s)):  550767
-NON-INF (2 resource(s)):  357923
-NON-INF (3 resource(s)):  50287
-NON-INF (4 resource(s)):  6619
-NON-INF (5 resource(s)):  1392
+NON-INF (all):  966981
+NON-INF (1 resource(s)):  550758
+NON-INF (2 resource(s)):  357912
+NON-INF (3 resource(s)):  50296
+NON-INF (4 resource(s)):  6624
+NON-INF (5 resource(s)):  1391

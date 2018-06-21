@@ -43,8 +43,8 @@ not_prev_verbs = {'alá|z', 'át|all', 'bele|s', 'bele|z', 'elé|g', 'elé|r', '
 not_prev_verbs2 = {'fel|esel', 'szembe|sül', 'észre|vételez', 'mellé|kel', 'ellen|őriz', 'ellen|őriztet',
                    'ellen|súlyoz', 'fel|ejt', 'ki|abál', 'ki|fogásol', 'be|folyásol', 'szemre|hány', 'szemre|vételez',
                    'nagyot|hall', 'bé|küld', 'bé|lel', 'be|cserkel', 'bé|kél', 'ki|józanul', 'vissz|hangoz',
-                   'túl|órázik', 'túl|óráz', 'rá|dióz', 'pán|céloz', 'nyug|díjaz', 'fel|vételiz', 'el|lenez',
-                   'ellen|pontoz', 'ellen|tételez', 'ellen|jegyez'}
+                   'túl|órázik', 'túl|óráz', 'túl|óráztat', 'rá|dióz', 'pán|céloz', 'nyug|díjaz', 'fel|vételiz',
+                   'el|lenez', 'ellen|pontoz', 'ellen|tételez', 'ellen|jegyez'}
 
 """
 Good verbs, that have false verbal particle analysis
@@ -146,7 +146,7 @@ strange combinations
 delete
 """
 # TODO: further research (delete)
-not_prev_verbs_TODO_FR = {'jól|esik', 'jól|lakat', 'jól|lakik', 'jól|tart', 'jót|áll', 'rosszul|esik', 'után|állít',
+not_prev_verbs_TODO_FR = {'jól|lakat', 'jól|lakik', 'jól|tart', 'jót|áll', 'után|állít',
                           'után|ízesít', 'után|nyom', 'után|rendel', 'után|tölt', 'abba|fejez',
                           'együtt|hat'
                           }
@@ -158,7 +158,7 @@ verb_bad_prev = {'-be|jár', 'bé|késik',  'egyet|ér', 'el|fogul', 'helyt|van'
                  'abba|kerül', 'abba|van', 'egyet|alszik', 'egyet|említ', 'egyet|gondol', 'egyet|húz', 'egyet|jelent',
                  'egyet|kér', 'egyet|lát', 'egyet|lép', 'egyet|mond', 'egyet|nyel', 'egyet|nyom', 'egyet|sóhajt',
                  'egyet|szeret', 'egyet|talál', 'egyet|tud', 'egyet|választ', 'egyet|vesz', 'együtt|csinál',
-                 'együtt|dolgozik', 'együtt|él', 'együtt|érez', 'együtt|jár', 'együtt|játszik',
+                 'együtt|dolgozik', 'együtt|él', 'együtt|érez', 'együtt|játszik',
                  'együtt|rögzít', 'együtt|szerkeszt', 'együtt|tölt', 'együtt|van', 'földet|kap', 'helyben|biztosít',
                  'helyben|használ', 'helyben|marad', 'helyben|van', 'helyt|kap', 'jót|akar', 'jót|ígér', 'jót|ír',
                  'jót|kíván', 'jót|mond', 'jót|tesz', 'nagyot|alkot', 'nagyot|csalódik', 'nagyot|dobban',

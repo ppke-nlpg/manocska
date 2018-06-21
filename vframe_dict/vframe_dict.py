@@ -5163,8 +5163,6 @@ verb_prev_restrs_dict = {
     'ont#V': {'be#PreV': 'X', 'el#PreV': 'X', 'ki#PreV': 'X', 'le#PreV': 'X'},
     'operál#V': {'át#PreV': 'X', 'bele#PreV': 'X', 'be#PreV': 'X', 'ki#PreV': 'X', 'le#PreV': 'X', 'meg#PreV': 'X', 'vissza#PreV': 'X'},
     'operáltat#V': {'át#PreV': 'X', 'ki#PreV': 'X', 'le#PreV': 'X', 'meg#PreV': 'X'},
-    'órázik#V': {'túl#PreV': 'X'},
-    'óráztat#V': {'túl#PreV': 'X'},
     'ordibál#V': {'bele#PreV': 'X', 'túl#PreV': 'X', 'végig#PreV': 'X'},
     'ordít#V': {'át#PreV': 'X', 'bele#PreV': 'X', 'be#PreV': 'X', 'el#PreV': 'X', 'fel#PreV': 'X', 'föl#PreV': 'X', 'ki#PreV': 'X', 'közbe#PreV': 'X', 'le#PreV': 'X', 'oda#PreV': 'X', 'rá#PreV': 'X', 'tele#PreV': 'X', 'túl#PreV': 'X', 'végig#PreV': 'X', 'vissza#PreV': 'X'},
     'ordíthat#V': {'ki#PreV': 'X'},
