@@ -59,14 +59,23 @@ Továbbiakban a Manócska készítése során felhasznált erőforrások jogtula
 
 A _Manócska_ a következő bibliográfiai bejegyzések egyikével hivatkozható:
 
-Indig Balázs, Vadász Noémi, Kalivoda Ágnes . _Manócska – integrált igei vonzatkeret adatbázis._ (2017) Elérhető: [https://github.com/ppke-nlpg/manocska](https://github.com/ppke-nlpg/manocska)
+Ágnes Kalivoda, Noémi Vadász, Balázs Indig. _Manócska: A Unified Verb Frame Database for Hungarian._ Proceedings of the 21st International Conference on Text, Speech and Dialogue (TSD 2018). 135--143. Brno 2018.
 
-    @manual{manocska,
-      author       = {Indig, Bal{\'a}zs and Vad{\'a}sz, No{\'e}mi and Kalivoda, {\'A}gnes},
-      title        = {Man{\'o}cska -- integr{\'a}lt igeivonzatkeret-adatb{\'a}zis},
-      year         = {2017},
-      url = {https://github.com/ppke-nlpg/manocska}
-    }
+	@inproceedings{nlp:tsd18conf/pp124-132,
+		title={{\textsc  {Manócska}: A Unified Verb Frame Database for Hungarian}},
+		booktitle={{Proceedings of the 21st International Conference on Text, Speech and Dialogue---TSD 2018, Brno, Czech Republic}},
+		series = {Lecture Notes in Artificial Intelligence},
+		volume = 11107,
+		year = 2018,
+		editor = {Petr Sojka and Ale{\v s} Hor{\'a}k and Ivan Kope{\v c}ek and Karel Pala},
+		month = Sep,
+		day = {11--14},
+		author={{\'A}gnes Kalivoda and No{\'e}mi Vad{\'a}sz and Bal{\'a}zs Indig},
+		pages={135--143},
+		doi={https://doi.org/10.1007/978-3-030-00794-2_14},
+		publisher = {Springer-Verlag},
+		isbn =  {978-3-030-00794-2},
+	}
 
 Vadász Noémi, Kalivoda Ágnes, Indig Balázs. _Egy egységesített magyar igei vonzatkerettár építése és felhasználása_ XIV. Magyar Számítógépes Nyelvészeti Konferencia (MSZNY 2018). 3--15. Szeged. 2018.
 
