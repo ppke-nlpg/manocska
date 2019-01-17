@@ -38,8 +38,8 @@ Tartalmazza az összes ige-igekötő-vonzatkeret hármast a fenti erőforrásokb
 - Harmadik mező: a keret frekvenciája a _Magyar igei szerkezetek (szótár)_ alapján
 - Negyedik mező: a keret frekvenciája a _500000 igei szerkezet (lista)_ alapján
 - Ötödik mező: a keret frekvenciája a _Tádé_ alapján
-- Hatodik mező: az (igekötős)ige frekvenciája _Kalivoda Ágnes Infinitívuszi szerkezetek a magyarban_ vizsgálata alapján (nem igekötős igékre None, minden keretre azonos)
-- Hetedik mező: az infinitívuszi vonzattal rendelkező igék frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (infinitívuszi vonzattal nem rendelkező igékre None, minden keretre azonos)
+- Hatodik mező: az (igekötős) ige frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igékre None, minden keretre azonos)
+- Hetedik mező: az infinitívuszi vonzattal rendelkező igék frekvenciája _Kalivoda Ágnes Infinitívuszi szerkezetek a magyarban_ vizsgálata alapján (infinitívuszi vonzattal nem rendelkező igékre None, minden keretre azonos)
 - Nyolcadik mező: a keret frekvenciája a _MetaMorpho_ alapján
 - Kilencedik mező: a rang
 
