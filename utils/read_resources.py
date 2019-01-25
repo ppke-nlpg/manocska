@@ -155,18 +155,19 @@ def tade_process():
     return sumfreq, found_wrong_verbs, found_verbs
 
 
-def kagi_verbs_process():
+def kagi_verbs_process():  # V2
     found_wrong_verbs = set()
     found_verbs = Counter()
     sumfreq = 0
-    with open('kagi_verbal_complex/freqPrevFin.txt', encoding='UTF-8') as kagi:
+    with open('prevlex/PrevLex.txt', encoding='UTF-8') as kagi:
         for entry in kagi:
-            entry = entry.strip().split(' ')
+            entry = entry.strip().split('\t')
 
-            if len(entry) != 2:
+            if len(entry) != 5:
                 exit('kagi_verbs_error: {0}'.format(entry))
 
-            freq, verb_w_ik = entry
+            verb_w_ik = entry[0]
+            freq = entry[1]
             prev, verb = verb_w_ik.split('+')
             freq = int(freq)
 

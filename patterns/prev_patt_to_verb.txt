@@ -612,8 +612,8 @@
 ('X', ((), ('[Acc]',), ('[Acc]', '[Dat]')))
 	adresszál	1	None	None	(None, None, 1)	None	(1, 1, None)
 	egyenirányít	1	None	None	(1, 3, 1)	None	None
-	hablatyol	1	None	None	(2, 2, 1)	None	(1, 1, 1)
 ('X', ((), ('[Acc]',), ('[Acc]', '[Dat]'), ('[Dat]',)))
+	hablatyol	1	None	None	(2, 2, 1, None)	None	(1, None, 1, 1)
 	látszat	1	None	(113, 29, 12, 7)	None	None	None
 	parancsolgat	1	None	(20, None, None, 38)	(11, 2, 1, 5)	None	(None, None, None, 1)
 	táviratoz	1	None	(21, 20, 14, 17)	None	None	None
@@ -666,7 +666,6 @@
 	lát-hall	1	None	(16, 130, 30, 12)	None	None	None
 	tároz	1	None	None	(1, 1, 1, 2)	None	None
 ('X', ((), ('[Acc]',), ('[Acc]', '[Ins]')))
-	abajgat	1	None	None	(None, 4, None)	None	(1, 1, 1)
 	butít	1	None	(18, 29, None)	(3, 3, 1)	None	(1, 1, None)
 	csitítgat	1	None	None	(7, 3, 1)	None	(None, 1, 1)
 	elemezget	1	None	(6, 73, 6)	None	None	None
@@ -691,6 +690,7 @@
 	kárpitoz	1	None	None	(6, 1, 2, 1)	None	(1, 1, None, None)
 	macerál	1	None	(15, 49, 9, None)	(2, 3, None, 1)	None	(None, 1, 1, None)
 ('X', ((), ('[Acc]',), ('[Acc]', '[Ins]'), ('[Ins]',)))
+	abajgat	1	None	None	(None, 4, None, None)	None	(1, None, 1, 1)
 	cifráz	1	None	(8, 154, 12, None)	(9, 28, 1, 1)	None	(None, 1, None, None)
 	izmosít	1	None	None	(None, 3, 1, None)	None	(1, 1, None, 1)
 	kötekedik	1	None	(54, 12, 7, 45)	(3, None, None, 7)	None	None
@@ -5841,12 +5841,14 @@
 	csorbít	1	None	None	(3, 7, 1)	None	(1, None, None)
 	ellenőriz	1	None	(7, 62, 6)	None	None	None
 	etet	1	None	None	(2, 1, 1)	None	None
-	festeget	1	None	None	(None, 1, None)	None	(1, 1, 1)
 	fényesít	1	None	(None, 63, 8)	(3, 20, 3)	None	None
 	puhatol	1	None	(11, 75, 11)	(None, 1, None)	None	(None, 1, None)
 ('ki', ((), ('[Acc]',), ('[Acc]', '[Ins]'), ('[Acc]', '[Supe]')))
 	oldoz	1	None	None	(1, 8, 1, 1)	None	None
 	tapétáz	1	None	None	(5, 1, 1, 1)	None	None
+('ki', ((), ('[Acc]',), ('[Acc]', '[Ins]'), ('[Ins]',)))
+	dekorál	1	None	None	(3, 1, 2, 1)	None	(None, 1, 1, None)
+	festeget	1	None	None	(None, 1, None, None)	None	(1, None, 1, 1)
 ('ki', ((), ('[Acc]',), ('[Acc]', '[Supe]')))
 	finanszíroz	1	None	None	(2, 115, 1)	None	None
 	kacag	1	None	(11, 50, 7)	(10, 5, None)	None	None
