@@ -7,7 +7,7 @@ A _Manócska_ adatbázis összefogja és harmonizálja a magyar nyelvű igei von
 - [_Magyar igei szerkezetek (szótár)_. Sass Bálint et al.](ige_szotar/README.md)
 - [28 millió szintaktikailag elemzett mondat és _500000 igei szerkezet (lista)_. Sass Bálint.](isz/README.md)
 - [_Tádé_ – Igei vonzatkeret-gyakorisági lista. Kornai András et al.](tade/README.md)
-- [_A magyar igei komplexumok vizsgálata_. Kalivoda Ágnes. (Mesterszakos szakdolgozat)](https://github.com/kagnes/hungarian_verbal_complex/)
+- [_PrevLex_ – Igekötős igék táblázata. Kalivoda Ágnes.](https://github.com/kagnes/prevlex/)
 - [_Infinitívuszi szerkezetek a magyarban_. Kalivoda Ágnes.](https://github.com/kagnes/infinitival_constructions)
 - [_A MetaMorpho magyar-angol változatának igei vonzatkeret adatbázisa_. Prószéky Gábor et al.](MetaMorphoHuEn/README.md)
 
@@ -38,7 +38,7 @@ Tartalmazza az összes ige-igekötő-vonzatkeret hármast a fenti erőforrásokb
 - Harmadik mező: a keret frekvenciája a _Magyar igei szerkezetek (szótár)_ alapján
 - Negyedik mező: a keret frekvenciája a _500000 igei szerkezet (lista)_ alapján
 - Ötödik mező: a keret frekvenciája a _Tádé_ alapján
-- Hatodik mező: az (igekötős) ige frekvenciája _Kalivoda Ágnes Magyar igei komplexum vizsgálatai_ alapján (nem igekötős igékre None, minden keretre azonos)
+- Hatodik mező: az (igekötős) ige frekvenciája a _PrevLex_ alapján (nem igekötős igékre None, minden keretre azonos)
 - Hetedik mező: az infinitívuszi vonzattal rendelkező igék frekvenciája _Kalivoda Ágnes Infinitívuszi szerkezetek a magyarban_ vizsgálata alapján (infinitívuszi vonzattal nem rendelkező igékre None, minden keretre azonos)
 - Nyolcadik mező: a keret frekvenciája a _MetaMorpho_ alapján
 - Kilencedik mező: a rang
