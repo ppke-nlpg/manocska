@@ -5,7 +5,7 @@ _Manócska_ contains all Hungarian verb frame databases, these are as follows:
 - [_Hungarian verbal structures (dictionary)_. Bálint Sass et al.](ige_szotar/README.en.md)
 - [28 million syntactically parsed sentences and _500000 verbal structures (list)_. Bálint Sass.](isz/README.en.md)
 - [_Tádé_ – A frequency list of verb frames. András Kornai et al.](tade/README.en.md)
-- [_A frequency list of verb frames_. Ágnes Kalivoda. (MA thesis)](https://github.com/kagnes/hungarian_verbal_complex/)
+- [_PrevLex_ – A revised table of particle verbs in Hungarian. Ágnes Kalivoda.](https://github.com/kagnes/prevlex/)
 - [_Infinitival constructions in Hungarian_. Ágnes Kalivoda.](https://github.com/kagnes/infinitival_constructions)
 - [_The verb frame database of the hungarian-english variant of MetaMorpho_. Gábor Prószéky et al.](MetaMorphoHuEn/README.en.md)
 
@@ -36,7 +36,7 @@ It contains 'verb – verbal particle – argument frame' triplets with their fr
 - 3rd field: the frequency of the argument frame, based on the _Hungarian verbal structures (dictionary)_
 - 4th field: the frequency of the argument frame, based on the _500000 verbal structures (list)_
 - 5th field: the frequency of the argument frame, based on _Tádé_
-- 6th field: the frequency of the argument frame (of the particle verbs only), based on _Ágnes Kalivoda's MA thesis_ (in the case of verbs without particle, this field gets a None value)
+- 6th field: the frequency of the argument frame (of the particle verbs only), based on _PrevLex_ (in the case of verbs without particle, this field gets a None value)
 - 7th field: the frequency of the argument frame by verbs having infinitival arguments, based on _Ágnes Kalivoda's collection_ (Infinitival constructions in Hungarian; in case of verbs without infinitival argument, this field gets a None value)
 - 8th field:  the frequency of the argument frame, based on _MetaMorpho_
 - 9th field: the rank value
