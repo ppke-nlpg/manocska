@@ -10,7 +10,7 @@ from itertools import repeat
 from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom import minidom
 
-from utils.read_resources import get_freq_w_ind_for_frame
+from .read_resources import get_freq_w_ind_for_frame
 
 
 def prev_split(verb):

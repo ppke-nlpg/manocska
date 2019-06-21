@@ -11,7 +11,7 @@ from itertools import combinations
 from collections import defaultdict, Counter
 from concurrent.futures import ProcessPoolExecutor, wait
 
-from utils.correction_tables import is_verb_wrong, fix_verb, correct_args
+from .correction_tables import is_verb_wrong, fix_verb, correct_args, mmo_exceptions
 from MetaMorphoHuEn.mmo_to_dict import process_mmo
 
 
@@ -163,7 +163,7 @@ def kagi_verbs_process():  # V2
         for entry in kagi:
             entry = entry.strip().split('\t')
 
-            if len(entry) != 5:
+            if len(entry) < 2:
                 exit('kagi_verbs_error: {0}'.format(entry))
 
             verb_w_ik = entry[0]
@@ -231,11 +231,13 @@ def mmo_process():
                  '[TEM]': '[Temp]', '[TER]': '[Ter]', '[FROM]': '[_From]', '[FROMTO]': '[_Fromto]',
                  '[MANNER]': '[_Manner]', '[PLACE]': '[_Place]', '[SZAM]': '[_Advz_Quant:szám/Adv]', '[TO]': '[_To]',
                  '': ''}
-    for verb, frames in verb_dict.items():
+    for verb, frames in sorted(verb_dict.items()):  # TODO: Somehow non-determinism is introduced here! Research!
+        if verb in mmo_exceptions:
+            continue
         for mmoid, frame in frames.items():
             fr = []
             opt = []
-            for arg, feats in frame[0].items():
+            for arg, feats in sorted(frame[0].items()):
                 if arg == 'TV':
                     continue
                 lex, case, postp = '', '', ''
@@ -272,14 +274,14 @@ def mmo_process():
             fr.sort(key=lambda x: x[1])
             verbs[verb].append((meta, tuple(fr)))
 
-            # Append all combinations of optimonal elements
+            # Append all combinations of optimonal elements  # TODO: In some runs not all combinations arrive at the end
             for i in range(1, len(opt) + 1):
                 fr_act = copy.deepcopy(fr)
                 for c in combinations(opt, i):
                     fr_act.extend(c)
                     fr_act.sort(key=lambda x: x[1])
                     verbs[verb].append((meta, tuple(fr_act)))
-    return len(verb_dict), {}, verbs  # Dummy wrong verbs list... TODO: research!
+    return len(verb_dict), mmo_exceptions, verbs  # Dummy wrong verbs list...
 
 
 def read_resources_parallel(pickled_name, overwrite=False):

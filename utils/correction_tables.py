@@ -874,6 +874,10 @@ postp_to_postp = {'afelett': 'felett', 'amellett': 'mellett', 'anélkül': 'nél
 
 number_re = re.compile('([0-9]*|[0-9]*-[0-9]*|[0-9]*\.|[0-9]*-(a|e|es|as|ai|je|os))[=[]')
 
+mmo_exceptions = {'becsül_saccol', 'el_van_havazva', 'ragad_megfog', 'észrevolna', 'jár az esze', 'kétségbe van esve',
+                  'nagyot/nagyokat mond', 'terhére van vkinek', 'tisztában van vmivel', 'tudomása van vmiről',
+                  'kellene', 'el|kelne', 'kéne', 'ó', 'szeretne'}
+
 
 def correct_args(frame):
     new_frame = []
